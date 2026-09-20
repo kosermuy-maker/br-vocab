@@ -610,3 +610,13 @@ button:hover {
     justify-content: flex-start;
   }
 }
+/* 20260920-tapfix-marker */
+
+.flashcard,
+.flashcard *,
+button,
+.lesson-item {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
