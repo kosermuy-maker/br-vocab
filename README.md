@@ -1,39 +1,48 @@
-# 单词冲刺器
+# 单词冲刺器 · Ebbinghaus Vocab Trainer
 
-这是一个基于 `艾宾浩斯曲线版 单词.pdf` 自动提取的本地背单词程序。
+基于艾宾浩斯曲线词表的**静态背单词网页**：免安装、打开即用，约 **1916** 个单词（Lesson 1–40）。
 
-## 已完成
+**在线试用：** https://kosermuy-maker.github.io/br-vocab/
 
-- 按 `Lesson 1` 到 `Lesson 40` 独立拆分单元
-- 共提取 `1916` 个单词
-- 支持随机背词
-- 支持顺序背词
-- 支持错题本
-- 支持本地学习进度保存
-- 支持按复习阶段自动生成到期复习列表
-- 支持一键进入「到期复习」模式（复习提醒面板的「开始复习」按钮）
-- 支持单词发音（🔊 按钮或快捷键 `P`，可开启「自动发音」，使用浏览器内置语音，无需联网下载）
+> 进度保存在浏览器本地（`localStorage`）。换手机 / 换浏览器不会自动同步；别人打开同一个链接也**不会**覆盖你的进度。
 
-## 直接使用
+---
 
-直接双击打开 [index.html](C:/Users/Master/Desktop/br/index.html) 即可。
+## 功能
 
-## 重新提取 PDF
+- 按单元选择（可多选）
+- 顺序背词 / 随机背词
+- 错题本（搜索、按单元筛选）
+- 复习提醒（艾宾浩斯阶段到期列表，可一键开始复习）
+- 单词发音（浏览器内置语音；可开「自动发音」）
+- 桌面快捷键：↑ 显示释义 · ← 不认识 · → 认识 · 空格/回车下一张 · `P` 发音
 
-如果你后面替换了根目录下的 PDF，可以重新执行：
+## 怎么用
 
-```powershell
-C:\Users\Master\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe .\scripts\extract_pdf_words.py
+### 手机 / 任意浏览器
+
+打开：https://kosermuy-maker.github.io/br-vocab/
+
+建议「添加到主屏幕」当小工具用。
+
+### 本地打开
+
+```bash
+git clone https://github.com/kosermuy-maker/br-vocab.git
+cd br-vocab
+# 用浏览器打开 index.html 即可（无需构建）
 ```
 
-提取后会自动更新：
+## 技术说明
 
-- [data/vocab.json](C:/Users/Master/Desktop/br/data/vocab.json)
-- [data/vocab-data.js](C:/Users/Master/Desktop/br/data/vocab-data.js)
+- 纯静态：`index.html` + `app.js` + `styles.css` + `data/`
+- 无后端、无账号
+- 可选：用 `scripts/extract_pdf_words.py` 从 PDF 重新提取词表（需本机 Python 与 PDF）
 
-## 手机访问（GitHub Pages）
+## 反馈
 
-https://kosermuy-maker.github.io/br-vocab/
+欢迎提 [Issue](https://github.com/kosermuy-maker/br-vocab/issues)。
 
-仓库仍是 Private；站点已开启 Pages。进度保存在浏览器本地存储。
+---
 
+MIT-ish / 学习自用欢迎；词表来源于艾宾浩斯曲线版单词材料，请自行注意版权使用范围。
