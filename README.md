@@ -30,3 +30,10 @@ C:\Users\Master\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\
 
 - [data/vocab.json](C:/Users/Master/Desktop/br/data/vocab.json)
 - [data/vocab-data.js](C:/Users/Master/Desktop/br/data/vocab-data.js)
+
+## 手机访问（GitHub Pages）
+
+https://kosermuy-maker.github.io/br-vocab/
+
+仓库仍是 Private；站点已开启 Pages。进度保存在浏览器本地存储。
+
