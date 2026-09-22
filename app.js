@@ -40,6 +40,7 @@ const els = {
   cardProgress: document.querySelector("#cardProgress"),
   cardWord: document.querySelector("#cardWord"),
   cardPos: document.querySelector("#cardPos"),
+  tapHint: document.querySelector("#tapHint"),
   cardMeaning: document.querySelector("#cardMeaning"),
   reviewList: document.querySelector("#reviewList"),
   wrongList: document.querySelector("#wrongList"),
@@ -54,7 +55,6 @@ const els = {
   nextWordBtn: document.querySelector("#nextWordBtn"),
   shuffleBtn: document.querySelector("#shuffleBtn"),
   clearSessionBtn: document.querySelector("#clearSessionBtn"),
-  revealBtn: document.querySelector("#revealBtn"),
   knownBtn: document.querySelector("#knownBtn"),
   unknownBtn: document.querySelector("#unknownBtn"),
   toggleAllLessons: document.querySelector("#toggleAllLessons"),
@@ -132,11 +132,7 @@ function bindEvents() {
     renderAll();
   });
   els.clearSessionBtn.addEventListener("click", clearCurrentSessionProgress);
-  els.revealBtn.addEventListener("click", revealMeaning);
-  els.flashcard.addEventListener("click", (event) => {
-    if (event.target.closest("button")) return;
-    revealMeaning();
-  });
+  els.flashcard.addEventListener("click", () => revealMeaning());
   els.knownBtn.addEventListener("click", () => markAnswer(true));
   els.unknownBtn.addEventListener("click", () => markAnswer(false));
   els.toggleAllLessons.addEventListener("click", toggleAllLessons);
@@ -1119,16 +1115,14 @@ function renderCard() {
     }
 
     els.cardPos.textContent = "";
-    els.cardMeaning.textContent = "点击卡片查看中文意思。";
+    els.tapHint.hidden = true;
+    els.cardMeaning.textContent = "轻点卡片查看中文意思。";
     els.cardMeaning.classList.add("hidden");
     els.knownBtn.disabled = true;
     els.unknownBtn.disabled = true;
-    els.revealBtn.disabled = true;
     els.speakBtn.disabled = true;
     els.knownBtn.style.opacity = "0.55";
     els.unknownBtn.style.opacity = "0.55";
-    els.revealBtn.style.opacity = "0.55";
-    els.revealBtn.textContent = "显示释义";
     return;
   }
 
@@ -1147,16 +1141,15 @@ function renderCard() {
   els.cardProgress.textContent = `${state.learnedCount} / ${state.sessionTotal || state.deck.length}`;
   els.cardWord.textContent = current.word;
   els.cardPos.textContent = current.part_of_speech || "未标注词性";
+  els.tapHint.hidden = state.showMeaning;
   els.cardMeaning.textContent = current.meaning || "未提取到释义";
   els.cardMeaning.classList.toggle("hidden", !state.showMeaning);
   els.knownBtn.disabled = !state.showMeaning;
   els.unknownBtn.disabled = !state.showMeaning;
-  els.revealBtn.disabled = false;
   els.speakBtn.disabled = false;
   els.knownBtn.style.opacity = state.showMeaning ? "1" : "0.55";
   els.unknownBtn.style.opacity = state.showMeaning ? "1" : "0.55";
-  els.revealBtn.style.opacity = "1";
-  els.revealBtn.textContent = state.showMeaning ? "隐藏释义" : "显示释义";
+  els.cardMeaning.classList.toggle("revealed", state.showMeaning);
 
   if (state.autoSpeak) speakCurrentWord();
 }
