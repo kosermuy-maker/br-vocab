@@ -23,7 +23,9 @@
 
 打开：https://kosermuy-maker.github.io/br-vocab/
 
-建议「添加到主屏幕」当小工具用。
+界面按手机应用布局：底部「复习 / 错题 / 面板」，背词卡占满一屏，**轻点卡片显示释义**，底部大按钮「发音 / 不认识 / 认识」。
+
+已支持 PWA：可用浏览器「添加到主屏幕」，装成独立图标的应用；装过一次后**离线也能打开**（Service Worker 缓存）。
 
 ### 本地打开
 
@@ -36,6 +38,7 @@ cd br-vocab
 ## 技术说明
 
 - 纯静态：`index.html` + `app.js` + `styles.css` + `data/`
+- PWA：`manifest.webmanifest` + `sw.js` + `icons/`（可安装、可离线）
 - 无后端、无账号
 - 可选：用 `scripts/extract_pdf_words.py` 从 PDF 重新提取词表（需本机 Python 与 PDF）
 
