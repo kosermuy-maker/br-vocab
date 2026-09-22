@@ -2,126 +2,153 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4efe6" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="单词背诵器" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20260920-mobile" />
+    <link rel="stylesheet" href="./styles.css?v=20260922-app" />
   </head>
   <body>
-    <div class="shell">
-      <aside class="sidebar">
-        <div class="brand">
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
           <p class="eyebrow">Ebbinghaus Vocabulary Trainer</p>
           <h1>单词背诵器</h1>
-          <p class="muted">按单元背词，支持顺序学习、随机学习、错题本和复习提醒。</p>
         </div>
+        <button id="menuBtn" class="icon-button" type="button" aria-label="打开学习面板">☰</button>
+      </header>
 
-        <section class="panel stats-panel">
-          <div class="stat">
-            <span>单元数</span>
-            <strong id="lessonCount">0</strong>
+      <main class="app-main">
+        <section class="study-screen panel">
+          <div class="card-topline">
+            <span id="cardTag" class="tag">准备开始</span>
+            <span id="cardProgress" class="muted">0 / 0</span>
           </div>
-          <div class="stat">
-            <span>总单词</span>
-            <strong id="wordCount">0</strong>
-          </div>
-          <div class="stat">
-            <span>错题本</span>
-            <strong id="wrongCount">0</strong>
-          </div>
-        </section>
 
-        <section class="panel">
-          <div class="panel-title-row">
-            <h2>单元列表</h2>
-            <button id="toggleAllLessons" class="text-button">全选/单选</button>
-          </div>
-          <div id="lessonList" class="lesson-list"></div>
-        </section>
-      </aside>
-
-      <main class="main">
-        <section class="hero panel">
-          <div>
-            <p class="eyebrow">Study Dashboard</p>
-            <h2 id="currentScopeTitle">全部单元</h2>
-            <p id="scopeHint" class="muted">左侧可选择多个单元一起背，也可以单独进入某个单元。</p>
-          </div>
-          <div class="hero-actions">
-            <button id="startRandomBtn" class="primary">开始背词</button>
-            <button id="reviewWrongBtn" class="secondary">错题本复习</button>
-          </div>
-        </section>
-
-        <section class="toolbar panel">
-          <div class="mode-group">
-            <button class="chip" data-mode="random">随机模式</button>
-            <button class="chip active" data-mode="sequential">顺序模式</button>
-          </div>
-          <div class="toolbar-actions">
-            <button id="prevWordBtn" class="ghost">上一个</button>
-            <button id="nextWordBtn" class="ghost">下一个</button>
-            <button id="shuffleBtn" class="ghost">重新随机</button>
-            <button id="autoSpeakBtn" class="chip">自动发音：关</button>
-            <button id="clearSessionBtn" class="ghost danger-ghost">清空顺序进度</button>
-          </div>
-        </section>
-
-        <section class="study-stage">
-          <section class="card panel flashcard">
-            <div class="card-topline">
-              <span id="cardTag" class="tag">准备开始</span>
-              <span id="cardProgress" class="muted">0 / 0</span>
-            </div>
+          <button id="flashcard" class="flashcard" type="button" aria-label="点击显示或隐藏释义">
             <div class="word-zone">
               <p class="study-label">当前单词</p>
-              <h3 id="cardWord" class="word">请选择单元开始</h3>
+              <h2 id="cardWord" class="word">请选择单元开始</h2>
               <p id="cardPos" class="pos"></p>
-              <button id="speakBtn" class="speak-button" title="播放发音（快捷键 P）">🔊 发音</button>
             </div>
             <div class="meaning-zone">
               <p class="study-label">中文释义</p>
               <p id="cardMeaning" class="meaning hidden">点击卡片查看中文意思。</p>
             </div>
-            <div class="card-actions">
-              <button id="revealBtn" class="secondary">显示释义</button>
-              <button id="knownBtn" class="success">认识</button>
-              <button id="unknownBtn" class="danger">不认识</button>
-            </div>
-            <p class="muted keyboard-hint">快捷键：↑ 显示释义，← 不认识，→ 认识，空格/回车 下一张</p>
-          </section>
+          </button>
+
+          <div class="card-actions">
+            <button id="speakBtn" class="secondary" type="button">🔊 发音</button>
+            <button id="unknownBtn" class="danger" type="button">不认识</button>
+            <button id="knownBtn" class="success" type="button">认识</button>
+          </div>
+
+          <div class="quick-actions">
+            <button id="prevWordBtn" class="ghost" type="button">上一个</button>
+            <button id="revealBtn" class="chip" type="button">显示释义</button>
+            <button id="nextWordBtn" class="ghost" type="button">下一个</button>
+            <button id="shuffleBtn" class="ghost" type="button">重新随机</button>
+          </div>
         </section>
 
-        <section class="grid">
-          <section class="panel">
-            <div class="panel-title-row">
-              <h2>复习提醒</h2>
-              <div class="panel-title-actions">
-                <button id="startDueReviewBtn" class="text-button">开始复习</button>
-                <button id="resetProgressBtn" class="text-button danger-text">清空进度</button>
+        <section id="drawer" class="app-drawer" aria-hidden="true">
+          <div class="drawer-backdrop" id="drawerBackdrop"></div>
+          <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="学习设置面板">
+            <div class="drawer-head">
+              <div>
+                <p class="eyebrow">Study Tools</p>
+                <h2>学习面板</h2>
               </div>
+              <button id="closeDrawerBtn" class="icon-button" type="button" aria-label="关闭学习面板">✕</button>
             </div>
-            <div id="reviewList" class="review-list"></div>
-          </section>
 
-          <section class="panel">
-            <div class="panel-title-row">
-              <h2>错题本 <span id="wrongListCount" class="muted panel-count"></span></h2>
-              <div class="panel-title-actions">
-                <button id="wrongOnlySelectedBtn" class="text-button">仅已选单元</button>
-                <button id="clearWrongBtn" class="text-button danger-text">清空</button>
-                <button id="practiceWrongBtn" class="text-button">进入错题复习</button>
+            <section class="panel stats-panel">
+              <div class="stat">
+                <span>单元数</span>
+                <strong id="lessonCount">0</strong>
               </div>
-            </div>
-            <div class="wrong-toolbar">
-              <input id="wrongSearchInput" class="wrong-search" type="search" placeholder="搜索单词、释义或单元" autocomplete="off" />
-            </div>
-            <div id="wrongList" class="wrong-list"></div>
-          </section>
+              <div class="stat">
+                <span>总单词</span>
+                <strong id="wordCount">0</strong>
+              </div>
+              <div class="stat">
+                <span>错题本</span>
+                <strong id="wrongCount">0</strong>
+              </div>
+            </section>
+
+            <section class="panel hero-panel">
+              <p class="eyebrow">Study Dashboard</p>
+              <h2 id="currentScopeTitle">全部单元</h2>
+              <p id="scopeHint" class="muted">打开面板选择单元，开始顺序或随机背词。</p>
+              <div class="hero-actions">
+                <button id="startRandomBtn" class="primary" type="button">开始背词</button>
+                <button id="reviewWrongBtn" class="secondary" type="button">错题本复习</button>
+                <button id="startDueReviewBtn" class="secondary" type="button">开始复习</button>
+              </div>
+            </section>
+
+            <section class="panel toolbar-panel">
+              <div class="mode-group">
+                <button class="chip" data-mode="random" type="button">随机模式</button>
+                <button class="chip active" data-mode="sequential" type="button">顺序模式</button>
+              </div>
+              <div class="toolbar-actions">
+                <button id="autoSpeakBtn" class="chip" type="button">自动发音：关</button>
+                <button id="wrongOnlySelectedBtn" class="ghost" type="button">仅已选单元</button>
+                <button id="clearSessionBtn" class="ghost danger-ghost" type="button">清空顺序进度</button>
+                <button id="resetProgressBtn" class="ghost danger-ghost" type="button">清空进度</button>
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-title-row">
+                <h2>单元列表</h2>
+                <button id="toggleAllLessons" class="text-button" type="button">全选/单选</button>
+              </div>
+              <div id="lessonList" class="lesson-list"></div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-title-row">
+                <h2>复习提醒</h2>
+              </div>
+              <div id="reviewList" class="review-list"></div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-title-row">
+                <h2>错题本 <span id="wrongListCount" class="muted panel-count"></span></h2>
+                <div class="panel-title-actions">
+                  <button id="practiceWrongBtn" class="text-button" type="button">进入错题复习</button>
+                  <button id="clearWrongBtn" class="text-button danger-text" type="button">清空</button>
+                </div>
+              </div>
+              <div class="wrong-toolbar">
+                <input id="wrongSearchInput" class="wrong-search" type="search" placeholder="搜索单词、释义或单元" autocomplete="off" />
+              </div>
+              <div id="wrongList" class="wrong-list"></div>
+            </section>
+          </div>
         </section>
       </main>
+
+      <nav class="bottom-nav" aria-label="底部快捷操作">
+        <button id="navReviewBtn" class="bottom-nav-button" type="button">
+          <span>复习</span>
+        </button>
+        <button id="navWrongBtn" class="bottom-nav-button" type="button">
+          <span>错题</span>
+        </button>
+        <button id="navDrawerBtn" class="bottom-nav-button primary-nav" type="button">
+          <span>面板</span>
+        </button>
+      </nav>
     </div>
 
     <script charset="UTF-8" src="./data/vocab-data.js"></script>
-    <script charset="UTF-8" src="./app.js?v=20260918-1"></script>
+    <script charset="UTF-8" src="./app.js?v=20260922-app"></script>
   </body>
   </html>
