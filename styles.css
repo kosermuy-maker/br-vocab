@@ -268,6 +268,28 @@ button:disabled {
   overflow-wrap: anywhere;
 }
 
+.meaning.revealed {
+  animation: meaning-pop 0.2s ease;
+}
+
+@keyframes meaning-pop {
+  from {
+    opacity: 0.4;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.tap-hint {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -710,7 +732,7 @@ button:hover {
 
   .quick-actions {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .card-actions > button,
