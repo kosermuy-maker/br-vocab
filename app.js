@@ -64,26 +64,26 @@ const els = {
   autoSpeakBtn: document.querySelector("#autoSpeakBtn"),
   modeButtons: [...document.querySelectorAll("[data-mode]")],
   keyboardHint: document.querySelector(".keyboard-hint"),
-  flashcard: document.querySelector(".flashcard"),
+  flashcard: document.querySelector("#flashcard"),
+  menuBtn: document.querySelector("#menuBtn"),
+  drawer: document.querySelector("#drawer"),
+  drawerBackdrop: document.querySelector("#drawerBackdrop"),
+  closeDrawerBtn: document.querySelector("#closeDrawerBtn"),
+  navReviewBtn: document.querySelector("#navReviewBtn"),
+  navWrongBtn: document.querySelector("#navWrongBtn"),
+  navDrawerBtn: document.querySelector("#navDrawerBtn"),
 };
 
 init();
 
 function init() {
   state.data = window.VOCAB_DATA;
-  const cardActions = els.unknownBtn?.parentElement;
 
   if (els.keyboardHint) {
     els.keyboardHint.textContent =
       "逻辑：点击卡片显示/隐藏释义；认识=移出本轮，不认识=放回队尾；错题本里点认识才会移出；上一个=撤销上次选择并重新判断；快捷键：↑/空格/回车 翻卡，← 不认识，→ 认识，P 发音";
   }
 
-  if (cardActions) {
-    cardActions.innerHTML = "";
-    cardActions.append(els.unknownBtn, els.knownBtn);
-  }
-
-  els.revealBtn.style.display = "none";
   els.cardMeaning.classList.add("hidden");
   els.cardMeaning.textContent = "点击卡片查看中文意思。";
 
@@ -154,6 +154,58 @@ function bindEvents() {
       renderAll();
     });
   });
+
+  els.menuBtn?.addEventListener("click", openDrawer);
+  els.closeDrawerBtn?.addEventListener("click", closeDrawer);
+  els.drawerBackdrop?.addEventListener("click", closeDrawer);
+  els.navDrawerBtn?.addEventListener("click", openDrawer);
+  els.navReviewBtn?.addEventListener("click", () => {
+    closeDrawer();
+    if (getDueWords().length) {
+      startDueReviewMode();
+    } else {
+      showToast("今天没有到期复习");
+    }
+  });
+  els.navWrongBtn?.addEventListener("click", () => {
+    closeDrawer();
+    if (getWrongWords({ selectedOnly: false }).length) {
+      startWrongMode();
+    } else {
+      showToast("错题本暂时为空");
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeDrawer();
+  });
+}
+
+function openDrawer() {
+  els.drawer?.classList.add("open");
+  els.drawer?.setAttribute("aria-hidden", "false");
+  if (window.matchMedia("(max-width: 899px)").matches) {
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closeDrawer() {
+  els.drawer?.classList.remove("open");
+  els.drawer?.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function showToast(message) {
+  let node = document.querySelector("#appToast");
+  if (!node) {
+    node = document.createElement("div");
+    node.id = "appToast";
+    node.className = "app-toast";
+    document.body.appendChild(node);
+  }
+  node.textContent = message;
+  node.classList.add("show");
+  clearTimeout(showToast.timer);
+  showToast.timer = setTimeout(() => node.classList.remove("show"), 1800);
 }
 
 function loadAutoSpeak() {
