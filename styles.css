@@ -703,6 +703,7 @@ button:hover {
 @media (max-width: 899px) {
   body {
     padding: 0;
+    overflow: hidden;
   }
 
   .app-shell {
@@ -712,16 +713,17 @@ button:hover {
   }
 
   .app-main {
-    display: grid;
+    display: block;
     min-height: 0;
     overflow: hidden;
-    padding: 0 max(12px, env(safe-area-inset-left)) 8px max(12px, env(safe-area-inset-right));
+    padding: 0 max(12px, env(safe-area-inset-left)) calc(86px + var(--nav-height) + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-right));
   }
 
   .study-screen {
+    height: calc(100dvh - 92px - var(--nav-height) - env(safe-area-inset-bottom, 0px));
     min-height: 0;
-    grid-template-rows: auto minmax(0, 1fr) auto auto;
-    gap: 10px;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 8px;
     padding: 12px;
   }
 
@@ -774,15 +776,22 @@ button:hover {
   }
 
   .card-actions {
+    position: fixed;
+    left: max(10px, env(safe-area-inset-left));
+    right: max(10px, env(safe-area-inset-right));
+    bottom: calc(var(--nav-height) + env(safe-area-inset-bottom, 0px));
+    z-index: 25;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    padding: 8px 0;
+    background: rgba(255, 250, 242, 0.92);
+    backdrop-filter: blur(14px);
+    border-radius: 18px 18px 0 0;
   }
 
   .quick-actions {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
+    display: none;
   }
 
   .card-actions > button {
@@ -859,8 +868,9 @@ button:hover {
     gap: 8px;
   }
 
-  .quick-actions {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .card-actions {
+    left: max(8px, env(safe-area-inset-left));
+    right: max(8px, env(safe-area-inset-right));
   }
 
   .hero-actions,
