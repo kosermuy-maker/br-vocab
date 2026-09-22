@@ -1319,3 +1319,9 @@ function shuffle(items) {
     [items[i], items[j]] = [items[j], items[i]];
   }
 }
+
+if ("serviceWorker" in navigator && location.protocol.indexOf("http") === 0) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(() => {});
+  });
+}
