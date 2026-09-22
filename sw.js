@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v2";
+const CACHE = "br-vocab-v3";
 const CORE = [
   "./",
   "./index.html",

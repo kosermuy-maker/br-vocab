@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20260922-fit" />
+    <link rel="stylesheet" href="./styles.css?v=20260922-fix2" />
   </head>
   <body>
     <div class="app-shell">
@@ -30,19 +30,19 @@
             <span id="cardProgress" class="muted">0 / 0</span>
           </div>
 
-          <button id="flashcard" class="flashcard" type="button" aria-label="点击显示或隐藏释义">
+          <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="点击显示或隐藏释义">
             <div class="word-zone">
               <p class="study-label">当前单词</p>
               <h2 id="cardWord" class="word">请选择单元开始</h2>
               <p id="cardPos" class="pos"></p>
-              <button id="speakBtn" class="speak-button" type="button">🔊 发音</button>
               <p id="tapHint" class="tap-hint">轻点卡片显示释义</p>
+              <button id="speakBtn" class="speak-button" type="button">🔊 发音</button>
             </div>
             <div class="meaning-zone">
               <p class="study-label">中文释义</p>
               <p id="cardMeaning" class="meaning hidden">点击卡片查看中文意思。</p>
             </div>
-          </button>
+          </div>
 
           <div class="card-actions">
             <button id="unknownBtn" class="danger" type="button">不认识</button>
@@ -152,6 +152,6 @@
     </div>
 
     <script charset="UTF-8" src="./data/vocab-data.js"></script>
-    <script charset="UTF-8" src="./app.js?v=20260922-fit"></script>
+    <script charset="UTF-8" src="./app.js?v=20260922-fix2"></script>
   </body>
   </html>

@@ -132,13 +132,19 @@ function bindEvents() {
     renderAll();
   });
   els.clearSessionBtn.addEventListener("click", clearCurrentSessionProgress);
-  els.flashcard.addEventListener("click", () => revealMeaning());
+  els.flashcard.addEventListener("click", (event) => {
+    if (event.target.closest("#speakBtn")) return; // 点“发音”不翻卡
+    revealMeaning();
+  });
   els.knownBtn.addEventListener("click", () => markAnswer(true));
   els.unknownBtn.addEventListener("click", () => markAnswer(false));
   els.toggleAllLessons.addEventListener("click", toggleAllLessons);
   els.resetProgressBtn.addEventListener("click", resetProgress);
   els.startDueReviewBtn.addEventListener("click", startDueReviewMode);
-  els.speakBtn.addEventListener("click", () => speakCurrentWord(true));
+  els.speakBtn.addEventListener("click", (event) => {
+    event.stopPropagation();
+    speakCurrentWord(true);
+  });
   els.autoSpeakBtn.addEventListener("click", toggleAutoSpeak);
   document.addEventListener("keydown", handleKeyboardShortcuts);
 
@@ -745,7 +751,9 @@ function startWrongMode(options = {}) {
   syncModeButtons();
   buildDeck();
   renderAll();
-  els.flashcard?.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (window.innerWidth >= 900) {
+    els.flashcard?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 function toggleWrongOnlySelected() {
@@ -1150,6 +1158,7 @@ function renderCard() {
   els.knownBtn.style.opacity = state.showMeaning ? "1" : "0.55";
   els.unknownBtn.style.opacity = state.showMeaning ? "1" : "0.55";
   els.cardMeaning.classList.toggle("revealed", state.showMeaning);
+  els.flashcard.classList.toggle("is-revealed", state.showMeaning);
 
   if (state.autoSpeak) speakCurrentWord();
 }
