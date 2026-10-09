@@ -13891,9 +13891,9 @@ window.VOCAB_DATA = {
     }
   ],
   "essay": {
-    "spellCount": 78,
+    "spellCount": 85,
     "recognizeCount": 910,
-    "misspellCount": 40,
+    "misspellCount": 47,
     "spell": [
       {
         "word": "accordingly",
@@ -14595,6 +14595,69 @@ window.VOCAB_DATA = {
         "group": "五、错词本补漏（基础易错）",
         "syllable": "walls",
         "index": 78,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "surged",
+        "part_of_speech": "v.",
+        "meaning": "激增；飙升",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "surged",
+        "index": 79,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "depicted",
+        "part_of_speech": "v.",
+        "meaning": "描绘（过去分词）",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "de-pict-ed",
+        "index": 80,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "significant",
+        "part_of_speech": "adj.",
+        "meaning": "显著的；重要的",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "sig-nif-i-cant",
+        "index": 81,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "subsidies",
+        "part_of_speech": "n.",
+        "meaning": "补贴（复数）",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "sub-si-dies",
+        "index": 82,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "driving force",
+        "part_of_speech": "短语",
+        "meaning": "推动力",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "driv-ing force",
+        "index": 83,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "highlight",
+        "part_of_speech": "v.",
+        "meaning": "突出；表明",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "high-light",
+        "index": 84,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "policies",
+        "part_of_speech": "n.",
+        "meaning": "政策（复数）",
+        "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
+        "syllable": "pol-i-cies",
+        "index": 85,
         "lesson": "essay-spell"
       }
     ],
@@ -22843,7 +22906,7 @@ window.VOCAB_DATA = {
           "nowdays"
         ],
         "group": "作文错词",
-        "source": "2002 首稿、2005 养老",
+        "source": "2002 首稿、2005 养老、公园作文 10-09",
         "note": "",
         "lesson": "essay-misspell",
         "syllable": ""
@@ -23274,11 +23337,12 @@ window.VOCAB_DATA = {
         "part_of_speech": "",
         "meaning": "健康",
         "wrongForms": [
-          "heathy"
+          "heathy",
+          "healthy"
         ],
         "group": "作文错词",
-        "source": "蜘蛛网作文",
-        "note": "",
+        "source": "蜘蛛网作文、公园作文 10-09",
+        "note": "勿用 healthy 当名词「健康」",
         "lesson": "essay-misspell",
         "syllable": ""
       },
@@ -23335,6 +23399,105 @@ window.VOCAB_DATA = {
         "group": "作文错词",
         "source": "蜘蛛网作文",
         "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 41,
+        "word": "parks",
+        "part_of_speech": "",
+        "meaning": "公园（复数）",
+        "wrongForms": [
+          "the park",
+          "park"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "单复数",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 42,
+        "word": "data",
+        "part_of_speech": "",
+        "meaning": "数据",
+        "wrongForms": [
+          "date"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 43,
+        "word": "pay attention to",
+        "part_of_speech": "",
+        "meaning": "注意；关注",
+        "wrongForms": [
+          "pay attention on"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 44,
+        "word": "playing",
+        "part_of_speech": "",
+        "meaning": "正在玩/进行（现在分词）",
+        "wrongForms": [
+          "are play"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "be + V-ing",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 45,
+        "word": "reflects",
+        "part_of_speech": "",
+        "meaning": "反映；体现",
+        "wrongForms": [
+          "reaction"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "勿把 reaction 当 reflect",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 46,
+        "word": "better",
+        "part_of_speech": "",
+        "meaning": "更好的",
+        "wrongForms": [
+          "more better"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "better 本身已是比较级",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 47,
+        "word": "says",
+        "part_of_speech": "",
+        "meaning": "说（第三人称单数）",
+        "wrongForms": [
+          "say"
+        ],
+        "group": "作文错词",
+        "source": "公园作文 10-09",
+        "note": "a boy says…",
         "lesson": "essay-misspell",
         "syllable": ""
       }

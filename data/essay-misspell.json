@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 40,
+  "count": 47,
   "words": [
     {
       "index": 1,
@@ -51,7 +51,7 @@
         "nowdays"
       ],
       "group": "作文错词",
-      "source": "2002 首稿、2005 养老",
+      "source": "2002 首稿、2005 养老、公园作文 10-09",
       "note": "",
       "lesson": "essay-misspell"
     },
@@ -450,11 +450,12 @@
       "part_of_speech": "",
       "meaning": "健康",
       "wrongForms": [
-        "heathy"
+        "heathy",
+        "healthy"
       ],
       "group": "作文错词",
-      "source": "蜘蛛网作文",
-      "note": "",
+      "source": "蜘蛛网作文、公园作文 10-09",
+      "note": "勿用 healthy 当名词「健康」",
       "lesson": "essay-misspell"
     },
     {
@@ -507,6 +508,98 @@
       "group": "作文错词",
       "source": "蜘蛛网作文",
       "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 41,
+      "word": "parks",
+      "part_of_speech": "",
+      "meaning": "公园（复数）",
+      "wrongForms": [
+        "the park",
+        "park"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "单复数",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 42,
+      "word": "data",
+      "part_of_speech": "",
+      "meaning": "数据",
+      "wrongForms": [
+        "date"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 43,
+      "word": "pay attention to",
+      "part_of_speech": "",
+      "meaning": "注意；关注",
+      "wrongForms": [
+        "pay attention on"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 44,
+      "word": "playing",
+      "part_of_speech": "",
+      "meaning": "正在玩/进行（现在分词）",
+      "wrongForms": [
+        "are play"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "be + V-ing",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 45,
+      "word": "reflects",
+      "part_of_speech": "",
+      "meaning": "反映；体现",
+      "wrongForms": [
+        "reaction"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "勿把 reaction 当 reflect",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 46,
+      "word": "better",
+      "part_of_speech": "",
+      "meaning": "更好的",
+      "wrongForms": [
+        "more better"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "better 本身已是比较级",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 47,
+      "word": "says",
+      "part_of_speech": "",
+      "meaning": "说（第三人称单数）",
+      "wrongForms": [
+        "say"
+      ],
+      "group": "作文错词",
+      "source": "公园作文 10-09",
+      "note": "a boy says…",
       "lesson": "essay-misspell"
     }
   ]
