@@ -33,6 +33,7 @@ const state = {
   spellFeedback: "",
   spellRevealedAnswer: false,
   spellShowAnswer: false,
+  spellPendingAdvance: null, // { isKnown: boolean } 提交后等用户点「下一个」
 };
 
 const els = {
@@ -148,8 +149,19 @@ function bindEvents() {
     renderWrongList();
   });
   els.wrongList.addEventListener("click", handleWrongListClick);
-  els.prevWordBtn.addEventListener("click", goToPreviousWord);
-  els.nextWordBtn.addEventListener("click", () => goToCard(state.currentIndex + 1));
+  els.prevWordBtn.addEventListener("click", () => {
+    if (state.spellPendingAdvance) {
+      // 已提交待确认时，「上一个」不跳过判分，先提醒用「下一个」
+      state.spellFeedback = state.spellFeedback || "请先点「下一个」继续";
+      renderCard();
+      return;
+    }
+    goToPreviousWord();
+  });
+  els.nextWordBtn.addEventListener("click", () => {
+    if (flushSpellPending()) return;
+    goToCard(state.currentIndex + 1);
+  });
   els.shuffleBtn.addEventListener("click", () => {
     buildDeck();
     renderAll();
@@ -209,6 +221,10 @@ function bindEvents() {
   els.spellInput?.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
+      if (state.spellPendingAdvance) {
+        flushSpellPending();
+        return;
+      }
       checkSpelling();
     }
   });
@@ -862,6 +878,7 @@ function buildDeck() {
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
   state.spellShowAnswer = false;
+  state.spellPendingAdvance = null;
   if (els.spellInput) els.spellInput.value = "";
 
   if (state.startFromKey) {
@@ -904,6 +921,7 @@ function goToCard(index) {
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
   state.spellShowAnswer = false;
+  state.spellPendingAdvance = null;
   if (els.spellInput) els.spellInput.value = "";
   saveCurrentSession();
   renderCard();
@@ -944,6 +962,7 @@ function goToPreviousWord() {
 function markAnswer(isKnown, options = {}) {
   const current = state.deck[state.currentIndex];
   if (!current) return;
+  state.spellPendingAdvance = null;
   const bypassReveal = options.bypassReveal || isSpellPractice();
   if (!bypassReveal && !state.showMeaning) {
     revealMeaning();
@@ -1015,13 +1034,30 @@ function markAnswer(isKnown, options = {}) {
 function revealSpellAnswer() {
   if (!isSpellPractice()) return;
   if (!state.deck[state.currentIndex]) return;
+  if (state.spellPendingAdvance) return;
   state.spellShowAnswer = true;
   renderCard();
   els.spellInput?.focus();
 }
 
+function flushSpellPending() {
+  if (!state.spellPendingAdvance) return false;
+  const isKnown = Boolean(state.spellPendingAdvance.isKnown);
+  state.spellPendingAdvance = null;
+  state.spellFeedback = "";
+  state.spellRevealedAnswer = false;
+  state.spellShowAnswer = false;
+  if (els.spellInput) els.spellInput.value = "";
+  markAnswer(isKnown, { bypassReveal: true });
+  return true;
+}
+
 function checkSpelling() {
   if (!isSpellPractice()) return;
+  if (state.spellPendingAdvance) {
+    // 已出对错，等用户点「下一个」
+    return;
+  }
   const current = state.deck[state.currentIndex];
   if (!current) return;
   const input = els.spellInput?.value || "";
@@ -1033,24 +1069,18 @@ function checkSpelling() {
     return;
   }
   if (answersMatch(input, current.word)) {
-    state.spellFeedback = "拼写正确";
-    state.spellRevealedAnswer = false;
+    state.spellFeedback = "拼写正确 ✓ 点「下一个」继续";
+    state.spellRevealedAnswer = true;
+    state.spellShowAnswer = true;
+    state.spellPendingAdvance = { isKnown: true };
     renderCard();
-    setTimeout(() => {
-      if (els.spellInput) els.spellInput.value = "";
-      markAnswer(true, { bypassReveal: true });
-    }, 280);
     return;
   }
-  state.spellFeedback = `不正确，答案：${current.word}`;
+  state.spellFeedback = `不正确，答案：${current.word} · 点「下一个」继续`;
   state.spellRevealedAnswer = true;
+  state.spellShowAnswer = true;
+  state.spellPendingAdvance = { isKnown: false };
   renderCard();
-  setTimeout(() => {
-    if (els.spellInput) els.spellInput.value = "";
-    state.spellFeedback = "";
-    state.spellRevealedAnswer = false;
-    markAnswer(false, { bypassReveal: true });
-  }, 900);
 }
 
 function startWrongMode(options = {}) {
@@ -1555,8 +1585,13 @@ function renderCard() {
     els.unknownBtn.style.opacity = "0.55";
     if (els.spellFeedback) els.spellFeedback.textContent = "";
     if (els.spellHint) els.spellHint.textContent = "";
-    if (els.spellCheckBtn) els.spellCheckBtn.disabled = true;
+    if (els.spellCheckBtn) {
+      els.spellCheckBtn.disabled = true;
+      els.spellCheckBtn.textContent = "检查";
+    }
     if (els.spellHintBtn) els.spellHintBtn.disabled = true;
+    if (els.spellInput) els.spellInput.disabled = false;
+    if (els.nextWordBtn) els.nextWordBtn.classList.remove("primary");
     return;
   }
 
@@ -1612,11 +1647,19 @@ function renderCard() {
       if (showAnswer && !state.spellRevealedAnswer) bits.unshift("已显示英文拼写，可对照后再输入");
       els.spellHint.textContent = bits.join(" · ");
     }
-    if (els.spellCheckBtn) els.spellCheckBtn.disabled = false;
+    const pending = Boolean(state.spellPendingAdvance);
+    if (els.spellCheckBtn) {
+      els.spellCheckBtn.disabled = pending;
+      els.spellCheckBtn.textContent = pending ? "已提交" : "检查";
+    }
+    if (els.spellInput) els.spellInput.disabled = pending;
     if (els.spellHintBtn) {
-      els.spellHintBtn.disabled = false;
-      els.spellHintBtn.textContent = state.spellShowAnswer ? "已显示英文" : "不会";
-      els.spellHintBtn.classList.toggle("active", state.spellShowAnswer);
+      els.spellHintBtn.disabled = pending;
+      els.spellHintBtn.textContent = state.spellShowAnswer || pending ? "已显示英文" : "不会";
+      els.spellHintBtn.classList.toggle("active", state.spellShowAnswer || pending);
+    }
+    if (els.nextWordBtn) {
+      els.nextWordBtn.classList.toggle("primary", pending);
     }
     if (!state.spellFeedback) {
       setTimeout(() => els.spellInput?.focus(), 0);
@@ -1638,6 +1681,12 @@ function renderCard() {
   els.flashcard.classList.toggle("is-revealed", state.showMeaning);
   if (els.spellFeedback) els.spellFeedback.textContent = "";
   if (els.spellHint) els.spellHint.textContent = "";
+  if (els.spellInput) els.spellInput.disabled = false;
+  if (els.spellCheckBtn) {
+    els.spellCheckBtn.disabled = false;
+    els.spellCheckBtn.textContent = "检查";
+  }
+  if (els.nextWordBtn) els.nextWordBtn.classList.remove("primary");
 
   if (state.autoSpeak) speakCurrentWord();
 }
