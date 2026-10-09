@@ -32,7 +32,7 @@ const state = {
   progress: loadProgress(),
   spellFeedback: "",
   spellRevealedAnswer: false,
-  spellShowMeaning: false,
+  spellShowAnswer: false,
 };
 
 const els = {
@@ -204,7 +204,7 @@ function bindEvents() {
   });
   els.spellHintBtn?.addEventListener("click", (event) => {
     event.stopPropagation();
-    revealSpellMeaning();
+    revealSpellAnswer();
   });
   els.spellInput?.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
@@ -337,7 +337,7 @@ function switchLibrary(next) {
   state.wrongReviewLesson = null;
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
-  state.spellShowMeaning = false;
+  state.spellShowAnswer = false;
   if (next === "essay") {
     state.essaySubMode = state.essaySubMode || "spell";
   } else {
@@ -861,7 +861,7 @@ function buildDeck() {
 
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
-  state.spellShowMeaning = false;
+  state.spellShowAnswer = false;
   if (els.spellInput) els.spellInput.value = "";
 
   if (state.startFromKey) {
@@ -903,7 +903,7 @@ function goToCard(index) {
   state.showMeaning = false;
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
-  state.spellShowMeaning = false;
+  state.spellShowAnswer = false;
   if (els.spellInput) els.spellInput.value = "";
   saveCurrentSession();
   renderCard();
@@ -1001,7 +1001,7 @@ function markAnswer(isKnown, options = {}) {
     state.currentIndex = state.deck.length - 1;
   }
   state.showMeaning = false;
-  state.spellShowMeaning = false;
+  state.spellShowAnswer = false;
   state.spellFeedback = "";
   state.spellRevealedAnswer = false;
   if (els.spellInput) els.spellInput.value = "";
@@ -1012,10 +1012,10 @@ function markAnswer(isKnown, options = {}) {
   renderCard();
 }
 
-function revealSpellMeaning() {
+function revealSpellAnswer() {
   if (!isSpellPractice()) return;
   if (!state.deck[state.currentIndex]) return;
-  state.spellShowMeaning = true;
+  state.spellShowAnswer = true;
   renderCard();
   els.spellInput?.focus();
 }
@@ -1465,10 +1465,10 @@ function refreshDashboard() {
   } else if (isEssayMode()) {
     if (state.essaySubMode === "spell") {
       els.currentScopeTitle.textContent = "作文 · 会拼写";
-      els.scopeHint.textContent = "默认不显示中文；想不起来点「不会」看意思/音节后再拼。对了下一词，错了进错题并放回队尾。";
+      els.scopeHint.textContent = "看中文拼英文；想不起来点「不会」可看正确拼写，仍可继续输入提交。";
     } else if (state.essaySubMode === "misspell") {
       els.currentScopeTitle.textContent = "作文 · 错词";
-      els.scopeHint.textContent = "作文错词须打字拼写；默认不露中文，点「不会」可看意思/曾错写后再拼。";
+      els.scopeHint.textContent = "看中文拼英文；点「不会」显示正确拼写，仍可继续输入。对了下一词，错了进错题。";
     } else {
       els.currentScopeTitle.textContent = "作文 · 要认识";
       els.scopeHint.textContent = "先看英文，轻点卡片显示释义，再点认识 / 不认识。";
@@ -1546,7 +1546,7 @@ function renderCard() {
 
     els.cardPos.textContent = "";
     els.tapHint.hidden = true;
-    els.cardMeaning.textContent = spellMode ? "输入英文拼写后点检查。" : "轻点卡片查看中文意思。";
+    els.cardMeaning.textContent = spellMode ? "看中文，拼出英文后点检查。" : "轻点卡片查看中文意思。";
     els.cardMeaning.classList.add("hidden");
     els.knownBtn.disabled = true;
     els.unknownBtn.disabled = true;
@@ -1577,22 +1577,17 @@ function renderCard() {
   els.cardProgress.textContent = `${state.learnedCount} / ${state.sessionTotal || state.deck.length}`;
 
   if (spellMode) {
-    const showHint = state.spellShowMeaning || state.spellRevealedAnswer;
-    els.cardWord.textContent = state.spellRevealedAnswer ? current.word : "？？？";
-    els.cardPos.textContent = showHint ? (current.part_of_speech || "") : "";
-    els.tapHint.hidden = showHint;
-    els.tapHint.textContent = "想不起来可点「不会」看中文";
-    if (showHint) {
-      els.cardMeaning.textContent = current.meaning || "未提取到释义";
-      els.cardMeaning.classList.remove("hidden");
-      els.cardMeaning.classList.add("revealed");
-      els.flashcard.classList.add("is-revealed");
-    } else {
-      els.cardMeaning.textContent = "中文意思已隐藏";
-      els.cardMeaning.classList.add("hidden");
-      els.cardMeaning.classList.remove("revealed");
-      els.flashcard.classList.remove("is-revealed");
-    }
+    const showAnswer = state.spellShowAnswer || state.spellRevealedAnswer;
+    // 中文意思默认一直显示，作为拼写提示
+    els.cardMeaning.textContent = current.meaning || "未提取到释义";
+    els.cardMeaning.classList.remove("hidden");
+    els.cardMeaning.classList.add("revealed");
+    els.flashcard.classList.add("is-revealed");
+    // 「不会」或判错后：揭开英文正确答案
+    els.cardWord.textContent = showAnswer ? current.word : "？？？";
+    els.cardPos.textContent = current.part_of_speech || "";
+    els.tapHint.hidden = showAnswer;
+    els.tapHint.textContent = "想不起来可点「不会」看英文怎么拼";
     els.knownBtn.disabled = true;
     els.unknownBtn.disabled = true;
     els.speakBtn.disabled = false;
@@ -1609,22 +1604,19 @@ function renderCard() {
       );
     }
     if (els.spellHint) {
-      if (showHint) {
-        const bits = [];
-        if (state.essaySubMode === "misspell" && Array.isArray(current.wrongForms) && current.wrongForms.length) {
-          bits.push(`你曾写成：${current.wrongForms.join(" / ")}`);
-        }
-        if (current.syllable) bits.push(`音节：${current.syllable}`);
-        els.spellHint.textContent = bits.join(" · ");
-      } else {
-        els.spellHint.textContent = "";
+      const bits = [];
+      if (state.essaySubMode === "misspell" && Array.isArray(current.wrongForms) && current.wrongForms.length) {
+        bits.push(`你曾写成：${current.wrongForms.join(" / ")}`);
       }
+      if (current.syllable) bits.push(`音节：${current.syllable}`);
+      if (showAnswer && !state.spellRevealedAnswer) bits.unshift("已显示英文拼写，可对照后再输入");
+      els.spellHint.textContent = bits.join(" · ");
     }
     if (els.spellCheckBtn) els.spellCheckBtn.disabled = false;
     if (els.spellHintBtn) {
       els.spellHintBtn.disabled = false;
-      els.spellHintBtn.textContent = state.spellShowMeaning ? "已显示提示" : "不会";
-      els.spellHintBtn.classList.toggle("active", state.spellShowMeaning);
+      els.spellHintBtn.textContent = state.spellShowAnswer ? "已显示英文" : "不会";
+      els.spellHintBtn.classList.toggle("active", state.spellShowAnswer);
     }
     if (!state.spellFeedback) {
       setTimeout(() => els.spellInput?.focus(), 0);

@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v6-spell-hint";
+const CACHE = "br-vocab-v7-spell-answer";
 const CORE = [
   "./",
   "./index.html",

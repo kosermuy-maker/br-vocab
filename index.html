@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20261009-spell-hint" />
+    <link rel="stylesheet" href="./styles.css?v=20261009-spell-answer" />
   </head>
   <body>
     <div class="app-shell">
@@ -53,7 +53,7 @@
               <p id="cardMeaning" class="meaning hidden">点击卡片查看中文意思。</p>
             </div>
             <div id="spellPanel" class="spell-panel hidden-panel">
-              <label class="spell-label" for="spellInput">拼出英文（想不起来可点「不会」看中文）</label>
+              <label class="spell-label" for="spellInput">根据中文拼出英文（不会时可点「不会」看英文）</label>
               <div class="spell-row">
                 <input id="spellInput" class="spell-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="输入英文单词或短语" />
                 <button id="spellCheckBtn" class="primary" type="button">检查</button>
@@ -172,6 +172,6 @@
     </div>
 
     <script charset="UTF-8" src="./data/vocab-data.js"></script>
-    <script charset="UTF-8" src="./app.js?v=20261009-spell-hint"></script>
+    <script charset="UTF-8" src="./app.js?v=20261009-spell-answer"></script>
   </body>
   </html>
