@@ -1027,3 +1027,12 @@ body.library-essay .app-header h1 {
     flex: 1 1 100%;
   }
 }
+
+#spellHintBtn.active {
+  background: #e8d2bc;
+  color: var(--accent-deep);
+}
+
+.spell-row .secondary {
+  flex: 0 0 auto;
+}
