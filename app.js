@@ -221,6 +221,7 @@ function bindEvents() {
   els.spellInput?.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
       event.preventDefault();
+      event.stopPropagation();
       if (state.spellPendingAdvance) {
         flushSpellPending();
         return;
@@ -700,13 +701,16 @@ function restoreSavedSessionIfPossible() {
 }
 
 function handleKeyboardShortcuts(event) {
-  // 拼写反馈期间：回车=下一题（输入框内外都生效）
+  // 拼写反馈期间：→ / 输入框外回车 = 下一题（输入框内回车由 spellInput 自己处理，避免同一次 Enter 提交又跳题）
   if (
     isSpellPractice() &&
     state.spellPendingAdvance &&
     (event.key === "Enter" || event.key === "ArrowRight") &&
     !event.repeat
   ) {
+    if (event.key === "Enter" && event.target === els.spellInput) {
+      return;
+    }
     event.preventDefault();
     flushSpellPending();
     return;
