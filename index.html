@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20260922-fix2" />
+    <link rel="stylesheet" href="./styles.css?v=20261009-essay2" />
   </head>
   <body>
     <div class="app-shell">
@@ -19,6 +19,10 @@
         <div>
           <p class="eyebrow">Ebbinghaus Vocabulary Trainer</p>
           <h1>单词背诵器</h1>
+          <div class="library-switch" role="tablist" aria-label="词库切换">
+            <button class="chip active" type="button" data-library="barron" role="tab" aria-selected="true">巴朗 1–40</button>
+            <button class="chip" type="button" data-library="essay" role="tab" aria-selected="false">作文</button>
+          </div>
         </div>
         <button id="menuBtn" class="icon-button" type="button" aria-label="打开学习面板">☰</button>
       </header>
@@ -30,17 +34,32 @@
             <span id="cardProgress" class="muted">0 / 0</span>
           </div>
 
+          <div id="essaySubModeRow" class="essay-submode-row hidden-panel" aria-label="作文子模式">
+            <button class="chip active" type="button" data-essay-sub="spell">会拼写</button>
+            <button class="chip" type="button" data-essay-sub="recognize">要认识</button>
+            <button class="chip" type="button" data-essay-sub="misspell">作文错词</button>
+          </div>
+
           <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="点击显示或隐藏释义">
             <div class="word-zone">
-              <p class="study-label">当前单词</p>
+              <p id="wordZoneLabel" class="study-label">当前单词</p>
               <h2 id="cardWord" class="word">请选择单元开始</h2>
               <p id="cardPos" class="pos"></p>
               <p id="tapHint" class="tap-hint">轻点卡片显示释义</p>
               <button id="speakBtn" class="speak-button" type="button">🔊 发音</button>
             </div>
             <div class="meaning-zone">
-              <p class="study-label">中文释义</p>
+              <p id="meaningZoneLabel" class="study-label">中文释义</p>
               <p id="cardMeaning" class="meaning hidden">点击卡片查看中文意思。</p>
+            </div>
+            <div id="spellPanel" class="spell-panel hidden-panel">
+              <label class="spell-label" for="spellInput">根据中文拼出英文</label>
+              <div class="spell-row">
+                <input id="spellInput" class="spell-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="输入英文单词或短语" />
+                <button id="spellCheckBtn" class="primary" type="button">检查</button>
+              </div>
+              <p id="spellFeedback" class="spell-feedback" aria-live="polite"></p>
+              <p id="spellHint" class="muted spell-hint"></p>
             </div>
           </div>
 
@@ -94,7 +113,7 @@
             </section>
 
             <section class="panel toolbar-panel">
-              <div class="mode-group">
+              <div class="mode-group" id="studyModeGroup">
                 <button class="chip" data-mode="random" type="button">随机模式</button>
                 <button class="chip active" data-mode="sequential" type="button">顺序模式</button>
               </div>
@@ -106,9 +125,9 @@
               </div>
             </section>
 
-            <section class="panel">
+            <section class="panel" id="lessonPanel">
               <div class="panel-title-row">
-                <h2>单元列表</h2>
+                <h2 id="lessonPanelTitle">单元列表</h2>
                 <button id="toggleAllLessons" class="text-button" type="button">全选/单选</button>
               </div>
               <div id="lessonList" class="lesson-list"></div>
@@ -152,6 +171,6 @@
     </div>
 
     <script charset="UTF-8" src="./data/vocab-data.js"></script>
-    <script charset="UTF-8" src="./app.js?v=20260922-fix2"></script>
+    <script charset="UTF-8" src="./app.js?v=20261009-essay2"></script>
   </body>
   </html>

@@ -1,0 +1,513 @@
+{
+  "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
+  "count": 40,
+  "words": [
+    {
+      "index": 1,
+      "word": "first",
+      "part_of_speech": "",
+      "meaning": "首先；第一",
+      "wrongForms": [
+        "Frist"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 09-25",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 2,
+      "word": "famous",
+      "part_of_speech": "",
+      "meaning": "著名的",
+      "wrongForms": [
+        "fmous"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 09-25",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 3,
+      "word": "little",
+      "part_of_speech": "",
+      "meaning": "小的",
+      "wrongForms": [
+        "litter"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 4,
+      "word": "nowadays",
+      "part_of_speech": "",
+      "meaning": "如今；现今",
+      "wrongForms": [
+        "now days",
+        "nowdays"
+      ],
+      "group": "作文错词",
+      "source": "2002 首稿、2005 养老",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 5,
+      "word": "global",
+      "part_of_speech": "",
+      "meaning": "全球的",
+      "wrongForms": [
+        "globle"
+      ],
+      "group": "作文错词",
+      "source": "2002 首稿",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 6,
+      "word": "suitable",
+      "part_of_speech": "",
+      "meaning": "合适的",
+      "wrongForms": [
+        "suitabe"
+      ],
+      "group": "作文错词",
+      "source": "2002 首稿",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 7,
+      "word": "child",
+      "part_of_speech": "",
+      "meaning": "孩子",
+      "wrongForms": [
+        "chirch"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 8,
+      "word": "daughter",
+      "part_of_speech": "",
+      "meaning": "女儿",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 9,
+      "word": "tradition",
+      "part_of_speech": "",
+      "meaning": "传统",
+      "wrongForms": [
+        "traidtal"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 10,
+      "word": "traditional",
+      "part_of_speech": "",
+      "meaning": "传统的",
+      "wrongForms": [
+        "traidtal"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 11,
+      "word": "society",
+      "part_of_speech": "",
+      "meaning": "社会",
+      "wrongForms": [
+        "socity"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 12,
+      "word": "importance",
+      "part_of_speech": "",
+      "meaning": "重要性",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 13,
+      "word": "intention",
+      "part_of_speech": "",
+      "meaning": "意图；目的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 14,
+      "word": "cartoonist",
+      "part_of_speech": "",
+      "meaning": "漫画家",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 15,
+      "word": "confidently",
+      "part_of_speech": "",
+      "meaning": "自信地",
+      "wrongForms": [
+        "confiodaly"
+      ],
+      "group": "作文错词",
+      "source": "2005 养老 09-27",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 16,
+      "word": "experience",
+      "part_of_speech": "",
+      "meaning": "经历；经验",
+      "wrongForms": [
+        "expercan"
+      ],
+      "group": "作文错词",
+      "source": "辞职道歉信",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 17,
+      "word": "chance",
+      "part_of_speech": "",
+      "meaning": "机会",
+      "wrongForms": [
+        "change"
+      ],
+      "group": "作文错词",
+      "source": "辞职道歉信",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 18,
+      "word": "been",
+      "part_of_speech": "",
+      "meaning": "be 的过去分词",
+      "wrongForms": [
+        "bee"
+      ],
+      "group": "作文错词",
+      "source": "辞职道歉信",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 19,
+      "word": "caused",
+      "part_of_speech": "",
+      "meaning": "导致了（过去分词）",
+      "wrongForms": [
+        "cause"
+      ],
+      "group": "作文错词",
+      "source": "辞职道歉信",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 20,
+      "word": "another",
+      "part_of_speech": "",
+      "meaning": "另一个",
+      "wrongForms": [
+        "anthoter"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 21,
+      "word": "small",
+      "part_of_speech": "",
+      "meaning": "小的",
+      "wrongForms": [
+        "samall"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 22,
+      "word": "fierce",
+      "part_of_speech": "",
+      "meaning": "激烈的；猛烈的",
+      "wrongForms": [
+        "fiere"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 23,
+      "word": "success",
+      "part_of_speech": "",
+      "meaning": "成功",
+      "wrongForms": [
+        "sucess"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 24,
+      "word": "confidence",
+      "part_of_speech": "",
+      "meaning": "自信",
+      "wrongForms": [
+        "confidite",
+        "confident"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 25,
+      "word": "their",
+      "part_of_speech": "",
+      "meaning": "他们的",
+      "wrongForms": [
+        "there"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 26,
+      "word": "defeated",
+      "part_of_speech": "",
+      "meaning": "被击败（过去分词）",
+      "wrongForms": [
+        "defeat"
+      ],
+      "group": "作文错词",
+      "source": "点球作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 27,
+      "word": "spider web",
+      "part_of_speech": "",
+      "meaning": "蜘蛛网",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-06 写作时问过的词（拼不出）",
+      "note": "也作 spiderweb；cobweb 指积灰旧网",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 28,
+      "word": "network",
+      "part_of_speech": "",
+      "meaning": "网络",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-06 写作时问过的词（拼不出）",
+      "note": "net + work",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 29,
+      "word": "mental problems",
+      "part_of_speech": "",
+      "meaning": "心理问题",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-06 写作时问过的词（拼不出）",
+      "note": "psychological 难拼（psy-cho-lo-gi-cal），考场用 mental",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 30,
+      "word": "mental health",
+      "part_of_speech": "",
+      "meaning": "心理健康",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-06 写作时问过的词（拼不出）",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 31,
+      "word": "sit",
+      "part_of_speech": "",
+      "meaning": "坐",
+      "wrongForms": [
+        "stat"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 32,
+      "word": "stuck",
+      "part_of_speech": "",
+      "meaning": "卡住的；困住",
+      "wrongForms": [
+        "stat"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 33,
+      "word": "communicate",
+      "part_of_speech": "",
+      "meaning": "交流；沟通",
+      "wrongForms": [
+        "comminicate",
+        "commnicate"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 34,
+      "word": "walls",
+      "part_of_speech": "",
+      "meaning": "墙（复数）",
+      "wrongForms": [
+        "wall"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 35,
+      "word": "healthy",
+      "part_of_speech": "",
+      "meaning": "健康的",
+      "wrongForms": [
+        "heathy"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 36,
+      "word": "health",
+      "part_of_speech": "",
+      "meaning": "健康",
+      "wrongForms": [
+        "heathy"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 37,
+      "word": "truth",
+      "part_of_speech": "",
+      "meaning": "真相",
+      "wrongForms": [
+        "tmth"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 38,
+      "word": "harmonious",
+      "part_of_speech": "",
+      "meaning": "和谐的",
+      "wrongForms": [
+        "harmonias"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 39,
+      "word": "sense",
+      "part_of_speech": "",
+      "meaning": "感觉;理解力;判断力;意义,含义;见识 v. 感觉到;意 识到",
+      "wrongForms": [
+        "cense"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 40,
+      "word": "become",
+      "part_of_speech": "",
+      "meaning": "成为",
+      "wrongForms": [
+        "beame"
+      ],
+      "group": "作文错词",
+      "source": "蜘蛛网作文",
+      "note": "",
+      "lesson": "essay-misspell"
+    }
+  ]
+}
