@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 47,
+  "count": 55,
   "words": [
     {
       "index": 1,
@@ -411,10 +411,11 @@
       "meaning": "交流；沟通",
       "wrongForms": [
         "comminicate",
-        "commnicate"
+        "commnicate",
+        "commicate"
       ],
       "group": "作文错词",
-      "source": "蜘蛛网作文",
+      "source": "蜘蛛网作文、欢迎信 10-11",
       "note": "",
       "lesson": "essay-misspell"
     },
@@ -600,6 +601,113 @@
       "group": "作文错词",
       "source": "公园作文 10-09",
       "note": "a boy says…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 48,
+      "word": "on behalf of",
+      "part_of_speech": "",
+      "meaning": "代表……",
+      "wrongForms": [
+        "I'm represent",
+        "represent"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "第一句固定 On behalf of the Students' Union…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 49,
+      "word": "Students' Union",
+      "part_of_speech": "",
+      "meaning": "学生会",
+      "wrongForms": [
+        "student's Union",
+        "study Union"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "Students' 复数所有格",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 50,
+      "word": "you",
+      "part_of_speech": "",
+      "meaning": "你（主格）",
+      "wrongForms": [
+        "your"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "主语该用 you",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 51,
+      "word": "What's more",
+      "part_of_speech": "",
+      "meaning": "此外；而且",
+      "wrongForms": [
+        "Wat's more"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 52,
+      "word": "students",
+      "part_of_speech": "",
+      "meaning": "学生（复数）",
+      "wrongForms": [
+        "student"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "主谓一致 Our students are…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 53,
+      "word": "prompt",
+      "part_of_speech": "",
+      "meaning": "迅速的；及时的",
+      "wrongForms": [
+        "prompе",
+        "promp"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 54,
+      "word": "suggestions",
+      "part_of_speech": "",
+      "meaning": "建议（复数）",
+      "wrongForms": [
+        "suggestion"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "可数，给建议常用复数",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 55,
+      "word": "welcome you",
+      "part_of_speech": "",
+      "meaning": "欢迎你（们）",
+      "wrongForms": [
+        "welcome your"
+      ],
+      "group": "作文错词",
+      "source": "欢迎信 10-11",
+      "note": "",
       "lesson": "essay-misspell"
     }
   ]

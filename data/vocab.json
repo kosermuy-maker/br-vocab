@@ -13891,9 +13891,9 @@
     }
   ],
   "essay": {
-    "spellCount": 85,
+    "spellCount": 91,
     "recognizeCount": 910,
-    "misspellCount": 47,
+    "misspellCount": 55,
     "spell": [
       {
         "word": "accordingly",
@@ -14463,12 +14463,66 @@
         "lesson": "essay-spell"
       },
       {
+        "word": "behalf",
+        "part_of_speech": "n.",
+        "meaning": "利益；代表",
+        "group": "四、书信小作文词",
+        "syllable": "be-half",
+        "index": 64,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "Students' Union",
+        "part_of_speech": "n.",
+        "meaning": "学生会",
+        "group": "四、书信小作文词",
+        "syllable": "Stu-dents' Un-ion",
+        "index": 65,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "suggestion",
+        "part_of_speech": "n.",
+        "meaning": "建议",
+        "group": "四、书信小作文词",
+        "syllable": "sug-ges-tion",
+        "index": 66,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "prompt",
+        "part_of_speech": "adj.",
+        "meaning": "迅速的；及时的",
+        "group": "四、书信小作文词",
+        "syllable": "prompt",
+        "index": 67,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "appreciated",
+        "part_of_speech": "adj./v.",
+        "meaning": "感激的；受赞赏的",
+        "group": "四、书信小作文词",
+        "syllable": "ap-pre-ci-at-ed",
+        "index": 68,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "recommendation",
+        "part_of_speech": "n.",
+        "meaning": "推荐；建议",
+        "group": "四、书信小作文词",
+        "syllable": "re-com-men-da-tion",
+        "index": 69,
+        "lesson": "essay-spell"
+      },
+      {
         "word": "first",
         "part_of_speech": "adv./adj.",
         "meaning": "首先；第一",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "first",
-        "index": 64,
+        "index": 70,
         "lesson": "essay-spell"
       },
       {
@@ -14477,7 +14531,7 @@
         "meaning": "小的",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "lit-tle",
-        "index": 65,
+        "index": 71,
         "lesson": "essay-spell"
       },
       {
@@ -14486,7 +14540,7 @@
         "meaning": "全球的",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "glob-al",
-        "index": 66,
+        "index": 72,
         "lesson": "essay-spell"
       },
       {
@@ -14495,7 +14549,7 @@
         "meaning": "合适的",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "suit-a-ble",
-        "index": 67,
+        "index": 73,
         "lesson": "essay-spell"
       },
       {
@@ -14504,7 +14558,7 @@
         "meaning": "孩子",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "child",
-        "index": 68,
+        "index": 74,
         "lesson": "essay-spell"
       },
       {
@@ -14513,7 +14567,7 @@
         "meaning": "女儿",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "daugh-ter",
-        "index": 69,
+        "index": 75,
         "lesson": "essay-spell"
       },
       {
@@ -14522,7 +14576,7 @@
         "meaning": "另一个",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "a-noth-er",
-        "index": 70,
+        "index": 76,
         "lesson": "essay-spell"
       },
       {
@@ -14531,7 +14585,7 @@
         "meaning": "小的",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "small",
-        "index": 71,
+        "index": 77,
         "lesson": "essay-spell"
       },
       {
@@ -14540,7 +14594,7 @@
         "meaning": "他们的",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "their",
-        "index": 72,
+        "index": 78,
         "lesson": "essay-spell"
       },
       {
@@ -14549,7 +14603,7 @@
         "meaning": "be 的过去分词",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "been",
-        "index": 73,
+        "index": 79,
         "lesson": "essay-spell"
       },
       {
@@ -14558,7 +14612,7 @@
         "meaning": "成为",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "be-come",
-        "index": 74,
+        "index": 80,
         "lesson": "essay-spell"
       },
       {
@@ -14567,7 +14621,7 @@
         "meaning": "真相",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "truth",
-        "index": 75,
+        "index": 81,
         "lesson": "essay-spell"
       },
       {
@@ -14576,7 +14630,7 @@
         "meaning": "感觉；意义",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "sense",
-        "index": 76,
+        "index": 82,
         "lesson": "essay-spell"
       },
       {
@@ -14585,7 +14639,7 @@
         "meaning": "卡住的；困住",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "stuck",
-        "index": 77,
+        "index": 83,
         "lesson": "essay-spell"
       },
       {
@@ -14594,7 +14648,7 @@
         "meaning": "墙（复数）",
         "group": "五、错词本补漏（基础易错）",
         "syllable": "walls",
-        "index": 78,
+        "index": 84,
         "lesson": "essay-spell"
       },
       {
@@ -14603,7 +14657,7 @@
         "meaning": "激增；飙升",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "surged",
-        "index": 79,
+        "index": 85,
         "lesson": "essay-spell"
       },
       {
@@ -14612,7 +14666,7 @@
         "meaning": "描绘（过去分词）",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "de-pict-ed",
-        "index": 80,
+        "index": 86,
         "lesson": "essay-spell"
       },
       {
@@ -14621,7 +14675,7 @@
         "meaning": "显著的；重要的",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "sig-nif-i-cant",
-        "index": 81,
+        "index": 87,
         "lesson": "essay-spell"
       },
       {
@@ -14630,7 +14684,7 @@
         "meaning": "补贴（复数）",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "sub-si-dies",
-        "index": 82,
+        "index": 88,
         "lesson": "essay-spell"
       },
       {
@@ -14639,7 +14693,7 @@
         "meaning": "推动力",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "driv-ing force",
-        "index": 83,
+        "index": 89,
         "lesson": "essay-spell"
       },
       {
@@ -14648,7 +14702,7 @@
         "meaning": "突出；表明",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "high-light",
-        "index": 84,
+        "index": 90,
         "lesson": "essay-spell"
       },
       {
@@ -14657,7 +14711,7 @@
         "meaning": "政策（复数）",
         "group": "六、图表/趋势模板难词（7）（2026-10-09 公园作文 · 拼对也要练）",
         "syllable": "pol-i-cies",
-        "index": 85,
+        "index": 91,
         "lesson": "essay-spell"
       }
     ],
@@ -23295,10 +23349,11 @@
         "meaning": "交流；沟通",
         "wrongForms": [
           "comminicate",
-          "commnicate"
+          "commnicate",
+          "commicate"
         ],
         "group": "作文错词",
-        "source": "蜘蛛网作文",
+        "source": "蜘蛛网作文、欢迎信 10-11",
         "note": "",
         "lesson": "essay-misspell",
         "syllable": ""
@@ -23498,6 +23553,121 @@
         "group": "作文错词",
         "source": "公园作文 10-09",
         "note": "a boy says…",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 48,
+        "word": "on behalf of",
+        "part_of_speech": "",
+        "meaning": "代表……",
+        "wrongForms": [
+          "I'm represent",
+          "represent"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "第一句固定 On behalf of the Students' Union…",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 49,
+        "word": "Students' Union",
+        "part_of_speech": "",
+        "meaning": "学生会",
+        "wrongForms": [
+          "student's Union",
+          "study Union"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "Students' 复数所有格",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 50,
+        "word": "you",
+        "part_of_speech": "",
+        "meaning": "你（主格）",
+        "wrongForms": [
+          "your"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "主语该用 you",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 51,
+        "word": "What's more",
+        "part_of_speech": "",
+        "meaning": "此外；而且",
+        "wrongForms": [
+          "Wat's more"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 52,
+        "word": "students",
+        "part_of_speech": "",
+        "meaning": "学生（复数）",
+        "wrongForms": [
+          "student"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "主谓一致 Our students are…",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 53,
+        "word": "prompt",
+        "part_of_speech": "",
+        "meaning": "迅速的；及时的",
+        "wrongForms": [
+          "prompе",
+          "promp"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 54,
+        "word": "suggestions",
+        "part_of_speech": "",
+        "meaning": "建议（复数）",
+        "wrongForms": [
+          "suggestion"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "可数，给建议常用复数",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 55,
+        "word": "welcome you",
+        "part_of_speech": "",
+        "meaning": "欢迎你（们）",
+        "wrongForms": [
+          "welcome your"
+        ],
+        "group": "作文错词",
+        "source": "欢迎信 10-11",
+        "note": "",
         "lesson": "essay-misspell",
         "syllable": ""
       }
