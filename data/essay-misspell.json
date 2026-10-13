@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 55,
+  "count": 74,
   "words": [
     {
       "index": 1,
@@ -586,8 +586,8 @@
         "more better"
       ],
       "group": "作文错词",
-      "source": "公园作文 10-09",
-      "note": "better 本身已是比较级",
+      "source": "公园作文 10-09、家电表格 10-13",
+      "note": "better 本身已是比较级；家电表格再犯 more better→much better/better",
       "lesson": "essay-misspell"
     },
     {
@@ -707,6 +707,238 @@
       ],
       "group": "作文错词",
       "source": "欢迎信 10-11",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 56,
+      "word": "clearly",
+      "part_of_speech": "",
+      "meaning": "清楚地；明显地",
+      "wrongForms": [
+        "cheaply",
+        "chearly"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "The table clearly shows…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 57,
+      "word": "washing machine",
+      "part_of_speech": "",
+      "meaning": "洗衣机",
+      "wrongForms": [
+        "washmachine"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13；写作时问过",
+      "note": "勿连写成 washmachine",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 58,
+      "word": "positive",
+      "part_of_speech": "",
+      "meaning": "积极的；正面的",
+      "wrongForms": [
+        "postive"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 59,
+      "word": "science",
+      "part_of_speech": "",
+      "meaning": "科学",
+      "wrongForms": [
+        "secience"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "science and technology",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 60,
+      "word": "form of",
+      "part_of_speech": "",
+      "meaning": "以……的形式",
+      "wrongForms": [
+        "from of"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "in the form of policies and subsidies",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 61,
+      "word": "However",
+      "part_of_speech": "",
+      "meaning": "然而；但是",
+      "wrongForms": [
+        "Hover"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "句首 However,",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 62,
+      "word": "buy",
+      "part_of_speech": "",
+      "meaning": "买",
+      "wrongForms": [
+        "by"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "勿写成介词 by",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 63,
+      "word": "It can",
+      "part_of_speech": "",
+      "meaning": "它可以……",
+      "wrongForms": [
+        "It's can"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "It's = It is，不能接 can",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 64,
+      "word": "cheaper and better than",
+      "part_of_speech": "",
+      "meaning": "比……更便宜更好",
+      "wrongForms": [
+        "cheap and good than"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "比较级 + than",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 65,
+      "word": "air conditioners",
+      "part_of_speech": "",
+      "meaning": "空调（复数）",
+      "wrongForms": [
+        "air conditioner"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "图表数据用复数",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 66,
+      "word": "technology",
+      "part_of_speech": "",
+      "meaning": "技术；科技",
+      "wrongForms": [
+        "technige"
+      ],
+      "group": "作文错词",
+      "source": "家电表格 10-13",
+      "note": "science and technology",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 67,
+      "word": "quantity",
+      "part_of_speech": "",
+      "meaning": "数量",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 68,
+      "word": "reaction",
+      "part_of_speech": "",
+      "meaning": "反应",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "动词 react/respond；勿当 reflect",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 69,
+      "word": "attach importance to",
+      "part_of_speech": "",
+      "meaning": "重视",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 70,
+      "word": "represent",
+      "part_of_speech": "",
+      "meaning": "代表",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "欢迎信曾误用 on behalf of",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 71,
+      "word": "household appliances",
+      "part_of_speech": "",
+      "meaning": "家电",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "ap-pli-an-ces",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 72,
+      "word": "air conditioner",
+      "part_of_speech": "",
+      "meaning": "空调",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "复数 air conditioners 见错词条",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 73,
+      "word": "refrigerator / fridge",
+      "part_of_speech": "",
+      "meaning": "冰箱",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
+      "note": "fridge 口语可写",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 74,
+      "word": "increase rapidly",
+      "part_of_speech": "",
+      "meaning": "增长飞快",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "2026-10-13 写作时问过的词",
       "note": "",
       "lesson": "essay-misspell"
     }
