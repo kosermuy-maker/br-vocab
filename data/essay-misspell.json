@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 74,
+  "count": 84,
   "words": [
     {
       "index": 1,
@@ -940,6 +940,124 @@
       "group": "作文错词",
       "source": "2026-10-13 写作时问过的词",
       "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 75,
+      "word": "works",
+      "part_of_speech": "",
+      "meaning": "运转；起作用",
+      "wrongForms": [
+        "use"
+      ],
+      "group": "作文错词",
+      "source": "投诉信 10-15",
+      "note": "It use not smooth → it does not work smoothly / works",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 76,
+      "word": "smoothly",
+      "part_of_speech": "",
+      "meaning": "顺利地；流畅地",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15",
+      "note": "does not work smoothly",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 77,
+      "word": "battery runs out",
+      "part_of_speech": "",
+      "meaning": "电池很快耗尽",
+      "wrongForms": [
+        "the power is use quick"
+      ],
+      "group": "作文错词",
+      "source": "投诉信 10-15",
+      "note": "the battery runs out very quickly",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 78,
+      "word": "change for another",
+      "part_of_speech": "",
+      "meaning": "换另一款/另一个",
+      "wrongForms": [
+        "change a new"
+      ],
+      "group": "作文错词",
+      "source": "投诉信 10-15",
+      "note": "change for another model … or a full refund",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 79,
+      "word": "Zhang Wei",
+      "part_of_speech": "",
+      "meaning": "题目要求署名",
+      "wrongForms": [
+        "Li Ming"
+      ],
+      "group": "作文错词",
+      "source": "投诉信 10-15",
+      "note": "本题署名 Zhang Wei，不是默认 Li Ming",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 80,
+      "word": "satisfactory",
+      "part_of_speech": "",
+      "meaning": "令人满意的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15（模板难词）",
+      "note": "far from satisfactory",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 81,
+      "word": "inconvenience",
+      "part_of_speech": "",
+      "meaning": "不便",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15（模板难词）",
+      "note": "much trouble and inconvenience",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 82,
+      "word": "refund",
+      "part_of_speech": "",
+      "meaning": "退款",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15（模板难词）",
+      "note": "a full refund",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 83,
+      "word": "electronic dictionary",
+      "part_of_speech": "",
+      "meaning": "电子词典",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15（模板难词）",
+      "note": "I bought an electronic dictionary…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 84,
+      "word": "appreciated",
+      "part_of_speech": "",
+      "meaning": "感激的；受赞赏的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "投诉信 10-15（模板难词）",
+      "note": "Your help is greatly appreciated.",
       "lesson": "essay-misspell"
     }
   ]

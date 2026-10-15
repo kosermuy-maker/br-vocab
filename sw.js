@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v13-appliances-table-1013";
+const CACHE = "br-vocab-v14-complaint-letter-1015";
 const CORE = [
   "./",
   "./index.html",

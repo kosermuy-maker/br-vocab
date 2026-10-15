@@ -13891,9 +13891,9 @@
     }
   ],
   "essay": {
-    "spellCount": 111,
-    "recognizeCount": 901,
-    "misspellCount": 74,
+    "spellCount": 115,
+    "recognizeCount": 900,
+    "misspellCount": 84,
     "spell": [
       {
         "word": "accordingly",
@@ -14892,6 +14892,42 @@
         "group": "八、2026-10-13 家电表写作时问过的词",
         "syllable": "in-crease rap-id-ly",
         "index": 111,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "satisfactory",
+        "part_of_speech": "adj.",
+        "meaning": "令人满意的",
+        "group": "九、2026-10-15 投诉信模板难词",
+        "syllable": "sat-is-fac-to-ry",
+        "index": 112,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "refund",
+        "part_of_speech": "n.",
+        "meaning": "退款",
+        "group": "九、2026-10-15 投诉信模板难词",
+        "syllable": "re-fund",
+        "index": 113,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "electronic",
+        "part_of_speech": "adj.",
+        "meaning": "电子的",
+        "group": "九、2026-10-15 投诉信模板难词",
+        "syllable": "e-lec-tron-ic",
+        "index": 114,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "dictionary",
+        "part_of_speech": "n.",
+        "meaning": "词典",
+        "group": "九、2026-10-15 投诉信模板难词",
+        "syllable": "dic-tion-a-ry",
+        "index": 115,
         "lesson": "essay-spell"
       }
     ],
@@ -22547,21 +22583,12 @@
         "lesson": "essay-recognize"
       },
       {
-        "word": "refund",
-        "part_of_speech": "n. / v.",
-        "meaning": "退款",
-        "group": "范文005（印刷 p52）",
-        "syllable": "",
-        "index": 851,
-        "lesson": "essay-recognize"
-      },
-      {
         "word": "talent",
         "part_of_speech": "n.",
         "meaning": "人才，天才；天赋",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 852,
+        "index": 851,
         "lesson": "essay-recognize"
       },
       {
@@ -22570,7 +22597,7 @@
         "meaning": "核心，要点；核心的；基本的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 853,
+        "index": 852,
         "lesson": "essay-recognize"
       },
       {
@@ -22579,7 +22606,7 @@
         "meaning": "参赛者，竞争者",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 854,
+        "index": 853,
         "lesson": "essay-recognize"
       },
       {
@@ -22588,7 +22615,7 @@
         "meaning": "有启发作用的，使人领悟的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 855,
+        "index": 854,
         "lesson": "essay-recognize"
       },
       {
@@ -22597,7 +22624,7 @@
         "meaning": "博学的；有见识的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 856,
+        "index": 855,
         "lesson": "essay-recognize"
       },
       {
@@ -22606,7 +22633,7 @@
         "meaning": "主要的；初级的；初等教育的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 857,
+        "index": 856,
         "lesson": "essay-recognize"
       },
       {
@@ -22615,7 +22642,7 @@
         "meaning": "古代的；古老的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 858,
+        "index": 857,
         "lesson": "essay-recognize"
       },
       {
@@ -22624,7 +22651,7 @@
         "meaning": "有名的；有声望的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 859,
+        "index": 858,
         "lesson": "essay-recognize"
       },
       {
@@ -22633,7 +22660,7 @@
         "meaning": "遗产；传统",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 860,
+        "index": 859,
         "lesson": "essay-recognize"
       },
       {
@@ -22642,7 +22669,7 @@
         "meaning": "候选人；应试者；适合………的人/物",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 861,
+        "index": 860,
         "lesson": "essay-recognize"
       },
       {
@@ -22651,7 +22678,7 @@
         "meaning": "技术；技能",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 862,
+        "index": 861,
         "lesson": "essay-recognize"
       },
       {
@@ -22660,7 +22687,7 @@
         "meaning": "促进；推广；促销；晋升",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 863,
+        "index": 862,
         "lesson": "essay-recognize"
       },
       {
@@ -22669,7 +22696,7 @@
         "meaning": "中世纪的",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 864,
+        "index": 863,
         "lesson": "essay-recognize"
       },
       {
@@ -22678,7 +22705,7 @@
         "meaning": "文艺复兴",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 865,
+        "index": 864,
         "lesson": "essay-recognize"
       },
       {
@@ -22687,7 +22714,7 @@
         "meaning": "热情的；热心的",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 866,
+        "index": 865,
         "lesson": "essay-recognize"
       },
       {
@@ -22696,7 +22723,7 @@
         "meaning": "继承；经遗传获得（品质、身体特征等）",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 867,
+        "index": 866,
         "lesson": "essay-recognize"
       },
       {
@@ -22705,7 +22732,7 @@
         "meaning": "百科全书",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 868,
+        "index": 867,
         "lesson": "essay-recognize"
       },
       {
@@ -22714,7 +22741,7 @@
         "meaning": "传奇故事；浪漫史；爱情",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 869,
+        "index": 868,
         "lesson": "essay-recognize"
       },
       {
@@ -22723,7 +22750,7 @@
         "meaning": "奋斗；搏斗",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 870,
+        "index": 869,
         "lesson": "essay-recognize"
       },
       {
@@ -22732,7 +22759,7 @@
         "meaning": "动荡的；汹涌的",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 871,
+        "index": 870,
         "lesson": "essay-recognize"
       },
       {
@@ -22741,7 +22768,7 @@
         "meaning": "描述；表现；扮演",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 872,
+        "index": 871,
         "lesson": "essay-recognize"
       },
       {
@@ -22750,7 +22777,7 @@
         "meaning": "人物，角色；性格；文字",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 873,
+        "index": 872,
         "lesson": "essay-recognize"
       },
       {
@@ -22759,7 +22786,7 @@
         "meaning": "典型的，独特的n. 特色；品质",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 874,
+        "index": 873,
         "lesson": "essay-recognize"
       },
       {
@@ -22768,7 +22795,7 @@
         "meaning": "独特的；独有的；唯一的",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 875,
+        "index": 874,
         "lesson": "essay-recognize"
       },
       {
@@ -22777,7 +22804,7 @@
         "meaning": "保存；保护；保护区",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 876,
+        "index": 875,
         "lesson": "essay-recognize"
       },
       {
@@ -22786,7 +22813,7 @@
         "meaning": "现象；杰出的人",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 877,
+        "index": 876,
         "lesson": "essay-recognize"
       },
       {
@@ -22795,7 +22822,7 @@
         "meaning": "重申，反复地说",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 878,
+        "index": 877,
         "lesson": "essay-recognize"
       },
       {
@@ -22804,7 +22831,7 @@
         "meaning": "虐待，亏待",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 879,
+        "index": 878,
         "lesson": "essay-recognize"
       },
       {
@@ -22813,7 +22840,7 @@
         "meaning": "具有讽刺意味的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 880,
+        "index": 879,
         "lesson": "essay-recognize"
       },
       {
@@ -22822,7 +22849,7 @@
         "meaning": "隐喻性的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 881,
+        "index": 880,
         "lesson": "essay-recognize"
       },
       {
@@ -22831,7 +22858,7 @@
         "meaning": "普遍存在的；全体的，普遍的，全世界的",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 882,
+        "index": 881,
         "lesson": "essay-recognize"
       },
       {
@@ -22840,7 +22867,7 @@
         "meaning": "（使）参与；吸引；雇用",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 883,
+        "index": 882,
         "lesson": "essay-recognize"
       },
       {
@@ -22849,7 +22876,7 @@
         "meaning": "促进；提升；宣传；晋升",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 884,
+        "index": 883,
         "lesson": "essay-recognize"
       },
       {
@@ -22858,7 +22885,7 @@
         "meaning": "耐用的；持久的；[pl.]耐用品",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 885,
+        "index": 884,
         "lesson": "essay-recognize"
       },
       {
@@ -22867,7 +22894,7 @@
         "meaning": "家庭；家喻户晓的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 886,
+        "index": 885,
         "lesson": "essay-recognize"
       },
       {
@@ -22876,7 +22903,7 @@
         "meaning": "国内的；家用的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 887,
+        "index": 886,
         "lesson": "essay-recognize"
       },
       {
@@ -22885,7 +22912,7 @@
         "meaning": "可进入/到达/使用的；可理解的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 888,
+        "index": 887,
         "lesson": "essay-recognize"
       },
       {
@@ -22894,7 +22921,7 @@
         "meaning": "按重要性排列，优先处理",
         "group": "范文027（印刷 p118）",
         "syllable": "",
-        "index": 889,
+        "index": 888,
         "lesson": "essay-recognize"
       },
       {
@@ -22903,7 +22930,7 @@
         "meaning": "展示；出席；礼物；现在的",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 890,
+        "index": 889,
         "lesson": "essay-recognize"
       },
       {
@@ -22912,7 +22939,7 @@
         "meaning": "基础设施，基础建设",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 891,
+        "index": 890,
         "lesson": "essay-recognize"
       },
       {
@@ -22921,7 +22948,7 @@
         "meaning": "包容性，包容度",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 892,
+        "index": 891,
         "lesson": "essay-recognize"
       },
       {
@@ -22930,7 +22957,7 @@
         "meaning": "巨大的；戏剧（性）的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 893,
+        "index": 892,
         "lesson": "essay-recognize"
       },
       {
@@ -22939,7 +22966,7 @@
         "meaning": "强有力的，起推动作用的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 894,
+        "index": 893,
         "lesson": "essay-recognize"
       },
       {
@@ -22948,7 +22975,7 @@
         "meaning": "有资格的；具备……的资历",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 895,
+        "index": 894,
         "lesson": "essay-recognize"
       },
       {
@@ -22957,7 +22984,7 @@
         "meaning": "迫使；（通过满足要求而）帮助",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 896,
+        "index": 895,
         "lesson": "essay-recognize"
       },
       {
@@ -22966,7 +22993,7 @@
         "meaning": "有害的，不利的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 897,
+        "index": 896,
         "lesson": "essay-recognize"
       },
       {
@@ -22975,7 +23002,7 @@
         "meaning": "（使）倾斜；倾向于",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 898,
+        "index": 897,
         "lesson": "essay-recognize"
       },
       {
@@ -22984,7 +23011,7 @@
         "meaning": "一贯地；坚持地",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 899,
+        "index": 898,
         "lesson": "essay-recognize"
       },
       {
@@ -22993,7 +23020,7 @@
         "meaning": "宝贵的；珍奇的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 900,
+        "index": 899,
         "lesson": "essay-recognize"
       },
       {
@@ -23002,7 +23029,7 @@
         "meaning": "表面（上）的；肤浅的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 901,
+        "index": 900,
         "lesson": "essay-recognize"
       }
     ],
@@ -24018,6 +24045,134 @@
         "group": "作文错词",
         "source": "2026-10-13 写作时问过的词",
         "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 75,
+        "word": "works",
+        "part_of_speech": "",
+        "meaning": "运转；起作用",
+        "wrongForms": [
+          "use"
+        ],
+        "group": "作文错词",
+        "source": "投诉信 10-15",
+        "note": "It use not smooth → it does not work smoothly / works",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 76,
+        "word": "smoothly",
+        "part_of_speech": "",
+        "meaning": "顺利地；流畅地",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15",
+        "note": "does not work smoothly",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 77,
+        "word": "battery runs out",
+        "part_of_speech": "",
+        "meaning": "电池很快耗尽",
+        "wrongForms": [
+          "the power is use quick"
+        ],
+        "group": "作文错词",
+        "source": "投诉信 10-15",
+        "note": "the battery runs out very quickly",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 78,
+        "word": "change for another",
+        "part_of_speech": "",
+        "meaning": "换另一款/另一个",
+        "wrongForms": [
+          "change a new"
+        ],
+        "group": "作文错词",
+        "source": "投诉信 10-15",
+        "note": "change for another model … or a full refund",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 79,
+        "word": "Zhang Wei",
+        "part_of_speech": "",
+        "meaning": "题目要求署名",
+        "wrongForms": [
+          "Li Ming"
+        ],
+        "group": "作文错词",
+        "source": "投诉信 10-15",
+        "note": "本题署名 Zhang Wei，不是默认 Li Ming",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 80,
+        "word": "satisfactory",
+        "part_of_speech": "",
+        "meaning": "令人满意的",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15（模板难词）",
+        "note": "far from satisfactory",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 81,
+        "word": "inconvenience",
+        "part_of_speech": "",
+        "meaning": "不便",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15（模板难词）",
+        "note": "much trouble and inconvenience",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 82,
+        "word": "refund",
+        "part_of_speech": "",
+        "meaning": "退款",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15（模板难词）",
+        "note": "a full refund",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 83,
+        "word": "electronic dictionary",
+        "part_of_speech": "",
+        "meaning": "电子词典",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15（模板难词）",
+        "note": "I bought an electronic dictionary…",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 84,
+        "word": "appreciated",
+        "part_of_speech": "",
+        "meaning": "感激的；受赞赏的",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "投诉信 10-15（模板难词）",
+        "note": "Your help is greatly appreciated.",
         "lesson": "essay-misspell",
         "syllable": ""
       }
