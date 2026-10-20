@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 84,
+  "count": 101,
   "words": [
     {
       "index": 1,
@@ -137,10 +137,11 @@
       "part_of_speech": "",
       "meaning": "社会",
       "wrongForms": [
-        "socity"
+        "socity",
+        "socitey"
       ],
       "group": "作文错词",
-      "source": "2005 养老 09-27",
+      "source": "2005 养老 09-27；养老机器人 10-20",
       "note": "",
       "lesson": "essay-misspell"
     },
@@ -769,10 +770,11 @@
       "part_of_speech": "",
       "meaning": "以……的形式",
       "wrongForms": [
-        "from of"
+        "from of",
+        "from"
       ],
       "group": "作文错词",
-      "source": "家电表格 10-13",
+      "source": "家电表格 10-13；养老机器人 10-20",
       "note": "in the form of policies and subsidies",
       "lesson": "essay-misspell"
     },
@@ -847,10 +849,11 @@
       "part_of_speech": "",
       "meaning": "技术；科技",
       "wrongForms": [
-        "technige"
+        "technige",
+        "techology"
       ],
       "group": "作文错词",
-      "source": "家电表格 10-13",
+      "source": "家电表格 10-13；养老机器人 10-20；养老机器人 10-20（模板难词）",
       "note": "science and technology",
       "lesson": "essay-misspell"
     },
@@ -1058,6 +1061,216 @@
       "group": "作文错词",
       "source": "投诉信 10-15（模板难词）",
       "note": "Your help is greatly appreciated.",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 85,
+      "word": "charts show",
+      "part_of_speech": "",
+      "meaning": "图表显示",
+      "wrongForms": [
+        "two chart illustrate",
+        "bar chart show"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 86,
+      "word": "safety",
+      "part_of_speech": "",
+      "meaning": "安全",
+      "wrongForms": [
+        "safe"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+      "note": "勿把 safe 当名词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 87,
+      "word": "convenience",
+      "part_of_speech": "",
+      "meaning": "便利",
+      "wrongForms": [
+        "conveclieven"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+      "note": "柱图关注点",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 88,
+      "word": "pie chart",
+      "part_of_speech": "",
+      "meaning": "饼图",
+      "wrongForms": [
+        "pi chart"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 89,
+      "word": "biggest",
+      "part_of_speech": "",
+      "meaning": "最大的",
+      "wrongForms": [
+        "bigest"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 90,
+      "word": "account for",
+      "part_of_speech": "",
+      "meaning": "占（比例）",
+      "wrongForms": [
+        "account of"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 91,
+      "word": "policies",
+      "part_of_speech": "",
+      "meaning": "政策（复数）",
+      "wrongForms": [
+        "pollicies"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 92,
+      "word": "subsidies",
+      "part_of_speech": "",
+      "meaning": "补贴（复数）",
+      "wrongForms": [
+        "subside"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+      "note": "government subsidies",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 93,
+      "word": "price",
+      "part_of_speech": "",
+      "meaning": "价格",
+      "wrongForms": [
+        "pirce"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 94,
+      "word": "It looks like",
+      "part_of_speech": "",
+      "meaning": "看起来像",
+      "wrongForms": [
+        "It's look like"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 95,
+      "word": "measured / assured",
+      "part_of_speech": "",
+      "meaning": "被衡量/被保证",
+      "wrongForms": [
+        "meash"
+      ],
+      "group": "作文错词",
+      "source": "养老机器人 10-20",
+      "note": "safe is not meash",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 96,
+      "word": "elderly",
+      "part_of_speech": "",
+      "meaning": "老年的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "elderly care robots",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 97,
+      "word": "respondent",
+      "part_of_speech": "",
+      "meaning": "受访者",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "范文词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 98,
+      "word": "prioritize",
+      "part_of_speech": "",
+      "meaning": "优先考虑",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "范文词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 99,
+      "word": "acceptance",
+      "part_of_speech": "",
+      "meaning": "接受",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "acceptance degree",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 100,
+      "word": "concern",
+      "part_of_speech": "",
+      "meaning": "关注点/担忧",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "main concerns",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 101,
+      "word": "aging society",
+      "part_of_speech": "",
+      "meaning": "老龄化社会",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "养老机器人 10-20（模板难词）",
+      "note": "结尾",
       "lesson": "essay-misspell"
     }
   ]

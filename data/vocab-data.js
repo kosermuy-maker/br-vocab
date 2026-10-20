@@ -13891,9 +13891,9 @@ window.VOCAB_DATA = {
     }
   ],
   "essay": {
-    "spellCount": 115,
-    "recognizeCount": 900,
-    "misspellCount": 84,
+    "spellCount": 120,
+    "recognizeCount": 898,
+    "misspellCount": 101,
     "spell": [
       {
         "word": "accordingly",
@@ -14928,6 +14928,51 @@ window.VOCAB_DATA = {
         "group": "九、2026-10-15 投诉信模板难词",
         "syllable": "dic-tion-a-ry",
         "index": 115,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "technology",
+        "part_of_speech": "n.",
+        "meaning": "技术；科技",
+        "group": "十、2026-10-20 养老机器人高频错拼",
+        "syllable": "tech-nol-o-gy",
+        "index": 116,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "safety",
+        "part_of_speech": "n.",
+        "meaning": "安全",
+        "group": "十、2026-10-20 养老机器人高频错拼",
+        "syllable": "safe-ty",
+        "index": 117,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "convenience",
+        "part_of_speech": "n.",
+        "meaning": "便利",
+        "group": "十、2026-10-20 养老机器人高频错拼",
+        "syllable": "con-ven-ience",
+        "index": 118,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "biggest",
+        "part_of_speech": "adj.",
+        "meaning": "最大的",
+        "group": "十、2026-10-20 养老机器人高频错拼",
+        "syllable": "big-gest",
+        "index": 119,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "concern",
+        "part_of_speech": "n.",
+        "meaning": "关注点；担忧",
+        "group": "十、2026-10-20 养老机器人高频错拼",
+        "syllable": "con-cern",
+        "index": 120,
         "lesson": "essay-spell"
       }
     ],
@@ -16373,30 +16418,12 @@ window.VOCAB_DATA = {
         "lesson": "essay-recognize"
       },
       {
-        "word": "safety",
-        "part_of_speech": "",
-        "meaning": "安全",
-        "group": "核心词汇",
-        "syllable": "",
-        "index": 161,
-        "lesson": "essay-recognize"
-      },
-      {
         "word": "complete/total/full acceptance",
         "part_of_speech": "",
         "meaning": "完全接受",
         "group": "核心词汇",
         "syllable": "",
-        "index": 162,
-        "lesson": "essay-recognize"
-      },
-      {
-        "word": "convenience",
-        "part_of_speech": "",
-        "meaning": "便利",
-        "group": "核心词汇",
-        "syllable": "",
-        "index": 163,
+        "index": 161,
         "lesson": "essay-recognize"
       },
       {
@@ -16405,7 +16432,7 @@ window.VOCAB_DATA = {
         "meaning": "部分接受",
         "group": "核心词汇",
         "syllable": "",
-        "index": 164,
+        "index": 162,
         "lesson": "essay-recognize"
       },
       {
@@ -16414,7 +16441,7 @@ window.VOCAB_DATA = {
         "meaning": "消费者",
         "group": "核心词汇",
         "syllable": "",
-        "index": 165,
+        "index": 163,
         "lesson": "essay-recognize"
       },
       {
@@ -16423,7 +16450,7 @@ window.VOCAB_DATA = {
         "meaning": "拓展人际关系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 166,
+        "index": 164,
         "lesson": "essay-recognize"
       },
       {
@@ -16432,7 +16459,7 @@ window.VOCAB_DATA = {
         "meaning": "选择餐厅",
         "group": "核心词汇",
         "syllable": "",
-        "index": 167,
+        "index": 165,
         "lesson": "essay-recognize"
       },
       {
@@ -16441,7 +16468,7 @@ window.VOCAB_DATA = {
         "meaning": "关注因素",
         "group": "核心词汇",
         "syllable": "",
-        "index": 168,
+        "index": 166,
         "lesson": "essay-recognize"
       },
       {
@@ -16450,7 +16477,7 @@ window.VOCAB_DATA = {
         "meaning": "特色",
         "group": "核心词汇",
         "syllable": "",
-        "index": 169,
+        "index": 167,
         "lesson": "essay-recognize"
       },
       {
@@ -16459,7 +16486,7 @@ window.VOCAB_DATA = {
         "meaning": "春节假期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 170,
+        "index": 168,
         "lesson": "essay-recognize"
       },
       {
@@ -16468,7 +16495,7 @@ window.VOCAB_DATA = {
         "meaning": "服务",
         "group": "核心词汇",
         "syllable": "",
-        "index": 171,
+        "index": 169,
         "lesson": "essay-recognize"
       },
       {
@@ -16477,7 +16504,7 @@ window.VOCAB_DATA = {
         "meaning": "花销",
         "group": "核心词汇",
         "syllable": "",
-        "index": 172,
+        "index": 170,
         "lesson": "essay-recognize"
       },
       {
@@ -16486,7 +16513,7 @@ window.VOCAB_DATA = {
         "meaning": "环境",
         "group": "核心词汇",
         "syllable": "",
-        "index": 173,
+        "index": 171,
         "lesson": "essay-recognize"
       },
       {
@@ -16495,7 +16522,7 @@ window.VOCAB_DATA = {
         "meaning": "价格",
         "group": "核心词汇",
         "syllable": "",
-        "index": 174,
+        "index": 172,
         "lesson": "essay-recognize"
       },
       {
@@ -16504,7 +16531,7 @@ window.VOCAB_DATA = {
         "meaning": "新年礼物",
         "group": "核心词汇",
         "syllable": "",
-        "index": 175,
+        "index": 173,
         "lesson": "essay-recognize"
       },
       {
@@ -16513,7 +16540,7 @@ window.VOCAB_DATA = {
         "meaning": "经济繁荣",
         "group": "核心词汇",
         "syllable": "",
-        "index": 176,
+        "index": 174,
         "lesson": "essay-recognize"
       },
       {
@@ -16522,7 +16549,7 @@ window.VOCAB_DATA = {
         "meaning": "交通",
         "group": "核心词汇",
         "syllable": "",
-        "index": 177,
+        "index": 175,
         "lesson": "essay-recognize"
       },
       {
@@ -16531,7 +16558,7 @@ window.VOCAB_DATA = {
         "meaning": "聚会吃饭",
         "group": "核心词汇",
         "syllable": "",
-        "index": 178,
+        "index": 176,
         "lesson": "essay-recognize"
       },
       {
@@ -16540,7 +16567,7 @@ window.VOCAB_DATA = {
         "meaning": "其他开支",
         "group": "核心词汇",
         "syllable": "",
-        "index": 179,
+        "index": 177,
         "lesson": "essay-recognize"
       },
       {
@@ -16549,7 +16576,7 @@ window.VOCAB_DATA = {
         "meaning": "享受舒适的生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 180,
+        "index": 178,
         "lesson": "essay-recognize"
       },
       {
@@ -16558,7 +16585,7 @@ window.VOCAB_DATA = {
         "meaning": "高度发达的交通系统",
         "group": "核心词汇",
         "syllable": "",
-        "index": 181,
+        "index": 179,
         "lesson": "essay-recognize"
       },
       {
@@ -16567,7 +16594,7 @@ window.VOCAB_DATA = {
         "meaning": "城市居民",
         "group": "核心词汇",
         "syllable": "",
-        "index": 182,
+        "index": 180,
         "lesson": "essay-recognize"
       },
       {
@@ -16576,7 +16603,7 @@ window.VOCAB_DATA = {
         "meaning": "摩天大楼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 183,
+        "index": 181,
         "lesson": "essay-recognize"
       },
       {
@@ -16585,7 +16612,7 @@ window.VOCAB_DATA = {
         "meaning": "能量",
         "group": "核心词汇",
         "syllable": "",
-        "index": 184,
+        "index": 182,
         "lesson": "essay-recognize"
       },
       {
@@ -16594,7 +16621,7 @@ window.VOCAB_DATA = {
         "meaning": "可持续的城市发展",
         "group": "核心词汇",
         "syllable": "",
-        "index": 185,
+        "index": 183,
         "lesson": "essay-recognize"
       },
       {
@@ -16603,7 +16630,7 @@ window.VOCAB_DATA = {
         "meaning": "刺激",
         "group": "核心词汇",
         "syllable": "",
-        "index": 186,
+        "index": 184,
         "lesson": "essay-recognize"
       },
       {
@@ -16612,7 +16639,7 @@ window.VOCAB_DATA = {
         "meaning": "大量的就业机会",
         "group": "核心词汇",
         "syllable": "",
-        "index": 187,
+        "index": 185,
         "lesson": "essay-recognize"
       },
       {
@@ -16621,7 +16648,7 @@ window.VOCAB_DATA = {
         "meaning": "公司",
         "group": "核心词汇",
         "syllable": "",
-        "index": 188,
+        "index": 186,
         "lesson": "essay-recognize"
       },
       {
@@ -16630,7 +16657,7 @@ window.VOCAB_DATA = {
         "meaning": "承担责任",
         "group": "核心词汇",
         "syllable": "",
-        "index": 189,
+        "index": 187,
         "lesson": "essay-recognize"
       },
       {
@@ -16639,7 +16666,7 @@ window.VOCAB_DATA = {
         "meaning": "企业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 190,
+        "index": 188,
         "lesson": "essay-recognize"
       },
       {
@@ -16648,7 +16675,7 @@ window.VOCAB_DATA = {
         "meaning": "员工",
         "group": "核心词汇",
         "syllable": "",
-        "index": 191,
+        "index": 189,
         "lesson": "essay-recognize"
       },
       {
@@ -16657,7 +16684,7 @@ window.VOCAB_DATA = {
         "meaning": "转换生活目标",
         "group": "核心词汇",
         "syllable": "",
-        "index": 192,
+        "index": 190,
         "lesson": "essay-recognize"
       },
       {
@@ -16666,7 +16693,7 @@ window.VOCAB_DATA = {
         "meaning": "实现终极成功",
         "group": "核心词汇",
         "syllable": "",
-        "index": 193,
+        "index": 191,
         "lesson": "essay-recognize"
       },
       {
@@ -16675,7 +16702,7 @@ window.VOCAB_DATA = {
         "meaning": "满意",
         "group": "核心词汇",
         "syllable": "",
-        "index": 194,
+        "index": 192,
         "lesson": "essay-recognize"
       },
       {
@@ -16684,7 +16711,7 @@ window.VOCAB_DATA = {
         "meaning": "相对轻松舒适的生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 195,
+        "index": 193,
         "lesson": "essay-recognize"
       },
       {
@@ -16693,7 +16720,7 @@ window.VOCAB_DATA = {
         "meaning": "不满意",
         "group": "核心词汇",
         "syllable": "",
-        "index": 196,
+        "index": 194,
         "lesson": "essay-recognize"
       },
       {
@@ -16702,7 +16729,7 @@ window.VOCAB_DATA = {
         "meaning": "41 岁 -50 岁",
         "group": "核心词汇",
         "syllable": "",
-        "index": 197,
+        "index": 195,
         "lesson": "essay-recognize"
       },
       {
@@ -16711,7 +16738,7 @@ window.VOCAB_DATA = {
         "meaning": "倾向于做，容易做",
         "group": "核心词汇",
         "syllable": "",
-        "index": 198,
+        "index": 196,
         "lesson": "essay-recognize"
       },
       {
@@ -16720,7 +16747,7 @@ window.VOCAB_DATA = {
         "meaning": "大于五十岁",
         "group": "核心词汇",
         "syllable": "",
-        "index": 199,
+        "index": 197,
         "lesson": "essay-recognize"
       },
       {
@@ -16729,7 +16756,7 @@ window.VOCAB_DATA = {
         "meaning": "调整期望",
         "group": "核心词汇",
         "syllable": "",
-        "index": 200,
+        "index": 198,
         "lesson": "essay-recognize"
       },
       {
@@ -16738,7 +16765,7 @@ window.VOCAB_DATA = {
         "meaning": "提高福利待遇",
         "group": "核心词汇",
         "syllable": "",
-        "index": 201,
+        "index": 199,
         "lesson": "essay-recognize"
       },
       {
@@ -16747,7 +16774,7 @@ window.VOCAB_DATA = {
         "meaning": "国内的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 202,
+        "index": 200,
         "lesson": "essay-recognize"
       },
       {
@@ -16756,7 +16783,7 @@ window.VOCAB_DATA = {
         "meaning": "美系品牌",
         "group": "核心词汇",
         "syllable": "",
-        "index": 203,
+        "index": 201,
         "lesson": "essay-recognize"
       },
       {
@@ -16765,7 +16792,7 @@ window.VOCAB_DATA = {
         "meaning": "轿车市场",
         "group": "核心词汇",
         "syllable": "",
-        "index": 204,
+        "index": 202,
         "lesson": "essay-recognize"
       },
       {
@@ -16774,7 +16801,7 @@ window.VOCAB_DATA = {
         "meaning": "国产品牌",
         "group": "核心词汇",
         "syllable": "",
-        "index": 205,
+        "index": 203,
         "lesson": "essay-recognize"
       },
       {
@@ -16783,7 +16810,7 @@ window.VOCAB_DATA = {
         "meaning": "部分品牌",
         "group": "核心词汇",
         "syllable": "",
-        "index": 206,
+        "index": 204,
         "lesson": "essay-recognize"
       },
       {
@@ -16792,7 +16819,7 @@ window.VOCAB_DATA = {
         "meaning": "日系品牌",
         "group": "核心词汇",
         "syllable": "",
-        "index": 207,
+        "index": 205,
         "lesson": "essay-recognize"
       },
       {
@@ -16801,7 +16828,7 @@ window.VOCAB_DATA = {
         "meaning": "市场份额",
         "group": "核心词汇",
         "syllable": "",
-        "index": 208,
+        "index": 206,
         "lesson": "essay-recognize"
       },
       {
@@ -16810,7 +16837,7 @@ window.VOCAB_DATA = {
         "meaning": "物质基础",
         "group": "核心词汇",
         "syllable": "",
-        "index": 209,
+        "index": 207,
         "lesson": "essay-recognize"
       },
       {
@@ -16819,7 +16846,7 @@ window.VOCAB_DATA = {
         "meaning": "科技进步",
         "group": "核心词汇",
         "syllable": "",
-        "index": 210,
+        "index": 208,
         "lesson": "essay-recognize"
       },
       {
@@ -16828,7 +16855,7 @@ window.VOCAB_DATA = {
         "meaning": "提升品牌形象",
         "group": "核心词汇",
         "syllable": "",
-        "index": 211,
+        "index": 209,
         "lesson": "essay-recognize"
       },
       {
@@ -16837,7 +16864,7 @@ window.VOCAB_DATA = {
         "meaning": "尝试促销活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 212,
+        "index": 210,
         "lesson": "essay-recognize"
       },
       {
@@ -16846,7 +16873,7 @@ window.VOCAB_DATA = {
         "meaning": "技术手段",
         "group": "核心词汇",
         "syllable": "",
-        "index": 213,
+        "index": 211,
         "lesson": "essay-recognize"
       },
       {
@@ -16855,7 +16882,7 @@ window.VOCAB_DATA = {
         "meaning": "手机入网",
         "group": "核心词汇",
         "syllable": "",
-        "index": 214,
+        "index": 212,
         "lesson": "essay-recognize"
       },
       {
@@ -16864,7 +16891,7 @@ window.VOCAB_DATA = {
         "meaning": "技术基础",
         "group": "核心词汇",
         "syllable": "",
-        "index": 215,
+        "index": 213,
         "lesson": "essay-recognize"
       },
       {
@@ -16873,7 +16900,7 @@ window.VOCAB_DATA = {
         "meaning": "发达国家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 216,
+        "index": 214,
         "lesson": "essay-recognize"
       },
       {
@@ -16882,7 +16909,7 @@ window.VOCAB_DATA = {
         "meaning": "发展中国家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 217,
+        "index": 215,
         "lesson": "essay-recognize"
       },
       {
@@ -16891,7 +16918,7 @@ window.VOCAB_DATA = {
         "meaning": "价格促销",
         "group": "核心词汇",
         "syllable": "",
-        "index": 218,
+        "index": 216,
         "lesson": "essay-recognize"
       },
       {
@@ -16900,7 +16927,7 @@ window.VOCAB_DATA = {
         "meaning": "电信产业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 219,
+        "index": 217,
         "lesson": "essay-recognize"
       },
       {
@@ -16909,7 +16936,7 @@ window.VOCAB_DATA = {
         "meaning": "汽车产业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 220,
+        "index": 218,
         "lesson": "essay-recognize"
       },
       {
@@ -16918,7 +16945,7 @@ window.VOCAB_DATA = {
         "meaning": "欺诈言行",
         "group": "核心词汇",
         "syllable": "",
-        "index": 221,
+        "index": 219,
         "lesson": "essay-recognize"
       },
       {
@@ -16927,7 +16954,7 @@ window.VOCAB_DATA = {
         "meaning": "房地产业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 222,
+        "index": 220,
         "lesson": "essay-recognize"
       },
       {
@@ -16936,7 +16963,7 @@ window.VOCAB_DATA = {
         "meaning": "汽车公司",
         "group": "核心词汇",
         "syllable": "",
-        "index": 223,
+        "index": 221,
         "lesson": "essay-recognize"
       },
       {
@@ -16945,7 +16972,7 @@ window.VOCAB_DATA = {
         "meaning": "满足需求",
         "group": "核心词汇",
         "syllable": "",
-        "index": 224,
+        "index": 222,
         "lesson": "essay-recognize"
       },
       {
@@ -16954,7 +16981,7 @@ window.VOCAB_DATA = {
         "meaning": "毁坏声誉",
         "group": "核心词汇",
         "syllable": "",
-        "index": 225,
+        "index": 223,
         "lesson": "essay-recognize"
       },
       {
@@ -16963,7 +16990,7 @@ window.VOCAB_DATA = {
         "meaning": "缩短距离",
         "group": "核心词汇",
         "syllable": "",
-        "index": 226,
+        "index": 224,
         "lesson": "essay-recognize"
       },
       {
@@ -16972,7 +16999,7 @@ window.VOCAB_DATA = {
         "meaning": "继续盈利",
         "group": "核心词汇",
         "syllable": "",
-        "index": 227,
+        "index": 225,
         "lesson": "essay-recognize"
       },
       {
@@ -16981,7 +17008,7 @@ window.VOCAB_DATA = {
         "meaning": "制造商",
         "group": "核心词汇",
         "syllable": "",
-        "index": 228,
+        "index": 226,
         "lesson": "essay-recognize"
       },
       {
@@ -16990,7 +17017,7 @@ window.VOCAB_DATA = {
         "meaning": "经济不景气",
         "group": "核心词汇",
         "syllable": "",
-        "index": 229,
+        "index": 227,
         "lesson": "essay-recognize"
       },
       {
@@ -16999,7 +17026,7 @@ window.VOCAB_DATA = {
         "meaning": "住房问题",
         "group": "核心词汇",
         "syllable": "",
-        "index": 230,
+        "index": 228,
         "lesson": "essay-recognize"
       },
       {
@@ -17008,7 +17035,7 @@ window.VOCAB_DATA = {
         "meaning": "信心重建",
         "group": "核心词汇",
         "syllable": "",
-        "index": 231,
+        "index": 229,
         "lesson": "essay-recognize"
       },
       {
@@ -17017,7 +17044,7 @@ window.VOCAB_DATA = {
         "meaning": "取得巨大成就",
         "group": "核心词汇",
         "syllable": "",
-        "index": 232,
+        "index": 230,
         "lesson": "essay-recognize"
       },
       {
@@ -17026,7 +17053,7 @@ window.VOCAB_DATA = {
         "meaning": "安居工程",
         "group": "核心词汇",
         "syllable": "",
-        "index": 233,
+        "index": 231,
         "lesson": "essay-recognize"
       },
       {
@@ -17035,7 +17062,7 @@ window.VOCAB_DATA = {
         "meaning": "农村贫困人口",
         "group": "核心词汇",
         "syllable": "",
-        "index": 234,
+        "index": 232,
         "lesson": "essay-recognize"
       },
       {
@@ -17044,7 +17071,7 @@ window.VOCAB_DATA = {
         "meaning": "相关部门",
         "group": "核心词汇",
         "syllable": "",
-        "index": 235,
+        "index": 233,
         "lesson": "essay-recognize"
       },
       {
@@ -17053,7 +17080,7 @@ window.VOCAB_DATA = {
         "meaning": "传统方法",
         "group": "核心词汇",
         "syllable": "",
-        "index": 236,
+        "index": 234,
         "lesson": "essay-recognize"
       },
       {
@@ -17062,7 +17089,7 @@ window.VOCAB_DATA = {
         "meaning": "就业指导",
         "group": "核心词汇",
         "syllable": "",
-        "index": 237,
+        "index": 235,
         "lesson": "essay-recognize"
       },
       {
@@ -17071,7 +17098,7 @@ window.VOCAB_DATA = {
         "meaning": "创新方法",
         "group": "核心词汇",
         "syllable": "",
-        "index": 238,
+        "index": 236,
         "lesson": "essay-recognize"
       },
       {
@@ -17080,7 +17107,7 @@ window.VOCAB_DATA = {
         "meaning": "扩大内需",
         "group": "核心词汇",
         "syllable": "",
-        "index": 239,
+        "index": 237,
         "lesson": "essay-recognize"
       },
       {
@@ -17089,7 +17116,7 @@ window.VOCAB_DATA = {
         "meaning": "改善教育医疗",
         "group": "核心词汇",
         "syllable": "",
-        "index": 240,
+        "index": 238,
         "lesson": "essay-recognize"
       },
       {
@@ -17098,7 +17125,7 @@ window.VOCAB_DATA = {
         "meaning": "有效缩小贫富差距",
         "group": "核心词汇",
         "syllable": "",
-        "index": 241,
+        "index": 239,
         "lesson": "essay-recognize"
       },
       {
@@ -17107,7 +17134,7 @@ window.VOCAB_DATA = {
         "meaning": "税收减免",
         "group": "核心词汇",
         "syllable": "",
-        "index": 242,
+        "index": 240,
         "lesson": "essay-recognize"
       },
       {
@@ -17116,7 +17143,7 @@ window.VOCAB_DATA = {
         "meaning": "实行节约",
         "group": "核心词汇",
         "syllable": "",
-        "index": 243,
+        "index": 241,
         "lesson": "essay-recognize"
       },
       {
@@ -17125,7 +17152,7 @@ window.VOCAB_DATA = {
         "meaning": "归功于",
         "group": "核心词汇",
         "syllable": "",
-        "index": 244,
+        "index": 242,
         "lesson": "essay-recognize"
       },
       {
@@ -17134,7 +17161,7 @@ window.VOCAB_DATA = {
         "meaning": "市场经济体制",
         "group": "核心词汇",
         "syllable": "",
-        "index": 245,
+        "index": 243,
         "lesson": "essay-recognize"
       },
       {
@@ -17143,7 +17170,7 @@ window.VOCAB_DATA = {
         "meaning": "实现承诺",
         "group": "核心词汇",
         "syllable": "",
-        "index": 246,
+        "index": 244,
         "lesson": "essay-recognize"
       },
       {
@@ -17152,7 +17179,7 @@ window.VOCAB_DATA = {
         "meaning": "跨国公司",
         "group": "核心词汇",
         "syllable": "",
-        "index": 247,
+        "index": 245,
         "lesson": "essay-recognize"
       },
       {
@@ -17161,7 +17188,7 @@ window.VOCAB_DATA = {
         "meaning": "全民脱贫",
         "group": "核心词汇",
         "syllable": "",
-        "index": 248,
+        "index": 246,
         "lesson": "essay-recognize"
       },
       {
@@ -17170,7 +17197,7 @@ window.VOCAB_DATA = {
         "meaning": "私营企业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 249,
+        "index": 247,
         "lesson": "essay-recognize"
       },
       {
@@ -17179,7 +17206,7 @@ window.VOCAB_DATA = {
         "meaning": "普通百姓",
         "group": "核心词汇",
         "syllable": "",
-        "index": 250,
+        "index": 248,
         "lesson": "essay-recognize"
       },
       {
@@ -17188,7 +17215,7 @@ window.VOCAB_DATA = {
         "meaning": "吸引外资",
         "group": "核心词汇",
         "syllable": "",
-        "index": 251,
+        "index": 249,
         "lesson": "essay-recognize"
       },
       {
@@ -17197,7 +17224,7 @@ window.VOCAB_DATA = {
         "meaning": "外出务工人员",
         "group": "核心词汇",
         "syllable": "",
-        "index": 252,
+        "index": 250,
         "lesson": "essay-recognize"
       },
       {
@@ -17206,7 +17233,7 @@ window.VOCAB_DATA = {
         "meaning": "深远的社会经济影响",
         "group": "核心词汇",
         "syllable": "",
-        "index": 253,
+        "index": 251,
         "lesson": "essay-recognize"
       },
       {
@@ -17215,7 +17242,7 @@ window.VOCAB_DATA = {
         "meaning": "休闲公园",
         "group": "核心词汇",
         "syllable": "",
-        "index": 254,
+        "index": 252,
         "lesson": "essay-recognize"
       },
       {
@@ -17224,7 +17251,7 @@ window.VOCAB_DATA = {
         "meaning": "文化中心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 255,
+        "index": 253,
         "lesson": "essay-recognize"
       },
       {
@@ -17233,7 +17260,7 @@ window.VOCAB_DATA = {
         "meaning": "公共服务",
         "group": "核心词汇",
         "syllable": "",
-        "index": 256,
+        "index": 254,
         "lesson": "essay-recognize"
       },
       {
@@ -17242,7 +17269,7 @@ window.VOCAB_DATA = {
         "meaning": "社会保障体系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 257,
+        "index": 255,
         "lesson": "essay-recognize"
       },
       {
@@ -17251,7 +17278,7 @@ window.VOCAB_DATA = {
         "meaning": "某社区",
         "group": "核心词汇",
         "syllable": "",
-        "index": 258,
+        "index": 256,
         "lesson": "essay-recognize"
       },
       {
@@ -17260,7 +17287,7 @@ window.VOCAB_DATA = {
         "meaning": "主要日常休闲活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 259,
+        "index": 257,
         "lesson": "essay-recognize"
       },
       {
@@ -17269,7 +17296,7 @@ window.VOCAB_DATA = {
         "meaning": "独自锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 260,
+        "index": 258,
         "lesson": "essay-recognize"
       },
       {
@@ -17278,7 +17305,7 @@ window.VOCAB_DATA = {
         "meaning": "与朋友一起锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 261,
+        "index": 259,
         "lesson": "essay-recognize"
       },
       {
@@ -17287,7 +17314,7 @@ window.VOCAB_DATA = {
         "meaning": "看电视",
         "group": "核心词汇",
         "syllable": "",
-        "index": 262,
+        "index": 260,
         "lesson": "essay-recognize"
       },
       {
@@ -17296,7 +17323,7 @@ window.VOCAB_DATA = {
         "meaning": "与家人一起锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 263,
+        "index": 261,
         "lesson": "essay-recognize"
       },
       {
@@ -17305,7 +17332,7 @@ window.VOCAB_DATA = {
         "meaning": "散步",
         "group": "核心词汇",
         "syllable": "",
-        "index": 264,
+        "index": 262,
         "lesson": "essay-recognize"
       },
       {
@@ -17314,7 +17341,7 @@ window.VOCAB_DATA = {
         "meaning": "团体活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 265,
+        "index": 263,
         "lesson": "essay-recognize"
       },
       {
@@ -17323,7 +17350,7 @@ window.VOCAB_DATA = {
         "meaning": "养花",
         "group": "核心词汇",
         "syllable": "",
-        "index": 266,
+        "index": 264,
         "lesson": "essay-recognize"
       },
       {
@@ -17332,7 +17359,7 @@ window.VOCAB_DATA = {
         "meaning": "体能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 267,
+        "index": 265,
         "lesson": "essay-recognize"
       },
       {
@@ -17341,7 +17368,7 @@ window.VOCAB_DATA = {
         "meaning": "灵活性",
         "group": "核心词汇",
         "syllable": "",
-        "index": 268,
+        "index": 266,
         "lesson": "essay-recognize"
       },
       {
@@ -17350,7 +17377,7 @@ window.VOCAB_DATA = {
         "meaning": "阅读",
         "group": "核心词汇",
         "syllable": "",
-        "index": 269,
+        "index": 267,
         "lesson": "essay-recognize"
       },
       {
@@ -17359,7 +17386,7 @@ window.VOCAB_DATA = {
         "meaning": "下棋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 270,
+        "index": 268,
         "lesson": "essay-recognize"
       },
       {
@@ -17368,7 +17395,7 @@ window.VOCAB_DATA = {
         "meaning": "身材",
         "group": "核心词汇",
         "syllable": "",
-        "index": 271,
+        "index": 269,
         "lesson": "essay-recognize"
       },
       {
@@ -17377,7 +17404,7 @@ window.VOCAB_DATA = {
         "meaning": "身体状况",
         "group": "核心词汇",
         "syllable": "",
-        "index": 272,
+        "index": 270,
         "lesson": "essay-recognize"
       },
       {
@@ -17386,7 +17413,7 @@ window.VOCAB_DATA = {
         "meaning": "灌输价值观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 273,
+        "index": 271,
         "lesson": "essay-recognize"
       },
       {
@@ -17395,7 +17422,7 @@ window.VOCAB_DATA = {
         "meaning": "低强度活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 274,
+        "index": 272,
         "lesson": "essay-recognize"
       },
       {
@@ -17404,7 +17431,7 @@ window.VOCAB_DATA = {
         "meaning": "团队合作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 275,
+        "index": 273,
         "lesson": "essay-recognize"
       },
       {
@@ -17413,7 +17440,7 @@ window.VOCAB_DATA = {
         "meaning": "日常锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 276,
+        "index": 274,
         "lesson": "essay-recognize"
       },
       {
@@ -17422,7 +17449,7 @@ window.VOCAB_DATA = {
         "meaning": "体育精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 277,
+        "index": 275,
         "lesson": "essay-recognize"
       },
       {
@@ -17431,7 +17458,7 @@ window.VOCAB_DATA = {
         "meaning": "改善身心健康",
         "group": "核心词汇",
         "syllable": "",
-        "index": 278,
+        "index": 276,
         "lesson": "essay-recognize"
       },
       {
@@ -17440,7 +17467,7 @@ window.VOCAB_DATA = {
         "meaning": "培养热情",
         "group": "核心词汇",
         "syllable": "",
-        "index": 279,
+        "index": 277,
         "lesson": "essay-recognize"
       },
       {
@@ -17449,7 +17476,7 @@ window.VOCAB_DATA = {
         "meaning": "改进身体状况",
         "group": "核心词汇",
         "syllable": "",
-        "index": 280,
+        "index": 278,
         "lesson": "essay-recognize"
       },
       {
@@ -17458,7 +17485,7 @@ window.VOCAB_DATA = {
         "meaning": "高质量的生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 281,
+        "index": 279,
         "lesson": "essay-recognize"
       },
       {
@@ -17467,7 +17494,7 @@ window.VOCAB_DATA = {
         "meaning": "恢复晨练",
         "group": "核心词汇",
         "syllable": "",
-        "index": 282,
+        "index": 280,
         "lesson": "essay-recognize"
       },
       {
@@ -17476,7 +17503,7 @@ window.VOCAB_DATA = {
         "meaning": "设施",
         "group": "核心词汇",
         "syllable": "",
-        "index": 283,
+        "index": 281,
         "lesson": "essay-recognize"
       },
       {
@@ -17485,7 +17512,7 @@ window.VOCAB_DATA = {
         "meaning": "幸福",
         "group": "核心词汇",
         "syllable": "",
-        "index": 284,
+        "index": 282,
         "lesson": "essay-recognize"
       },
       {
@@ -17494,7 +17521,7 @@ window.VOCAB_DATA = {
         "meaning": "宿舍区",
         "group": "核心词汇",
         "syllable": "",
-        "index": 285,
+        "index": 283,
         "lesson": "essay-recognize"
       },
       {
@@ -17503,7 +17530,7 @@ window.VOCAB_DATA = {
         "meaning": "生理健康",
         "group": "核心词汇",
         "syllable": "",
-        "index": 286,
+        "index": 284,
         "lesson": "essay-recognize"
       },
       {
@@ -17512,7 +17539,7 @@ window.VOCAB_DATA = {
         "meaning": "慢跑",
         "group": "核心词汇",
         "syllable": "",
-        "index": 287,
+        "index": 285,
         "lesson": "essay-recognize"
       },
       {
@@ -17521,7 +17548,7 @@ window.VOCAB_DATA = {
         "meaning": "打篮球",
         "group": "核心词汇",
         "syllable": "",
-        "index": 288,
+        "index": 286,
         "lesson": "essay-recognize"
       },
       {
@@ -17530,7 +17557,7 @@ window.VOCAB_DATA = {
         "meaning": "心理健康",
         "group": "核心词汇",
         "syllable": "",
-        "index": 289,
+        "index": 287,
         "lesson": "essay-recognize"
       },
       {
@@ -17539,7 +17566,7 @@ window.VOCAB_DATA = {
         "meaning": "踢足球",
         "group": "核心词汇",
         "syllable": "",
-        "index": 290,
+        "index": 288,
         "lesson": "essay-recognize"
       },
       {
@@ -17548,7 +17575,7 @@ window.VOCAB_DATA = {
         "meaning": "进行体育锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 291,
+        "index": 289,
         "lesson": "essay-recognize"
       },
       {
@@ -17557,7 +17584,7 @@ window.VOCAB_DATA = {
         "meaning": "爬山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 292,
+        "index": 290,
         "lesson": "essay-recognize"
       },
       {
@@ -17566,7 +17593,7 @@ window.VOCAB_DATA = {
         "meaning": "均衡的饮食",
         "group": "核心词汇",
         "syllable": "",
-        "index": 293,
+        "index": 291,
         "lesson": "essay-recognize"
       },
       {
@@ -17575,7 +17602,7 @@ window.VOCAB_DATA = {
         "meaning": "骑车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 294,
+        "index": 292,
         "lesson": "essay-recognize"
       },
       {
@@ -17584,7 +17611,7 @@ window.VOCAB_DATA = {
         "meaning": "保持乐观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 295,
+        "index": 293,
         "lesson": "essay-recognize"
       },
       {
@@ -17593,7 +17620,7 @@ window.VOCAB_DATA = {
         "meaning": "滑冰",
         "group": "核心词汇",
         "syllable": "",
-        "index": 296,
+        "index": 294,
         "lesson": "essay-recognize"
       },
       {
@@ -17602,7 +17629,7 @@ window.VOCAB_DATA = {
         "meaning": "节食",
         "group": "核心词汇",
         "syllable": "",
-        "index": 297,
+        "index": 295,
         "lesson": "essay-recognize"
       },
       {
@@ -17611,7 +17638,7 @@ window.VOCAB_DATA = {
         "meaning": "打乒乓球",
         "group": "核心词汇",
         "syllable": "",
-        "index": 298,
+        "index": 296,
         "lesson": "essay-recognize"
       },
       {
@@ -17620,7 +17647,7 @@ window.VOCAB_DATA = {
         "meaning": "减肥",
         "group": "核心词汇",
         "syllable": "",
-        "index": 299,
+        "index": 297,
         "lesson": "essay-recognize"
       },
       {
@@ -17629,7 +17656,7 @@ window.VOCAB_DATA = {
         "meaning": "打网球",
         "group": "核心词汇",
         "syllable": "",
-        "index": 300,
+        "index": 298,
         "lesson": "essay-recognize"
       },
       {
@@ -17638,7 +17665,7 @@ window.VOCAB_DATA = {
         "meaning": "生活习惯",
         "group": "核心词汇",
         "syllable": "",
-        "index": 301,
+        "index": 299,
         "lesson": "essay-recognize"
       },
       {
@@ -17647,7 +17674,7 @@ window.VOCAB_DATA = {
         "meaning": "游泳",
         "group": "核心词汇",
         "syllable": "",
-        "index": 302,
+        "index": 300,
         "lesson": "essay-recognize"
       },
       {
@@ -17656,7 +17683,7 @@ window.VOCAB_DATA = {
         "meaning": "吸烟",
         "group": "核心词汇",
         "syllable": "",
-        "index": 303,
+        "index": 301,
         "lesson": "essay-recognize"
       },
       {
@@ -17665,7 +17692,7 @@ window.VOCAB_DATA = {
         "meaning": "发挥重要作用",
         "group": "核心词汇",
         "syllable": "",
-        "index": 304,
+        "index": 302,
         "lesson": "essay-recognize"
       },
       {
@@ -17674,7 +17701,7 @@ window.VOCAB_DATA = {
         "meaning": "传染病",
         "group": "核心词汇",
         "syllable": "",
-        "index": 305,
+        "index": 303,
         "lesson": "essay-recognize"
       },
       {
@@ -17683,7 +17710,7 @@ window.VOCAB_DATA = {
         "meaning": "健康素养",
         "group": "核心词汇",
         "syllable": "",
-        "index": 306,
+        "index": 304,
         "lesson": "essay-recognize"
       },
       {
@@ -17692,7 +17719,7 @@ window.VOCAB_DATA = {
         "meaning": "保持整洁",
         "group": "核心词汇",
         "syllable": "",
-        "index": 307,
+        "index": 305,
         "lesson": "essay-recognize"
       },
       {
@@ -17701,7 +17728,7 @@ window.VOCAB_DATA = {
         "meaning": "有机食品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 308,
+        "index": 306,
         "lesson": "essay-recognize"
       },
       {
@@ -17710,7 +17737,7 @@ window.VOCAB_DATA = {
         "meaning": "糟糕的环境",
         "group": "核心词汇",
         "syllable": "",
-        "index": 309,
+        "index": 307,
         "lesson": "essay-recognize"
       },
       {
@@ -17719,7 +17746,7 @@ window.VOCAB_DATA = {
         "meaning": "瓶装矿泉水",
         "group": "核心词汇",
         "syllable": "",
-        "index": 310,
+        "index": 308,
         "lesson": "essay-recognize"
       },
       {
@@ -17728,7 +17755,7 @@ window.VOCAB_DATA = {
         "meaning": "健康问题",
         "group": "核心词汇",
         "syllable": "",
-        "index": 311,
+        "index": 309,
         "lesson": "essay-recognize"
       },
       {
@@ -17737,7 +17764,7 @@ window.VOCAB_DATA = {
         "meaning": "健身俱乐部",
         "group": "核心词汇",
         "syllable": "",
-        "index": 312,
+        "index": 310,
         "lesson": "essay-recognize"
       },
       {
@@ -17746,7 +17773,7 @@ window.VOCAB_DATA = {
         "meaning": "亚健康",
         "group": "核心词汇",
         "syllable": "",
-        "index": 313,
+        "index": 311,
         "lesson": "essay-recognize"
       },
       {
@@ -17755,7 +17782,7 @@ window.VOCAB_DATA = {
         "meaning": "身心联系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 314,
+        "index": 312,
         "lesson": "essay-recognize"
       },
       {
@@ -17764,7 +17791,7 @@ window.VOCAB_DATA = {
         "meaning": "公共卫生",
         "group": "核心词汇",
         "syllable": "",
-        "index": 315,
+        "index": 313,
         "lesson": "essay-recognize"
       },
       {
@@ -17773,7 +17800,7 @@ window.VOCAB_DATA = {
         "meaning": "心理状况",
         "group": "核心词汇",
         "syllable": "",
-        "index": 316,
+        "index": 314,
         "lesson": "essay-recognize"
       },
       {
@@ -17782,7 +17809,7 @@ window.VOCAB_DATA = {
         "meaning": "心态",
         "group": "核心词汇",
         "syllable": "",
-        "index": 317,
+        "index": 315,
         "lesson": "essay-recognize"
       },
       {
@@ -17791,7 +17818,7 @@ window.VOCAB_DATA = {
         "meaning": "饮酒",
         "group": "核心词汇",
         "syllable": "",
-        "index": 318,
+        "index": 316,
         "lesson": "essay-recognize"
       },
       {
@@ -17800,7 +17827,7 @@ window.VOCAB_DATA = {
         "meaning": "垃圾食品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 319,
+        "index": 317,
         "lesson": "essay-recognize"
       },
       {
@@ -17809,7 +17836,7 @@ window.VOCAB_DATA = {
         "meaning": "熬夜",
         "group": "核心词汇",
         "syllable": "",
-        "index": 320,
+        "index": 318,
         "lesson": "essay-recognize"
       },
       {
@@ -17818,7 +17845,7 @@ window.VOCAB_DATA = {
         "meaning": "疾病",
         "group": "核心词汇",
         "syllable": "",
-        "index": 321,
+        "index": 319,
         "lesson": "essay-recognize"
       },
       {
@@ -17827,7 +17854,7 @@ window.VOCAB_DATA = {
         "meaning": "饮食",
         "group": "核心词汇",
         "syllable": "",
-        "index": 322,
+        "index": 320,
         "lesson": "essay-recognize"
       },
       {
@@ -17836,7 +17863,7 @@ window.VOCAB_DATA = {
         "meaning": "癌症",
         "group": "核心词汇",
         "syllable": "",
-        "index": 323,
+        "index": 321,
         "lesson": "essay-recognize"
       },
       {
@@ -17845,7 +17872,7 @@ window.VOCAB_DATA = {
         "meaning": "锻炼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 324,
+        "index": 322,
         "lesson": "essay-recognize"
       },
       {
@@ -17854,7 +17881,7 @@ window.VOCAB_DATA = {
         "meaning": "提供医疗服务",
         "group": "核心词汇",
         "syllable": "",
-        "index": 325,
+        "index": 323,
         "lesson": "essay-recognize"
       },
       {
@@ -17863,7 +17890,7 @@ window.VOCAB_DATA = {
         "meaning": "牺牲健康",
         "group": "核心词汇",
         "syllable": "",
-        "index": 326,
+        "index": 324,
         "lesson": "essay-recognize"
       },
       {
@@ -17872,7 +17899,7 @@ window.VOCAB_DATA = {
         "meaning": "看法",
         "group": "核心词汇",
         "syllable": "",
-        "index": 327,
+        "index": 325,
         "lesson": "essay-recognize"
       },
       {
@@ -17881,7 +17908,7 @@ window.VOCAB_DATA = {
         "meaning": "短期经济利益",
         "group": "核心词汇",
         "syllable": "",
-        "index": 328,
+        "index": 326,
         "lesson": "essay-recognize"
       },
       {
@@ -17890,7 +17917,7 @@ window.VOCAB_DATA = {
         "meaning": "满足好奇心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 329,
+        "index": 327,
         "lesson": "essay-recognize"
       },
       {
@@ -17899,7 +17926,7 @@ window.VOCAB_DATA = {
         "meaning": "全面禁烟",
         "group": "核心词汇",
         "syllable": "",
-        "index": 330,
+        "index": 328,
         "lesson": "essay-recognize"
       },
       {
@@ -17908,7 +17935,7 @@ window.VOCAB_DATA = {
         "meaning": "促进观察力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 331,
+        "index": 329,
         "lesson": "essay-recognize"
       },
       {
@@ -17917,7 +17944,7 @@ window.VOCAB_DATA = {
         "meaning": "慢性病",
         "group": "核心词汇",
         "syllable": "",
-        "index": 332,
+        "index": 330,
         "lesson": "essay-recognize"
       },
       {
@@ -17926,7 +17953,7 @@ window.VOCAB_DATA = {
         "meaning": "医疗体制改革",
         "group": "核心词汇",
         "syllable": "",
-        "index": 333,
+        "index": 331,
         "lesson": "essay-recognize"
       },
       {
@@ -17935,7 +17962,7 @@ window.VOCAB_DATA = {
         "meaning": "强身健体",
         "group": "核心词汇",
         "syllable": "",
-        "index": 334,
+        "index": 332,
         "lesson": "essay-recognize"
       },
       {
@@ -17944,7 +17971,7 @@ window.VOCAB_DATA = {
         "meaning": "某项",
         "group": "核心词汇",
         "syllable": "",
-        "index": 335,
+        "index": 333,
         "lesson": "essay-recognize"
       },
       {
@@ -17953,7 +17980,7 @@ window.VOCAB_DATA = {
         "meaning": "增进亲子关系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 336,
+        "index": 334,
         "lesson": "essay-recognize"
       },
       {
@@ -17962,7 +17989,7 @@ window.VOCAB_DATA = {
         "meaning": "户外活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 337,
+        "index": 335,
         "lesson": "essay-recognize"
       },
       {
@@ -17971,7 +17998,7 @@ window.VOCAB_DATA = {
         "meaning": "室内活动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 338,
+        "index": 336,
         "lesson": "essay-recognize"
       },
       {
@@ -17980,7 +18007,7 @@ window.VOCAB_DATA = {
         "meaning": "老年人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 339,
+        "index": 337,
         "lesson": "essay-recognize"
       },
       {
@@ -17989,7 +18016,7 @@ window.VOCAB_DATA = {
         "meaning": "儿子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 340,
+        "index": 338,
         "lesson": "essay-recognize"
       },
       {
@@ -17998,7 +18025,7 @@ window.VOCAB_DATA = {
         "meaning": "年迈的父母",
         "group": "核心词汇",
         "syllable": "",
-        "index": 341,
+        "index": 339,
         "lesson": "essay-recognize"
       },
       {
@@ -18007,7 +18034,7 @@ window.VOCAB_DATA = {
         "meaning": "提要求",
         "group": "核心词汇",
         "syllable": "",
-        "index": 342,
+        "index": 340,
         "lesson": "essay-recognize"
       },
       {
@@ -18016,7 +18043,7 @@ window.VOCAB_DATA = {
         "meaning": "闻名于世",
         "group": "核心词汇",
         "syllable": "",
-        "index": 343,
+        "index": 341,
         "lesson": "essay-recognize"
       },
       {
@@ -18025,7 +18052,7 @@ window.VOCAB_DATA = {
         "meaning": "做榜样",
         "group": "核心词汇",
         "syllable": "",
-        "index": 344,
+        "index": 342,
         "lesson": "essay-recognize"
       },
       {
@@ -18034,7 +18061,7 @@ window.VOCAB_DATA = {
         "meaning": "虐待",
         "group": "核心词汇",
         "syllable": "",
-        "index": 345,
+        "index": 343,
         "lesson": "essay-recognize"
       },
       {
@@ -18043,7 +18070,7 @@ window.VOCAB_DATA = {
         "meaning": "以身作则",
         "group": "核心词汇",
         "syllable": "",
-        "index": 346,
+        "index": 344,
         "lesson": "essay-recognize"
       },
       {
@@ -18052,7 +18079,7 @@ window.VOCAB_DATA = {
         "meaning": "良心的谴责",
         "group": "核心词汇",
         "syllable": "",
-        "index": 347,
+        "index": 345,
         "lesson": "essay-recognize"
       },
       {
@@ -18061,7 +18088,7 @@ window.VOCAB_DATA = {
         "meaning": "祖先",
         "group": "核心词汇",
         "syllable": "",
-        "index": 348,
+        "index": 346,
         "lesson": "essay-recognize"
       },
       {
@@ -18070,7 +18097,7 @@ window.VOCAB_DATA = {
         "meaning": "养育子女",
         "group": "核心词汇",
         "syllable": "",
-        "index": 349,
+        "index": 347,
         "lesson": "essay-recognize"
       },
       {
@@ -18079,7 +18106,7 @@ window.VOCAB_DATA = {
         "meaning": "后代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 350,
+        "index": 348,
         "lesson": "essay-recognize"
       },
       {
@@ -18088,7 +18115,7 @@ window.VOCAB_DATA = {
         "meaning": "尊老爱幼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 351,
+        "index": 349,
         "lesson": "essay-recognize"
       },
       {
@@ -18097,7 +18124,7 @@ window.VOCAB_DATA = {
         "meaning": "传承",
         "group": "核心词汇",
         "syllable": "",
-        "index": 352,
+        "index": 350,
         "lesson": "essay-recognize"
       },
       {
@@ -18106,7 +18133,7 @@ window.VOCAB_DATA = {
         "meaning": "溺爱",
         "group": "核心词汇",
         "syllable": "",
-        "index": 353,
+        "index": 351,
         "lesson": "essay-recognize"
       },
       {
@@ -18115,7 +18142,7 @@ window.VOCAB_DATA = {
         "meaning": "传统美德",
         "group": "核心词汇",
         "syllable": "",
-        "index": 354,
+        "index": 352,
         "lesson": "essay-recognize"
       },
       {
@@ -18124,7 +18151,7 @@ window.VOCAB_DATA = {
         "meaning": "优越的物质条件",
         "group": "核心词汇",
         "syllable": "",
-        "index": 355,
+        "index": 353,
         "lesson": "essay-recognize"
       },
       {
@@ -18133,7 +18160,7 @@ window.VOCAB_DATA = {
         "meaning": "相携",
         "group": "核心词汇",
         "syllable": "",
-        "index": 356,
+        "index": 354,
         "lesson": "essay-recognize"
       },
       {
@@ -18142,7 +18169,7 @@ window.VOCAB_DATA = {
         "meaning": "残酷的现实",
         "group": "核心词汇",
         "syllable": "",
-        "index": 357,
+        "index": 355,
         "lesson": "essay-recognize"
       },
       {
@@ -18151,7 +18178,7 @@ window.VOCAB_DATA = {
         "meaning": "奉行孝道",
         "group": "核心词汇",
         "syllable": "",
-        "index": 358,
+        "index": 356,
         "lesson": "essay-recognize"
       },
       {
@@ -18160,7 +18187,7 @@ window.VOCAB_DATA = {
         "meaning": "代沟",
         "group": "核心词汇",
         "syllable": "",
-        "index": 359,
+        "index": 357,
         "lesson": "essay-recognize"
       },
       {
@@ -18169,7 +18196,7 @@ window.VOCAB_DATA = {
         "meaning": "父母",
         "group": "核心词汇",
         "syllable": "",
-        "index": 360,
+        "index": 358,
         "lesson": "essay-recognize"
       },
       {
@@ -18178,7 +18205,7 @@ window.VOCAB_DATA = {
         "meaning": "弥合差距",
         "group": "核心词汇",
         "syllable": "",
-        "index": 361,
+        "index": 359,
         "lesson": "essay-recognize"
       },
       {
@@ -18187,7 +18214,7 @@ window.VOCAB_DATA = {
         "meaning": "祖父母",
         "group": "核心词汇",
         "syllable": "",
-        "index": 362,
+        "index": 360,
         "lesson": "essay-recognize"
       },
       {
@@ -18196,7 +18223,7 @@ window.VOCAB_DATA = {
         "meaning": "相互理解",
         "group": "核心词汇",
         "syllable": "",
-        "index": 363,
+        "index": 361,
         "lesson": "essay-recognize"
       },
       {
@@ -18205,7 +18232,7 @@ window.VOCAB_DATA = {
         "meaning": "过去几代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 364,
+        "index": 362,
         "lesson": "essay-recognize"
       },
       {
@@ -18214,7 +18241,7 @@ window.VOCAB_DATA = {
         "meaning": "误解",
         "group": "核心词汇",
         "syllable": "",
-        "index": 365,
+        "index": 363,
         "lesson": "essay-recognize"
       },
       {
@@ -18223,7 +18250,7 @@ window.VOCAB_DATA = {
         "meaning": "赡养",
         "group": "核心词汇",
         "syllable": "",
-        "index": 366,
+        "index": 364,
         "lesson": "essay-recognize"
       },
       {
@@ -18232,7 +18259,7 @@ window.VOCAB_DATA = {
         "meaning": "现状",
         "group": "核心词汇",
         "syllable": "",
-        "index": 367,
+        "index": 365,
         "lesson": "essay-recognize"
       },
       {
@@ -18241,7 +18268,7 @@ window.VOCAB_DATA = {
         "meaning": "照顾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 368,
+        "index": 366,
         "lesson": "essay-recognize"
       },
       {
@@ -18250,7 +18277,7 @@ window.VOCAB_DATA = {
         "meaning": "缺乏沟通",
         "group": "核心词汇",
         "syllable": "",
-        "index": 369,
+        "index": 367,
         "lesson": "essay-recognize"
       },
       {
@@ -18259,7 +18286,7 @@ window.VOCAB_DATA = {
         "meaning": "长大的孩子们",
         "group": "核心词汇",
         "syllable": "",
-        "index": 370,
+        "index": 368,
         "lesson": "essay-recognize"
       },
       {
@@ -18268,7 +18295,7 @@ window.VOCAB_DATA = {
         "meaning": "帮助乡村小学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 371,
+        "index": 369,
         "lesson": "essay-recognize"
       },
       {
@@ -18277,7 +18304,7 @@ window.VOCAB_DATA = {
         "meaning": "责任感",
         "group": "核心词汇",
         "syllable": "",
-        "index": 372,
+        "index": 370,
         "lesson": "essay-recognize"
       },
       {
@@ -18286,7 +18313,7 @@ window.VOCAB_DATA = {
         "meaning": "慈善义卖",
         "group": "核心词汇",
         "syllable": "",
-        "index": 373,
+        "index": 371,
         "lesson": "essay-recognize"
       },
       {
@@ -18295,7 +18322,7 @@ window.VOCAB_DATA = {
         "meaning": "逃避责任",
         "group": "核心词汇",
         "syllable": "",
-        "index": 374,
+        "index": 372,
         "lesson": "essay-recognize"
       },
       {
@@ -18304,7 +18331,7 @@ window.VOCAB_DATA = {
         "meaning": "希望工程",
         "group": "核心词汇",
         "syllable": "",
-        "index": 375,
+        "index": 373,
         "lesson": "essay-recognize"
       },
       {
@@ -18313,7 +18340,7 @@ window.VOCAB_DATA = {
         "meaning": "捐款",
         "group": "核心词汇",
         "syllable": "",
-        "index": 376,
+        "index": 374,
         "lesson": "essay-recognize"
       },
       {
@@ -18322,7 +18349,7 @@ window.VOCAB_DATA = {
         "meaning": "奉献",
         "group": "核心词汇",
         "syllable": "",
-        "index": 377,
+        "index": 375,
         "lesson": "essay-recognize"
       },
       {
@@ -18331,7 +18358,7 @@ window.VOCAB_DATA = {
         "meaning": "贫困乡村地区",
         "group": "核心词汇",
         "syllable": "",
-        "index": 378,
+        "index": 376,
         "lesson": "essay-recognize"
       },
       {
@@ -18340,7 +18367,7 @@ window.VOCAB_DATA = {
         "meaning": "无私奉献",
         "group": "核心词汇",
         "syllable": "",
-        "index": 379,
+        "index": 377,
         "lesson": "essay-recognize"
       },
       {
@@ -18349,7 +18376,7 @@ window.VOCAB_DATA = {
         "meaning": "入学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 380,
+        "index": 378,
         "lesson": "essay-recognize"
       },
       {
@@ -18358,7 +18385,7 @@ window.VOCAB_DATA = {
         "meaning": "管理部门",
         "group": "核心词汇",
         "syllable": "",
-        "index": 381,
+        "index": 379,
         "lesson": "essay-recognize"
       },
       {
@@ -18367,7 +18394,7 @@ window.VOCAB_DATA = {
         "meaning": "辍学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 382,
+        "index": 380,
         "lesson": "essay-recognize"
       },
       {
@@ -18376,7 +18403,7 @@ window.VOCAB_DATA = {
         "meaning": "监管部门",
         "group": "核心词汇",
         "syllable": "",
-        "index": 383,
+        "index": 381,
         "lesson": "essay-recognize"
       },
       {
@@ -18385,7 +18412,7 @@ window.VOCAB_DATA = {
         "meaning": "完成学业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 384,
+        "index": 382,
         "lesson": "essay-recognize"
       },
       {
@@ -18394,7 +18421,7 @@ window.VOCAB_DATA = {
         "meaning": "商家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 385,
+        "index": 383,
         "lesson": "essay-recognize"
       },
       {
@@ -18403,7 +18430,7 @@ window.VOCAB_DATA = {
         "meaning": "公德",
         "group": "核心词汇",
         "syllable": "",
-        "index": 386,
+        "index": 384,
         "lesson": "essay-recognize"
       },
       {
@@ -18412,7 +18439,7 @@ window.VOCAB_DATA = {
         "meaning": "有关当局",
         "group": "核心词汇",
         "syllable": "",
-        "index": 387,
+        "index": 385,
         "lesson": "essay-recognize"
       },
       {
@@ -18421,7 +18448,7 @@ window.VOCAB_DATA = {
         "meaning": "责任",
         "group": "核心词汇",
         "syllable": "",
-        "index": 388,
+        "index": 386,
         "lesson": "essay-recognize"
       },
       {
@@ -18430,7 +18457,7 @@ window.VOCAB_DATA = {
         "meaning": "推卸责任",
         "group": "核心词汇",
         "syllable": "",
-        "index": 389,
+        "index": 387,
         "lesson": "essay-recognize"
       },
       {
@@ -18439,7 +18466,7 @@ window.VOCAB_DATA = {
         "meaning": "消费者权益",
         "group": "核心词汇",
         "syllable": "",
-        "index": 390,
+        "index": 388,
         "lesson": "essay-recognize"
       },
       {
@@ -18448,7 +18475,7 @@ window.VOCAB_DATA = {
         "meaning": "随地吐痰",
         "group": "核心词汇",
         "syllable": "",
-        "index": 391,
+        "index": 389,
         "lesson": "essay-recognize"
       },
       {
@@ -18457,7 +18484,7 @@ window.VOCAB_DATA = {
         "meaning": "公正有效地履行职责",
         "group": "核心词汇",
         "syllable": "",
-        "index": 392,
+        "index": 390,
         "lesson": "essay-recognize"
       },
       {
@@ -18466,7 +18493,7 @@ window.VOCAB_DATA = {
         "meaning": "大声喧哗",
         "group": "核心词汇",
         "syllable": "",
-        "index": 393,
+        "index": 391,
         "lesson": "essay-recognize"
       },
       {
@@ -18475,7 +18502,7 @@ window.VOCAB_DATA = {
         "meaning": "空洞承诺",
         "group": "核心词汇",
         "syllable": "",
-        "index": 394,
+        "index": 392,
         "lesson": "essay-recognize"
       },
       {
@@ -18484,7 +18511,7 @@ window.VOCAB_DATA = {
         "meaning": "提供礼貌热情的服务",
         "group": "核心词汇",
         "syllable": "",
-        "index": 395,
+        "index": 393,
         "lesson": "essay-recognize"
       },
       {
@@ -18493,7 +18520,7 @@ window.VOCAB_DATA = {
         "meaning": "虚假承诺",
         "group": "核心词汇",
         "syllable": "",
-        "index": 396,
+        "index": 394,
         "lesson": "essay-recognize"
       },
       {
@@ -18502,7 +18529,7 @@ window.VOCAB_DATA = {
         "meaning": "伪劣产品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 397,
+        "index": 395,
         "lesson": "essay-recognize"
       },
       {
@@ -18511,7 +18538,7 @@ window.VOCAB_DATA = {
         "meaning": "信任危机",
         "group": "核心词汇",
         "syllable": "",
-        "index": 398,
+        "index": 396,
         "lesson": "essay-recognize"
       },
       {
@@ -18520,7 +18547,7 @@ window.VOCAB_DATA = {
         "meaning": "学术腐败",
         "group": "核心词汇",
         "syllable": "",
-        "index": 399,
+        "index": 397,
         "lesson": "essay-recognize"
       },
       {
@@ -18529,7 +18556,7 @@ window.VOCAB_DATA = {
         "meaning": "公德堕落",
         "group": "核心词汇",
         "syllable": "",
-        "index": 400,
+        "index": 398,
         "lesson": "essay-recognize"
       },
       {
@@ -18538,7 +18565,7 @@ window.VOCAB_DATA = {
         "meaning": "剽窃抄袭",
         "group": "核心词汇",
         "syllable": "",
-        "index": 401,
+        "index": 399,
         "lesson": "essay-recognize"
       },
       {
@@ -18547,7 +18574,7 @@ window.VOCAB_DATA = {
         "meaning": "道德缺失",
         "group": "核心词汇",
         "syllable": "",
-        "index": 402,
+        "index": 400,
         "lesson": "essay-recognize"
       },
       {
@@ -18556,7 +18583,7 @@ window.VOCAB_DATA = {
         "meaning": "食品安全",
         "group": "核心词汇",
         "syllable": "",
-        "index": 403,
+        "index": 401,
         "lesson": "essay-recognize"
       },
       {
@@ -18565,7 +18592,7 @@ window.VOCAB_DATA = {
         "meaning": "不道德行为",
         "group": "核心词汇",
         "syllable": "",
-        "index": 404,
+        "index": 402,
         "lesson": "essay-recognize"
       },
       {
@@ -18574,7 +18601,7 @@ window.VOCAB_DATA = {
         "meaning": "工程质量",
         "group": "核心词汇",
         "syllable": "",
-        "index": 405,
+        "index": 403,
         "lesson": "essay-recognize"
       },
       {
@@ -18583,7 +18610,7 @@ window.VOCAB_DATA = {
         "meaning": "中国红十字会",
         "group": "核心词汇",
         "syllable": "",
-        "index": 406,
+        "index": 404,
         "lesson": "essay-recognize"
       },
       {
@@ -18592,7 +18619,7 @@ window.VOCAB_DATA = {
         "meaning": "食品添加剂",
         "group": "核心词汇",
         "syllable": "",
-        "index": 407,
+        "index": 405,
         "lesson": "essay-recognize"
       },
       {
@@ -18601,7 +18628,7 @@ window.VOCAB_DATA = {
         "meaning": "不公平竞争",
         "group": "核心词汇",
         "syllable": "",
-        "index": 408,
+        "index": 406,
         "lesson": "essay-recognize"
       },
       {
@@ -18610,7 +18637,7 @@ window.VOCAB_DATA = {
         "meaning": "城市交通",
         "group": "核心词汇",
         "syllable": "",
-        "index": 409,
+        "index": 407,
         "lesson": "essay-recognize"
       },
       {
@@ -18619,7 +18646,7 @@ window.VOCAB_DATA = {
         "meaning": "公交专用车道",
         "group": "核心词汇",
         "syllable": "",
-        "index": 410,
+        "index": 408,
         "lesson": "essay-recognize"
       },
       {
@@ -18628,7 +18655,7 @@ window.VOCAB_DATA = {
         "meaning": "交通拥堵",
         "group": "核心词汇",
         "syllable": "",
-        "index": 411,
+        "index": 409,
         "lesson": "essay-recognize"
       },
       {
@@ -18637,7 +18664,7 @@ window.VOCAB_DATA = {
         "meaning": "公共交通网络",
         "group": "核心词汇",
         "syllable": "",
-        "index": 412,
+        "index": 410,
         "lesson": "essay-recognize"
       },
       {
@@ -18646,7 +18673,7 @@ window.VOCAB_DATA = {
         "meaning": "交通高峰期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 413,
+        "index": 411,
         "lesson": "essay-recognize"
       },
       {
@@ -18655,7 +18682,7 @@ window.VOCAB_DATA = {
         "meaning": "限制使用私家车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 414,
+        "index": 412,
         "lesson": "essay-recognize"
       },
       {
@@ -18664,7 +18691,7 @@ window.VOCAB_DATA = {
         "meaning": "早晚高峰",
         "group": "核心词汇",
         "syllable": "",
-        "index": 415,
+        "index": 413,
         "lesson": "essay-recognize"
       },
       {
@@ -18673,7 +18700,7 @@ window.VOCAB_DATA = {
         "meaning": "无车日",
         "group": "核心词汇",
         "syllable": "",
-        "index": 416,
+        "index": 414,
         "lesson": "essay-recognize"
       },
       {
@@ -18682,7 +18709,7 @@ window.VOCAB_DATA = {
         "meaning": "交通管制",
         "group": "核心词汇",
         "syllable": "",
-        "index": 417,
+        "index": 415,
         "lesson": "essay-recognize"
       },
       {
@@ -18691,7 +18718,7 @@ window.VOCAB_DATA = {
         "meaning": "交通事故",
         "group": "核心词汇",
         "syllable": "",
-        "index": 418,
+        "index": 416,
         "lesson": "essay-recognize"
       },
       {
@@ -18700,7 +18727,7 @@ window.VOCAB_DATA = {
         "meaning": "尾号限行",
         "group": "核心词汇",
         "syllable": "",
-        "index": 419,
+        "index": 417,
         "lesson": "essay-recognize"
       },
       {
@@ -18709,7 +18736,7 @@ window.VOCAB_DATA = {
         "meaning": "醉驾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 420,
+        "index": 418,
         "lesson": "essay-recognize"
       },
       {
@@ -18718,7 +18745,7 @@ window.VOCAB_DATA = {
         "meaning": "酒后驾车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 421,
+        "index": 419,
         "lesson": "essay-recognize"
       },
       {
@@ -18727,7 +18754,7 @@ window.VOCAB_DATA = {
         "meaning": "(机动车)单双号限行",
         "group": "核心词汇",
         "syllable": "",
-        "index": 422,
+        "index": 420,
         "lesson": "essay-recognize"
       },
       {
@@ -18736,7 +18763,7 @@ window.VOCAB_DATA = {
         "meaning": "司机",
         "group": "核心词汇",
         "syllable": "",
-        "index": 423,
+        "index": 421,
         "lesson": "essay-recognize"
       },
       {
@@ -18745,7 +18772,7 @@ window.VOCAB_DATA = {
         "meaning": "发展公共交通",
         "group": "核心词汇",
         "syllable": "",
-        "index": 424,
+        "index": 422,
         "lesson": "essay-recognize"
       },
       {
@@ -18754,7 +18781,7 @@ window.VOCAB_DATA = {
         "meaning": "行人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 425,
+        "index": 423,
         "lesson": "essay-recognize"
       },
       {
@@ -18763,7 +18790,7 @@ window.VOCAB_DATA = {
         "meaning": "中国传统文化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 426,
+        "index": 424,
         "lesson": "essay-recognize"
       },
       {
@@ -18772,7 +18799,7 @@ window.VOCAB_DATA = {
         "meaning": "智",
         "group": "核心词汇",
         "syllable": "",
-        "index": 427,
+        "index": 425,
         "lesson": "essay-recognize"
       },
       {
@@ -18781,7 +18808,7 @@ window.VOCAB_DATA = {
         "meaning": "民族文化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 428,
+        "index": 426,
         "lesson": "essay-recognize"
       },
       {
@@ -18790,7 +18817,7 @@ window.VOCAB_DATA = {
         "meaning": "信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 429,
+        "index": 427,
         "lesson": "essay-recognize"
       },
       {
@@ -18799,7 +18826,7 @@ window.VOCAB_DATA = {
         "meaning": "文化交流",
         "group": "核心词汇",
         "syllable": "",
-        "index": 430,
+        "index": 428,
         "lesson": "essay-recognize"
       },
       {
@@ -18808,7 +18835,7 @@ window.VOCAB_DATA = {
         "meaning": "道",
         "group": "核心词汇",
         "syllable": "",
-        "index": 431,
+        "index": 429,
         "lesson": "essay-recognize"
       },
       {
@@ -18817,7 +18844,7 @@ window.VOCAB_DATA = {
         "meaning": "文化融合",
         "group": "核心词汇",
         "syllable": "",
-        "index": 432,
+        "index": 430,
         "lesson": "essay-recognize"
       },
       {
@@ -18826,7 +18853,7 @@ window.VOCAB_DATA = {
         "meaning": "德",
         "group": "核心词汇",
         "syllable": "",
-        "index": 433,
+        "index": 431,
         "lesson": "essay-recognize"
       },
       {
@@ -18835,7 +18862,7 @@ window.VOCAB_DATA = {
         "meaning": "儒家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 434,
+        "index": 432,
         "lesson": "essay-recognize"
       },
       {
@@ -18844,7 +18871,7 @@ window.VOCAB_DATA = {
         "meaning": "自然",
         "group": "核心词汇",
         "syllable": "",
-        "index": 435,
+        "index": 433,
         "lesson": "essay-recognize"
       },
       {
@@ -18853,7 +18880,7 @@ window.VOCAB_DATA = {
         "meaning": "佛家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 436,
+        "index": 434,
         "lesson": "essay-recognize"
       },
       {
@@ -18862,7 +18889,7 @@ window.VOCAB_DATA = {
         "meaning": "无为",
         "group": "核心词汇",
         "syllable": "",
-        "index": 437,
+        "index": 435,
         "lesson": "essay-recognize"
       },
       {
@@ -18871,7 +18898,7 @@ window.VOCAB_DATA = {
         "meaning": "道家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 438,
+        "index": 436,
         "lesson": "essay-recognize"
       },
       {
@@ -18880,7 +18907,7 @@ window.VOCAB_DATA = {
         "meaning": "老子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 439,
+        "index": 437,
         "lesson": "essay-recognize"
       },
       {
@@ -18889,7 +18916,7 @@ window.VOCAB_DATA = {
         "meaning": "墨家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 440,
+        "index": 438,
         "lesson": "essay-recognize"
       },
       {
@@ -18898,7 +18925,7 @@ window.VOCAB_DATA = {
         "meaning": "《道德经》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 441,
+        "index": 439,
         "lesson": "essay-recognize"
       },
       {
@@ -18907,7 +18934,7 @@ window.VOCAB_DATA = {
         "meaning": "天",
         "group": "核心词汇",
         "syllable": "",
-        "index": 442,
+        "index": 440,
         "lesson": "essay-recognize"
       },
       {
@@ -18916,7 +18943,7 @@ window.VOCAB_DATA = {
         "meaning": "庄子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 443,
+        "index": 441,
         "lesson": "essay-recognize"
       },
       {
@@ -18925,7 +18952,7 @@ window.VOCAB_DATA = {
         "meaning": "人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 444,
+        "index": 442,
         "lesson": "essay-recognize"
       },
       {
@@ -18934,7 +18961,7 @@ window.VOCAB_DATA = {
         "meaning": "孔子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 445,
+        "index": 443,
         "lesson": "essay-recognize"
       },
       {
@@ -18943,7 +18970,7 @@ window.VOCAB_DATA = {
         "meaning": "仁",
         "group": "核心词汇",
         "syllable": "",
-        "index": 446,
+        "index": 444,
         "lesson": "essay-recognize"
       },
       {
@@ -18952,7 +18979,7 @@ window.VOCAB_DATA = {
         "meaning": "《论语》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 447,
+        "index": 445,
         "lesson": "essay-recognize"
       },
       {
@@ -18961,7 +18988,7 @@ window.VOCAB_DATA = {
         "meaning": "义",
         "group": "核心词汇",
         "syllable": "",
-        "index": 448,
+        "index": 446,
         "lesson": "essay-recognize"
       },
       {
@@ -18970,7 +18997,7 @@ window.VOCAB_DATA = {
         "meaning": "《易经》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 449,
+        "index": 447,
         "lesson": "essay-recognize"
       },
       {
@@ -18979,7 +19006,7 @@ window.VOCAB_DATA = {
         "meaning": "礼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 450,
+        "index": 448,
         "lesson": "essay-recognize"
       },
       {
@@ -18988,7 +19015,7 @@ window.VOCAB_DATA = {
         "meaning": "孟子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 451,
+        "index": 449,
         "lesson": "essay-recognize"
       },
       {
@@ -18997,7 +19024,7 @@ window.VOCAB_DATA = {
         "meaning": "墨子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 452,
+        "index": 450,
         "lesson": "essay-recognize"
       },
       {
@@ -19006,7 +19033,7 @@ window.VOCAB_DATA = {
         "meaning": "春秋时期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 453,
+        "index": 451,
         "lesson": "essay-recognize"
       },
       {
@@ -19015,7 +19042,7 @@ window.VOCAB_DATA = {
         "meaning": "孙子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 454,
+        "index": 452,
         "lesson": "essay-recognize"
       },
       {
@@ -19024,7 +19051,7 @@ window.VOCAB_DATA = {
         "meaning": "战国时期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 455,
+        "index": 453,
         "lesson": "essay-recognize"
       },
       {
@@ -19033,7 +19060,7 @@ window.VOCAB_DATA = {
         "meaning": "《孙子兵法》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 456,
+        "index": 454,
         "lesson": "essay-recognize"
       },
       {
@@ -19042,7 +19069,7 @@ window.VOCAB_DATA = {
         "meaning": "故宫",
         "group": "核心词汇",
         "syllable": "",
-        "index": 457,
+        "index": 455,
         "lesson": "essay-recognize"
       },
       {
@@ -19051,7 +19078,7 @@ window.VOCAB_DATA = {
         "meaning": "汉字",
         "group": "核心词汇",
         "syllable": "",
-        "index": 458,
+        "index": 456,
         "lesson": "essay-recognize"
       },
       {
@@ -19060,7 +19087,7 @@ window.VOCAB_DATA = {
         "meaning": "长城",
         "group": "核心词汇",
         "syllable": "",
-        "index": 459,
+        "index": 457,
         "lesson": "essay-recognize"
       },
       {
@@ -19069,7 +19096,7 @@ window.VOCAB_DATA = {
         "meaning": "京剧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 460,
+        "index": 458,
         "lesson": "essay-recognize"
       },
       {
@@ -19078,7 +19105,7 @@ window.VOCAB_DATA = {
         "meaning": "天安门广场",
         "group": "核心词汇",
         "syllable": "",
-        "index": 461,
+        "index": 459,
         "lesson": "essay-recognize"
       },
       {
@@ -19087,7 +19114,7 @@ window.VOCAB_DATA = {
         "meaning": "颐和园",
         "group": "核心词汇",
         "syllable": "",
-        "index": 462,
+        "index": 460,
         "lesson": "essay-recognize"
       },
       {
@@ -19096,7 +19123,7 @@ window.VOCAB_DATA = {
         "meaning": "中国书法",
         "group": "核心词汇",
         "syllable": "",
-        "index": 463,
+        "index": 461,
         "lesson": "essay-recognize"
       },
       {
@@ -19105,7 +19132,7 @@ window.VOCAB_DATA = {
         "meaning": "中国功夫",
         "group": "核心词汇",
         "syllable": "",
-        "index": 464,
+        "index": 462,
         "lesson": "essay-recognize"
       },
       {
@@ -19114,7 +19141,7 @@ window.VOCAB_DATA = {
         "meaning": "天坛",
         "group": "核心词汇",
         "syllable": "",
-        "index": 465,
+        "index": 463,
         "lesson": "essay-recognize"
       },
       {
@@ -19123,7 +19150,7 @@ window.VOCAB_DATA = {
         "meaning": "传统中国服装",
         "group": "核心词汇",
         "syllable": "",
-        "index": 466,
+        "index": 464,
         "lesson": "essay-recognize"
       },
       {
@@ -19132,7 +19159,7 @@ window.VOCAB_DATA = {
         "meaning": "胡同",
         "group": "核心词汇",
         "syllable": "",
-        "index": 467,
+        "index": 465,
         "lesson": "essay-recognize"
       },
       {
@@ -19141,7 +19168,7 @@ window.VOCAB_DATA = {
         "meaning": "唐装",
         "group": "核心词汇",
         "syllable": "",
-        "index": 468,
+        "index": 466,
         "lesson": "essay-recognize"
       },
       {
@@ -19150,7 +19177,7 @@ window.VOCAB_DATA = {
         "meaning": "青铜器",
         "group": "核心词汇",
         "syllable": "",
-        "index": 469,
+        "index": 467,
         "lesson": "essay-recognize"
       },
       {
@@ -19159,7 +19186,7 @@ window.VOCAB_DATA = {
         "meaning": "兵马俑",
         "group": "核心词汇",
         "syllable": "",
-        "index": 470,
+        "index": 468,
         "lesson": "essay-recognize"
       },
       {
@@ -19168,7 +19195,7 @@ window.VOCAB_DATA = {
         "meaning": "筷子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 471,
+        "index": 469,
         "lesson": "essay-recognize"
       },
       {
@@ -19177,7 +19204,7 @@ window.VOCAB_DATA = {
         "meaning": "苏州园林",
         "group": "核心词汇",
         "syllable": "",
-        "index": 472,
+        "index": 470,
         "lesson": "essay-recognize"
       },
       {
@@ -19186,7 +19213,7 @@ window.VOCAB_DATA = {
         "meaning": "中国菜",
         "group": "核心词汇",
         "syllable": "",
-        "index": 473,
+        "index": 471,
         "lesson": "essay-recognize"
       },
       {
@@ -19195,7 +19222,7 @@ window.VOCAB_DATA = {
         "meaning": "莫高窟",
         "group": "核心词汇",
         "syllable": "",
-        "index": 474,
+        "index": 472,
         "lesson": "essay-recognize"
       },
       {
@@ -19204,7 +19231,7 @@ window.VOCAB_DATA = {
         "meaning": "北京烤鸭",
         "group": "核心词汇",
         "syllable": "",
-        "index": 475,
+        "index": 473,
         "lesson": "essay-recognize"
       },
       {
@@ -19213,7 +19240,7 @@ window.VOCAB_DATA = {
         "meaning": "瓷器",
         "group": "核心词汇",
         "syllable": "",
-        "index": 476,
+        "index": 474,
         "lesson": "essay-recognize"
       },
       {
@@ -19222,7 +19249,7 @@ window.VOCAB_DATA = {
         "meaning": "丝绸之路",
         "group": "核心词汇",
         "syllable": "",
-        "index": 477,
+        "index": 475,
         "lesson": "essay-recognize"
       },
       {
@@ -19231,7 +19258,7 @@ window.VOCAB_DATA = {
         "meaning": "造纸术",
         "group": "核心词汇",
         "syllable": "",
-        "index": 478,
+        "index": 476,
         "lesson": "essay-recognize"
       },
       {
@@ -19240,7 +19267,7 @@ window.VOCAB_DATA = {
         "meaning": "海上丝绸之路",
         "group": "核心词汇",
         "syllable": "",
-        "index": 479,
+        "index": 477,
         "lesson": "essay-recognize"
       },
       {
@@ -19249,7 +19276,7 @@ window.VOCAB_DATA = {
         "meaning": "印刷术",
         "group": "核心词汇",
         "syllable": "",
-        "index": 480,
+        "index": 478,
         "lesson": "essay-recognize"
       },
       {
@@ -19258,7 +19285,7 @@ window.VOCAB_DATA = {
         "meaning": "一带一路",
         "group": "核心词汇",
         "syllable": "",
-        "index": 481,
+        "index": 479,
         "lesson": "essay-recognize"
       },
       {
@@ -19267,7 +19294,7 @@ window.VOCAB_DATA = {
         "meaning": "火药",
         "group": "核心词汇",
         "syllable": "",
-        "index": 482,
+        "index": 480,
         "lesson": "essay-recognize"
       },
       {
@@ -19276,7 +19303,7 @@ window.VOCAB_DATA = {
         "meaning": "北京大学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 483,
+        "index": 481,
         "lesson": "essay-recognize"
       },
       {
@@ -19285,7 +19312,7 @@ window.VOCAB_DATA = {
         "meaning": "指南针",
         "group": "核心词汇",
         "syllable": "",
-        "index": 484,
+        "index": 482,
         "lesson": "essay-recognize"
       },
       {
@@ -19294,7 +19321,7 @@ window.VOCAB_DATA = {
         "meaning": "清华大学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 485,
+        "index": 483,
         "lesson": "essay-recognize"
       },
       {
@@ -19303,7 +19330,7 @@ window.VOCAB_DATA = {
         "meaning": "保存珍惜",
         "group": "核心词汇",
         "syllable": "",
-        "index": 486,
+        "index": 484,
         "lesson": "essay-recognize"
       },
       {
@@ -19312,7 +19339,7 @@ window.VOCAB_DATA = {
         "meaning": "郑和下西洋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 487,
+        "index": 485,
         "lesson": "essay-recognize"
       },
       {
@@ -19321,7 +19348,7 @@ window.VOCAB_DATA = {
         "meaning": "取其精华",
         "group": "核心词汇",
         "syllable": "",
-        "index": 488,
+        "index": 486,
         "lesson": "essay-recognize"
       },
       {
@@ -19330,7 +19357,7 @@ window.VOCAB_DATA = {
         "meaning": "去其糟粕",
         "group": "核心词汇",
         "syllable": "",
-        "index": 489,
+        "index": 487,
         "lesson": "essay-recognize"
       },
       {
@@ -19339,7 +19366,7 @@ window.VOCAB_DATA = {
         "meaning": "毕昇",
         "group": "核心词汇",
         "syllable": "",
-        "index": 490,
+        "index": 488,
         "lesson": "essay-recognize"
       },
       {
@@ -19348,7 +19375,7 @@ window.VOCAB_DATA = {
         "meaning": "积极促进文化发展",
         "group": "核心词汇",
         "syllable": "",
-        "index": 491,
+        "index": 489,
         "lesson": "essay-recognize"
       },
       {
@@ -19357,7 +19384,7 @@ window.VOCAB_DATA = {
         "meaning": "北宋时期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 492,
+        "index": 490,
         "lesson": "essay-recognize"
       },
       {
@@ -19366,7 +19393,7 @@ window.VOCAB_DATA = {
         "meaning": "蔡伦",
         "group": "核心词汇",
         "syllable": "",
-        "index": 493,
+        "index": 491,
         "lesson": "essay-recognize"
       },
       {
@@ -19375,7 +19402,7 @@ window.VOCAB_DATA = {
         "meaning": "辉煌灿烂的文化遗产",
         "group": "核心词汇",
         "syllable": "",
-        "index": 494,
+        "index": 492,
         "lesson": "essay-recognize"
       },
       {
@@ -19384,7 +19411,7 @@ window.VOCAB_DATA = {
         "meaning": "东汉时期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 495,
+        "index": 493,
         "lesson": "essay-recognize"
       },
       {
@@ -19393,7 +19420,7 @@ window.VOCAB_DATA = {
         "meaning": "发明",
         "group": "核心词汇",
         "syllable": "",
-        "index": 496,
+        "index": 494,
         "lesson": "essay-recognize"
       },
       {
@@ -19402,7 +19429,7 @@ window.VOCAB_DATA = {
         "meaning": "与时俱进",
         "group": "核心词汇",
         "syllable": "",
-        "index": 497,
+        "index": 495,
         "lesson": "essay-recognize"
       },
       {
@@ -19411,7 +19438,7 @@ window.VOCAB_DATA = {
         "meaning": "中国古代四大发明",
         "group": "核心词汇",
         "syllable": "",
-        "index": 498,
+        "index": 496,
         "lesson": "essay-recognize"
       },
       {
@@ -19420,7 +19447,7 @@ window.VOCAB_DATA = {
         "meaning": "人类文明",
         "group": "核心词汇",
         "syllable": "",
-        "index": 499,
+        "index": 497,
         "lesson": "essay-recognize"
       },
       {
@@ -19429,7 +19456,7 @@ window.VOCAB_DATA = {
         "meaning": "主流文化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 500,
+        "index": 498,
         "lesson": "essay-recognize"
       },
       {
@@ -19438,7 +19465,7 @@ window.VOCAB_DATA = {
         "meaning": "解读经典",
         "group": "核心词汇",
         "syllable": "",
-        "index": 501,
+        "index": 499,
         "lesson": "essay-recognize"
       },
       {
@@ -19447,7 +19474,7 @@ window.VOCAB_DATA = {
         "meaning": "《红楼梦》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 502,
+        "index": 500,
         "lesson": "essay-recognize"
       },
       {
@@ -19456,7 +19483,7 @@ window.VOCAB_DATA = {
         "meaning": "小说",
         "group": "核心词汇",
         "syllable": "",
-        "index": 503,
+        "index": 501,
         "lesson": "essay-recognize"
       },
       {
@@ -19465,7 +19492,7 @@ window.VOCAB_DATA = {
         "meaning": "作者",
         "group": "核心词汇",
         "syllable": "",
-        "index": 504,
+        "index": 502,
         "lesson": "essay-recognize"
       },
       {
@@ -19474,7 +19501,7 @@ window.VOCAB_DATA = {
         "meaning": "曹雪芹",
         "group": "核心词汇",
         "syllable": "",
-        "index": 505,
+        "index": 503,
         "lesson": "essay-recognize"
       },
       {
@@ -19483,7 +19510,7 @@ window.VOCAB_DATA = {
         "meaning": "戏剧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 506,
+        "index": 504,
         "lesson": "essay-recognize"
       },
       {
@@ -19492,7 +19519,7 @@ window.VOCAB_DATA = {
         "meaning": "贾宝玉",
         "group": "核心词汇",
         "syllable": "",
-        "index": 507,
+        "index": 505,
         "lesson": "essay-recognize"
       },
       {
@@ -19501,7 +19528,7 @@ window.VOCAB_DATA = {
         "meaning": "短剧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 508,
+        "index": 506,
         "lesson": "essay-recognize"
       },
       {
@@ -19510,7 +19537,7 @@ window.VOCAB_DATA = {
         "meaning": "电视剧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 509,
+        "index": 507,
         "lesson": "essay-recognize"
       },
       {
@@ -19519,7 +19546,7 @@ window.VOCAB_DATA = {
         "meaning": "林黛玉",
         "group": "核心词汇",
         "syllable": "",
-        "index": 510,
+        "index": 508,
         "lesson": "essay-recognize"
       },
       {
@@ -19528,7 +19555,7 @@ window.VOCAB_DATA = {
         "meaning": "电影",
         "group": "核心词汇",
         "syllable": "",
-        "index": 511,
+        "index": 509,
         "lesson": "essay-recognize"
       },
       {
@@ -19537,7 +19564,7 @@ window.VOCAB_DATA = {
         "meaning": "薛宝钗",
         "group": "核心词汇",
         "syllable": "",
-        "index": 512,
+        "index": 510,
         "lesson": "essay-recognize"
       },
       {
@@ -19546,7 +19573,7 @@ window.VOCAB_DATA = {
         "meaning": "戏曲",
         "group": "核心词汇",
         "syllable": "",
-        "index": 513,
+        "index": 511,
         "lesson": "essay-recognize"
       },
       {
@@ -19555,7 +19582,7 @@ window.VOCAB_DATA = {
         "meaning": "清代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 514,
+        "index": 512,
         "lesson": "essay-recognize"
       },
       {
@@ -19564,7 +19591,7 @@ window.VOCAB_DATA = {
         "meaning": "《三国演义》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 515,
+        "index": 513,
         "lesson": "essay-recognize"
       },
       {
@@ -19573,7 +19600,7 @@ window.VOCAB_DATA = {
         "meaning": "罗贯中",
         "group": "核心词汇",
         "syllable": "",
-        "index": 516,
+        "index": 514,
         "lesson": "essay-recognize"
       },
       {
@@ -19582,7 +19609,7 @@ window.VOCAB_DATA = {
         "meaning": "猪八戒",
         "group": "核心词汇",
         "syllable": "",
-        "index": 517,
+        "index": 515,
         "lesson": "essay-recognize"
       },
       {
@@ -19591,7 +19618,7 @@ window.VOCAB_DATA = {
         "meaning": "明代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 518,
+        "index": 516,
         "lesson": "essay-recognize"
       },
       {
@@ -19600,7 +19627,7 @@ window.VOCAB_DATA = {
         "meaning": "沙僧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 519,
+        "index": 517,
         "lesson": "essay-recognize"
       },
       {
@@ -19609,7 +19636,7 @@ window.VOCAB_DATA = {
         "meaning": "三国时期",
         "group": "核心词汇",
         "syllable": "",
-        "index": 520,
+        "index": 518,
         "lesson": "essay-recognize"
       },
       {
@@ -19618,7 +19645,7 @@ window.VOCAB_DATA = {
         "meaning": "妖怪",
         "group": "核心词汇",
         "syllable": "",
-        "index": 521,
+        "index": 519,
         "lesson": "essay-recognize"
       },
       {
@@ -19627,7 +19654,7 @@ window.VOCAB_DATA = {
         "meaning": "诸葛亮",
         "group": "核心词汇",
         "syllable": "",
-        "index": 522,
+        "index": 520,
         "lesson": "essay-recognize"
       },
       {
@@ -19636,7 +19663,7 @@ window.VOCAB_DATA = {
         "meaning": "唐代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 523,
+        "index": 521,
         "lesson": "essay-recognize"
       },
       {
@@ -19645,7 +19672,7 @@ window.VOCAB_DATA = {
         "meaning": "刘备",
         "group": "核心词汇",
         "syllable": "",
-        "index": 524,
+        "index": 522,
         "lesson": "essay-recognize"
       },
       {
@@ -19654,7 +19681,7 @@ window.VOCAB_DATA = {
         "meaning": "《东周列国志》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 525,
+        "index": 523,
         "lesson": "essay-recognize"
       },
       {
@@ -19663,7 +19690,7 @@ window.VOCAB_DATA = {
         "meaning": "曹操",
         "group": "核心词汇",
         "syllable": "",
-        "index": 526,
+        "index": 524,
         "lesson": "essay-recognize"
       },
       {
@@ -19672,7 +19699,7 @@ window.VOCAB_DATA = {
         "meaning": "《水浒传》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 527,
+        "index": 525,
         "lesson": "essay-recognize"
       },
       {
@@ -19681,7 +19708,7 @@ window.VOCAB_DATA = {
         "meaning": "冯梦龙",
         "group": "核心词汇",
         "syllable": "",
-        "index": 528,
+        "index": 526,
         "lesson": "essay-recognize"
       },
       {
@@ -19690,7 +19717,7 @@ window.VOCAB_DATA = {
         "meaning": "施耐庵",
         "group": "核心词汇",
         "syllable": "",
-        "index": 529,
+        "index": 527,
         "lesson": "essay-recognize"
       },
       {
@@ -19699,7 +19726,7 @@ window.VOCAB_DATA = {
         "meaning": "家书",
         "group": "核心词汇",
         "syllable": "",
-        "index": 530,
+        "index": 528,
         "lesson": "essay-recognize"
       },
       {
@@ -19708,7 +19735,7 @@ window.VOCAB_DATA = {
         "meaning": "《西游记》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 531,
+        "index": 529,
         "lesson": "essay-recognize"
       },
       {
@@ -19717,7 +19744,7 @@ window.VOCAB_DATA = {
         "meaning": "《朱子家训》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 532,
+        "index": 530,
         "lesson": "essay-recognize"
       },
       {
@@ -19726,7 +19753,7 @@ window.VOCAB_DATA = {
         "meaning": "《曾国藩家书》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 533,
+        "index": 531,
         "lesson": "essay-recognize"
       },
       {
@@ -19735,7 +19762,7 @@ window.VOCAB_DATA = {
         "meaning": "唐僧",
         "group": "核心词汇",
         "syllable": "",
-        "index": 534,
+        "index": 532,
         "lesson": "essay-recognize"
       },
       {
@@ -19744,7 +19771,7 @@ window.VOCAB_DATA = {
         "meaning": "《傅雷家书》",
         "group": "核心词汇",
         "syllable": "",
-        "index": 535,
+        "index": 533,
         "lesson": "essay-recognize"
       },
       {
@@ -19753,7 +19780,7 @@ window.VOCAB_DATA = {
         "meaning": "孙悟空",
         "group": "核心词汇",
         "syllable": "",
-        "index": 536,
+        "index": 534,
         "lesson": "essay-recognize"
       },
       {
@@ -19762,7 +19789,7 @@ window.VOCAB_DATA = {
         "meaning": "工匠",
         "group": "核心词汇",
         "syllable": "",
-        "index": 537,
+        "index": 535,
         "lesson": "essay-recognize"
       },
       {
@@ -19771,7 +19798,7 @@ window.VOCAB_DATA = {
         "meaning": "中国结",
         "group": "核心词汇",
         "syllable": "",
-        "index": 538,
+        "index": 536,
         "lesson": "essay-recognize"
       },
       {
@@ -19780,7 +19807,7 @@ window.VOCAB_DATA = {
         "meaning": "手工艺品制作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 539,
+        "index": 537,
         "lesson": "essay-recognize"
       },
       {
@@ -19789,7 +19816,7 @@ window.VOCAB_DATA = {
         "meaning": "刺绣",
         "group": "核心词汇",
         "syllable": "",
-        "index": 540,
+        "index": 538,
         "lesson": "essay-recognize"
       },
       {
@@ -19798,7 +19825,7 @@ window.VOCAB_DATA = {
         "meaning": "手工艺（品）",
         "group": "核心词汇",
         "syllable": "",
-        "index": 541,
+        "index": 539,
         "lesson": "essay-recognize"
       },
       {
@@ -19807,7 +19834,7 @@ window.VOCAB_DATA = {
         "meaning": "青花瓷",
         "group": "核心词汇",
         "syllable": "",
-        "index": 542,
+        "index": 540,
         "lesson": "essay-recognize"
       },
       {
@@ -19816,7 +19843,7 @@ window.VOCAB_DATA = {
         "meaning": "年画",
         "group": "核心词汇",
         "syllable": "",
-        "index": 543,
+        "index": 541,
         "lesson": "essay-recognize"
       },
       {
@@ -19825,7 +19852,7 @@ window.VOCAB_DATA = {
         "meaning": "剪纸",
         "group": "核心词汇",
         "syllable": "",
-        "index": 544,
+        "index": 542,
         "lesson": "essay-recognize"
       },
       {
@@ -19834,7 +19861,7 @@ window.VOCAB_DATA = {
         "meaning": "风筝",
         "group": "核心词汇",
         "syllable": "",
-        "index": 545,
+        "index": 543,
         "lesson": "essay-recognize"
       },
       {
@@ -19843,7 +19870,7 @@ window.VOCAB_DATA = {
         "meaning": "剪纸作品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 546,
+        "index": 544,
         "lesson": "essay-recognize"
       },
       {
@@ -19852,7 +19879,7 @@ window.VOCAB_DATA = {
         "meaning": "泥人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 547,
+        "index": 545,
         "lesson": "essay-recognize"
       },
       {
@@ -19861,7 +19888,7 @@ window.VOCAB_DATA = {
         "meaning": "皮影戏",
         "group": "核心词汇",
         "syllable": "",
-        "index": 548,
+        "index": 546,
         "lesson": "essay-recognize"
       },
       {
@@ -19870,7 +19897,7 @@ window.VOCAB_DATA = {
         "meaning": "科学家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 549,
+        "index": 547,
         "lesson": "essay-recognize"
       },
       {
@@ -19879,7 +19906,7 @@ window.VOCAB_DATA = {
         "meaning": "元曲",
         "group": "核心词汇",
         "syllable": "",
-        "index": 550,
+        "index": 548,
         "lesson": "essay-recognize"
       },
       {
@@ -19888,7 +19915,7 @@ window.VOCAB_DATA = {
         "meaning": "作家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 551,
+        "index": 549,
         "lesson": "essay-recognize"
       },
       {
@@ -19897,7 +19924,7 @@ window.VOCAB_DATA = {
         "meaning": "明清小说",
         "group": "核心词汇",
         "syllable": "",
-        "index": 552,
+        "index": 550,
         "lesson": "essay-recognize"
       },
       {
@@ -19906,7 +19933,7 @@ window.VOCAB_DATA = {
         "meaning": "教育家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 553,
+        "index": 551,
         "lesson": "essay-recognize"
       },
       {
@@ -19915,7 +19942,7 @@ window.VOCAB_DATA = {
         "meaning": "艺术家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 554,
+        "index": 552,
         "lesson": "essay-recognize"
       },
       {
@@ -19924,7 +19951,7 @@ window.VOCAB_DATA = {
         "meaning": "西方文化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 555,
+        "index": 553,
         "lesson": "essay-recognize"
       },
       {
@@ -19933,7 +19960,7 @@ window.VOCAB_DATA = {
         "meaning": "政治家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 556,
+        "index": 554,
         "lesson": "essay-recognize"
       },
       {
@@ -19942,7 +19969,7 @@ window.VOCAB_DATA = {
         "meaning": "启蒙运动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 557,
+        "index": 555,
         "lesson": "essay-recognize"
       },
       {
@@ -19951,7 +19978,7 @@ window.VOCAB_DATA = {
         "meaning": "思想家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 558,
+        "index": 556,
         "lesson": "essay-recognize"
       },
       {
@@ -19960,7 +19987,7 @@ window.VOCAB_DATA = {
         "meaning": "人本主义",
         "group": "核心词汇",
         "syllable": "",
-        "index": 559,
+        "index": 557,
         "lesson": "essay-recognize"
       },
       {
@@ -19969,7 +19996,7 @@ window.VOCAB_DATA = {
         "meaning": "画家",
         "group": "核心词汇",
         "syllable": "",
-        "index": 560,
+        "index": 558,
         "lesson": "essay-recognize"
       },
       {
@@ -19978,7 +20005,7 @@ window.VOCAB_DATA = {
         "meaning": "后现代主义",
         "group": "核心词汇",
         "syllable": "",
-        "index": 561,
+        "index": 559,
         "lesson": "essay-recognize"
       },
       {
@@ -19987,7 +20014,7 @@ window.VOCAB_DATA = {
         "meaning": "先秦散文",
         "group": "核心词汇",
         "syllable": "",
-        "index": 562,
+        "index": 560,
         "lesson": "essay-recognize"
       },
       {
@@ -19996,7 +20023,7 @@ window.VOCAB_DATA = {
         "meaning": "解构主义",
         "group": "核心词汇",
         "syllable": "",
-        "index": 563,
+        "index": 561,
         "lesson": "essay-recognize"
       },
       {
@@ -20005,7 +20032,7 @@ window.VOCAB_DATA = {
         "meaning": "汉赋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 564,
+        "index": 562,
         "lesson": "essay-recognize"
       },
       {
@@ -20014,7 +20041,7 @@ window.VOCAB_DATA = {
         "meaning": "莎士比亚",
         "group": "核心词汇",
         "syllable": "",
-        "index": 565,
+        "index": 563,
         "lesson": "essay-recognize"
       },
       {
@@ -20023,7 +20050,7 @@ window.VOCAB_DATA = {
         "meaning": "唐诗",
         "group": "核心词汇",
         "syllable": "",
-        "index": 566,
+        "index": 564,
         "lesson": "essay-recognize"
       },
       {
@@ -20032,7 +20059,7 @@ window.VOCAB_DATA = {
         "meaning": "爱因斯坦",
         "group": "核心词汇",
         "syllable": "",
-        "index": 567,
+        "index": 565,
         "lesson": "essay-recognize"
       },
       {
@@ -20041,7 +20068,7 @@ window.VOCAB_DATA = {
         "meaning": "宋词",
         "group": "核心词汇",
         "syllable": "",
-        "index": 568,
+        "index": 566,
         "lesson": "essay-recognize"
       },
       {
@@ -20050,7 +20077,7 @@ window.VOCAB_DATA = {
         "meaning": "天鹅湖",
         "group": "核心词汇",
         "syllable": "",
-        "index": 569,
+        "index": 567,
         "lesson": "essay-recognize"
       },
       {
@@ -20059,7 +20086,7 @@ window.VOCAB_DATA = {
         "meaning": "世界文化遗产",
         "group": "核心词汇",
         "syllable": "",
-        "index": 570,
+        "index": 568,
         "lesson": "essay-recognize"
       },
       {
@@ -20068,7 +20095,7 @@ window.VOCAB_DATA = {
         "meaning": "山东泰山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 571,
+        "index": 569,
         "lesson": "essay-recognize"
       },
       {
@@ -20077,7 +20104,7 @@ window.VOCAB_DATA = {
         "meaning": "世界自然遗产",
         "group": "核心词汇",
         "syllable": "",
-        "index": 572,
+        "index": 570,
         "lesson": "essay-recognize"
       },
       {
@@ -20086,7 +20113,7 @@ window.VOCAB_DATA = {
         "meaning": "陕西华山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 573,
+        "index": 571,
         "lesson": "essay-recognize"
       },
       {
@@ -20095,7 +20122,7 @@ window.VOCAB_DATA = {
         "meaning": "联合国教科文组织",
         "group": "核心词汇",
         "syllable": "",
-        "index": 574,
+        "index": 572,
         "lesson": "essay-recognize"
       },
       {
@@ -20104,7 +20131,7 @@ window.VOCAB_DATA = {
         "meaning": "河南嵩山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 575,
+        "index": 573,
         "lesson": "essay-recognize"
       },
       {
@@ -20113,7 +20140,7 @@ window.VOCAB_DATA = {
         "meaning": "山西恒山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 576,
+        "index": 574,
         "lesson": "essay-recognize"
       },
       {
@@ -20122,7 +20149,7 @@ window.VOCAB_DATA = {
         "meaning": "湖南衡山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 577,
+        "index": 575,
         "lesson": "essay-recognize"
       },
       {
@@ -20131,7 +20158,7 @@ window.VOCAB_DATA = {
         "meaning": "五岳",
         "group": "核心词汇",
         "syllable": "",
-        "index": 578,
+        "index": 576,
         "lesson": "essay-recognize"
       },
       {
@@ -20140,7 +20167,7 @@ window.VOCAB_DATA = {
         "meaning": "安徽黄山",
         "group": "核心词汇",
         "syllable": "",
-        "index": 579,
+        "index": 577,
         "lesson": "essay-recognize"
       },
       {
@@ -20149,7 +20176,7 @@ window.VOCAB_DATA = {
         "meaning": "长江",
         "group": "核心词汇",
         "syllable": "",
-        "index": 580,
+        "index": 578,
         "lesson": "essay-recognize"
       },
       {
@@ -20158,7 +20185,7 @@ window.VOCAB_DATA = {
         "meaning": "淮河",
         "group": "核心词汇",
         "syllable": "",
-        "index": 581,
+        "index": 579,
         "lesson": "essay-recognize"
       },
       {
@@ -20167,7 +20194,7 @@ window.VOCAB_DATA = {
         "meaning": "黄河",
         "group": "核心词汇",
         "syllable": "",
-        "index": 582,
+        "index": 580,
         "lesson": "essay-recognize"
       },
       {
@@ -20176,7 +20203,7 @@ window.VOCAB_DATA = {
         "meaning": "中国北方",
         "group": "核心词汇",
         "syllable": "",
-        "index": 583,
+        "index": 581,
         "lesson": "essay-recognize"
       },
       {
@@ -20185,7 +20212,7 @@ window.VOCAB_DATA = {
         "meaning": "秦岭",
         "group": "核心词汇",
         "syllable": "",
-        "index": 584,
+        "index": 582,
         "lesson": "essay-recognize"
       },
       {
@@ -20194,7 +20221,7 @@ window.VOCAB_DATA = {
         "meaning": "中国南方",
         "group": "核心词汇",
         "syllable": "",
-        "index": 585,
+        "index": 583,
         "lesson": "essay-recognize"
       },
       {
@@ -20203,7 +20230,7 @@ window.VOCAB_DATA = {
         "meaning": "春节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 586,
+        "index": 584,
         "lesson": "essay-recognize"
       },
       {
@@ -20212,7 +20239,7 @@ window.VOCAB_DATA = {
         "meaning": "圣诞节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 587,
+        "index": 585,
         "lesson": "essay-recognize"
       },
       {
@@ -20221,7 +20248,7 @@ window.VOCAB_DATA = {
         "meaning": "元宵节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 588,
+        "index": 586,
         "lesson": "essay-recognize"
       },
       {
@@ -20230,7 +20257,7 @@ window.VOCAB_DATA = {
         "meaning": "圣诞平安夜",
         "group": "核心词汇",
         "syllable": "",
-        "index": 589,
+        "index": 587,
         "lesson": "essay-recognize"
       },
       {
@@ -20239,7 +20266,7 @@ window.VOCAB_DATA = {
         "meaning": "家人团聚",
         "group": "核心词汇",
         "syllable": "",
-        "index": 590,
+        "index": 588,
         "lesson": "essay-recognize"
       },
       {
@@ -20248,7 +20275,7 @@ window.VOCAB_DATA = {
         "meaning": "圣诞老人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 591,
+        "index": 589,
         "lesson": "essay-recognize"
       },
       {
@@ -20257,7 +20284,7 @@ window.VOCAB_DATA = {
         "meaning": "武术",
         "group": "核心词汇",
         "syllable": "",
-        "index": 592,
+        "index": 590,
         "lesson": "essay-recognize"
       },
       {
@@ -20266,7 +20293,7 @@ window.VOCAB_DATA = {
         "meaning": "清明节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 593,
+        "index": 591,
         "lesson": "essay-recognize"
       },
       {
@@ -20275,7 +20302,7 @@ window.VOCAB_DATA = {
         "meaning": "中医",
         "group": "核心词汇",
         "syllable": "",
-        "index": 594,
+        "index": 592,
         "lesson": "essay-recognize"
       },
       {
@@ -20284,7 +20311,7 @@ window.VOCAB_DATA = {
         "meaning": "纪念先人",
         "group": "核心词汇",
         "syllable": "",
-        "index": 595,
+        "index": 593,
         "lesson": "essay-recognize"
       },
       {
@@ -20293,7 +20320,7 @@ window.VOCAB_DATA = {
         "meaning": "包饺子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 596,
+        "index": 594,
         "lesson": "essay-recognize"
       },
       {
@@ -20302,7 +20329,7 @@ window.VOCAB_DATA = {
         "meaning": "劳动节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 597,
+        "index": 595,
         "lesson": "essay-recognize"
       },
       {
@@ -20311,7 +20338,7 @@ window.VOCAB_DATA = {
         "meaning": "穿新衣",
         "group": "核心词汇",
         "syllable": "",
-        "index": 598,
+        "index": 596,
         "lesson": "essay-recognize"
       },
       {
@@ -20320,7 +20347,7 @@ window.VOCAB_DATA = {
         "meaning": "端午节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 599,
+        "index": 597,
         "lesson": "essay-recognize"
       },
       {
@@ -20329,7 +20356,7 @@ window.VOCAB_DATA = {
         "meaning": "拜年",
         "group": "核心词汇",
         "syllable": "",
-        "index": 600,
+        "index": 598,
         "lesson": "essay-recognize"
       },
       {
@@ -20338,7 +20365,7 @@ window.VOCAB_DATA = {
         "meaning": "纪念屈原",
         "group": "核心词汇",
         "syllable": "",
-        "index": 601,
+        "index": 599,
         "lesson": "essay-recognize"
       },
       {
@@ -20347,7 +20374,7 @@ window.VOCAB_DATA = {
         "meaning": "打灯笼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 602,
+        "index": 600,
         "lesson": "essay-recognize"
       },
       {
@@ -20356,7 +20383,7 @@ window.VOCAB_DATA = {
         "meaning": "龙舟赛",
         "group": "核心词汇",
         "syllable": "",
-        "index": 603,
+        "index": 601,
         "lesson": "essay-recognize"
       },
       {
@@ -20365,7 +20392,7 @@ window.VOCAB_DATA = {
         "meaning": "舞狮",
         "group": "核心词汇",
         "syllable": "",
-        "index": 604,
+        "index": 602,
         "lesson": "essay-recognize"
       },
       {
@@ -20374,7 +20401,7 @@ window.VOCAB_DATA = {
         "meaning": "中秋节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 605,
+        "index": 603,
         "lesson": "essay-recognize"
       },
       {
@@ -20383,7 +20410,7 @@ window.VOCAB_DATA = {
         "meaning": "舞龙",
         "group": "核心词汇",
         "syllable": "",
-        "index": 606,
+        "index": 604,
         "lesson": "essay-recognize"
       },
       {
@@ -20392,7 +20419,7 @@ window.VOCAB_DATA = {
         "meaning": "重阳节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 607,
+        "index": 605,
         "lesson": "essay-recognize"
       },
       {
@@ -20401,7 +20428,7 @@ window.VOCAB_DATA = {
         "meaning": "放鞭炮",
         "group": "核心词汇",
         "syllable": "",
-        "index": 608,
+        "index": 606,
         "lesson": "essay-recognize"
       },
       {
@@ -20410,7 +20437,7 @@ window.VOCAB_DATA = {
         "meaning": "登高",
         "group": "核心词汇",
         "syllable": "",
-        "index": 609,
+        "index": 607,
         "lesson": "essay-recognize"
       },
       {
@@ -20419,7 +20446,7 @@ window.VOCAB_DATA = {
         "meaning": "看烟花",
         "group": "核心词汇",
         "syllable": "",
-        "index": 610,
+        "index": 608,
         "lesson": "essay-recognize"
       },
       {
@@ -20428,7 +20455,7 @@ window.VOCAB_DATA = {
         "meaning": "敬老",
         "group": "核心词汇",
         "syllable": "",
-        "index": 611,
+        "index": 609,
         "lesson": "essay-recognize"
       },
       {
@@ -20437,7 +20464,7 @@ window.VOCAB_DATA = {
         "meaning": "贴春联",
         "group": "核心词汇",
         "syllable": "",
-        "index": 612,
+        "index": 610,
         "lesson": "essay-recognize"
       },
       {
@@ -20446,7 +20473,7 @@ window.VOCAB_DATA = {
         "meaning": "国庆节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 613,
+        "index": 611,
         "lesson": "essay-recognize"
       },
       {
@@ -20455,7 +20482,7 @@ window.VOCAB_DATA = {
         "meaning": "元宵/ 汤圆",
         "group": "核心词汇",
         "syllable": "",
-        "index": 614,
+        "index": 612,
         "lesson": "essay-recognize"
       },
       {
@@ -20464,7 +20491,7 @@ window.VOCAB_DATA = {
         "meaning": "黄金周",
         "group": "核心词汇",
         "syllable": "",
-        "index": 615,
+        "index": 613,
         "lesson": "essay-recognize"
       },
       {
@@ -20473,7 +20500,7 @@ window.VOCAB_DATA = {
         "meaning": "粽子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 616,
+        "index": 614,
         "lesson": "essay-recognize"
       },
       {
@@ -20482,7 +20509,7 @@ window.VOCAB_DATA = {
         "meaning": "复活节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 617,
+        "index": 615,
         "lesson": "essay-recognize"
       },
       {
@@ -20491,7 +20518,7 @@ window.VOCAB_DATA = {
         "meaning": "月饼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 618,
+        "index": 616,
         "lesson": "essay-recognize"
       },
       {
@@ -20500,7 +20527,7 @@ window.VOCAB_DATA = {
         "meaning": "感恩节",
         "group": "核心词汇",
         "syllable": "",
-        "index": 619,
+        "index": 617,
         "lesson": "essay-recognize"
       },
       {
@@ -20509,7 +20536,7 @@ window.VOCAB_DATA = {
         "meaning": "流行文化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 620,
+        "index": 618,
         "lesson": "essay-recognize"
       },
       {
@@ -20518,7 +20545,7 @@ window.VOCAB_DATA = {
         "meaning": "手机游戏",
         "group": "核心词汇",
         "syllable": "",
-        "index": 621,
+        "index": 619,
         "lesson": "essay-recognize"
       },
       {
@@ -20527,7 +20554,7 @@ window.VOCAB_DATA = {
         "meaning": "电视广告泛滥",
         "group": "核心词汇",
         "syllable": "",
-        "index": 622,
+        "index": 620,
         "lesson": "essay-recognize"
       },
       {
@@ -20536,7 +20563,7 @@ window.VOCAB_DATA = {
         "meaning": "数码产品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 623,
+        "index": 621,
         "lesson": "essay-recognize"
       },
       {
@@ -20545,7 +20572,7 @@ window.VOCAB_DATA = {
         "meaning": "双赢局面",
         "group": "核心词汇",
         "syllable": "",
-        "index": 624,
+        "index": 622,
         "lesson": "essay-recognize"
       },
       {
@@ -20554,7 +20581,7 @@ window.VOCAB_DATA = {
         "meaning": "网上聊天",
         "group": "核心词汇",
         "syllable": "",
-        "index": 625,
+        "index": 623,
         "lesson": "essay-recognize"
       },
       {
@@ -20563,7 +20590,7 @@ window.VOCAB_DATA = {
         "meaning": "偶像崇拜",
         "group": "核心词汇",
         "syllable": "",
-        "index": 626,
+        "index": 624,
         "lesson": "essay-recognize"
       },
       {
@@ -20572,7 +20599,7 @@ window.VOCAB_DATA = {
         "meaning": "网络监管",
         "group": "核心词汇",
         "syllable": "",
-        "index": 627,
+        "index": 625,
         "lesson": "essay-recognize"
       },
       {
@@ -20581,7 +20608,7 @@ window.VOCAB_DATA = {
         "meaning": "网络暴力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 628,
+        "index": 626,
         "lesson": "essay-recognize"
       },
       {
@@ -20590,7 +20617,7 @@ window.VOCAB_DATA = {
         "meaning": "上网成瘾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 629,
+        "index": 627,
         "lesson": "essay-recognize"
       },
       {
@@ -20599,7 +20626,7 @@ window.VOCAB_DATA = {
         "meaning": "不负责任的言论",
         "group": "核心词汇",
         "syllable": "",
-        "index": 630,
+        "index": 628,
         "lesson": "essay-recognize"
       },
       {
@@ -20608,7 +20635,7 @@ window.VOCAB_DATA = {
         "meaning": "手机",
         "group": "核心词汇",
         "syllable": "",
-        "index": 631,
+        "index": 629,
         "lesson": "essay-recognize"
       },
       {
@@ -20617,7 +20644,7 @@ window.VOCAB_DATA = {
         "meaning": "购买彩票",
         "group": "核心词汇",
         "syllable": "",
-        "index": 632,
+        "index": 630,
         "lesson": "essay-recognize"
       },
       {
@@ -20626,7 +20653,7 @@ window.VOCAB_DATA = {
         "meaning": "手机成瘾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 633,
+        "index": 631,
         "lesson": "essay-recognize"
       },
       {
@@ -20635,7 +20662,7 @@ window.VOCAB_DATA = {
         "meaning": "垃圾短信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 634,
+        "index": 632,
         "lesson": "essay-recognize"
       },
       {
@@ -20644,7 +20671,7 @@ window.VOCAB_DATA = {
         "meaning": "手机短信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 635,
+        "index": 633,
         "lesson": "essay-recognize"
       },
       {
@@ -20653,7 +20680,7 @@ window.VOCAB_DATA = {
         "meaning": "给我们的生活带来方便",
         "group": "核心词汇",
         "syllable": "",
-        "index": 636,
+        "index": 634,
         "lesson": "essay-recognize"
       },
       {
@@ -20662,7 +20689,7 @@ window.VOCAB_DATA = {
         "meaning": "手机阅读",
         "group": "核心词汇",
         "syllable": "",
-        "index": 637,
+        "index": 635,
         "lesson": "essay-recognize"
       },
       {
@@ -20671,7 +20698,7 @@ window.VOCAB_DATA = {
         "meaning": "手机时代的聚会",
         "group": "核心词汇",
         "syllable": "",
-        "index": 638,
+        "index": 636,
         "lesson": "essay-recognize"
       },
       {
@@ -20680,7 +20707,7 @@ window.VOCAB_DATA = {
         "meaning": "满足工作和学习的需要",
         "group": "核心词汇",
         "syllable": "",
-        "index": 639,
+        "index": 637,
         "lesson": "essay-recognize"
       },
       {
@@ -20689,7 +20716,7 @@ window.VOCAB_DATA = {
         "meaning": "虚拟生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 640,
+        "index": 638,
         "lesson": "essay-recognize"
       },
       {
@@ -20698,7 +20725,7 @@ window.VOCAB_DATA = {
         "meaning": "娱乐自我",
         "group": "核心词汇",
         "syllable": "",
-        "index": 641,
+        "index": 639,
         "lesson": "essay-recognize"
       },
       {
@@ -20707,7 +20734,7 @@ window.VOCAB_DATA = {
         "meaning": "虚幻世界",
         "group": "核心词汇",
         "syllable": "",
-        "index": 642,
+        "index": 640,
         "lesson": "essay-recognize"
       },
       {
@@ -20716,7 +20743,7 @@ window.VOCAB_DATA = {
         "meaning": "浪费大量的时间、金钱和精力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 643,
+        "index": 641,
         "lesson": "essay-recognize"
       },
       {
@@ -20725,7 +20752,7 @@ window.VOCAB_DATA = {
         "meaning": "网上交友",
         "group": "核心词汇",
         "syllable": "",
-        "index": 644,
+        "index": 642,
         "lesson": "essay-recognize"
       },
       {
@@ -20734,7 +20761,7 @@ window.VOCAB_DATA = {
         "meaning": "影响工作和学习的效率",
         "group": "核心词汇",
         "syllable": "",
-        "index": 645,
+        "index": 643,
         "lesson": "essay-recognize"
       },
       {
@@ -20743,7 +20770,7 @@ window.VOCAB_DATA = {
         "meaning": "丧失自我",
         "group": "核心词汇",
         "syllable": "",
-        "index": 646,
+        "index": 644,
         "lesson": "essay-recognize"
       },
       {
@@ -20752,7 +20779,7 @@ window.VOCAB_DATA = {
         "meaning": "某高校",
         "group": "核心词汇",
         "syllable": "",
-        "index": 647,
+        "index": 645,
         "lesson": "essay-recognize"
       },
       {
@@ -20761,7 +20788,7 @@ window.VOCAB_DATA = {
         "meaning": "感觉到轻松快乐",
         "group": "核心词汇",
         "syllable": "",
-        "index": 648,
+        "index": 646,
         "lesson": "essay-recognize"
       },
       {
@@ -20770,7 +20797,7 @@ window.VOCAB_DATA = {
         "meaning": "劳动实践课",
         "group": "核心词汇",
         "syllable": "",
-        "index": 649,
+        "index": 647,
         "lesson": "essay-recognize"
       },
       {
@@ -20779,7 +20806,7 @@ window.VOCAB_DATA = {
         "meaning": "增强合作能力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 650,
+        "index": 648,
         "lesson": "essay-recognize"
       },
       {
@@ -20788,7 +20815,7 @@ window.VOCAB_DATA = {
         "meaning": "主要收获",
         "group": "核心词汇",
         "syllable": "",
-        "index": 651,
+        "index": 649,
         "lesson": "essay-recognize"
       },
       {
@@ -20797,7 +20824,7 @@ window.VOCAB_DATA = {
         "meaning": "学到广泛的理论知识",
         "group": "核心词汇",
         "syllable": "",
-        "index": 652,
+        "index": 650,
         "lesson": "essay-recognize"
       },
       {
@@ -20806,7 +20833,7 @@ window.VOCAB_DATA = {
         "meaning": "学习相关知识",
         "group": "核心词汇",
         "syllable": "",
-        "index": 653,
+        "index": 651,
         "lesson": "essay-recognize"
       },
       {
@@ -20815,7 +20842,7 @@ window.VOCAB_DATA = {
         "meaning": "提高动手能力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 654,
+        "index": 652,
         "lesson": "essay-recognize"
       },
       {
@@ -20824,7 +20851,7 @@ window.VOCAB_DATA = {
         "meaning": "实践技能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 655,
+        "index": 653,
         "lesson": "essay-recognize"
       },
       {
@@ -20833,7 +20860,7 @@ window.VOCAB_DATA = {
         "meaning": "校园讲座",
         "group": "核心词汇",
         "syllable": "",
-        "index": 656,
+        "index": 654,
         "lesson": "essay-recognize"
       },
       {
@@ -20842,7 +20869,7 @@ window.VOCAB_DATA = {
         "meaning": "高素质人才",
         "group": "核心词汇",
         "syllable": "",
-        "index": 657,
+        "index": 655,
         "lesson": "essay-recognize"
       },
       {
@@ -20851,7 +20878,7 @@ window.VOCAB_DATA = {
         "meaning": "布告栏",
         "group": "核心词汇",
         "syllable": "",
-        "index": 658,
+        "index": 656,
         "lesson": "essay-recognize"
       },
       {
@@ -20860,7 +20887,7 @@ window.VOCAB_DATA = {
         "meaning": "海报",
         "group": "核心词汇",
         "syllable": "",
-        "index": 659,
+        "index": 657,
         "lesson": "essay-recognize"
       },
       {
@@ -20869,7 +20896,7 @@ window.VOCAB_DATA = {
         "meaning": "与专业相关",
         "group": "核心词汇",
         "syllable": "",
-        "index": 660,
+        "index": 658,
         "lesson": "essay-recognize"
       },
       {
@@ -20878,7 +20905,7 @@ window.VOCAB_DATA = {
         "meaning": "跟上",
         "group": "核心词汇",
         "syllable": "",
-        "index": 661,
+        "index": 659,
         "lesson": "essay-recognize"
       },
       {
@@ -20887,7 +20914,7 @@ window.VOCAB_DATA = {
         "meaning": "用处不大",
         "group": "核心词汇",
         "syllable": "",
-        "index": 662,
+        "index": 660,
         "lesson": "essay-recognize"
       },
       {
@@ -20896,7 +20923,7 @@ window.VOCAB_DATA = {
         "meaning": "大学毕业生",
         "group": "核心词汇",
         "syllable": "",
-        "index": 663,
+        "index": 661,
         "lesson": "essay-recognize"
       },
       {
@@ -20905,7 +20932,7 @@ window.VOCAB_DATA = {
         "meaning": "充满活力的经济",
         "group": "核心词汇",
         "syllable": "",
-        "index": 664,
+        "index": 662,
         "lesson": "essay-recognize"
       },
       {
@@ -20914,7 +20941,7 @@ window.VOCAB_DATA = {
         "meaning": "大学生",
         "group": "核心词汇",
         "syllable": "",
-        "index": 665,
+        "index": 663,
         "lesson": "essay-recognize"
       },
       {
@@ -20923,7 +20950,7 @@ window.VOCAB_DATA = {
         "meaning": "觉得有必要做",
         "group": "核心词汇",
         "syllable": "",
-        "index": 666,
+        "index": 664,
         "lesson": "essay-recognize"
       },
       {
@@ -20932,7 +20959,7 @@ window.VOCAB_DATA = {
         "meaning": "广泛学习",
         "group": "核心词汇",
         "syllable": "",
-        "index": 667,
+        "index": 665,
         "lesson": "essay-recognize"
       },
       {
@@ -20941,7 +20968,7 @@ window.VOCAB_DATA = {
         "meaning": "做好准备",
         "group": "核心词汇",
         "syllable": "",
-        "index": 668,
+        "index": 666,
         "lesson": "essay-recognize"
       },
       {
@@ -20950,7 +20977,7 @@ window.VOCAB_DATA = {
         "meaning": "满意的工作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 669,
+        "index": 667,
         "lesson": "essay-recognize"
       },
       {
@@ -20959,7 +20986,7 @@ window.VOCAB_DATA = {
         "meaning": "职业生涯",
         "group": "核心词汇",
         "syllable": "",
-        "index": 670,
+        "index": 668,
         "lesson": "essay-recognize"
       },
       {
@@ -20968,7 +20995,7 @@ window.VOCAB_DATA = {
         "meaning": "探索思维",
         "group": "核心词汇",
         "syllable": "",
-        "index": 671,
+        "index": 669,
         "lesson": "essay-recognize"
       },
       {
@@ -20977,7 +21004,7 @@ window.VOCAB_DATA = {
         "meaning": "不远的将来",
         "group": "核心词汇",
         "syllable": "",
-        "index": 672,
+        "index": 670,
         "lesson": "essay-recognize"
       },
       {
@@ -20986,7 +21013,7 @@ window.VOCAB_DATA = {
         "meaning": "创业精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 673,
+        "index": 671,
         "lesson": "essay-recognize"
       },
       {
@@ -20995,7 +21022,7 @@ window.VOCAB_DATA = {
         "meaning": "本科生",
         "group": "核心词汇",
         "syllable": "",
-        "index": 674,
+        "index": 672,
         "lesson": "essay-recognize"
       },
       {
@@ -21004,7 +21031,7 @@ window.VOCAB_DATA = {
         "meaning": "职业目标",
         "group": "核心词汇",
         "syllable": "",
-        "index": 675,
+        "index": 673,
         "lesson": "essay-recognize"
       },
       {
@@ -21013,7 +21040,7 @@ window.VOCAB_DATA = {
         "meaning": "读研",
         "group": "核心词汇",
         "syllable": "",
-        "index": 676,
+        "index": 674,
         "lesson": "essay-recognize"
       },
       {
@@ -21022,7 +21049,7 @@ window.VOCAB_DATA = {
         "meaning": "经济状况",
         "group": "核心词汇",
         "syllable": "",
-        "index": 677,
+        "index": 675,
         "lesson": "essay-recognize"
       },
       {
@@ -21031,7 +21058,7 @@ window.VOCAB_DATA = {
         "meaning": "个人偏好",
         "group": "核心词汇",
         "syllable": "",
-        "index": 678,
+        "index": 676,
         "lesson": "essay-recognize"
       },
       {
@@ -21040,7 +21067,7 @@ window.VOCAB_DATA = {
         "meaning": "创业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 679,
+        "index": 677,
         "lesson": "essay-recognize"
       },
       {
@@ -21049,7 +21076,7 @@ window.VOCAB_DATA = {
         "meaning": "做出最佳选择",
         "group": "核心词汇",
         "syllable": "",
-        "index": 680,
+        "index": 678,
         "lesson": "essay-recognize"
       },
       {
@@ -21058,7 +21085,7 @@ window.VOCAB_DATA = {
         "meaning": "选择课程",
         "group": "核心词汇",
         "syllable": "",
-        "index": 681,
+        "index": 679,
         "lesson": "essay-recognize"
       },
       {
@@ -21067,7 +21094,7 @@ window.VOCAB_DATA = {
         "meaning": "作业少",
         "group": "核心词汇",
         "syllable": "",
-        "index": 682,
+        "index": 680,
         "lesson": "essay-recognize"
       },
       {
@@ -21076,7 +21103,7 @@ window.VOCAB_DATA = {
         "meaning": "知识新",
         "group": "核心词汇",
         "syllable": "",
-        "index": 683,
+        "index": 681,
         "lesson": "essay-recognize"
       },
       {
@@ -21085,7 +21112,7 @@ window.VOCAB_DATA = {
         "meaning": "必修课",
         "group": "核心词汇",
         "syllable": "",
-        "index": 684,
+        "index": 682,
         "lesson": "essay-recognize"
       },
       {
@@ -21094,7 +21121,7 @@ window.VOCAB_DATA = {
         "meaning": "重创新",
         "group": "核心词汇",
         "syllable": "",
-        "index": 685,
+        "index": 683,
         "lesson": "essay-recognize"
       },
       {
@@ -21103,7 +21130,7 @@ window.VOCAB_DATA = {
         "meaning": "易通过",
         "group": "核心词汇",
         "syllable": "",
-        "index": 686,
+        "index": 684,
         "lesson": "essay-recognize"
       },
       {
@@ -21112,7 +21139,7 @@ window.VOCAB_DATA = {
         "meaning": "有难度",
         "group": "核心词汇",
         "syllable": "",
-        "index": 687,
+        "index": 685,
         "lesson": "essay-recognize"
       },
       {
@@ -21121,7 +21148,7 @@ window.VOCAB_DATA = {
         "meaning": "选修课",
         "group": "核心词汇",
         "syllable": "",
-        "index": 688,
+        "index": 686,
         "lesson": "essay-recognize"
       },
       {
@@ -21130,7 +21157,7 @@ window.VOCAB_DATA = {
         "meaning": "给分高",
         "group": "核心词汇",
         "syllable": "",
-        "index": 689,
+        "index": 687,
         "lesson": "essay-recognize"
       },
       {
@@ -21139,7 +21166,7 @@ window.VOCAB_DATA = {
         "meaning": "博览群书",
         "group": "核心词汇",
         "syllable": "",
-        "index": 690,
+        "index": 688,
         "lesson": "essay-recognize"
       },
       {
@@ -21148,7 +21175,7 @@ window.VOCAB_DATA = {
         "meaning": "雄心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 691,
+        "index": 689,
         "lesson": "essay-recognize"
       },
       {
@@ -21157,7 +21184,7 @@ window.VOCAB_DATA = {
         "meaning": "有选择地阅读",
         "group": "核心词汇",
         "syllable": "",
-        "index": 692,
+        "index": 690,
         "lesson": "essay-recognize"
       },
       {
@@ -21166,7 +21193,7 @@ window.VOCAB_DATA = {
         "meaning": "采取行动",
         "group": "核心词汇",
         "syllable": "",
-        "index": 693,
+        "index": 691,
         "lesson": "essay-recognize"
       },
       {
@@ -21175,7 +21202,7 @@ window.VOCAB_DATA = {
         "meaning": "行动胜于言语",
         "group": "核心词汇",
         "syllable": "",
-        "index": 694,
+        "index": 692,
         "lesson": "essay-recognize"
       },
       {
@@ -21184,7 +21211,7 @@ window.VOCAB_DATA = {
         "meaning": "兼职",
         "group": "核心词汇",
         "syllable": "",
-        "index": 695,
+        "index": 693,
         "lesson": "essay-recognize"
       },
       {
@@ -21193,7 +21220,7 @@ window.VOCAB_DATA = {
         "meaning": "消耗精力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 696,
+        "index": 694,
         "lesson": "essay-recognize"
       },
       {
@@ -21202,7 +21229,7 @@ window.VOCAB_DATA = {
         "meaning": "有益的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 697,
+        "index": 695,
         "lesson": "essay-recognize"
       },
       {
@@ -21211,7 +21238,7 @@ window.VOCAB_DATA = {
         "meaning": "大一",
         "group": "核心词汇",
         "syllable": "",
-        "index": 698,
+        "index": 696,
         "lesson": "essay-recognize"
       },
       {
@@ -21220,7 +21247,7 @@ window.VOCAB_DATA = {
         "meaning": "有害的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 699,
+        "index": 697,
         "lesson": "essay-recognize"
       },
       {
@@ -21229,7 +21256,7 @@ window.VOCAB_DATA = {
         "meaning": "大二",
         "group": "核心词汇",
         "syllable": "",
-        "index": 700,
+        "index": 698,
         "lesson": "essay-recognize"
       },
       {
@@ -21238,7 +21265,7 @@ window.VOCAB_DATA = {
         "meaning": "破坏学习动力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 701,
+        "index": 699,
         "lesson": "essay-recognize"
       },
       {
@@ -21247,7 +21274,7 @@ window.VOCAB_DATA = {
         "meaning": "大三",
         "group": "核心词汇",
         "syllable": "",
-        "index": 702,
+        "index": 700,
         "lesson": "essay-recognize"
       },
       {
@@ -21256,7 +21283,7 @@ window.VOCAB_DATA = {
         "meaning": "更好了解喜好",
         "group": "核心词汇",
         "syllable": "",
-        "index": 703,
+        "index": 701,
         "lesson": "essay-recognize"
       },
       {
@@ -21265,7 +21292,7 @@ window.VOCAB_DATA = {
         "meaning": "大四",
         "group": "核心词汇",
         "syllable": "",
-        "index": 704,
+        "index": 702,
         "lesson": "essay-recognize"
       },
       {
@@ -21274,7 +21301,7 @@ window.VOCAB_DATA = {
         "meaning": "研究生",
         "group": "核心词汇",
         "syllable": "",
-        "index": 705,
+        "index": 703,
         "lesson": "essay-recognize"
       },
       {
@@ -21283,7 +21310,7 @@ window.VOCAB_DATA = {
         "meaning": "检验职业方向",
         "group": "核心词汇",
         "syllable": "",
-        "index": 706,
+        "index": 704,
         "lesson": "essay-recognize"
       },
       {
@@ -21292,7 +21319,7 @@ window.VOCAB_DATA = {
         "meaning": "对……产生积极/负面/深远的影响",
         "group": "核心词汇",
         "syllable": "",
-        "index": 707,
+        "index": 705,
         "lesson": "essay-recognize"
       },
       {
@@ -21301,7 +21328,7 @@ window.VOCAB_DATA = {
         "meaning": "优先考虑",
         "group": "核心词汇",
         "syllable": "",
-        "index": 708,
+        "index": 706,
         "lesson": "essay-recognize"
       },
       {
@@ -21310,7 +21337,7 @@ window.VOCAB_DATA = {
         "meaning": "影响学生学业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 709,
+        "index": 707,
         "lesson": "essay-recognize"
       },
       {
@@ -21319,7 +21346,7 @@ window.VOCAB_DATA = {
         "meaning": "保持平衡",
         "group": "核心词汇",
         "syllable": "",
-        "index": 710,
+        "index": 708,
         "lesson": "essay-recognize"
       },
       {
@@ -21328,7 +21355,7 @@ window.VOCAB_DATA = {
         "meaning": "工程硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 711,
+        "index": 709,
         "lesson": "essay-recognize"
       },
       {
@@ -21337,7 +21364,7 @@ window.VOCAB_DATA = {
         "meaning": "小学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 712,
+        "index": 710,
         "lesson": "essay-recognize"
       },
       {
@@ -21346,7 +21373,7 @@ window.VOCAB_DATA = {
         "meaning": "中学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 713,
+        "index": 711,
         "lesson": "essay-recognize"
       },
       {
@@ -21355,7 +21382,7 @@ window.VOCAB_DATA = {
         "meaning": "综合性大学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 714,
+        "index": 712,
         "lesson": "essay-recognize"
       },
       {
@@ -21364,7 +21391,7 @@ window.VOCAB_DATA = {
         "meaning": "成人高考",
         "group": "核心词汇",
         "syllable": "",
-        "index": 715,
+        "index": 713,
         "lesson": "essay-recognize"
       },
       {
@@ -21373,7 +21400,7 @@ window.VOCAB_DATA = {
         "meaning": "学院",
         "group": "核心词汇",
         "syllable": "",
-        "index": 716,
+        "index": 714,
         "lesson": "essay-recognize"
       },
       {
@@ -21382,7 +21409,7 @@ window.VOCAB_DATA = {
         "meaning": "学士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 717,
+        "index": 715,
         "lesson": "essay-recognize"
       },
       {
@@ -21391,7 +21418,7 @@ window.VOCAB_DATA = {
         "meaning": "硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 718,
+        "index": 716,
         "lesson": "essay-recognize"
       },
       {
@@ -21400,7 +21427,7 @@ window.VOCAB_DATA = {
         "meaning": "研究生院",
         "group": "核心词汇",
         "syllable": "",
-        "index": 719,
+        "index": 717,
         "lesson": "essay-recognize"
       },
       {
@@ -21409,7 +21436,7 @@ window.VOCAB_DATA = {
         "meaning": "博士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 720,
+        "index": 718,
         "lesson": "essay-recognize"
       },
       {
@@ -21418,7 +21445,7 @@ window.VOCAB_DATA = {
         "meaning": "教授",
         "group": "核心词汇",
         "syllable": "",
-        "index": 721,
+        "index": 719,
         "lesson": "essay-recognize"
       },
       {
@@ -21427,7 +21454,7 @@ window.VOCAB_DATA = {
         "meaning": "获得学位",
         "group": "核心词汇",
         "syllable": "",
-        "index": 722,
+        "index": 720,
         "lesson": "essay-recognize"
       },
       {
@@ -21436,7 +21463,7 @@ window.VOCAB_DATA = {
         "meaning": "全体教师",
         "group": "核心词汇",
         "syllable": "",
-        "index": 723,
+        "index": 721,
         "lesson": "essay-recognize"
       },
       {
@@ -21445,7 +21472,7 @@ window.VOCAB_DATA = {
         "meaning": "文学硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 724,
+        "index": 722,
         "lesson": "essay-recognize"
       },
       {
@@ -21454,7 +21481,7 @@ window.VOCAB_DATA = {
         "meaning": "系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 725,
+        "index": 723,
         "lesson": "essay-recognize"
       },
       {
@@ -21463,7 +21490,7 @@ window.VOCAB_DATA = {
         "meaning": "理学硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 726,
+        "index": 724,
         "lesson": "essay-recognize"
       },
       {
@@ -21472,7 +21499,7 @@ window.VOCAB_DATA = {
         "meaning": "专业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 727,
+        "index": 725,
         "lesson": "essay-recognize"
       },
       {
@@ -21481,7 +21508,7 @@ window.VOCAB_DATA = {
         "meaning": "大",
         "group": "核心词汇",
         "syllable": "",
-        "index": 728,
+        "index": 726,
         "lesson": "essay-recognize"
       },
       {
@@ -21490,7 +21517,7 @@ window.VOCAB_DATA = {
         "meaning": "教学设施",
         "group": "核心词汇",
         "syllable": "",
-        "index": 729,
+        "index": 727,
         "lesson": "essay-recognize"
       },
       {
@@ -21499,7 +21526,7 @@ window.VOCAB_DATA = {
         "meaning": "理科",
         "group": "核心词汇",
         "syllable": "",
-        "index": 730,
+        "index": 728,
         "lesson": "essay-recognize"
       },
       {
@@ -21508,7 +21535,7 @@ window.VOCAB_DATA = {
         "meaning": "食堂",
         "group": "核心词汇",
         "syllable": "",
-        "index": 731,
+        "index": 729,
         "lesson": "essay-recognize"
       },
       {
@@ -21517,7 +21544,7 @@ window.VOCAB_DATA = {
         "meaning": "工商管理硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 732,
+        "index": 730,
         "lesson": "essay-recognize"
       },
       {
@@ -21526,7 +21553,7 @@ window.VOCAB_DATA = {
         "meaning": "宿舍",
         "group": "核心词汇",
         "syllable": "",
-        "index": 733,
+        "index": 731,
         "lesson": "essay-recognize"
       },
       {
@@ -21535,7 +21562,7 @@ window.VOCAB_DATA = {
         "meaning": "学杂费",
         "group": "核心词汇",
         "syllable": "",
-        "index": 734,
+        "index": 732,
         "lesson": "essay-recognize"
       },
       {
@@ -21544,7 +21571,7 @@ window.VOCAB_DATA = {
         "meaning": "公共管理硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 735,
+        "index": 733,
         "lesson": "essay-recognize"
       },
       {
@@ -21553,7 +21580,7 @@ window.VOCAB_DATA = {
         "meaning": "终身教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 736,
+        "index": 734,
         "lesson": "essay-recognize"
       },
       {
@@ -21562,7 +21589,7 @@ window.VOCAB_DATA = {
         "meaning": "素质教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 737,
+        "index": 735,
         "lesson": "essay-recognize"
       },
       {
@@ -21571,7 +21598,7 @@ window.VOCAB_DATA = {
         "meaning": "会计硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 738,
+        "index": 736,
         "lesson": "essay-recognize"
       },
       {
@@ -21580,7 +21607,7 @@ window.VOCAB_DATA = {
         "meaning": "应试教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 739,
+        "index": 737,
         "lesson": "essay-recognize"
       },
       {
@@ -21589,7 +21616,7 @@ window.VOCAB_DATA = {
         "meaning": "幼儿园",
         "group": "核心词汇",
         "syllable": "",
-        "index": 740,
+        "index": 738,
         "lesson": "essay-recognize"
       },
       {
@@ -21598,7 +21625,7 @@ window.VOCAB_DATA = {
         "meaning": "成人教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 741,
+        "index": 739,
         "lesson": "essay-recognize"
       },
       {
@@ -21607,7 +21634,7 @@ window.VOCAB_DATA = {
         "meaning": "信息时代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 742,
+        "index": 740,
         "lesson": "essay-recognize"
       },
       {
@@ -21616,7 +21643,7 @@ window.VOCAB_DATA = {
         "meaning": "开阔眼界",
         "group": "核心词汇",
         "syllable": "",
-        "index": 743,
+        "index": 741,
         "lesson": "essay-recognize"
       },
       {
@@ -21625,7 +21652,7 @@ window.VOCAB_DATA = {
         "meaning": "知识爆炸时代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 744,
+        "index": 742,
         "lesson": "essay-recognize"
       },
       {
@@ -21634,7 +21661,7 @@ window.VOCAB_DATA = {
         "meaning": "激发兴趣",
         "group": "核心词汇",
         "syllable": "",
-        "index": 745,
+        "index": 743,
         "lesson": "essay-recognize"
       },
       {
@@ -21643,7 +21670,7 @@ window.VOCAB_DATA = {
         "meaning": "影响学习成绩",
         "group": "核心词汇",
         "syllable": "",
-        "index": 746,
+        "index": 744,
         "lesson": "essay-recognize"
       },
       {
@@ -21652,7 +21679,7 @@ window.VOCAB_DATA = {
         "meaning": "开发潜能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 747,
+        "index": 745,
         "lesson": "essay-recognize"
       },
       {
@@ -21661,7 +21688,7 @@ window.VOCAB_DATA = {
         "meaning": "逃课",
         "group": "核心词汇",
         "syllable": "",
-        "index": 748,
+        "index": 746,
         "lesson": "essay-recognize"
       },
       {
@@ -21670,7 +21697,7 @@ window.VOCAB_DATA = {
         "meaning": "(学生)减负",
         "group": "核心词汇",
         "syllable": "",
-        "index": 749,
+        "index": 747,
         "lesson": "essay-recognize"
       },
       {
@@ -21679,7 +21706,7 @@ window.VOCAB_DATA = {
         "meaning": "学业表现",
         "group": "核心词汇",
         "syllable": "",
-        "index": 750,
+        "index": 748,
         "lesson": "essay-recognize"
       },
       {
@@ -21688,7 +21715,7 @@ window.VOCAB_DATA = {
         "meaning": "文理分科",
         "group": "核心词汇",
         "syllable": "",
-        "index": 751,
+        "index": 749,
         "lesson": "essay-recognize"
       },
       {
@@ -21697,7 +21724,7 @@ window.VOCAB_DATA = {
         "meaning": "学习氛围",
         "group": "核心词汇",
         "syllable": "",
-        "index": 752,
+        "index": 750,
         "lesson": "essay-recognize"
       },
       {
@@ -21706,7 +21733,7 @@ window.VOCAB_DATA = {
         "meaning": "轻松的大学生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 753,
+        "index": 751,
         "lesson": "essay-recognize"
       },
       {
@@ -21715,7 +21742,7 @@ window.VOCAB_DATA = {
         "meaning": "雇员",
         "group": "核心词汇",
         "syllable": "",
-        "index": 754,
+        "index": 752,
         "lesson": "essay-recognize"
       },
       {
@@ -21724,7 +21751,7 @@ window.VOCAB_DATA = {
         "meaning": "申请入学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 755,
+        "index": 753,
         "lesson": "essay-recognize"
       },
       {
@@ -21733,7 +21760,7 @@ window.VOCAB_DATA = {
         "meaning": "职业培训",
         "group": "核心词汇",
         "syllable": "",
-        "index": 756,
+        "index": 754,
         "lesson": "essay-recognize"
       },
       {
@@ -21742,7 +21769,7 @@ window.VOCAB_DATA = {
         "meaning": "雇主",
         "group": "核心词汇",
         "syllable": "",
-        "index": 757,
+        "index": 755,
         "lesson": "essay-recognize"
       },
       {
@@ -21751,7 +21778,7 @@ window.VOCAB_DATA = {
         "meaning": "自立",
         "group": "核心词汇",
         "syllable": "",
-        "index": 758,
+        "index": 756,
         "lesson": "essay-recognize"
       },
       {
@@ -21760,7 +21787,7 @@ window.VOCAB_DATA = {
         "meaning": "独生子女",
         "group": "核心词汇",
         "syllable": "",
-        "index": 759,
+        "index": 757,
         "lesson": "essay-recognize"
       },
       {
@@ -21769,7 +21796,7 @@ window.VOCAB_DATA = {
         "meaning": "激烈竞争",
         "group": "核心词汇",
         "syllable": "",
-        "index": 760,
+        "index": 758,
         "lesson": "essay-recognize"
       },
       {
@@ -21778,7 +21805,7 @@ window.VOCAB_DATA = {
         "meaning": "不劳而获",
         "group": "核心词汇",
         "syllable": "",
-        "index": 761,
+        "index": 759,
         "lesson": "essay-recognize"
       },
       {
@@ -21787,7 +21814,7 @@ window.VOCAB_DATA = {
         "meaning": "啃老族",
         "group": "核心词汇",
         "syllable": "",
-        "index": 762,
+        "index": 760,
         "lesson": "essay-recognize"
       },
       {
@@ -21796,7 +21823,7 @@ window.VOCAB_DATA = {
         "meaning": "不断努力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 763,
+        "index": 761,
         "lesson": "essay-recognize"
       },
       {
@@ -21805,7 +21832,7 @@ window.VOCAB_DATA = {
         "meaning": "奋斗精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 764,
+        "index": 762,
         "lesson": "essay-recognize"
       },
       {
@@ -21814,7 +21841,7 @@ window.VOCAB_DATA = {
         "meaning": "决不放弃",
         "group": "核心词汇",
         "syllable": "",
-        "index": 765,
+        "index": 763,
         "lesson": "essay-recognize"
       },
       {
@@ -21823,7 +21850,7 @@ window.VOCAB_DATA = {
         "meaning": "人生观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 766,
+        "index": 764,
         "lesson": "essay-recognize"
       },
       {
@@ -21832,7 +21859,7 @@ window.VOCAB_DATA = {
         "meaning": "决不停止进步",
         "group": "核心词汇",
         "syllable": "",
-        "index": 767,
+        "index": 765,
         "lesson": "essay-recognize"
       },
       {
@@ -21841,7 +21868,7 @@ window.VOCAB_DATA = {
         "meaning": "世界观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 768,
+        "index": 766,
         "lesson": "essay-recognize"
       },
       {
@@ -21850,7 +21877,7 @@ window.VOCAB_DATA = {
         "meaning": "获得成功",
         "group": "核心词汇",
         "syllable": "",
-        "index": 769,
+        "index": 767,
         "lesson": "essay-recognize"
       },
       {
@@ -21859,7 +21886,7 @@ window.VOCAB_DATA = {
         "meaning": "恒心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 770,
+        "index": 768,
         "lesson": "essay-recognize"
       },
       {
@@ -21868,7 +21895,7 @@ window.VOCAB_DATA = {
         "meaning": "创新",
         "group": "核心词汇",
         "syllable": "",
-        "index": 771,
+        "index": 769,
         "lesson": "essay-recognize"
       },
       {
@@ -21877,7 +21904,7 @@ window.VOCAB_DATA = {
         "meaning": "耐心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 772,
+        "index": 770,
         "lesson": "essay-recognize"
       },
       {
@@ -21886,7 +21913,7 @@ window.VOCAB_DATA = {
         "meaning": "勤奋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 773,
+        "index": 771,
         "lesson": "essay-recognize"
       },
       {
@@ -21895,7 +21922,7 @@ window.VOCAB_DATA = {
         "meaning": "谨慎",
         "group": "核心词汇",
         "syllable": "",
-        "index": 774,
+        "index": 772,
         "lesson": "essay-recognize"
       },
       {
@@ -21904,7 +21931,7 @@ window.VOCAB_DATA = {
         "meaning": "自信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 775,
+        "index": 773,
         "lesson": "essay-recognize"
       },
       {
@@ -21913,7 +21940,7 @@ window.VOCAB_DATA = {
         "meaning": "高估困难",
         "group": "核心词汇",
         "syllable": "",
-        "index": 776,
+        "index": 774,
         "lesson": "essay-recognize"
       },
       {
@@ -21922,7 +21949,7 @@ window.VOCAB_DATA = {
         "meaning": "谦虚",
         "group": "核心词汇",
         "syllable": "",
-        "index": 777,
+        "index": 775,
         "lesson": "essay-recognize"
       },
       {
@@ -21931,7 +21958,7 @@ window.VOCAB_DATA = {
         "meaning": "低估能力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 778,
+        "index": 776,
         "lesson": "essay-recognize"
       },
       {
@@ -21940,7 +21967,7 @@ window.VOCAB_DATA = {
         "meaning": "缺乏自信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 779,
+        "index": 777,
         "lesson": "essay-recognize"
       },
       {
@@ -21949,7 +21976,7 @@ window.VOCAB_DATA = {
         "meaning": "齐心协力 /众志成城",
         "group": "核心词汇",
         "syllable": "",
-        "index": 780,
+        "index": 778,
         "lesson": "essay-recognize"
       },
       {
@@ -21958,7 +21985,7 @@ window.VOCAB_DATA = {
         "meaning": "团队精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 781,
+        "index": 779,
         "lesson": "essay-recognize"
       },
       {
@@ -21967,7 +21994,7 @@ window.VOCAB_DATA = {
         "meaning": "互相帮助",
         "group": "核心词汇",
         "syllable": "",
-        "index": 782,
+        "index": 780,
         "lesson": "essay-recognize"
       },
       {
@@ -21976,7 +22003,7 @@ window.VOCAB_DATA = {
         "meaning": "与他人合作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 783,
+        "index": 781,
         "lesson": "essay-recognize"
       },
       {
@@ -21985,7 +22012,7 @@ window.VOCAB_DATA = {
         "meaning": "完成工作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 784,
+        "index": 782,
         "lesson": "essay-recognize"
       },
       {
@@ -21994,7 +22021,7 @@ window.VOCAB_DATA = {
         "meaning": "悲观(主义)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 785,
+        "index": 783,
         "lesson": "essay-recognize"
       },
       {
@@ -22003,7 +22030,7 @@ window.VOCAB_DATA = {
         "meaning": "坚信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 786,
+        "index": 784,
         "lesson": "essay-recognize"
       },
       {
@@ -22012,7 +22039,7 @@ window.VOCAB_DATA = {
         "meaning": "悲观的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 787,
+        "index": 785,
         "lesson": "essay-recognize"
       },
       {
@@ -22021,7 +22048,7 @@ window.VOCAB_DATA = {
         "meaning": "百折不挠的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 788,
+        "index": 786,
         "lesson": "essay-recognize"
       },
       {
@@ -22030,7 +22057,7 @@ window.VOCAB_DATA = {
         "meaning": "积极态度",
         "group": "核心词汇",
         "syllable": "",
-        "index": 789,
+        "index": 787,
         "lesson": "essay-recognize"
       },
       {
@@ -22039,7 +22066,7 @@ window.VOCAB_DATA = {
         "meaning": "不可战胜的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 790,
+        "index": 788,
         "lesson": "essay-recognize"
       },
       {
@@ -22048,7 +22075,7 @@ window.VOCAB_DATA = {
         "meaning": "思想开明",
         "group": "核心词汇",
         "syllable": "",
-        "index": 791,
+        "index": 789,
         "lesson": "essay-recognize"
       },
       {
@@ -22057,7 +22084,7 @@ window.VOCAB_DATA = {
         "meaning": "压力之下保持风度",
         "group": "核心词汇",
         "syllable": "",
-        "index": 792,
+        "index": 790,
         "lesson": "essay-recognize"
       },
       {
@@ -22066,7 +22093,7 @@ window.VOCAB_DATA = {
         "meaning": "勇于面对困难",
         "group": "核心词汇",
         "syllable": "",
-        "index": 793,
+        "index": 791,
         "lesson": "essay-recognize"
       },
       {
@@ -22075,7 +22102,7 @@ window.VOCAB_DATA = {
         "meaning": "把梦想变成现实",
         "group": "核心词汇",
         "syllable": "",
-        "index": 794,
+        "index": 792,
         "lesson": "essay-recognize"
       },
       {
@@ -22084,7 +22111,7 @@ window.VOCAB_DATA = {
         "meaning": "犹豫不决",
         "group": "核心词汇",
         "syllable": "",
-        "index": 795,
+        "index": 793,
         "lesson": "essay-recognize"
       },
       {
@@ -22093,7 +22120,7 @@ window.VOCAB_DATA = {
         "meaning": "磨炼意志",
         "group": "核心词汇",
         "syllable": "",
-        "index": 796,
+        "index": 794,
         "lesson": "essay-recognize"
       },
       {
@@ -22102,7 +22129,7 @@ window.VOCAB_DATA = {
         "meaning": "提高环保意识",
         "group": "核心词汇",
         "syllable": "",
-        "index": 797,
+        "index": 795,
         "lesson": "essay-recognize"
       },
       {
@@ -22111,7 +22138,7 @@ window.VOCAB_DATA = {
         "meaning": "生态系统",
         "group": "核心词汇",
         "syllable": "",
-        "index": 798,
+        "index": 796,
         "lesson": "essay-recognize"
       },
       {
@@ -22120,7 +22147,7 @@ window.VOCAB_DATA = {
         "meaning": "自然保护区",
         "group": "核心词汇",
         "syllable": "",
-        "index": 799,
+        "index": 797,
         "lesson": "essay-recognize"
       },
       {
@@ -22129,7 +22156,7 @@ window.VOCAB_DATA = {
         "meaning": "宜人的生活环境",
         "group": "核心词汇",
         "syllable": "",
-        "index": 800,
+        "index": 798,
         "lesson": "essay-recognize"
       },
       {
@@ -22138,7 +22165,7 @@ window.VOCAB_DATA = {
         "meaning": "保持生态平衡",
         "group": "核心词汇",
         "syllable": "",
-        "index": 801,
+        "index": 799,
         "lesson": "essay-recognize"
       },
       {
@@ -22147,7 +22174,7 @@ window.VOCAB_DATA = {
         "meaning": "节能(节约能源)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 802,
+        "index": 800,
         "lesson": "essay-recognize"
       },
       {
@@ -22156,7 +22183,7 @@ window.VOCAB_DATA = {
         "meaning": "减排(减少温室气体排放)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 803,
+        "index": 801,
         "lesson": "essay-recognize"
       },
       {
@@ -22165,7 +22192,7 @@ window.VOCAB_DATA = {
         "meaning": "清洁可再生能源",
         "group": "核心词汇",
         "syllable": "",
-        "index": 804,
+        "index": 802,
         "lesson": "essay-recognize"
       },
       {
@@ -22174,7 +22201,7 @@ window.VOCAB_DATA = {
         "meaning": "核能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 805,
+        "index": 803,
         "lesson": "essay-recognize"
       },
       {
@@ -22183,7 +22210,7 @@ window.VOCAB_DATA = {
         "meaning": "降低资源消耗率",
         "group": "核心词汇",
         "syllable": "",
-        "index": 806,
+        "index": 804,
         "lesson": "essay-recognize"
       },
       {
@@ -22192,7 +22219,7 @@ window.VOCAB_DATA = {
         "meaning": "太阳能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 807,
+        "index": 805,
         "lesson": "essay-recognize"
       },
       {
@@ -22201,7 +22228,7 @@ window.VOCAB_DATA = {
         "meaning": "大功率电器",
         "group": "核心词汇",
         "syllable": "",
-        "index": 808,
+        "index": 806,
         "lesson": "essay-recognize"
       },
       {
@@ -22210,7 +22237,7 @@ window.VOCAB_DATA = {
         "meaning": "环保产品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 809,
+        "index": 807,
         "lesson": "essay-recognize"
       },
       {
@@ -22219,7 +22246,7 @@ window.VOCAB_DATA = {
         "meaning": "二氧化碳",
         "group": "核心词汇",
         "syllable": "",
-        "index": 810,
+        "index": 808,
         "lesson": "essay-recognize"
       },
       {
@@ -22228,7 +22255,7 @@ window.VOCAB_DATA = {
         "meaning": "环境恶化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 811,
+        "index": 809,
         "lesson": "essay-recognize"
       },
       {
@@ -22237,7 +22264,7 @@ window.VOCAB_DATA = {
         "meaning": "濒危物种",
         "group": "核心词汇",
         "syllable": "",
-        "index": 812,
+        "index": 810,
         "lesson": "essay-recognize"
       },
       {
@@ -22246,7 +22273,7 @@ window.VOCAB_DATA = {
         "meaning": "乱砍滥伐",
         "group": "核心词汇",
         "syllable": "",
-        "index": 813,
+        "index": 811,
         "lesson": "essay-recognize"
       },
       {
@@ -22255,7 +22282,7 @@ window.VOCAB_DATA = {
         "meaning": "野生物种",
         "group": "核心词汇",
         "syllable": "",
-        "index": 814,
+        "index": 812,
         "lesson": "essay-recognize"
       },
       {
@@ -22264,7 +22291,7 @@ window.VOCAB_DATA = {
         "meaning": "沙漠化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 815,
+        "index": 813,
         "lesson": "essay-recognize"
       },
       {
@@ -22273,7 +22300,7 @@ window.VOCAB_DATA = {
         "meaning": "商业捕鱼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 816,
+        "index": 814,
         "lesson": "essay-recognize"
       },
       {
@@ -22282,7 +22309,7 @@ window.VOCAB_DATA = {
         "meaning": "过度捕捞",
         "group": "核心词汇",
         "syllable": "",
-        "index": 817,
+        "index": 815,
         "lesson": "essay-recognize"
       },
       {
@@ -22291,7 +22318,7 @@ window.VOCAB_DATA = {
         "meaning": "野生动物保护",
         "group": "核心词汇",
         "syllable": "",
-        "index": 818,
+        "index": 816,
         "lesson": "essay-recognize"
       },
       {
@@ -22300,7 +22327,7 @@ window.VOCAB_DATA = {
         "meaning": "过度开发",
         "group": "核心词汇",
         "syllable": "",
-        "index": 819,
+        "index": 817,
         "lesson": "essay-recognize"
       },
       {
@@ -22309,7 +22336,7 @@ window.VOCAB_DATA = {
         "meaning": "可降解一次性塑料袋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 820,
+        "index": 818,
         "lesson": "essay-recognize"
       },
       {
@@ -22318,7 +22345,7 @@ window.VOCAB_DATA = {
         "meaning": "限制使用一次性塑料袋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 821,
+        "index": 819,
         "lesson": "essay-recognize"
       },
       {
@@ -22327,7 +22354,7 @@ window.VOCAB_DATA = {
         "meaning": "一次性筷子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 822,
+        "index": 820,
         "lesson": "essay-recognize"
       },
       {
@@ -22336,7 +22363,7 @@ window.VOCAB_DATA = {
         "meaning": "乱扔垃圾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 823,
+        "index": 821,
         "lesson": "essay-recognize"
       },
       {
@@ -22345,7 +22372,7 @@ window.VOCAB_DATA = {
         "meaning": "垃圾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 824,
+        "index": 822,
         "lesson": "essay-recognize"
       },
       {
@@ -22354,7 +22381,7 @@ window.VOCAB_DATA = {
         "meaning": "综合利用",
         "group": "核心词汇",
         "syllable": "",
-        "index": 825,
+        "index": 823,
         "lesson": "essay-recognize"
       },
       {
@@ -22363,7 +22390,7 @@ window.VOCAB_DATA = {
         "meaning": "丢弃",
         "group": "核心词汇",
         "syllable": "",
-        "index": 826,
+        "index": 824,
         "lesson": "essay-recognize"
       },
       {
@@ -22372,7 +22399,7 @@ window.VOCAB_DATA = {
         "meaning": "污水处理",
         "group": "核心词汇",
         "syllable": "",
-        "index": 827,
+        "index": 825,
         "lesson": "essay-recognize"
       },
       {
@@ -22381,7 +22408,7 @@ window.VOCAB_DATA = {
         "meaning": "电动汽车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 828,
+        "index": 826,
         "lesson": "essay-recognize"
       },
       {
@@ -22390,7 +22417,7 @@ window.VOCAB_DATA = {
         "meaning": "汽车尾气排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 829,
+        "index": 827,
         "lesson": "essay-recognize"
       },
       {
@@ -22399,7 +22426,7 @@ window.VOCAB_DATA = {
         "meaning": "工业粉尘排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 830,
+        "index": 828,
         "lesson": "essay-recognize"
       },
       {
@@ -22408,7 +22435,7 @@ window.VOCAB_DATA = {
         "meaning": "天然气汽车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 831,
+        "index": 829,
         "lesson": "essay-recognize"
       },
       {
@@ -22417,7 +22444,7 @@ window.VOCAB_DATA = {
         "meaning": "烟尘排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 832,
+        "index": 830,
         "lesson": "essay-recognize"
       },
       {
@@ -22426,7 +22453,7 @@ window.VOCAB_DATA = {
         "meaning": "雇用；使用；利用",
         "group": "范文001（印刷 p40）",
         "syllable": "",
-        "index": 833,
+        "index": 831,
         "lesson": "essay-recognize"
       },
       {
@@ -22435,7 +22462,7 @@ window.VOCAB_DATA = {
         "meaning": "要求，必要条件；需要的东西",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 834,
+        "index": 832,
         "lesson": "essay-recognize"
       },
       {
@@ -22444,7 +22471,7 @@ window.VOCAB_DATA = {
         "meaning": "熟悉，通晓；友好随和",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 835,
+        "index": 833,
         "lesson": "essay-recognize"
       },
       {
@@ -22453,7 +22480,7 @@ window.VOCAB_DATA = {
         "meaning": "优先考虑；偏爱；偏爱的事物",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 836,
+        "index": 834,
         "lesson": "essay-recognize"
       },
       {
@@ -22462,7 +22489,7 @@ window.VOCAB_DATA = {
         "meaning": "申请；请求；申请书；运用",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 837,
+        "index": 835,
         "lesson": "essay-recognize"
       },
       {
@@ -22471,7 +22498,7 @@ window.VOCAB_DATA = {
         "meaning": "询问，调查；探索",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 838,
+        "index": 836,
         "lesson": "essay-recognize"
       },
       {
@@ -22480,7 +22507,7 @@ window.VOCAB_DATA = {
         "meaning": "接待；欢迎；招待会",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 839,
+        "index": 837,
         "lesson": "essay-recognize"
       },
       {
@@ -22489,7 +22516,7 @@ window.VOCAB_DATA = {
         "meaning": "交流；交换",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 840,
+        "index": 838,
         "lesson": "essay-recognize"
       },
       {
@@ -22498,7 +22525,7 @@ window.VOCAB_DATA = {
         "meaning": "印象；影响",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 841,
+        "index": 839,
         "lesson": "essay-recognize"
       },
       {
@@ -22507,7 +22534,7 @@ window.VOCAB_DATA = {
         "meaning": "谈及；提到",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 842,
+        "index": 840,
         "lesson": "essay-recognize"
       },
       {
@@ -22516,7 +22543,7 @@ window.VOCAB_DATA = {
         "meaning": "预先，事先",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 843,
+        "index": 841,
         "lesson": "essay-recognize"
       },
       {
@@ -22525,7 +22552,7 @@ window.VOCAB_DATA = {
         "meaning": "提供，给予；延长，扩展，扩大",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 844,
+        "index": 842,
         "lesson": "essay-recognize"
       },
       {
@@ -22534,7 +22561,7 @@ window.VOCAB_DATA = {
         "meaning": "有声望的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 845,
+        "index": 843,
         "lesson": "essay-recognize"
       },
       {
@@ -22543,7 +22570,7 @@ window.VOCAB_DATA = {
         "meaning": "大量的；丰富的，充足的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 846,
+        "index": 844,
         "lesson": "essay-recognize"
       },
       {
@@ -22552,7 +22579,7 @@ window.VOCAB_DATA = {
         "meaning": "有价值的；令人愉快的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 847,
+        "index": 845,
         "lesson": "essay-recognize"
       },
       {
@@ -22561,7 +22588,7 @@ window.VOCAB_DATA = {
         "meaning": "提高，增强；改进",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 848,
+        "index": 846,
         "lesson": "essay-recognize"
       },
       {
@@ -22570,7 +22597,7 @@ window.VOCAB_DATA = {
         "meaning": "给（电池）充电；恢复精力，休整",
         "group": "范文005（印刷 p52）",
         "syllable": "",
-        "index": 849,
+        "index": 847,
         "lesson": "essay-recognize"
       },
       {
@@ -22579,7 +22606,7 @@ window.VOCAB_DATA = {
         "meaning": "不能接受的；不受欢迎的",
         "group": "范文005（印刷 p52）",
         "syllable": "",
-        "index": 850,
+        "index": 848,
         "lesson": "essay-recognize"
       },
       {
@@ -22588,7 +22615,7 @@ window.VOCAB_DATA = {
         "meaning": "人才，天才；天赋",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 851,
+        "index": 849,
         "lesson": "essay-recognize"
       },
       {
@@ -22597,7 +22624,7 @@ window.VOCAB_DATA = {
         "meaning": "核心，要点；核心的；基本的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 852,
+        "index": 850,
         "lesson": "essay-recognize"
       },
       {
@@ -22606,7 +22633,7 @@ window.VOCAB_DATA = {
         "meaning": "参赛者，竞争者",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 853,
+        "index": 851,
         "lesson": "essay-recognize"
       },
       {
@@ -22615,7 +22642,7 @@ window.VOCAB_DATA = {
         "meaning": "有启发作用的，使人领悟的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 854,
+        "index": 852,
         "lesson": "essay-recognize"
       },
       {
@@ -22624,7 +22651,7 @@ window.VOCAB_DATA = {
         "meaning": "博学的；有见识的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 855,
+        "index": 853,
         "lesson": "essay-recognize"
       },
       {
@@ -22633,7 +22660,7 @@ window.VOCAB_DATA = {
         "meaning": "主要的；初级的；初等教育的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 856,
+        "index": 854,
         "lesson": "essay-recognize"
       },
       {
@@ -22642,7 +22669,7 @@ window.VOCAB_DATA = {
         "meaning": "古代的；古老的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 857,
+        "index": 855,
         "lesson": "essay-recognize"
       },
       {
@@ -22651,7 +22678,7 @@ window.VOCAB_DATA = {
         "meaning": "有名的；有声望的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 858,
+        "index": 856,
         "lesson": "essay-recognize"
       },
       {
@@ -22660,7 +22687,7 @@ window.VOCAB_DATA = {
         "meaning": "遗产；传统",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 859,
+        "index": 857,
         "lesson": "essay-recognize"
       },
       {
@@ -22669,7 +22696,7 @@ window.VOCAB_DATA = {
         "meaning": "候选人；应试者；适合………的人/物",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 860,
+        "index": 858,
         "lesson": "essay-recognize"
       },
       {
@@ -22678,7 +22705,7 @@ window.VOCAB_DATA = {
         "meaning": "技术；技能",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 861,
+        "index": 859,
         "lesson": "essay-recognize"
       },
       {
@@ -22687,7 +22714,7 @@ window.VOCAB_DATA = {
         "meaning": "促进；推广；促销；晋升",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 862,
+        "index": 860,
         "lesson": "essay-recognize"
       },
       {
@@ -22696,7 +22723,7 @@ window.VOCAB_DATA = {
         "meaning": "中世纪的",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 863,
+        "index": 861,
         "lesson": "essay-recognize"
       },
       {
@@ -22705,7 +22732,7 @@ window.VOCAB_DATA = {
         "meaning": "文艺复兴",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 864,
+        "index": 862,
         "lesson": "essay-recognize"
       },
       {
@@ -22714,7 +22741,7 @@ window.VOCAB_DATA = {
         "meaning": "热情的；热心的",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 865,
+        "index": 863,
         "lesson": "essay-recognize"
       },
       {
@@ -22723,7 +22750,7 @@ window.VOCAB_DATA = {
         "meaning": "继承；经遗传获得（品质、身体特征等）",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 866,
+        "index": 864,
         "lesson": "essay-recognize"
       },
       {
@@ -22732,7 +22759,7 @@ window.VOCAB_DATA = {
         "meaning": "百科全书",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 867,
+        "index": 865,
         "lesson": "essay-recognize"
       },
       {
@@ -22741,7 +22768,7 @@ window.VOCAB_DATA = {
         "meaning": "传奇故事；浪漫史；爱情",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 868,
+        "index": 866,
         "lesson": "essay-recognize"
       },
       {
@@ -22750,7 +22777,7 @@ window.VOCAB_DATA = {
         "meaning": "奋斗；搏斗",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 869,
+        "index": 867,
         "lesson": "essay-recognize"
       },
       {
@@ -22759,7 +22786,7 @@ window.VOCAB_DATA = {
         "meaning": "动荡的；汹涌的",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 870,
+        "index": 868,
         "lesson": "essay-recognize"
       },
       {
@@ -22768,7 +22795,7 @@ window.VOCAB_DATA = {
         "meaning": "描述；表现；扮演",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 871,
+        "index": 869,
         "lesson": "essay-recognize"
       },
       {
@@ -22777,7 +22804,7 @@ window.VOCAB_DATA = {
         "meaning": "人物，角色；性格；文字",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 872,
+        "index": 870,
         "lesson": "essay-recognize"
       },
       {
@@ -22786,7 +22813,7 @@ window.VOCAB_DATA = {
         "meaning": "典型的，独特的n. 特色；品质",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 873,
+        "index": 871,
         "lesson": "essay-recognize"
       },
       {
@@ -22795,7 +22822,7 @@ window.VOCAB_DATA = {
         "meaning": "独特的；独有的；唯一的",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 874,
+        "index": 872,
         "lesson": "essay-recognize"
       },
       {
@@ -22804,7 +22831,7 @@ window.VOCAB_DATA = {
         "meaning": "保存；保护；保护区",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 875,
+        "index": 873,
         "lesson": "essay-recognize"
       },
       {
@@ -22813,7 +22840,7 @@ window.VOCAB_DATA = {
         "meaning": "现象；杰出的人",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 876,
+        "index": 874,
         "lesson": "essay-recognize"
       },
       {
@@ -22822,7 +22849,7 @@ window.VOCAB_DATA = {
         "meaning": "重申，反复地说",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 877,
+        "index": 875,
         "lesson": "essay-recognize"
       },
       {
@@ -22831,7 +22858,7 @@ window.VOCAB_DATA = {
         "meaning": "虐待，亏待",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 878,
+        "index": 876,
         "lesson": "essay-recognize"
       },
       {
@@ -22840,7 +22867,7 @@ window.VOCAB_DATA = {
         "meaning": "具有讽刺意味的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 879,
+        "index": 877,
         "lesson": "essay-recognize"
       },
       {
@@ -22849,7 +22876,7 @@ window.VOCAB_DATA = {
         "meaning": "隐喻性的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 880,
+        "index": 878,
         "lesson": "essay-recognize"
       },
       {
@@ -22858,7 +22885,7 @@ window.VOCAB_DATA = {
         "meaning": "普遍存在的；全体的，普遍的，全世界的",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 881,
+        "index": 879,
         "lesson": "essay-recognize"
       },
       {
@@ -22867,7 +22894,7 @@ window.VOCAB_DATA = {
         "meaning": "（使）参与；吸引；雇用",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 882,
+        "index": 880,
         "lesson": "essay-recognize"
       },
       {
@@ -22876,7 +22903,7 @@ window.VOCAB_DATA = {
         "meaning": "促进；提升；宣传；晋升",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 883,
+        "index": 881,
         "lesson": "essay-recognize"
       },
       {
@@ -22885,7 +22912,7 @@ window.VOCAB_DATA = {
         "meaning": "耐用的；持久的；[pl.]耐用品",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 884,
+        "index": 882,
         "lesson": "essay-recognize"
       },
       {
@@ -22894,7 +22921,7 @@ window.VOCAB_DATA = {
         "meaning": "家庭；家喻户晓的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 885,
+        "index": 883,
         "lesson": "essay-recognize"
       },
       {
@@ -22903,7 +22930,7 @@ window.VOCAB_DATA = {
         "meaning": "国内的；家用的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 886,
+        "index": 884,
         "lesson": "essay-recognize"
       },
       {
@@ -22912,7 +22939,7 @@ window.VOCAB_DATA = {
         "meaning": "可进入/到达/使用的；可理解的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 887,
+        "index": 885,
         "lesson": "essay-recognize"
       },
       {
@@ -22921,7 +22948,7 @@ window.VOCAB_DATA = {
         "meaning": "按重要性排列，优先处理",
         "group": "范文027（印刷 p118）",
         "syllable": "",
-        "index": 888,
+        "index": 886,
         "lesson": "essay-recognize"
       },
       {
@@ -22930,7 +22957,7 @@ window.VOCAB_DATA = {
         "meaning": "展示；出席；礼物；现在的",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 889,
+        "index": 887,
         "lesson": "essay-recognize"
       },
       {
@@ -22939,7 +22966,7 @@ window.VOCAB_DATA = {
         "meaning": "基础设施，基础建设",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 890,
+        "index": 888,
         "lesson": "essay-recognize"
       },
       {
@@ -22948,7 +22975,7 @@ window.VOCAB_DATA = {
         "meaning": "包容性，包容度",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 891,
+        "index": 889,
         "lesson": "essay-recognize"
       },
       {
@@ -22957,7 +22984,7 @@ window.VOCAB_DATA = {
         "meaning": "巨大的；戏剧（性）的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 892,
+        "index": 890,
         "lesson": "essay-recognize"
       },
       {
@@ -22966,7 +22993,7 @@ window.VOCAB_DATA = {
         "meaning": "强有力的，起推动作用的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 893,
+        "index": 891,
         "lesson": "essay-recognize"
       },
       {
@@ -22975,7 +23002,7 @@ window.VOCAB_DATA = {
         "meaning": "有资格的；具备……的资历",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 894,
+        "index": 892,
         "lesson": "essay-recognize"
       },
       {
@@ -22984,7 +23011,7 @@ window.VOCAB_DATA = {
         "meaning": "迫使；（通过满足要求而）帮助",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 895,
+        "index": 893,
         "lesson": "essay-recognize"
       },
       {
@@ -22993,7 +23020,7 @@ window.VOCAB_DATA = {
         "meaning": "有害的，不利的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 896,
+        "index": 894,
         "lesson": "essay-recognize"
       },
       {
@@ -23002,7 +23029,7 @@ window.VOCAB_DATA = {
         "meaning": "（使）倾斜；倾向于",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 897,
+        "index": 895,
         "lesson": "essay-recognize"
       },
       {
@@ -23011,7 +23038,7 @@ window.VOCAB_DATA = {
         "meaning": "一贯地；坚持地",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 898,
+        "index": 896,
         "lesson": "essay-recognize"
       },
       {
@@ -23020,7 +23047,7 @@ window.VOCAB_DATA = {
         "meaning": "宝贵的；珍奇的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 899,
+        "index": 897,
         "lesson": "essay-recognize"
       },
       {
@@ -23029,7 +23056,7 @@ window.VOCAB_DATA = {
         "meaning": "表面（上）的；肤浅的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 900,
+        "index": 898,
         "lesson": "essay-recognize"
       }
     ],
@@ -23179,10 +23206,11 @@ window.VOCAB_DATA = {
         "part_of_speech": "",
         "meaning": "社会",
         "wrongForms": [
-          "socity"
+          "socity",
+          "socitey"
         ],
         "group": "作文错词",
-        "source": "2005 养老 09-27",
+        "source": "2005 养老 09-27；养老机器人 10-20",
         "note": "",
         "lesson": "essay-misspell",
         "syllable": ""
@@ -23860,10 +23888,11 @@ window.VOCAB_DATA = {
         "part_of_speech": "",
         "meaning": "以……的形式",
         "wrongForms": [
-          "from of"
+          "from of",
+          "from"
         ],
         "group": "作文错词",
-        "source": "家电表格 10-13",
+        "source": "家电表格 10-13；养老机器人 10-20",
         "note": "in the form of policies and subsidies",
         "lesson": "essay-misspell",
         "syllable": ""
@@ -23944,10 +23973,11 @@ window.VOCAB_DATA = {
         "part_of_speech": "",
         "meaning": "技术；科技",
         "wrongForms": [
-          "technige"
+          "technige",
+          "techology"
         ],
         "group": "作文错词",
-        "source": "家电表格 10-13",
+        "source": "家电表格 10-13；养老机器人 10-20；养老机器人 10-20（模板难词）",
         "note": "science and technology",
         "lesson": "essay-misspell",
         "syllable": ""
@@ -24173,6 +24203,233 @@ window.VOCAB_DATA = {
         "group": "作文错词",
         "source": "投诉信 10-15（模板难词）",
         "note": "Your help is greatly appreciated.",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 85,
+        "word": "charts show",
+        "part_of_speech": "",
+        "meaning": "图表显示",
+        "wrongForms": [
+          "two chart illustrate",
+          "bar chart show"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 86,
+        "word": "safety",
+        "part_of_speech": "",
+        "meaning": "安全",
+        "wrongForms": [
+          "safe"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+        "note": "勿把 safe 当名词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 87,
+        "word": "convenience",
+        "part_of_speech": "",
+        "meaning": "便利",
+        "wrongForms": [
+          "conveclieven"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+        "note": "柱图关注点",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 88,
+        "word": "pie chart",
+        "part_of_speech": "",
+        "meaning": "饼图",
+        "wrongForms": [
+          "pi chart"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 89,
+        "word": "biggest",
+        "part_of_speech": "",
+        "meaning": "最大的",
+        "wrongForms": [
+          "bigest"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 90,
+        "word": "account for",
+        "part_of_speech": "",
+        "meaning": "占（比例）",
+        "wrongForms": [
+          "account of"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 91,
+        "word": "policies",
+        "part_of_speech": "",
+        "meaning": "政策（复数）",
+        "wrongForms": [
+          "pollicies"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 92,
+        "word": "subsidies",
+        "part_of_speech": "",
+        "meaning": "补贴（复数）",
+        "wrongForms": [
+          "subside"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20；养老机器人 10-20（模板难词）",
+        "note": "government subsidies",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 93,
+        "word": "price",
+        "part_of_speech": "",
+        "meaning": "价格",
+        "wrongForms": [
+          "pirce"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 94,
+        "word": "It looks like",
+        "part_of_speech": "",
+        "meaning": "看起来像",
+        "wrongForms": [
+          "It's look like"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 95,
+        "word": "measured / assured",
+        "part_of_speech": "",
+        "meaning": "被衡量/被保证",
+        "wrongForms": [
+          "meash"
+        ],
+        "group": "作文错词",
+        "source": "养老机器人 10-20",
+        "note": "safe is not meash",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 96,
+        "word": "elderly",
+        "part_of_speech": "",
+        "meaning": "老年的",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "elderly care robots",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 97,
+        "word": "respondent",
+        "part_of_speech": "",
+        "meaning": "受访者",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "范文词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 98,
+        "word": "prioritize",
+        "part_of_speech": "",
+        "meaning": "优先考虑",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "范文词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 99,
+        "word": "acceptance",
+        "part_of_speech": "",
+        "meaning": "接受",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "acceptance degree",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 100,
+        "word": "concern",
+        "part_of_speech": "",
+        "meaning": "关注点/担忧",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "main concerns",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 101,
+        "word": "aging society",
+        "part_of_speech": "",
+        "meaning": "老龄化社会",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "养老机器人 10-20（模板难词）",
+        "note": "结尾",
         "lesson": "essay-misspell",
         "syllable": ""
       }
