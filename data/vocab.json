@@ -13891,9 +13891,9 @@
     }
   ],
   "essay": {
-    "spellCount": 120,
-    "recognizeCount": 898,
-    "misspellCount": 101,
+    "spellCount": 126,
+    "recognizeCount": 897,
+    "misspellCount": 114,
     "spell": [
       {
         "word": "accordingly",
@@ -14973,6 +14973,60 @@
         "group": "十、2026-10-20 养老机器人高频错拼",
         "syllable": "con-cern",
         "index": 120,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "professor",
+        "part_of_speech": "n.",
+        "meaning": "教授",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "pro-fes-sor",
+        "index": 121,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "believe",
+        "part_of_speech": "v.",
+        "meaning": "相信",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "be-lieve",
+        "index": 122,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "invite",
+        "part_of_speech": "v.",
+        "meaning": "邀请",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "in-vite",
+        "index": 123,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "committee",
+        "part_of_speech": "n.",
+        "meaning": "委员会",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "com-mit-tee",
+        "index": 124,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "judge",
+        "part_of_speech": "n.",
+        "meaning": "评委 v. 评判",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "judge",
+        "index": 125,
+        "lesson": "essay-spell"
+      },
+      {
+        "word": "contest",
+        "part_of_speech": "n.",
+        "meaning": "比赛",
+        "group": "十一、2026-10-22 邀请信必拼升格",
+        "syllable": "con-test",
+        "index": 126,
         "lesson": "essay-spell"
       }
     ],
@@ -21440,21 +21494,12 @@
         "lesson": "essay-recognize"
       },
       {
-        "word": "professor",
-        "part_of_speech": "",
-        "meaning": "教授",
-        "group": "核心词汇",
-        "syllable": "",
-        "index": 719,
-        "lesson": "essay-recognize"
-      },
-      {
         "word": "acquire a degree",
         "part_of_speech": "",
         "meaning": "获得学位",
         "group": "核心词汇",
         "syllable": "",
-        "index": 720,
+        "index": 719,
         "lesson": "essay-recognize"
       },
       {
@@ -21463,7 +21508,7 @@
         "meaning": "全体教师",
         "group": "核心词汇",
         "syllable": "",
-        "index": 721,
+        "index": 720,
         "lesson": "essay-recognize"
       },
       {
@@ -21472,7 +21517,7 @@
         "meaning": "文学硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 722,
+        "index": 721,
         "lesson": "essay-recognize"
       },
       {
@@ -21481,7 +21526,7 @@
         "meaning": "系",
         "group": "核心词汇",
         "syllable": "",
-        "index": 723,
+        "index": 722,
         "lesson": "essay-recognize"
       },
       {
@@ -21490,7 +21535,7 @@
         "meaning": "理学硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 724,
+        "index": 723,
         "lesson": "essay-recognize"
       },
       {
@@ -21499,7 +21544,7 @@
         "meaning": "专业",
         "group": "核心词汇",
         "syllable": "",
-        "index": 725,
+        "index": 724,
         "lesson": "essay-recognize"
       },
       {
@@ -21508,7 +21553,7 @@
         "meaning": "大",
         "group": "核心词汇",
         "syllable": "",
-        "index": 726,
+        "index": 725,
         "lesson": "essay-recognize"
       },
       {
@@ -21517,7 +21562,7 @@
         "meaning": "教学设施",
         "group": "核心词汇",
         "syllable": "",
-        "index": 727,
+        "index": 726,
         "lesson": "essay-recognize"
       },
       {
@@ -21526,7 +21571,7 @@
         "meaning": "理科",
         "group": "核心词汇",
         "syllable": "",
-        "index": 728,
+        "index": 727,
         "lesson": "essay-recognize"
       },
       {
@@ -21535,7 +21580,7 @@
         "meaning": "食堂",
         "group": "核心词汇",
         "syllable": "",
-        "index": 729,
+        "index": 728,
         "lesson": "essay-recognize"
       },
       {
@@ -21544,7 +21589,7 @@
         "meaning": "工商管理硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 730,
+        "index": 729,
         "lesson": "essay-recognize"
       },
       {
@@ -21553,7 +21598,7 @@
         "meaning": "宿舍",
         "group": "核心词汇",
         "syllable": "",
-        "index": 731,
+        "index": 730,
         "lesson": "essay-recognize"
       },
       {
@@ -21562,7 +21607,7 @@
         "meaning": "学杂费",
         "group": "核心词汇",
         "syllable": "",
-        "index": 732,
+        "index": 731,
         "lesson": "essay-recognize"
       },
       {
@@ -21571,7 +21616,7 @@
         "meaning": "公共管理硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 733,
+        "index": 732,
         "lesson": "essay-recognize"
       },
       {
@@ -21580,7 +21625,7 @@
         "meaning": "终身教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 734,
+        "index": 733,
         "lesson": "essay-recognize"
       },
       {
@@ -21589,7 +21634,7 @@
         "meaning": "素质教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 735,
+        "index": 734,
         "lesson": "essay-recognize"
       },
       {
@@ -21598,7 +21643,7 @@
         "meaning": "会计硕士",
         "group": "核心词汇",
         "syllable": "",
-        "index": 736,
+        "index": 735,
         "lesson": "essay-recognize"
       },
       {
@@ -21607,7 +21652,7 @@
         "meaning": "应试教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 737,
+        "index": 736,
         "lesson": "essay-recognize"
       },
       {
@@ -21616,7 +21661,7 @@
         "meaning": "幼儿园",
         "group": "核心词汇",
         "syllable": "",
-        "index": 738,
+        "index": 737,
         "lesson": "essay-recognize"
       },
       {
@@ -21625,7 +21670,7 @@
         "meaning": "成人教育",
         "group": "核心词汇",
         "syllable": "",
-        "index": 739,
+        "index": 738,
         "lesson": "essay-recognize"
       },
       {
@@ -21634,7 +21679,7 @@
         "meaning": "信息时代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 740,
+        "index": 739,
         "lesson": "essay-recognize"
       },
       {
@@ -21643,7 +21688,7 @@
         "meaning": "开阔眼界",
         "group": "核心词汇",
         "syllable": "",
-        "index": 741,
+        "index": 740,
         "lesson": "essay-recognize"
       },
       {
@@ -21652,7 +21697,7 @@
         "meaning": "知识爆炸时代",
         "group": "核心词汇",
         "syllable": "",
-        "index": 742,
+        "index": 741,
         "lesson": "essay-recognize"
       },
       {
@@ -21661,7 +21706,7 @@
         "meaning": "激发兴趣",
         "group": "核心词汇",
         "syllable": "",
-        "index": 743,
+        "index": 742,
         "lesson": "essay-recognize"
       },
       {
@@ -21670,7 +21715,7 @@
         "meaning": "影响学习成绩",
         "group": "核心词汇",
         "syllable": "",
-        "index": 744,
+        "index": 743,
         "lesson": "essay-recognize"
       },
       {
@@ -21679,7 +21724,7 @@
         "meaning": "开发潜能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 745,
+        "index": 744,
         "lesson": "essay-recognize"
       },
       {
@@ -21688,7 +21733,7 @@
         "meaning": "逃课",
         "group": "核心词汇",
         "syllable": "",
-        "index": 746,
+        "index": 745,
         "lesson": "essay-recognize"
       },
       {
@@ -21697,7 +21742,7 @@
         "meaning": "(学生)减负",
         "group": "核心词汇",
         "syllable": "",
-        "index": 747,
+        "index": 746,
         "lesson": "essay-recognize"
       },
       {
@@ -21706,7 +21751,7 @@
         "meaning": "学业表现",
         "group": "核心词汇",
         "syllable": "",
-        "index": 748,
+        "index": 747,
         "lesson": "essay-recognize"
       },
       {
@@ -21715,7 +21760,7 @@
         "meaning": "文理分科",
         "group": "核心词汇",
         "syllable": "",
-        "index": 749,
+        "index": 748,
         "lesson": "essay-recognize"
       },
       {
@@ -21724,7 +21769,7 @@
         "meaning": "学习氛围",
         "group": "核心词汇",
         "syllable": "",
-        "index": 750,
+        "index": 749,
         "lesson": "essay-recognize"
       },
       {
@@ -21733,7 +21778,7 @@
         "meaning": "轻松的大学生活",
         "group": "核心词汇",
         "syllable": "",
-        "index": 751,
+        "index": 750,
         "lesson": "essay-recognize"
       },
       {
@@ -21742,7 +21787,7 @@
         "meaning": "雇员",
         "group": "核心词汇",
         "syllable": "",
-        "index": 752,
+        "index": 751,
         "lesson": "essay-recognize"
       },
       {
@@ -21751,7 +21796,7 @@
         "meaning": "申请入学",
         "group": "核心词汇",
         "syllable": "",
-        "index": 753,
+        "index": 752,
         "lesson": "essay-recognize"
       },
       {
@@ -21760,7 +21805,7 @@
         "meaning": "职业培训",
         "group": "核心词汇",
         "syllable": "",
-        "index": 754,
+        "index": 753,
         "lesson": "essay-recognize"
       },
       {
@@ -21769,7 +21814,7 @@
         "meaning": "雇主",
         "group": "核心词汇",
         "syllable": "",
-        "index": 755,
+        "index": 754,
         "lesson": "essay-recognize"
       },
       {
@@ -21778,7 +21823,7 @@
         "meaning": "自立",
         "group": "核心词汇",
         "syllable": "",
-        "index": 756,
+        "index": 755,
         "lesson": "essay-recognize"
       },
       {
@@ -21787,7 +21832,7 @@
         "meaning": "独生子女",
         "group": "核心词汇",
         "syllable": "",
-        "index": 757,
+        "index": 756,
         "lesson": "essay-recognize"
       },
       {
@@ -21796,7 +21841,7 @@
         "meaning": "激烈竞争",
         "group": "核心词汇",
         "syllable": "",
-        "index": 758,
+        "index": 757,
         "lesson": "essay-recognize"
       },
       {
@@ -21805,7 +21850,7 @@
         "meaning": "不劳而获",
         "group": "核心词汇",
         "syllable": "",
-        "index": 759,
+        "index": 758,
         "lesson": "essay-recognize"
       },
       {
@@ -21814,7 +21859,7 @@
         "meaning": "啃老族",
         "group": "核心词汇",
         "syllable": "",
-        "index": 760,
+        "index": 759,
         "lesson": "essay-recognize"
       },
       {
@@ -21823,7 +21868,7 @@
         "meaning": "不断努力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 761,
+        "index": 760,
         "lesson": "essay-recognize"
       },
       {
@@ -21832,7 +21877,7 @@
         "meaning": "奋斗精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 762,
+        "index": 761,
         "lesson": "essay-recognize"
       },
       {
@@ -21841,7 +21886,7 @@
         "meaning": "决不放弃",
         "group": "核心词汇",
         "syllable": "",
-        "index": 763,
+        "index": 762,
         "lesson": "essay-recognize"
       },
       {
@@ -21850,7 +21895,7 @@
         "meaning": "人生观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 764,
+        "index": 763,
         "lesson": "essay-recognize"
       },
       {
@@ -21859,7 +21904,7 @@
         "meaning": "决不停止进步",
         "group": "核心词汇",
         "syllable": "",
-        "index": 765,
+        "index": 764,
         "lesson": "essay-recognize"
       },
       {
@@ -21868,7 +21913,7 @@
         "meaning": "世界观",
         "group": "核心词汇",
         "syllable": "",
-        "index": 766,
+        "index": 765,
         "lesson": "essay-recognize"
       },
       {
@@ -21877,7 +21922,7 @@
         "meaning": "获得成功",
         "group": "核心词汇",
         "syllable": "",
-        "index": 767,
+        "index": 766,
         "lesson": "essay-recognize"
       },
       {
@@ -21886,7 +21931,7 @@
         "meaning": "恒心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 768,
+        "index": 767,
         "lesson": "essay-recognize"
       },
       {
@@ -21895,7 +21940,7 @@
         "meaning": "创新",
         "group": "核心词汇",
         "syllable": "",
-        "index": 769,
+        "index": 768,
         "lesson": "essay-recognize"
       },
       {
@@ -21904,7 +21949,7 @@
         "meaning": "耐心",
         "group": "核心词汇",
         "syllable": "",
-        "index": 770,
+        "index": 769,
         "lesson": "essay-recognize"
       },
       {
@@ -21913,7 +21958,7 @@
         "meaning": "勤奋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 771,
+        "index": 770,
         "lesson": "essay-recognize"
       },
       {
@@ -21922,7 +21967,7 @@
         "meaning": "谨慎",
         "group": "核心词汇",
         "syllable": "",
-        "index": 772,
+        "index": 771,
         "lesson": "essay-recognize"
       },
       {
@@ -21931,7 +21976,7 @@
         "meaning": "自信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 773,
+        "index": 772,
         "lesson": "essay-recognize"
       },
       {
@@ -21940,7 +21985,7 @@
         "meaning": "高估困难",
         "group": "核心词汇",
         "syllable": "",
-        "index": 774,
+        "index": 773,
         "lesson": "essay-recognize"
       },
       {
@@ -21949,7 +21994,7 @@
         "meaning": "谦虚",
         "group": "核心词汇",
         "syllable": "",
-        "index": 775,
+        "index": 774,
         "lesson": "essay-recognize"
       },
       {
@@ -21958,7 +22003,7 @@
         "meaning": "低估能力",
         "group": "核心词汇",
         "syllable": "",
-        "index": 776,
+        "index": 775,
         "lesson": "essay-recognize"
       },
       {
@@ -21967,7 +22012,7 @@
         "meaning": "缺乏自信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 777,
+        "index": 776,
         "lesson": "essay-recognize"
       },
       {
@@ -21976,7 +22021,7 @@
         "meaning": "齐心协力 /众志成城",
         "group": "核心词汇",
         "syllable": "",
-        "index": 778,
+        "index": 777,
         "lesson": "essay-recognize"
       },
       {
@@ -21985,7 +22030,7 @@
         "meaning": "团队精神",
         "group": "核心词汇",
         "syllable": "",
-        "index": 779,
+        "index": 778,
         "lesson": "essay-recognize"
       },
       {
@@ -21994,7 +22039,7 @@
         "meaning": "互相帮助",
         "group": "核心词汇",
         "syllable": "",
-        "index": 780,
+        "index": 779,
         "lesson": "essay-recognize"
       },
       {
@@ -22003,7 +22048,7 @@
         "meaning": "与他人合作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 781,
+        "index": 780,
         "lesson": "essay-recognize"
       },
       {
@@ -22012,7 +22057,7 @@
         "meaning": "完成工作",
         "group": "核心词汇",
         "syllable": "",
-        "index": 782,
+        "index": 781,
         "lesson": "essay-recognize"
       },
       {
@@ -22021,7 +22066,7 @@
         "meaning": "悲观(主义)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 783,
+        "index": 782,
         "lesson": "essay-recognize"
       },
       {
@@ -22030,7 +22075,7 @@
         "meaning": "坚信",
         "group": "核心词汇",
         "syllable": "",
-        "index": 784,
+        "index": 783,
         "lesson": "essay-recognize"
       },
       {
@@ -22039,7 +22084,7 @@
         "meaning": "悲观的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 785,
+        "index": 784,
         "lesson": "essay-recognize"
       },
       {
@@ -22048,7 +22093,7 @@
         "meaning": "百折不挠的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 786,
+        "index": 785,
         "lesson": "essay-recognize"
       },
       {
@@ -22057,7 +22102,7 @@
         "meaning": "积极态度",
         "group": "核心词汇",
         "syllable": "",
-        "index": 787,
+        "index": 786,
         "lesson": "essay-recognize"
       },
       {
@@ -22066,7 +22111,7 @@
         "meaning": "不可战胜的",
         "group": "核心词汇",
         "syllable": "",
-        "index": 788,
+        "index": 787,
         "lesson": "essay-recognize"
       },
       {
@@ -22075,7 +22120,7 @@
         "meaning": "思想开明",
         "group": "核心词汇",
         "syllable": "",
-        "index": 789,
+        "index": 788,
         "lesson": "essay-recognize"
       },
       {
@@ -22084,7 +22129,7 @@
         "meaning": "压力之下保持风度",
         "group": "核心词汇",
         "syllable": "",
-        "index": 790,
+        "index": 789,
         "lesson": "essay-recognize"
       },
       {
@@ -22093,7 +22138,7 @@
         "meaning": "勇于面对困难",
         "group": "核心词汇",
         "syllable": "",
-        "index": 791,
+        "index": 790,
         "lesson": "essay-recognize"
       },
       {
@@ -22102,7 +22147,7 @@
         "meaning": "把梦想变成现实",
         "group": "核心词汇",
         "syllable": "",
-        "index": 792,
+        "index": 791,
         "lesson": "essay-recognize"
       },
       {
@@ -22111,7 +22156,7 @@
         "meaning": "犹豫不决",
         "group": "核心词汇",
         "syllable": "",
-        "index": 793,
+        "index": 792,
         "lesson": "essay-recognize"
       },
       {
@@ -22120,7 +22165,7 @@
         "meaning": "磨炼意志",
         "group": "核心词汇",
         "syllable": "",
-        "index": 794,
+        "index": 793,
         "lesson": "essay-recognize"
       },
       {
@@ -22129,7 +22174,7 @@
         "meaning": "提高环保意识",
         "group": "核心词汇",
         "syllable": "",
-        "index": 795,
+        "index": 794,
         "lesson": "essay-recognize"
       },
       {
@@ -22138,7 +22183,7 @@
         "meaning": "生态系统",
         "group": "核心词汇",
         "syllable": "",
-        "index": 796,
+        "index": 795,
         "lesson": "essay-recognize"
       },
       {
@@ -22147,7 +22192,7 @@
         "meaning": "自然保护区",
         "group": "核心词汇",
         "syllable": "",
-        "index": 797,
+        "index": 796,
         "lesson": "essay-recognize"
       },
       {
@@ -22156,7 +22201,7 @@
         "meaning": "宜人的生活环境",
         "group": "核心词汇",
         "syllable": "",
-        "index": 798,
+        "index": 797,
         "lesson": "essay-recognize"
       },
       {
@@ -22165,7 +22210,7 @@
         "meaning": "保持生态平衡",
         "group": "核心词汇",
         "syllable": "",
-        "index": 799,
+        "index": 798,
         "lesson": "essay-recognize"
       },
       {
@@ -22174,7 +22219,7 @@
         "meaning": "节能(节约能源)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 800,
+        "index": 799,
         "lesson": "essay-recognize"
       },
       {
@@ -22183,7 +22228,7 @@
         "meaning": "减排(减少温室气体排放)",
         "group": "核心词汇",
         "syllable": "",
-        "index": 801,
+        "index": 800,
         "lesson": "essay-recognize"
       },
       {
@@ -22192,7 +22237,7 @@
         "meaning": "清洁可再生能源",
         "group": "核心词汇",
         "syllable": "",
-        "index": 802,
+        "index": 801,
         "lesson": "essay-recognize"
       },
       {
@@ -22201,7 +22246,7 @@
         "meaning": "核能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 803,
+        "index": 802,
         "lesson": "essay-recognize"
       },
       {
@@ -22210,7 +22255,7 @@
         "meaning": "降低资源消耗率",
         "group": "核心词汇",
         "syllable": "",
-        "index": 804,
+        "index": 803,
         "lesson": "essay-recognize"
       },
       {
@@ -22219,7 +22264,7 @@
         "meaning": "太阳能",
         "group": "核心词汇",
         "syllable": "",
-        "index": 805,
+        "index": 804,
         "lesson": "essay-recognize"
       },
       {
@@ -22228,7 +22273,7 @@
         "meaning": "大功率电器",
         "group": "核心词汇",
         "syllable": "",
-        "index": 806,
+        "index": 805,
         "lesson": "essay-recognize"
       },
       {
@@ -22237,7 +22282,7 @@
         "meaning": "环保产品",
         "group": "核心词汇",
         "syllable": "",
-        "index": 807,
+        "index": 806,
         "lesson": "essay-recognize"
       },
       {
@@ -22246,7 +22291,7 @@
         "meaning": "二氧化碳",
         "group": "核心词汇",
         "syllable": "",
-        "index": 808,
+        "index": 807,
         "lesson": "essay-recognize"
       },
       {
@@ -22255,7 +22300,7 @@
         "meaning": "环境恶化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 809,
+        "index": 808,
         "lesson": "essay-recognize"
       },
       {
@@ -22264,7 +22309,7 @@
         "meaning": "濒危物种",
         "group": "核心词汇",
         "syllable": "",
-        "index": 810,
+        "index": 809,
         "lesson": "essay-recognize"
       },
       {
@@ -22273,7 +22318,7 @@
         "meaning": "乱砍滥伐",
         "group": "核心词汇",
         "syllable": "",
-        "index": 811,
+        "index": 810,
         "lesson": "essay-recognize"
       },
       {
@@ -22282,7 +22327,7 @@
         "meaning": "野生物种",
         "group": "核心词汇",
         "syllable": "",
-        "index": 812,
+        "index": 811,
         "lesson": "essay-recognize"
       },
       {
@@ -22291,7 +22336,7 @@
         "meaning": "沙漠化",
         "group": "核心词汇",
         "syllable": "",
-        "index": 813,
+        "index": 812,
         "lesson": "essay-recognize"
       },
       {
@@ -22300,7 +22345,7 @@
         "meaning": "商业捕鱼",
         "group": "核心词汇",
         "syllable": "",
-        "index": 814,
+        "index": 813,
         "lesson": "essay-recognize"
       },
       {
@@ -22309,7 +22354,7 @@
         "meaning": "过度捕捞",
         "group": "核心词汇",
         "syllable": "",
-        "index": 815,
+        "index": 814,
         "lesson": "essay-recognize"
       },
       {
@@ -22318,7 +22363,7 @@
         "meaning": "野生动物保护",
         "group": "核心词汇",
         "syllable": "",
-        "index": 816,
+        "index": 815,
         "lesson": "essay-recognize"
       },
       {
@@ -22327,7 +22372,7 @@
         "meaning": "过度开发",
         "group": "核心词汇",
         "syllable": "",
-        "index": 817,
+        "index": 816,
         "lesson": "essay-recognize"
       },
       {
@@ -22336,7 +22381,7 @@
         "meaning": "可降解一次性塑料袋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 818,
+        "index": 817,
         "lesson": "essay-recognize"
       },
       {
@@ -22345,7 +22390,7 @@
         "meaning": "限制使用一次性塑料袋",
         "group": "核心词汇",
         "syllable": "",
-        "index": 819,
+        "index": 818,
         "lesson": "essay-recognize"
       },
       {
@@ -22354,7 +22399,7 @@
         "meaning": "一次性筷子",
         "group": "核心词汇",
         "syllable": "",
-        "index": 820,
+        "index": 819,
         "lesson": "essay-recognize"
       },
       {
@@ -22363,7 +22408,7 @@
         "meaning": "乱扔垃圾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 821,
+        "index": 820,
         "lesson": "essay-recognize"
       },
       {
@@ -22372,7 +22417,7 @@
         "meaning": "垃圾",
         "group": "核心词汇",
         "syllable": "",
-        "index": 822,
+        "index": 821,
         "lesson": "essay-recognize"
       },
       {
@@ -22381,7 +22426,7 @@
         "meaning": "综合利用",
         "group": "核心词汇",
         "syllable": "",
-        "index": 823,
+        "index": 822,
         "lesson": "essay-recognize"
       },
       {
@@ -22390,7 +22435,7 @@
         "meaning": "丢弃",
         "group": "核心词汇",
         "syllable": "",
-        "index": 824,
+        "index": 823,
         "lesson": "essay-recognize"
       },
       {
@@ -22399,7 +22444,7 @@
         "meaning": "污水处理",
         "group": "核心词汇",
         "syllable": "",
-        "index": 825,
+        "index": 824,
         "lesson": "essay-recognize"
       },
       {
@@ -22408,7 +22453,7 @@
         "meaning": "电动汽车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 826,
+        "index": 825,
         "lesson": "essay-recognize"
       },
       {
@@ -22417,7 +22462,7 @@
         "meaning": "汽车尾气排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 827,
+        "index": 826,
         "lesson": "essay-recognize"
       },
       {
@@ -22426,7 +22471,7 @@
         "meaning": "工业粉尘排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 828,
+        "index": 827,
         "lesson": "essay-recognize"
       },
       {
@@ -22435,7 +22480,7 @@
         "meaning": "天然气汽车",
         "group": "核心词汇",
         "syllable": "",
-        "index": 829,
+        "index": 828,
         "lesson": "essay-recognize"
       },
       {
@@ -22444,7 +22489,7 @@
         "meaning": "烟尘排放",
         "group": "核心词汇",
         "syllable": "",
-        "index": 830,
+        "index": 829,
         "lesson": "essay-recognize"
       },
       {
@@ -22453,7 +22498,7 @@
         "meaning": "雇用；使用；利用",
         "group": "范文001（印刷 p40）",
         "syllable": "",
-        "index": 831,
+        "index": 830,
         "lesson": "essay-recognize"
       },
       {
@@ -22462,7 +22507,7 @@
         "meaning": "要求，必要条件；需要的东西",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 832,
+        "index": 831,
         "lesson": "essay-recognize"
       },
       {
@@ -22471,7 +22516,7 @@
         "meaning": "熟悉，通晓；友好随和",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 833,
+        "index": 832,
         "lesson": "essay-recognize"
       },
       {
@@ -22480,7 +22525,7 @@
         "meaning": "优先考虑；偏爱；偏爱的事物",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 834,
+        "index": 833,
         "lesson": "essay-recognize"
       },
       {
@@ -22489,7 +22534,7 @@
         "meaning": "申请；请求；申请书；运用",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 835,
+        "index": 834,
         "lesson": "essay-recognize"
       },
       {
@@ -22498,7 +22543,7 @@
         "meaning": "询问，调查；探索",
         "group": "范文002（印刷 p43）",
         "syllable": "",
-        "index": 836,
+        "index": 835,
         "lesson": "essay-recognize"
       },
       {
@@ -22507,7 +22552,7 @@
         "meaning": "接待；欢迎；招待会",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 837,
+        "index": 836,
         "lesson": "essay-recognize"
       },
       {
@@ -22516,7 +22561,7 @@
         "meaning": "交流；交换",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 838,
+        "index": 837,
         "lesson": "essay-recognize"
       },
       {
@@ -22525,7 +22570,7 @@
         "meaning": "印象；影响",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 839,
+        "index": 838,
         "lesson": "essay-recognize"
       },
       {
@@ -22534,7 +22579,7 @@
         "meaning": "谈及；提到",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 840,
+        "index": 839,
         "lesson": "essay-recognize"
       },
       {
@@ -22543,7 +22588,7 @@
         "meaning": "预先，事先",
         "group": "范文003（印刷 p46）",
         "syllable": "",
-        "index": 841,
+        "index": 840,
         "lesson": "essay-recognize"
       },
       {
@@ -22552,7 +22597,7 @@
         "meaning": "提供，给予；延长，扩展，扩大",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 842,
+        "index": 841,
         "lesson": "essay-recognize"
       },
       {
@@ -22561,7 +22606,7 @@
         "meaning": "有声望的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 843,
+        "index": 842,
         "lesson": "essay-recognize"
       },
       {
@@ -22570,7 +22615,7 @@
         "meaning": "大量的；丰富的，充足的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 844,
+        "index": 843,
         "lesson": "essay-recognize"
       },
       {
@@ -22579,7 +22624,7 @@
         "meaning": "有价值的；令人愉快的",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 845,
+        "index": 844,
         "lesson": "essay-recognize"
       },
       {
@@ -22588,7 +22633,7 @@
         "meaning": "提高，增强；改进",
         "group": "范文004（印刷 p49）",
         "syllable": "",
-        "index": 846,
+        "index": 845,
         "lesson": "essay-recognize"
       },
       {
@@ -22597,7 +22642,7 @@
         "meaning": "给（电池）充电；恢复精力，休整",
         "group": "范文005（印刷 p52）",
         "syllable": "",
-        "index": 847,
+        "index": 846,
         "lesson": "essay-recognize"
       },
       {
@@ -22606,7 +22651,7 @@
         "meaning": "不能接受的；不受欢迎的",
         "group": "范文005（印刷 p52）",
         "syllable": "",
-        "index": 848,
+        "index": 847,
         "lesson": "essay-recognize"
       },
       {
@@ -22615,7 +22660,7 @@
         "meaning": "人才，天才；天赋",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 849,
+        "index": 848,
         "lesson": "essay-recognize"
       },
       {
@@ -22624,7 +22669,7 @@
         "meaning": "核心，要点；核心的；基本的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 850,
+        "index": 849,
         "lesson": "essay-recognize"
       },
       {
@@ -22633,7 +22678,7 @@
         "meaning": "参赛者，竞争者",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 851,
+        "index": 850,
         "lesson": "essay-recognize"
       },
       {
@@ -22642,7 +22687,7 @@
         "meaning": "有启发作用的，使人领悟的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 852,
+        "index": 851,
         "lesson": "essay-recognize"
       },
       {
@@ -22651,7 +22696,7 @@
         "meaning": "博学的；有见识的",
         "group": "范文006（印刷 p55）",
         "syllable": "",
-        "index": 853,
+        "index": 852,
         "lesson": "essay-recognize"
       },
       {
@@ -22660,7 +22705,7 @@
         "meaning": "主要的；初级的；初等教育的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 854,
+        "index": 853,
         "lesson": "essay-recognize"
       },
       {
@@ -22669,7 +22714,7 @@
         "meaning": "古代的；古老的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 855,
+        "index": 854,
         "lesson": "essay-recognize"
       },
       {
@@ -22678,7 +22723,7 @@
         "meaning": "有名的；有声望的",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 856,
+        "index": 855,
         "lesson": "essay-recognize"
       },
       {
@@ -22687,7 +22732,7 @@
         "meaning": "遗产；传统",
         "group": "范文007（印刷 p58）",
         "syllable": "",
-        "index": 857,
+        "index": 856,
         "lesson": "essay-recognize"
       },
       {
@@ -22696,7 +22741,7 @@
         "meaning": "候选人；应试者；适合………的人/物",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 858,
+        "index": 857,
         "lesson": "essay-recognize"
       },
       {
@@ -22705,7 +22750,7 @@
         "meaning": "技术；技能",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 859,
+        "index": 858,
         "lesson": "essay-recognize"
       },
       {
@@ -22714,7 +22759,7 @@
         "meaning": "促进；推广；促销；晋升",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 860,
+        "index": 859,
         "lesson": "essay-recognize"
       },
       {
@@ -22723,7 +22768,7 @@
         "meaning": "中世纪的",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 861,
+        "index": 860,
         "lesson": "essay-recognize"
       },
       {
@@ -22732,7 +22777,7 @@
         "meaning": "文艺复兴",
         "group": "范文008（印刷 p61）",
         "syllable": "",
-        "index": 862,
+        "index": 861,
         "lesson": "essay-recognize"
       },
       {
@@ -22741,7 +22786,7 @@
         "meaning": "热情的；热心的",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 863,
+        "index": 862,
         "lesson": "essay-recognize"
       },
       {
@@ -22750,7 +22795,7 @@
         "meaning": "继承；经遗传获得（品质、身体特征等）",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 864,
+        "index": 863,
         "lesson": "essay-recognize"
       },
       {
@@ -22759,7 +22804,7 @@
         "meaning": "百科全书",
         "group": "范文009（印刷 p65）",
         "syllable": "",
-        "index": 865,
+        "index": 864,
         "lesson": "essay-recognize"
       },
       {
@@ -22768,7 +22813,7 @@
         "meaning": "传奇故事；浪漫史；爱情",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 866,
+        "index": 865,
         "lesson": "essay-recognize"
       },
       {
@@ -22777,7 +22822,7 @@
         "meaning": "奋斗；搏斗",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 867,
+        "index": 866,
         "lesson": "essay-recognize"
       },
       {
@@ -22786,7 +22831,7 @@
         "meaning": "动荡的；汹涌的",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 868,
+        "index": 867,
         "lesson": "essay-recognize"
       },
       {
@@ -22795,7 +22840,7 @@
         "meaning": "描述；表现；扮演",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 869,
+        "index": 868,
         "lesson": "essay-recognize"
       },
       {
@@ -22804,7 +22849,7 @@
         "meaning": "人物，角色；性格；文字",
         "group": "范文010（印刷 p69）",
         "syllable": "",
-        "index": 870,
+        "index": 869,
         "lesson": "essay-recognize"
       },
       {
@@ -22813,7 +22858,7 @@
         "meaning": "典型的，独特的n. 特色；品质",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 871,
+        "index": 870,
         "lesson": "essay-recognize"
       },
       {
@@ -22822,7 +22867,7 @@
         "meaning": "独特的；独有的；唯一的",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 872,
+        "index": 871,
         "lesson": "essay-recognize"
       },
       {
@@ -22831,7 +22876,7 @@
         "meaning": "保存；保护；保护区",
         "group": "范文021（印刷 p98）",
         "syllable": "",
-        "index": 873,
+        "index": 872,
         "lesson": "essay-recognize"
       },
       {
@@ -22840,7 +22885,7 @@
         "meaning": "现象；杰出的人",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 874,
+        "index": 873,
         "lesson": "essay-recognize"
       },
       {
@@ -22849,7 +22894,7 @@
         "meaning": "重申，反复地说",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 875,
+        "index": 874,
         "lesson": "essay-recognize"
       },
       {
@@ -22858,7 +22903,7 @@
         "meaning": "虐待，亏待",
         "group": "范文022（印刷 p101）",
         "syllable": "",
-        "index": 876,
+        "index": 875,
         "lesson": "essay-recognize"
       },
       {
@@ -22867,7 +22912,7 @@
         "meaning": "具有讽刺意味的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 877,
+        "index": 876,
         "lesson": "essay-recognize"
       },
       {
@@ -22876,7 +22921,7 @@
         "meaning": "隐喻性的",
         "group": "范文024（印刷 p107）",
         "syllable": "",
-        "index": 878,
+        "index": 877,
         "lesson": "essay-recognize"
       },
       {
@@ -22885,7 +22930,7 @@
         "meaning": "普遍存在的；全体的，普遍的，全世界的",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 879,
+        "index": 878,
         "lesson": "essay-recognize"
       },
       {
@@ -22894,7 +22939,7 @@
         "meaning": "（使）参与；吸引；雇用",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 880,
+        "index": 879,
         "lesson": "essay-recognize"
       },
       {
@@ -22903,7 +22948,7 @@
         "meaning": "促进；提升；宣传；晋升",
         "group": "范文025（印刷 p110）",
         "syllable": "",
-        "index": 881,
+        "index": 880,
         "lesson": "essay-recognize"
       },
       {
@@ -22912,7 +22957,7 @@
         "meaning": "耐用的；持久的；[pl.]耐用品",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 882,
+        "index": 881,
         "lesson": "essay-recognize"
       },
       {
@@ -22921,7 +22966,7 @@
         "meaning": "家庭；家喻户晓的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 883,
+        "index": 882,
         "lesson": "essay-recognize"
       },
       {
@@ -22930,7 +22975,7 @@
         "meaning": "国内的；家用的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 884,
+        "index": 883,
         "lesson": "essay-recognize"
       },
       {
@@ -22939,7 +22984,7 @@
         "meaning": "可进入/到达/使用的；可理解的",
         "group": "范文026（印刷 p114）",
         "syllable": "",
-        "index": 885,
+        "index": 884,
         "lesson": "essay-recognize"
       },
       {
@@ -22948,7 +22993,7 @@
         "meaning": "按重要性排列，优先处理",
         "group": "范文027（印刷 p118）",
         "syllable": "",
-        "index": 886,
+        "index": 885,
         "lesson": "essay-recognize"
       },
       {
@@ -22957,7 +23002,7 @@
         "meaning": "展示；出席；礼物；现在的",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 887,
+        "index": 886,
         "lesson": "essay-recognize"
       },
       {
@@ -22966,7 +23011,7 @@
         "meaning": "基础设施，基础建设",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 888,
+        "index": 887,
         "lesson": "essay-recognize"
       },
       {
@@ -22975,7 +23020,7 @@
         "meaning": "包容性，包容度",
         "group": "范文028（印刷 p121）",
         "syllable": "",
-        "index": 889,
+        "index": 888,
         "lesson": "essay-recognize"
       },
       {
@@ -22984,7 +23029,7 @@
         "meaning": "巨大的；戏剧（性）的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 890,
+        "index": 889,
         "lesson": "essay-recognize"
       },
       {
@@ -22993,7 +23038,7 @@
         "meaning": "强有力的，起推动作用的",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 891,
+        "index": 890,
         "lesson": "essay-recognize"
       },
       {
@@ -23002,7 +23047,7 @@
         "meaning": "有资格的；具备……的资历",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 892,
+        "index": 891,
         "lesson": "essay-recognize"
       },
       {
@@ -23011,7 +23056,7 @@
         "meaning": "迫使；（通过满足要求而）帮助",
         "group": "范文029（印刷 p124）",
         "syllable": "",
-        "index": 893,
+        "index": 892,
         "lesson": "essay-recognize"
       },
       {
@@ -23020,7 +23065,7 @@
         "meaning": "有害的，不利的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 894,
+        "index": 893,
         "lesson": "essay-recognize"
       },
       {
@@ -23029,7 +23074,7 @@
         "meaning": "（使）倾斜；倾向于",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 895,
+        "index": 894,
         "lesson": "essay-recognize"
       },
       {
@@ -23038,7 +23083,7 @@
         "meaning": "一贯地；坚持地",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 896,
+        "index": 895,
         "lesson": "essay-recognize"
       },
       {
@@ -23047,7 +23092,7 @@
         "meaning": "宝贵的；珍奇的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 897,
+        "index": 896,
         "lesson": "essay-recognize"
       },
       {
@@ -23056,7 +23101,7 @@
         "meaning": "表面（上）的；肤浅的",
         "group": "范文030（印刷 p127）",
         "syllable": "",
-        "index": 898,
+        "index": 897,
         "lesson": "essay-recognize"
       }
     ],
@@ -24430,6 +24475,174 @@
         "group": "作文错词",
         "source": "养老机器人 10-20（模板难词）",
         "note": "结尾",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 102,
+        "word": "professor",
+        "part_of_speech": "",
+        "meaning": "教授",
+        "wrongForms": [
+          "profeeso"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 103,
+        "word": "believe",
+        "part_of_speech": "",
+        "meaning": "相信",
+        "wrongForms": [
+          "belive"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "易漏 e",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 104,
+        "word": "sincerely",
+        "part_of_speech": "",
+        "meaning": "诚挚地",
+        "wrongForms": [
+          "siniacly"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "Yours sincerely",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 105,
+        "word": "English speaking",
+        "part_of_speech": "",
+        "meaning": "说英语的",
+        "wrongForms": [
+          "English speak"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 106,
+        "word": "gift",
+        "part_of_speech": "",
+        "meaning": "礼物",
+        "wrongForms": [
+          "food and feel"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "原稿用意不明（fee/gift）",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 107,
+        "word": "at the end of the week",
+        "part_of_speech": "",
+        "meaning": "在周末",
+        "wrongForms": [
+          "on the end of the week"
+        ],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "介词用 at",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 108,
+        "word": "invite",
+        "part_of_speech": "",
+        "meaning": "邀请",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 109,
+        "word": "committee",
+        "part_of_speech": "",
+        "meaning": "委员会",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词；双m双t双e",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 110,
+        "word": "judge",
+        "part_of_speech": "",
+        "meaning": "评委",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 111,
+        "word": "auditorium",
+        "part_of_speech": "",
+        "meaning": "礼堂",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 112,
+        "word": "knowledgeable",
+        "part_of_speech": "",
+        "meaning": "有见识的",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词；难拼可用 experienced",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 113,
+        "word": "enlightening",
+        "part_of_speech": "",
+        "meaning": "有启发的",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词；难拼，考场可用 useful",
+        "lesson": "essay-misspell",
+        "syllable": ""
+      },
+      {
+        "index": 114,
+        "word": "contest",
+        "part_of_speech": "",
+        "meaning": "比赛",
+        "wrongForms": [],
+        "group": "作文错词",
+        "source": "邀请信 10-22",
+        "note": "模板难词",
         "lesson": "essay-misspell",
         "syllable": ""
       }

@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 101,
+  "count": 114,
   "words": [
     {
       "index": 1,
@@ -1271,6 +1271,161 @@
       "group": "作文错词",
       "source": "养老机器人 10-20（模板难词）",
       "note": "结尾",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 102,
+      "word": "professor",
+      "part_of_speech": "",
+      "meaning": "教授",
+      "wrongForms": [
+        "profeeso"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 103,
+      "word": "believe",
+      "part_of_speech": "",
+      "meaning": "相信",
+      "wrongForms": [
+        "belive"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "易漏 e",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 104,
+      "word": "sincerely",
+      "part_of_speech": "",
+      "meaning": "诚挚地",
+      "wrongForms": [
+        "siniacly"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "Yours sincerely",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 105,
+      "word": "English speaking",
+      "part_of_speech": "",
+      "meaning": "说英语的",
+      "wrongForms": [
+        "English speak"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 106,
+      "word": "gift",
+      "part_of_speech": "",
+      "meaning": "礼物",
+      "wrongForms": [
+        "food and feel"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "原稿用意不明（fee/gift）",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 107,
+      "word": "at the end of the week",
+      "part_of_speech": "",
+      "meaning": "在周末",
+      "wrongForms": [
+        "on the end of the week"
+      ],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "介词用 at",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 108,
+      "word": "invite",
+      "part_of_speech": "",
+      "meaning": "邀请",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 109,
+      "word": "committee",
+      "part_of_speech": "",
+      "meaning": "委员会",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词；双m双t双e",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 110,
+      "word": "judge",
+      "part_of_speech": "",
+      "meaning": "评委",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 111,
+      "word": "auditorium",
+      "part_of_speech": "",
+      "meaning": "礼堂",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 112,
+      "word": "knowledgeable",
+      "part_of_speech": "",
+      "meaning": "有见识的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词；难拼可用 experienced",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 113,
+      "word": "enlightening",
+      "part_of_speech": "",
+      "meaning": "有启发的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词；难拼，考场可用 useful",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 114,
+      "word": "contest",
+      "part_of_speech": "",
+      "meaning": "比赛",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "邀请信 10-22",
+      "note": "模板难词",
       "lesson": "essay-misspell"
     }
   ]
