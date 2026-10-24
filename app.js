@@ -683,6 +683,15 @@ function restoreSavedSessionIfPossible() {
     const wordsByKey = new Map(state.deck.map((word) => [getWordKey(word), word]));
     const restoredDeck = saved.deckQueueKeys.map((wordKey) => wordsByKey.get(wordKey)).filter(Boolean);
     if (restoredDeck.length) {
+      const seenKeys = new Set(saved.deckQueueKeys);
+      const prevTotal = Number(saved.sessionTotal) || restoredDeck.length;
+      const extra = Math.max(0, state.deck.length - prevTotal);
+      if (extra > 0) {
+        const added = state.deck.filter((word) => !seenKeys.has(getWordKey(word))).slice(-extra);
+        restoredDeck.push(...added);
+        saved.sessionTotal = prevTotal + added.length;
+        saved.deckQueueKeys = restoredDeck.map(getWordKey);
+      }
       state.deck = restoredDeck;
       state.currentIndex = Math.max(
         0,

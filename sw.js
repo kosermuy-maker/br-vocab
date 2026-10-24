@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v17-netizen-1024";
+const CACHE = "br-vocab-v18-session-1024";
 const CORE = [
   "./",
   "./index.html",
