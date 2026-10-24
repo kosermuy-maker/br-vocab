@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 114,
+  "count": 138,
   "words": [
     {
       "index": 1,
@@ -1426,6 +1426,280 @@
       "group": "作文错词",
       "source": "邀请信 10-22",
       "note": "模板难词",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 115,
+      "word": "Internet users",
+      "part_of_speech": "",
+      "meaning": "网民",
+      "wrongForms": [
+        "user"
+      ],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "复数 users；勿漏 -s",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 116,
+      "word": "chart",
+      "part_of_speech": "",
+      "meaning": "图表",
+      "wrongForms": [
+        "char"
+      ],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "勿写成 char；与 chat 别混",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 117,
+      "word": "Internet",
+      "part_of_speech": "",
+      "meaning": "互联网",
+      "wrongForms": [
+        "Inter"
+      ],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "勿写成 Inter",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 118,
+      "word": "too old",
+      "part_of_speech": "",
+      "meaning": "太老",
+      "wrongForms": [
+        "too older"
+      ],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "勿用 too older",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 119,
+      "word": "chat",
+      "part_of_speech": "",
+      "meaning": "聊天",
+      "wrongForms": [
+        "chart"
+      ],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "勿写成 chart",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 120,
+      "word": "something",
+      "part_of_speech": "",
+      "meaning": "某事；某物",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "本篇不稳",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 121,
+      "word": "penetration",
+      "part_of_speech": "",
+      "meaning": "普及；渗透",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "penetration rate 普及率",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 122,
+      "word": "penetration rate",
+      "part_of_speech": "",
+      "meaning": "普及率",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "图表数据",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 123,
+      "word": "perspective",
+      "part_of_speech": "",
+      "meaning": "视角；看法",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "From my perspective",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 124,
+      "word": "challenges",
+      "part_of_speech": "",
+      "meaning": "挑战（复数）",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "challenges remain",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 125,
+      "word": "skills",
+      "part_of_speech": "",
+      "meaning": "技能（复数）",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "lack of skills",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 126,
+      "word": "education",
+      "part_of_speech": "",
+      "meaning": "教育；学历",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "low education level",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 127,
+      "word": "device",
+      "part_of_speech": "",
+      "meaning": "设备",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "no device",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 128,
+      "word": "barriers",
+      "part_of_speech": "",
+      "meaning": "障碍（复数）",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "main barriers",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 129,
+      "word": "million",
+      "part_of_speech": "",
+      "meaning": "百万",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "688 million",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 130,
+      "word": "billion",
+      "part_of_speech": "",
+      "meaning": "十亿",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "1.03 billion",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 131,
+      "word": "online",
+      "part_of_speech": "",
+      "meaning": "在线的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "go online",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 132,
+      "word": "rapid",
+      "part_of_speech": "",
+      "meaning": "迅速的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "rapid growth",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 133,
+      "word": "shift",
+      "part_of_speech": "",
+      "meaning": "转变",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "significant shift",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 134,
+      "word": "development",
+      "part_of_speech": "",
+      "meaning": "发展",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "positive development",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 135,
+      "word": "forthcoming",
+      "part_of_speech": "",
+      "meaning": "即将到来的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "forthcoming future",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 136,
+      "word": "remain",
+      "part_of_speech": "",
+      "meaning": "仍然；保持",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "challenges remain",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 137,
+      "word": "solved",
+      "part_of_speech": "",
+      "meaning": "解决（过去分词）",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "If…are solved",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 138,
+      "word": "non-users",
+      "part_of_speech": "",
+      "meaning": "非网民；不上网者",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "网民图表 10-24",
+      "note": "第二段障碍人群",
       "lesson": "essay-misspell"
     }
   ]
