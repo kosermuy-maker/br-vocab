@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 138,
+  "count": 158,
   "words": [
     {
       "index": 1,
@@ -850,10 +850,11 @@
       "meaning": "技术；科技",
       "wrongForms": [
         "technige",
-        "techology"
+        "techology",
+        "Technodge"
       ],
       "group": "作文错词",
-      "source": "家电表格 10-13；养老机器人 10-20；养老机器人 10-20（模板难词）",
+      "source": "家电表格 10-13；养老机器人 10-20；养老机器人 10-20（模板难词）、工程硕士图表 10-27",
       "note": "science and technology",
       "lesson": "essay-misspell"
     },
@@ -1447,10 +1448,11 @@
       "part_of_speech": "",
       "meaning": "图表",
       "wrongForms": [
-        "char"
+        "char",
+        "charty"
       ],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "勿写成 char；与 chat 别混",
       "lesson": "essay-misspell"
     },
@@ -1533,7 +1535,7 @@
       "meaning": "视角；看法",
       "wrongForms": [],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "From my perspective",
       "lesson": "essay-misspell"
     },
@@ -1544,7 +1546,7 @@
       "meaning": "挑战（复数）",
       "wrongForms": [],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "challenges remain",
       "lesson": "essay-misspell"
     },
@@ -1566,7 +1568,7 @@
       "meaning": "教育；学历",
       "wrongForms": [],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "low education level",
       "lesson": "essay-misspell"
     },
@@ -1643,7 +1645,7 @@
       "meaning": "转变",
       "wrongForms": [],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "significant shift",
       "lesson": "essay-misspell"
     },
@@ -1665,7 +1667,7 @@
       "meaning": "即将到来的",
       "wrongForms": [],
       "group": "作文错词",
-      "source": "网民图表 10-24",
+      "source": "网民图表 10-24、工程硕士图表 10-27",
       "note": "forthcoming future",
       "lesson": "essay-misspell"
     },
@@ -1700,6 +1702,234 @@
       "group": "作文错词",
       "source": "网民图表 10-24",
       "note": "第二段障碍人群",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 139,
+      "word": "1998",
+      "part_of_speech": "",
+      "meaning": "年份",
+      "wrongForms": [
+        "1988"
+      ],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "勿写成 1988",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 140,
+      "word": "surged",
+      "part_of_speech": "",
+      "meaning": "激增",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "surged from…to…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 141,
+      "word": "gradually",
+      "part_of_speech": "",
+      "meaning": "逐渐地",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "rose gradually",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 142,
+      "word": "sharply",
+      "part_of_speech": "",
+      "meaning": "急剧地",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "rose sharply",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 143,
+      "word": "highlight",
+      "part_of_speech": "",
+      "meaning": "突出；表明",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "These data highlight…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 144,
+      "word": "manufacturing",
+      "part_of_speech": "",
+      "meaning": "制造业",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "manufacturing industry",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 145,
+      "word": "qualified",
+      "part_of_speech": "",
+      "meaning": "合格的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "qualified engineers",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 146,
+      "word": "engineers",
+      "part_of_speech": "",
+      "meaning": "工程师",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "复数 -s",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 147,
+      "word": "recruitment",
+      "part_of_speech": "",
+      "meaning": "招生；招聘",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "the recruitment of…",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 148,
+      "word": "research",
+      "part_of_speech": "",
+      "meaning": "研究",
+      "wrongForms": [
+        "reseach"
+      ],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "勿漏 r",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 149,
+      "word": "China",
+      "part_of_speech": "",
+      "meaning": "中国",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "首字母大写",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 150,
+      "word": "want",
+      "part_of_speech": "",
+      "meaning": "想要",
+      "wrongForms": [
+        "wants"
+      ],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "主语复数用 want",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 151,
+      "word": "job",
+      "part_of_speech": "",
+      "meaning": "工作（职位）",
+      "wrongForms": [
+        "work"
+      ],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "find a better job，勿 work",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 152,
+      "word": "graduate",
+      "part_of_speech": "",
+      "meaning": "研究生的；毕业生",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "graduate education",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 153,
+      "word": "industry",
+      "part_of_speech": "",
+      "meaning": "工业；产业",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "manufacturing industry",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 154,
+      "word": "training",
+      "part_of_speech": "",
+      "meaning": "培训",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "quality of training",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 155,
+      "word": "degree",
+      "part_of_speech": "",
+      "meaning": "学位",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "choose this degree",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 156,
+      "word": "campus",
+      "part_of_speech": "",
+      "meaning": "校园",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "stay on campus",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 157,
+      "word": "prepared",
+      "part_of_speech": "",
+      "meaning": "准备好的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "get better prepared",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 158,
+      "word": "Masters of Engineering",
+      "part_of_speech": "",
+      "meaning": "工程硕士",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "工程硕士图表 10-27",
+      "note": "单数 Master of Engineering",
       "lesson": "essay-misspell"
     }
   ]
