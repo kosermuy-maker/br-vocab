@@ -1,0 +1,202 @@
+# 27考研英语阅读真题高频200词（共 199 个词条，含真题词频）
+# 格式：序号	单词	[频]词频	词性	中文释义
+
+1	just	[频]81	adj. / adv.	adj. ①公正的，正义的②合适的，恰当的；adv. ①正好，恰好②仅仅，只不过③刚才，方才
+2	justice	[频]31	n.	n. ①法官②公平，公正③审判，法律制裁
+3	justify	[频]14	vt.	vt. ①证明……正确 ②对……作出解释，为……辩解
+4	justification	[频]3	n.	n. 正当理由
+5	justifiable	[频]1	adj.	adj. 可证明是正当的，情有可原的
+6	following	[频]65	n. / adj. / prep.	n. ①拥护者，追随者②下述，下列；adj. ①（时间上）接着的②下述的，下列的；prep. ①在（某事）以后②由于
+7	economic	[频]64	adj.	adj. ①经济的，经济学的②可赚钱的，有利可图的
+8	economist	[频]13	n.	n. 经济学家
+9	economics	[频]8	n.	n. ①经济学②经济情况，经济意义
+10	reviewer	[频]6	n.	n. ①检查者，审查者②评论家，评论撰写者
+11	worldview	[频]2	n.	n. 世界观
+12	data	[频]59	n.	n. ①数据，资料②（贮存在计算机中的）数据资料
+13	database	[频]14	n.	n. （贮存在计算机中的）数据库，资料库
+14	court	[频]57	vt. / n.	vt. ①试图取悦，讨好②招致，酿成③试图获得，博得；n. ①法院，法庭②球场③全体出庭人员，全体审判人员
+15	keep	[频]57	v. / n.	v. ①保持，处于②供养，养活③（为某人）保留，留下；n. 生活必需品，生活费用
+16	process	[频]56	vt. / vi. / n.	vt. ①加工，处理 ②审阅，审核 ③数据处理；vi. 行进，缓慢前进；n. ①过程，进程，步骤 ②做事方法，工艺流程
+17	system	[频]54	n.	n. ①体系，方法②系统③制度，体制
+18	supersystem	[频]2	n.	n. 超级体系
+19	ecosystem	[频]1	n.	n. 生态系统
+20	lead	[频]52	v. / vt. / n.	v. ①带路，引领②导致，造成；vt. ①使得出（观点），引导（某人）②处于领先地位③过（某种生活）；n. ①领先地位②超前量，领先的距离③实例，榜样
+21	mislead	[频]7	vt.	vt. 误导，引入歧途
+22	effect	[频]51	vt. / n.	vt. 使发生，引起；n. ①效应，影响②效果，印象③（个人）财产，所有物
+23	effectively	[频]7	adv.	adv. ①有效地②实际上，事实上
+24	effective	[频]6	adj.	adj. ①产生预期结果的，有效的②生效的，起作用的
+25	ineffective	[频]3	adj.	adj. 不起作用的，不奏效的
+26	ineffectual	[频]1	adj.	adj. ①无能的②达不到目的的
+27	evaluate	[频]5	vt.	vt. ①估计，给……估值 ②评价，评估
+28	devalue	[频]1	v. / vt.	v. 使（货币）贬值，下跌；vt. 降低……的价值，贬低
+29	overvalue	[频]1	vt.	vt. 估计过高，过于重视
+30	federal	[频]50	adj.	adj. ①联邦制的②联邦政府的
+31	founder	[频]2	vi. / n.	vi. ①失败，破产②沉没；n. （组织、机构等的）创建者，发起人
+32	scientific	[频]47	adj.	adj. ①科学（上）的，关于科学的②细致严谨的，科学的
+33	call	[频]46	vt. / n.	vt. ①给……命名，称呼②认为……是，把……看作③召唤，呼唤；n. ①要求，呼吁②喊叫，叫声③短暂的拜访
+34	power	[频]46	vt. / vi. / n.	vt. 驱动，推动（机器或车辆）；vi. 迅猛移动，快速前进；n. ①电，能源②影响力，权力③统治，政权
+35	powerful	[频]13	adj.	adj. ①有权势的，有影响力的②强有力的，强壮的③强烈的，鲜明的
+36	requirement	[频]10	n.	n. ①需要，需求②必要条件，必备条件③规定
+37	political	[频]43	adj.	adj. ①政治的，政府的②政党的，党派的③关心政治的
+38	politically	[频]3	adv.	adv. 政治上
+39	consumer	[频]42	n.	n. 消费者，用户
+40	consume	[频]9	vt.	vt. ①消耗，耗费（燃料、能量等）②烧毁，毁灭③使充满（强烈的感情)
+41	consumerism	[频]2	n.	n. 消费，消费主义（认为高消费对社会和个人有利）
+42	technology	[频]42	n.	n. ①科技，技术②技术性机器（或设备）
+43	technological	[频]13	adj.	adj. 科技的
+44	technical	[频]11	adj.	adj. ①技术的，技能的②专科的，专业的
+45	technique	[频]7	n.	n. ①技巧，工艺②技术，技能
+46	growth	[频]41	n.	n. ①成长，生长②增加，增强③（经济）增长，发展
+47	outgrow	[频]1	v.	v. ①长得穿不下（衣服），增长得容不进（某地） ②比……长得高 ③因长大而放弃（或不再拥有）
+48	tend	[频]41	vt. / vi.	vt. ①往往会，常常就②照料，护理；vi. 倾向，趋向于
+49	fund	[频]40	vt. / n.	vt. 提供资金，拨款；n. ①基金，专款②资金，现款③（相当）数量，储备
+50	journalist	[频]20	n.	n. 新闻记者，新闻工作者
+51	journalism	[频]12	n.	n. 新闻业，新闻工作
+52	loss	[频]26	n.	n. ①缺少，丧失②损失，亏损③失败，失利
+53	intellectual	[频]39	adj. / n.	adj. ①智力的，脑力的②有才智的，智力发达的；n. 知识分子，脑力劳动者
+54	intellect	[频]13	n.	n. ①（尤指高等的）智力，思维逻辑领悟力②智力高的人
+55	AI	[频]18	abbr.	abbr. （=Artificial Intelligence）人工智能
+56	intellectualism	[频]7	n.	n. 理智主义，主知主义
+57	intellectualize	[频]1	vt.	vt. 使理智化
+58	likely	[频]39	adj. / adv.	adj. ①可能的，有希望的②似乎合适的；adv. 很可能
+59	likewise	[频]5	adv.	adv. ①同样地，类似地②也，还
+60	liken	[频]1	vt.	vt. 把……比作……
+61	theory	[频]39	n.	n. ①学说，论②理论，原则③（未证明的）意见，看法
+62	financial	[频]38	adj.	adj. ①财政的，金融的②有钱的
+63	financially	[频]3	adv.	adv. 经济上，财政上
+64	profession	[频]15	n.	n. ①行业，职业 ②业界人士，同行 ③宣称，表白
+65	professionalization	[频]5	n.	n. 专业化，职业化
+66	profess	[频]1	vt.	vt. ①声称，妄称②宣称，公开表明③信奉，信仰（某一宗教）
+67	site	[频]37	n. / vt.	n. ①地点，位置②现场，发生地③网站，站点；vt. 使坐落在，为…选址
+68	publish	[频]36	vt.	vt. ①出版，发行②（在报刊）发表，刊登③公布，发布
+69	publication	[频]22	n.	n. ①出版，出版物②发表，刊登③公布
+70	publisher	[频]11	n.	n. 出版人，发行人（或机构）
+71	republican	[频]7	n. / adj.	n. ①拥护共和政体的人②共和党党员；adj. ①共和政体的，共和国的②共和党的
+72	publicly	[频]3	adv.	adv. ①公开地，公然地②由国家
+73	limit	[频]35	vt. / n.	vt. ①限制，限定②限量，减量；n. ①限制，限定②极限，限度③界限，范围
+74	argument	[频]34	n.	n. ①争吵，争论②辩论，争辩③理由，论据
+75	decade	[频]34	n.	n. 十年（尤指一个年代）
+76	class	[频]33	vt. / n.	vt. 将……看作（或分类）；n. ①类别，等级 ②阶级，阶层 ③舱位等级
+77	classical	[频]14	adj.	adj. ①古典的，经典的②传统的
+78	measure	[频]33	vt. / n.	vt. ①测量，度量 ②衡量，判定；n. ①措施，方法②判断，衡量③标准，尺度
+79	productivity	[频]26	n.	n. 生产率，生产效率
+80	productive	[频]4	adj.	adj. ①高产的，多产的②有效益的，富有成效的
+81	program (美式 programme)	[频]33	v. / n.	v. ①计划，安排②训练，培养；n. ①计划，方案②课程大纲③程序
+82	moral	[频]32	adj. / n.	adj. ①道德的，道德上的②品行端正的，有道德的；n. ①品行，道德②寓意，教益
+83	immoral	[频]2	adj.	adj. ①不道德的，邪恶的②放荡的，淫荡的
+84	morality	[频]1	n.	n. ①道德，道义②道德规范，道德体系
+85	policy	[频]32	n.	n. ①政策，方针②原则，为人之道③保险单
+86	policymaker	[频]4	n.	n. 政策制定者
+87	involve	[频]31	vt.	vt. ①包含，包括②牵连，涉及③（使）参加，加入
+88	legal	[频]31	adj.	adj. ①与法律有关的②法律允许的，合法的
+89	illegal	[频]7	adj.	adj. 不合法的，非法的
+90	legally	[频]4	adv.	adv. ①合法地②法律上地
+91	legislation	[频]8	n.	n. ①法律，法规②立法，制定法律
+92	legislative	[频]4	adj.	adj. 立法的，制订法律的
+93	legitimate	[频]8	adj.	adj. ①正当合理的，合乎情理的②合法的，法律认可的
+94	legitimacy	[频]4	n.	n. 合法(性)，合理 (性)
+95	legislature	[频]2	n.	n. 立法机关
+96	sense	[频]31	vt. / n.	vt. ①感觉到，意识到②检测出；n. ①感觉，直觉②觉察，意识③理解力，见识
+97	sensitive	[频]10	adj.	adj. ①感觉敏锐的，灵敏的②易被惹恼的，易生气的③微妙的，敏感的
+98	sentiment	[频]4	n.	n. ①观点，看法②伤感，柔情
+99	sensible	[频]2	adj.	adj. ①明智的，合理的②意识到，认识到③朴素而实用的
+100	sensational	[频]1	adj.	adj. ①轰动的，引起哗然的 ②哗众取宠的，耸人听闻的 ③极好的，绝妙的
+101	unite	[频]31	v.	v. 联结，联合
+102	unity	[频]4	n.	n. ①团结一致，统一②和谐，协调③统一性，一致性
+103	decline	[频]30	vt. / vi. / n.	vt. ①减少，下降②衰落，衰退；vi. 谢绝，婉言拒绝；n. ①减少，下降②衰落，衰退
+104	majority	[频]14	n.	n. ①大部分，大多数②多数票，（获胜的）票数
+105	infrastructure	[频]11	n.	n. （国家或机构的）基础设施，基础建设
+106	structural	[频]2	adj.	adj. 结构（上）的，构架（上）的
+107	avoid	[频]29	vt.	vt. ①避免，防止②回避，躲避
+108	expectation	[频]7	n.	n. ①预料，预计②期待，盼望③要求，指望
+109	expectancy	[频]3	n.	n. ①预料，预期②期待，盼望
+110	firm	[频]29	vt. / n. / adj.	vt. ①使结实，使坚固②使稳定，使确定；n. 商行，公司；adj. ①坚固的，坚硬的②坚定的，坚决的③稳固的，牢固的
+111	peer	[频]29	v. / n.	v. 仔细看，端详；n. ①同龄人，同辈人②（英国）贵族成员
+112	jobseeker	[频]3	n.	n. 求职者
+113	quality	[频]28	n. / adj.	n. ①质量，品质②特征，特色③人品，素质；adj. 优质的，高质量的
+114	qualify	[频]5	v. / vt. / vi.	v. ①取得资格（或学历），使合格 ②使有权（做某事）；vt. 修饰，限定；vi. 符合，配得上
+115	qualified	[频]3	adj.	adj. ①具备……的学历(或资历)，具备……的知识(或技能)②胜任的，符合资格的③有保留的，有限度的
+116	recent	[频]28	adj.	adj. 近来的，新近的
+117	reduce	[频]28	v. / vt.	v. ①减少，缩小②降低，削弱③减轻体重，节食；vt. ①迫使，使陷入②使蒸发
+118	reduction	[频]7	n.	n. ①减少，降低②减价，折扣③缩图，缩版
+119	lawyer	[频]27	n.	n. 律师
+120	lawsuit	[频]4	n.	n. 诉讼，起诉
+121	official	[频]27	n. / adj.	n. 要员，官员；adj. ①公务的，公职的 ②正式的，官方的 ③公开的，公布的
+122	practice (美式 practise)	[频]27	v. / vt. / n.	v. 练习；vt. 实施；n. ①实践，实际行动②常规，惯例③训练，练习
+123	practical	[频]8	n. / adj.	n. 实习课，实践课；adj. ①实际的，真实的②切实可行的③实用的，适用的
+124	security	[频]27	n.	n. ①保护措施，安全工作②担保，保证③证券
+125	insecurity	[频]2	n.	n. ①缺乏信心，惶恐不安 ②不稳定
+126	focus	[频]26	v. / n.	v. ①集中（注意力、精力等）于②集中光束于，聚焦于；n. ①中心点（指人或事物），焦点②（眼晴或镜头）焦距，调焦
+127	inflation	[频]26	n.	n. ①通货膨胀，通胀率②充气
+128	inflate	[频]2	v. / vt.	v. 充气，膨胀；vt. ①使涨价，使上涨②鼓吹，吹捧
+129	living	[频]26	n. / adj.	n. ①生计，谋生②生活方式③活着的人；adj. ①活着的，活的②在使用的，现存的
+130	livelihood	[频]2	n.	n. 赚钱维生的手段，生计
+131	liveliness	[频]2	n.	n. ①精力充沛②生动
+132	patent	[频]26	n. / adj.	n. 专利权，专利证书；adj. ①有专利的，受专利保护的②明显的，赤裸裸的
+133	reform	[频]26	vt. / v. / n.	vt. 改革，改进；v. （使）改过自新；n. 改革，变革
+134	transform	[频]7	vt.	vt. ①使改变形态②使改变外观（或性质）
+135	formation	[频]4	n.	n. ①组成，形成②组成物，形成物
+136	conformity	[频]2	n.	n. 遵从，遵守，依照
+137	uniformly	[频]1	adv.	adv. ①一致地②均匀地
+138	baseline	[频]4	n.	n. 基础，基准，基线
+139	billion	[频]25	n.	n. ①十亿②数以十亿计，大量
+140	executive	[频]25	n. / adj.	n. ①经理，管理人员 ②领导层 ③（the executive）（政府的）行政部门；adj. ①经营管理的，决策的 ②有执行权的，行政的 ③供重要人物使用的
+141	generation	[频]25	n.	n. ①一代人，一代②一批，一届③（尤指电、热等的）产生
+142	generate	[频]13	vt.	vt. 产生，引起
+143	cultural	[频]24	adj.	adj. ①与文化有关的，文化的②文艺的
+144	define	[频]24	vt.	vt. ①解释，给……下定义②明确，界定
+145	definitely	[频]3	adv.	adv. ①肯定，当然，确实②确切地，明确地，清楚地
+146	definite	[频]1	adj.	adj. ①肯定的，确定的②清楚的，明显的
+147	finite	[频]2	adj.	adj. ①有限的，有限制的②限定的
+148	earn	[频]24	v. / vt.	v. 赚得，挣钱；vt. ①获得（利润）②赢得，应得
+149	earner	[频]2	n.	n. 挣钱者，挣工资者
+150	earnings	[频]1	n.	n. ①薪水，工资，收入②利润，收益，盈利
+151	intend	[频]24	v. / vt.	v. 打算，计划，想要；vt. 意指
+152	intent	[频]1	n. / adj.	n. 目的,意图；adj. ①热切的，专注的②决心做（尤指伤害他人的事）③专心的，专注的
+153	accessible	[频]4	adj.	adj. ①可到达的，可进入的，可使用的②容易理解的，易懂的③易相处的
+154	accessibility	[频]1	n.	n. 可达性，易接近性，可访问性
+155	analysis	[频]23	n.	n. 分析， 分析结果
+156	analyst	[频]4	n.	n. 分析者，化验员
+157	analytical	[频]2	adj.	adj. 分析的，解析的
+158	analyse (美式 analyze)	[频]1	vt.	vt. 分析
+159	analytically	[频]1	adv.	adv. 分析地，解析地
+160	clone	[频]23	vt. / n.	vt. 克隆；n. ①克隆动物（或植物）②复制品，仿造品
+161	generally	[频]23	adv.	adv. ①普遍地，广泛地②一般地，通常③概括地，大概
+162	generous	[频]5	adj.	adj. ①慷慨的，大方的②丰富的，大的③宽厚的，宽宏大量的
+163	impact	[频]23	v. / n.	v. ①有影响，有作用②冲击；n. ①巨大影响，强大作用②撞击，冲撞
+164	investment	[频]23	n.	n. ①投资②投资额，投资物③（时间、精力的）投入
+165	investor	[频]5	n.	n. 投资者，投资机构
+166	potential	[频]23	n. / adj.	n. ①可能性，潜在性②潜力，潜质；adj. 潜在的，可能的
+167	species	[频]23	n.	n. 种, 物种
+168	union	[频]23	n.	n. ①工会②协会③联盟，联邦④结婚，婚姻
+169	unionist	[频]3	n.	n. ①工会会员②工会主义者③统一主义者
+170	ambitious	[频]1	adj.	adj. ①有野心的，有雄心的②宏大的，艰巨的
+171	availability	[频]4	n.	n. 可利用，可用性，可得到
+172	experiment	[频]22	vi. / n.	vi. ①做试验，进行实验 ②尝试，试用；n. ①实验，试验②尝试，实践
+173	fallout	[频]2	n.	n. 后果，余波
+174	source	[频]22	n.	n. ①来源，出处②起源，原因③源头，发源地
+175	thus	[频]22	adv.	adv. ①因此，所以②如此，这样
+176	concept	[频]21	n.	n. 概念，观念
+177	conception	[频]4	n.	n. ①构思，构想 ②理解，观念 ③怀孕
+178	misconception	[频]1	n.	n. 错误认识，误解
+179	identifiable	[频]3	adj.	adj. 可识别的，可辨认的
+180	identity	[频]3	n.	n. ①身份，本身②特征③相同，一致
+181	identical	[频]2	adj.	adj. ①完全相同的②同一的
+182	revelation	[频]1	n.	n. ①被揭露的真相②揭露，披露③启示
+183	statute	[频]4	n.	n. ①成文法，法令，法规②章程，条例
+184	status	[频]2	n.	n. 现状
+185	asset	[频]20	n.	n. ①资产，财产②有用的人（或事物）
+186	setter	[频]4	n.	n. 制订者，规定者，安排者
+187	choose	[频]20	v. / vi.	v. 选择，挑选；vi. 宁愿，情愿
+188	emerge	[频]20	v. / vi.	v. 暴露，露出真相；vi. ①出现，浮现②显现，显露
+189	emerging	[频]11	adj.	adj. 新兴的，发展初期的
+190	merger	[频]7	n.	n. （机构或企业的）合并，归并
+191	emergence	[频]3	n.	n. ①出现，显现②（困境的）摆脱
+192	merge	[频]1	v. / vi.	v. (使）合并，结合；vi. 相融，融入
+193	expressive	[频]3	adj.	adj. ①富于表情的，有表现力的②表达，表现
+194	happiness	[频]20	n.	n. 幸福
+195	income	[频]20	n.	n. 收入，收益，所得
+196	criticism	[频]19	n.	n. ①批评，责备②（尤指对书、音乐等的）评论文章，评论
+197	critic	[频]18	n.	n. ①批评家，评论家②批评者
+198	hypocritical	[频]1	adj.	adj. 虚伪的
+199	digital	[频]19	adj.	adj. ①数字的，数码的②数字显示的

@@ -1,10 +1,20 @@
 const STORAGE_KEY = "vocab-trainer-progress-v1";
-const SESSION_KEY = "vocab-trainer-session-v2";
+// v2：按「单元组合」整组存队列（换个勾选组合进度就“消失”），只读用于迁移
+const LEGACY_SESSION_KEY = "vocab-trainer-session-v2";
+// v3：「已背」按单元按单词存，任何组合/模式共享；队列只记录顺序和当前位置
+const LEARNED_KEY = "vocab-trainer-learned-v3";
+const QUEUE_KEY = "vocab-trainer-queue-v3";
+const LAST_SCOPE_KEY = "vocab-trainer-last-scope-v3";
+const MAX_SAVED_QUEUES = 12;
 const LIBRARY_KEY = "vocab-trainer-library-v1";
+// 考研词汇模块的选择偏好（当前书 + 核心词勾选的 Unit），与巴朗/作文完全独立
+const KAOYAN_PREFS_KEY = "vocab-trainer-kaoyan-prefs-v1";
+const LIBRARIES = ["barron", "essay", "kaoyan"];
 const AUTOSPEAK_KEY = "vocab-trainer-autospeak-v1";
 const REVIEW_INTERVALS = [0, 1, 2, 4, 7, 15];
 
 let allWordsCache = null;
+let lessonIndexCache = null; // lesson -> words[]，由 getLessonWords 惰性构建
 let lastSpokenKey = null;
 
 const state = {
@@ -13,6 +23,8 @@ const state = {
   currentMode: "sequential",
   libraryMode: "barron",
   essaySubMode: "spell",
+  kaoyanBook: "core", // core = 核心词 Unit 1–15；freq = 真题高频200词
+  selectedKaoyanUnits: new Set(), // 核心词勾选的 lesson id（"core-1"…）
   deck: [],
   currentIndex: -1,
   showMeaning: false,
@@ -30,6 +42,7 @@ const state = {
   studyContext: null,
   autoSpeak: loadAutoSpeak(),
   progress: loadProgress(),
+  learned: new Map(), // lesson(string) -> Set<wordKey>
   spellFeedback: "",
   spellRevealedAnswer: false,
   spellShowAnswer: false,
@@ -82,6 +95,8 @@ const els = {
   libraryButtons: [...document.querySelectorAll("[data-library]")],
   essaySubModeRow: document.querySelector("#essaySubModeRow"),
   essaySubButtons: [...document.querySelectorAll("[data-essay-sub]")],
+  kaoyanBookRow: document.querySelector("#kaoyanBookRow"),
+  kaoyanBookButtons: [...document.querySelectorAll("[data-kaoyan-book]")],
   spellPanel: document.querySelector("#spellPanel"),
   spellInput: document.querySelector("#spellInput"),
   spellCheckBtn: document.querySelector("#spellCheckBtn"),
@@ -115,16 +130,100 @@ function init() {
   }
 
   state.data.lessons.forEach((lesson) => state.selectedLessons.add(lesson.lesson));
+  setupKaoyanData();
   migrateWrongBookFlags();
+  state.learned = loadLearned() ?? migrateLegacySessions();
   restoreSavedSessionScopeOnStartup();
+  // 请求持久化存储，降低 iOS/Safari 长期不用时清掉 localStorage 的概率
+  navigator.storage?.persist?.().catch(() => {});
   bindEvents();
   syncLibraryButtons();
   syncEssaySubButtons();
+  syncKaoyanBookButtons();
   syncModeButtons();
   syncAutoSpeakButton();
   syncLibraryUi();
   buildDeck();
   renderAll();
+}
+
+// ---------- 考研词汇模块（核心词 Unit 1–15 + 真题高频200词） ----------
+
+function setupKaoyanData() {
+  const kaoyan = window.KAOYAN_DATA;
+  state.data.kaoyan = kaoyan && Array.isArray(kaoyan.lessons) ? kaoyan : null;
+  if (!state.data.kaoyan) {
+    // 数据文件没加载到（旧缓存/离线），隐藏入口，其余词库照常可用
+    els.libraryButtons.find((button) => button.dataset.library === "kaoyan")?.classList.add("hidden-panel");
+    if (state.libraryMode === "kaoyan") state.libraryMode = "barron";
+    return;
+  }
+  const prefs = readJson(KAOYAN_PREFS_KEY, {});
+  state.kaoyanBook = prefs?.book === "freq" ? "freq" : "core";
+  const validUnits = new Set(getKaoyanCoreLessons().map((lesson) => lesson.id));
+  const units = Array.isArray(prefs?.units) ? prefs.units.filter((id) => validUnits.has(id)) : [];
+  state.selectedKaoyanUnits = new Set(units.length ? units : [...validUnits]);
+}
+
+function saveKaoyanPrefs() {
+  safeSetItem(
+    KAOYAN_PREFS_KEY,
+    JSON.stringify({ book: state.kaoyanBook, units: sortKaoyanUnits([...state.selectedKaoyanUnits]) })
+  );
+}
+
+function isKaoyanMode() {
+  return state.libraryMode === "kaoyan";
+}
+
+function getKaoyanLessons() {
+  return state.data.kaoyan?.lessons || [];
+}
+
+function getKaoyanCoreLessons() {
+  return getKaoyanLessons().filter((lesson) => lesson.book === "core");
+}
+
+function getKaoyanLesson(id) {
+  return getKaoyanLessons().find((lesson) => lesson.id === id) || null;
+}
+
+function sortKaoyanUnits(ids) {
+  const order = new Map(getKaoyanLessons().map((lesson, i) => [lesson.id, i]));
+  return ids.sort((a, b) => (order.get(a) ?? 999) - (order.get(b) ?? 999));
+}
+
+function syncKaoyanBookButtons() {
+  els.kaoyanBookButtons.forEach((button) => {
+    button.classList.toggle("active", button.dataset.kaoyanBook === state.kaoyanBook);
+  });
+}
+
+function switchKaoyanBook(next) {
+  if (next === state.kaoyanBook) return;
+  state.kaoyanBook = next;
+  state.currentSource = "normal";
+  state.quizLesson = null;
+  state.wrongReviewLesson = null;
+  saveKaoyanPrefs();
+  syncKaoyanBookButtons();
+  buildDeck();
+  renderAll();
+}
+
+// 单词属于哪个词库：巴朗 lesson 是数字，作文是 "essay-*"，考研是 "core-N" / "freq"
+function wordLibrary(word) {
+  if (typeof word.lesson === "number") return "barron";
+  return String(word.lesson).startsWith("essay-") ? "essay" : "kaoyan";
+}
+
+// 当前「已选范围」：巴朗=勾选的 Lesson；作文=当前子模式；考研=勾选的 Unit 或高频词
+function isWordInSelection(word) {
+  if (isEssayMode()) return word.lesson === essayLessonId();
+  if (isKaoyanMode()) {
+    return state.kaoyanBook === "freq" ? word.lesson === "freq" : state.selectedKaoyanUnits.has(word.lesson);
+  }
+  return state.selectedLessons.has(word.lesson);
 }
 
 function bindEvents() {
@@ -162,10 +261,7 @@ function bindEvents() {
     if (flushSpellPending()) return;
     goToCard(state.currentIndex + 1);
   });
-  els.shuffleBtn.addEventListener("click", () => {
-    buildDeck();
-    renderAll();
-  });
+  els.shuffleBtn.addEventListener("click", reshuffleDeck);
   els.clearSessionBtn.addEventListener("click", clearCurrentSessionProgress);
   els.flashcard.addEventListener("click", (event) => {
     if (event.target.closest("#speakBtn")) return;
@@ -187,10 +283,14 @@ function bindEvents() {
 
   els.libraryButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const next = button.dataset.library === "essay" ? "essay" : "barron";
+      const next = LIBRARIES.includes(button.dataset.library) ? button.dataset.library : "barron";
       if (next === state.libraryMode) return;
       switchLibrary(next);
     });
+  });
+
+  els.kaoyanBookButtons.forEach((button) => {
+    button.addEventListener("click", () => switchKaoyanBook(button.dataset.kaoyanBook === "freq" ? "freq" : "core"));
   });
 
   els.essaySubButtons.forEach((button) => {
@@ -263,6 +363,10 @@ function bindEvents() {
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") closeDrawer();
   });
+  // 拼写已判分但还没点「下一个」就切走/关闭页面时，把结果记下来，避免这一题白做
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") flushSpellPending();
+  });
 }
 
 function openDrawer() {
@@ -298,7 +402,8 @@ function loadAutoSpeak() {
 }
 
 function loadLibraryMode() {
-  return localStorage.getItem(LIBRARY_KEY) === "essay" ? "essay" : "barron";
+  const saved = localStorage.getItem(LIBRARY_KEY);
+  return LIBRARIES.includes(saved) ? saved : "barron";
 }
 
 function saveLibraryMode() {
@@ -357,6 +462,10 @@ function switchLibrary(next) {
   state.spellShowAnswer = false;
   if (next === "essay") {
     state.essaySubMode = state.essaySubMode || "spell";
+  } else if (next === "kaoyan") {
+    if (!state.selectedKaoyanUnits.size) {
+      getKaoyanCoreLessons().forEach((lesson) => state.selectedKaoyanUnits.add(lesson.id));
+    }
   } else {
     if (!state.selectedLessons.size) {
       state.data.lessons.forEach((lesson) => state.selectedLessons.add(lesson.lesson));
@@ -385,14 +494,18 @@ function syncEssaySubButtons() {
 
 function syncLibraryUi() {
   const essay = isEssayMode();
+  const kaoyan = isKaoyanMode();
+  const kaoyanFreq = kaoyan && state.kaoyanBook === "freq";
   els.essaySubModeRow?.classList.toggle("hidden-panel", !essay);
+  els.kaoyanBookRow?.classList.toggle("hidden-panel", !kaoyan);
   document.body.classList.toggle("library-essay", essay);
+  document.body.classList.toggle("library-kaoyan", kaoyan);
   document.body.classList.toggle("practice-spell", isSpellPractice());
   if (els.lessonPanelTitle) {
-    els.lessonPanelTitle.textContent = essay ? "作文词表" : "单元列表";
+    els.lessonPanelTitle.textContent = essay ? "作文词表" : kaoyanFreq ? "真题高频200词" : kaoyan ? "核心词单元" : "单元列表";
   }
   if (els.toggleAllLessons) {
-    els.toggleAllLessons.style.display = essay ? "none" : "";
+    els.toggleAllLessons.style.display = essay || kaoyanFreq ? "none" : "";
   }
 }
 
@@ -435,33 +548,148 @@ function loadProgress() {
 }
 
 function saveProgress() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.progress));
+  safeSetItem(STORAGE_KEY, JSON.stringify(state.progress));
 }
 
-function loadSavedSessions() {
+function safeSetItem(key, value) {
   try {
-    const saved = JSON.parse(localStorage.getItem(SESSION_KEY) || "{}");
-    if (!saved || Array.isArray(saved) || typeof saved !== "object") return {};
-
-    // 兼容旧版单一断点：旧数据里有 currentWordKey，但没有 sessions 包装。
-    if (saved.currentWordKey) {
-      const key = getSessionKeyFromSaved(saved);
-      return key ? { [key]: saved } : {};
+    localStorage.setItem(key, value);
+    return true;
+  } catch (error) {
+    // 空间满时先丢掉可再生的队列顺序再重试一次（旧版会话可能是迁移的唯一来源，不删）
+    try {
+      if (key !== QUEUE_KEY) localStorage.removeItem(QUEUE_KEY);
+      localStorage.setItem(key, value);
+      return true;
+    } catch {
+      showToast("进度保存失败：浏览器存储空间不足或被禁用");
+      console.error("localStorage write failed", key, error);
+      return false;
     }
-
-    return saved;
-  } catch {
-    return {};
   }
 }
 
-function saveSavedSessions(sessions) {
-  localStorage.setItem(SESSION_KEY, JSON.stringify(sessions));
+function readJson(key, fallback) {
+  try {
+    const value = JSON.parse(localStorage.getItem(key) || "null");
+    return value ?? fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+// ---------- 已背（per word，跨组合/模式共享） ----------
+
+function loadLearned() {
+  if (localStorage.getItem(LEARNED_KEY) === null) return null;
+  const raw = readJson(LEARNED_KEY, {});
+  const map = new Map();
+  if (raw && typeof raw === "object" && !Array.isArray(raw)) {
+    Object.entries(raw).forEach(([lesson, keys]) => {
+      if (Array.isArray(keys)) map.set(lesson, new Set(keys));
+    });
+  }
+  return map;
+}
+
+function saveLearned() {
+  const raw = {};
+  state.learned.forEach((keys, lesson) => {
+    if (keys.size) raw[lesson] = [...keys];
+  });
+  safeSetItem(LEARNED_KEY, JSON.stringify(raw));
+}
+
+function isLearned(word) {
+  return state.learned.get(String(word.lesson))?.has(getWordKey(word)) || false;
+}
+
+function setLearned(word, learned) {
+  const lesson = String(word.lesson);
+  let keys = state.learned.get(lesson);
+  if (learned) {
+    if (!keys) state.learned.set(lesson, (keys = new Set()));
+    keys.add(getWordKey(word));
+  } else {
+    keys?.delete(getWordKey(word));
+  }
+}
+
+// 旧版 v2：每个组合存剩余队列。不在队列里的词 = 已背。取并集，任何一个会话背过都算背过。
+function migrateLegacySessions() {
+  const learned = new Map();
+  const sessions = readJson(LEGACY_SESSION_KEY, {});
+  const list =
+    sessions && typeof sessions === "object" && !Array.isArray(sessions)
+      ? sessions.currentWordKey
+        ? [sessions]
+        : Object.values(sessions)
+      : [];
+
+  const lessonIds = new Set([
+    ...state.data.lessons.map((lesson) => lesson.lesson),
+    "essay-spell",
+    "essay-recognize",
+    "essay-misspell",
+  ]);
+  const queues = {};
+
+  list.forEach((saved) => {
+    if (!saved || !Array.isArray(saved.selectedLessons)) return;
+    const hasQueue = Array.isArray(saved.deckQueueKeys);
+    if (!hasQueue && !saved.completed) return;
+    const remaining = new Set(saved.deckQueueKeys || []);
+    const scopeWords = saved.selectedLessons
+      .filter((lessonNo) => lessonIds.has(lessonNo))
+      .flatMap((lessonNo) => getLessonWords(lessonNo));
+    // 保存之后词库新加的词（老版本会追加到末尾）不能算已背
+    const unseen = scopeWords.filter((word) => !remaining.has(getWordKey(word)));
+    const total = Number(saved.sessionTotal) || 0;
+    const extra = total ? Math.max(0, scopeWords.length - total) : 0;
+    const learnedWords = saved.completed && !extra ? scopeWords : unseen.slice(0, unseen.length - extra);
+    learnedWords.forEach((word) => {
+      const lesson = String(word.lesson);
+      if (!learned.has(lesson)) learned.set(lesson, new Set());
+      learned.get(lesson).add(getWordKey(word));
+    });
+
+    const key = getSessionKeyFromSaved(saved);
+    if (key && hasQueue && saved.deckQueueKeys.length) {
+      queues[key] = {
+        queueKeys: saved.deckQueueKeys,
+        currentWordKey: saved.currentWordKey || null,
+        savedAt: saved.savedAt || new Date(0).toISOString(),
+      };
+    }
+  });
+
+  state.learned = learned;
+  saveLearned();
+  saveQueues(queues);
+  const latest = list
+    .filter((saved) => saved && Array.isArray(saved.selectedLessons))
+    .sort((a, b) => new Date(b.savedAt || 0) - new Date(a.savedAt || 0))[0];
+  if (latest) safeSetItem(LAST_SCOPE_KEY, JSON.stringify(latest));
+  return learned;
+}
+
+// ---------- 队列顺序 / 当前位置（per 组合 + 模式，只是“书签”） ----------
+
+function loadQueues() {
+  const raw = readJson(QUEUE_KEY, {});
+  return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+}
+
+function saveQueues(queues) {
+  const entries = Object.entries(queues)
+    .sort((a, b) => new Date(b[1]?.savedAt || 0) - new Date(a[1]?.savedAt || 0))
+    .slice(0, MAX_SAVED_QUEUES);
+  safeSetItem(QUEUE_KEY, JSON.stringify(Object.fromEntries(entries)));
 }
 
 function getSessionKeyFromSaved(saved) {
   if (!saved || !Array.isArray(saved.selectedLessons)) return null;
-  const library = saved.libraryMode === "essay" ? "essay" : "barron";
+  const library = LIBRARIES.includes(saved.libraryMode) ? saved.libraryMode : "barron";
   const essaySub =
     saved.essaySubMode === "recognize"
       ? "recognize"
@@ -474,40 +702,24 @@ function getSessionKeyFromSaved(saved) {
   else if (saved.type === "all") base = "all";
   else base = `selection:${saved.selectedLessons.join(",")}`;
   if (library === "essay") return `essay:${essaySub}|${base}@${mode}`;
+  if (library === "kaoyan") return `kaoyan|${base}@${mode}`;
   return `barron|${base}@${mode}`;
 }
 
-function getSessionKey(scope = getCurrentSessionScope()) {
+function getSessionKey(scope = getCurrentSessionScope(), mode = state.currentMode) {
   if (!scope) return null;
   return getSessionKeyFromSaved({
     ...scope,
     libraryMode: state.libraryMode,
     essaySubMode: state.essaySubMode,
-    mode: state.currentMode,
+    mode,
   });
 }
 
-function loadSavedSession(scope = getCurrentSessionScope()) {
-  const key = getSessionKey(scope);
-  if (!key) return null;
-  return loadSavedSessions()[key] || null;
-}
-
-function clearSavedSession(scope = getCurrentSessionScope()) {
-  const key = getSessionKey(scope);
-  if (!key) return;
-  const sessions = loadSavedSessions();
-  delete sessions[key];
-  saveSavedSessions(sessions);
-}
-
 function restoreSavedSessionScopeOnStartup() {
-  const sessions = Object.values(loadSavedSessions()).filter(
-    (saved) => saved && Array.isArray(saved.selectedLessons) && saved.selectedLessons.length
-  );
-  if (!sessions.length) return;
+  const saved = readJson(LAST_SCOPE_KEY, null);
+  if (!saved || !Array.isArray(saved.selectedLessons) || !saved.selectedLessons.length) return;
 
-  const saved = sessions.sort((a, b) => new Date(b.savedAt || 0) - new Date(a.savedAt || 0))[0];
   if (saved.libraryMode === "essay") {
     state.libraryMode = "essay";
     state.essaySubMode =
@@ -523,6 +735,26 @@ function restoreSavedSessionScopeOnStartup() {
     return;
   }
 
+  if (saved.libraryMode === "kaoyan") {
+    if (!state.data.kaoyan) return;
+    const valid = new Set(getKaoyanLessons().map((lesson) => lesson.id));
+    const lessons = saved.selectedLessons.filter((id) => valid.has(id));
+    if (!lessons.length) return;
+    state.libraryMode = "kaoyan";
+    state.currentSource = "normal";
+    state.currentMode = saved.mode === "random" ? "random" : "sequential";
+    if (lessons.includes("freq")) {
+      state.kaoyanBook = "freq";
+      state.quizLesson = null;
+    } else {
+      state.kaoyanBook = "core";
+      state.selectedKaoyanUnits = new Set(lessons);
+      state.quizLesson = saved.type === "lesson" && valid.has(saved.quizLesson) ? saved.quizLesson : null;
+    }
+    saveLibraryMode();
+    return;
+  }
+
   const validLessons = new Set(state.data.lessons.map((lesson) => lesson.lesson));
   const selectedLessons = saved.selectedLessons.filter((lessonNo) => validLessons.has(lessonNo));
   if (!selectedLessons.length) return;
@@ -532,6 +764,7 @@ function restoreSavedSessionScopeOnStartup() {
   state.currentMode = saved.mode === "random" ? "random" : "sequential";
   state.selectedLessons = new Set(selectedLessons);
   state.quizLesson = saved.type === "lesson" && validLessons.has(saved.quizLesson) ? saved.quizLesson : null;
+  saveLibraryMode();
 }
 
 function getCurrentSessionScope() {
@@ -546,6 +779,24 @@ function getCurrentSessionScope() {
       libraryMode: "essay",
       essaySubMode: state.essaySubMode,
       mode: state.currentMode,
+    };
+  }
+
+  if (isKaoyanMode()) {
+    const base = { libraryMode: "kaoyan", mode: state.currentMode };
+    if (state.kaoyanBook === "freq") {
+      return { ...base, type: "lesson", quizLesson: "freq", selectedLessons: ["freq"] };
+    }
+    if (state.quizLesson !== null) {
+      return { ...base, type: "lesson", quizLesson: state.quizLesson, selectedLessons: [state.quizLesson] };
+    }
+    const units = sortKaoyanUnits([...state.selectedKaoyanUnits]);
+    if (!units.length) return null;
+    return {
+      ...base,
+      type: units.length === getKaoyanCoreLessons().length ? "all" : "selection",
+      quizLesson: null,
+      selectedLessons: units,
     };
   }
 
@@ -570,6 +821,10 @@ function getCurrentSessionScope() {
   };
 }
 
+function getScopeWords() {
+  return state.quizLesson !== null ? getLessonWords(state.quizLesson) : getSelectedWords();
+}
+
 function rememberStudyContext() {
   if (state.currentSource !== "normal") return;
   saveCurrentSession();
@@ -590,123 +845,52 @@ function restoreStudyContext() {
   state.currentMode = ctx.currentMode;
 }
 
-function saveCurrentSession() {
-  if (state.currentSource !== "normal") return;
-
+function saveLastScope() {
   const scope = getCurrentSessionScope();
   if (!scope) return;
+  safeSetItem(LAST_SCOPE_KEY, JSON.stringify({ ...scope, savedAt: new Date().toISOString() }));
+}
 
+// 只在真正学习动作（判对错/翻页/撤销）时写队列，单纯切换勾选不产生垃圾会话
+function saveCurrentSession() {
+  const scope = getCurrentSessionScope();
   const key = getSessionKey(scope);
   if (!key) return;
 
+  const queues = loadQueues();
   const current = state.deck[state.currentIndex];
-  const safeSessionTotal = state.sessionTotal || state.deck.length;
-  const isCompleted = !state.deck.length && safeSessionTotal > 0 && state.learnedCount >= safeSessionTotal;
-  if (!current && !isCompleted) return;
-
-  const sessions = loadSavedSessions();
-
-  if (isCompleted) {
-    sessions[key] = {
-      ...scope,
-      currentWordKey: null,
-      currentIndex: -1,
-      deckQueueKeys: [],
-      learnedCount: safeSessionTotal,
-      sessionTotal: safeSessionTotal,
-      completed: true,
+  if (!state.deck.length || !current) {
+    delete queues[key];
+  } else {
+    queues[key] = {
+      queueKeys: state.deck.map(getWordKey),
+      currentWordKey: getWordKey(current),
       savedAt: new Date().toISOString(),
     };
-    saveSavedSessions(sessions);
-    return;
   }
-
-  const deckQueueKeys = state.deck.map(getWordKey);
-  const remainingUniqueCount = new Set(deckQueueKeys).size;
-  const safeLearnedCount = Math.max(0, safeSessionTotal - remainingUniqueCount);
-
-  sessions[key] = {
-    ...scope,
-    currentWordKey: getWordKey(current),
-    currentIndex: state.currentIndex,
-    deckQueueKeys,
-    learnedCount: safeLearnedCount,
-    sessionTotal: safeSessionTotal,
-    completed: false,
-    savedAt: new Date().toISOString(),
-  };
-  saveSavedSessions(sessions);
+  saveQueues(queues);
+  saveLastScope();
 }
 
-function sameLessonSet(a = [], b = []) {
-  if (a.length !== b.length) return false;
-  return a.every((item, index) => item === b[index]);
-}
+function restoreSavedQueue() {
+  const key = getSessionKey();
+  const saved = key ? loadQueues()[key] : null;
+  if (!saved || !Array.isArray(saved.queueKeys) || !state.deck.length) return;
 
-function isSavedSessionCompleted(saved) {
-  if (!saved) return false;
-  if (saved.completed) return true;
-  const savedTotal = Number(saved.sessionTotal) || 0;
-  return Array.isArray(saved.deckQueueKeys) && saved.deckQueueKeys.length === 0 && savedTotal > 0;
-}
+  const byKey = new Map(state.deck.map((word) => [getWordKey(word), word]));
+  const ordered = [];
+  saved.queueKeys.forEach((wordKey) => {
+    const word = byKey.get(wordKey);
+    if (!word) return; // 已背或已不在词库
+    ordered.push(word);
+    byKey.delete(wordKey);
+  });
+  // 队列里没有的剩余词（新加的词、在别的组合里被撤销的词）按原顺序接在后面
+  ordered.push(...byKey.values());
+  state.deck = ordered;
 
-function restoreSavedSessionIfPossible() {
-  const saved = loadSavedSession();
-  if (!saved || state.currentSource !== "normal" || state.currentMode !== "sequential") {
-    return false;
-  }
-
-  const scope = getCurrentSessionScope();
-  if (!scope) return false;
-  if (saved.type !== scope.type) return false;
-  if ((saved.quizLesson ?? null) !== (scope.quizLesson ?? null)) return false;
-  if (!sameLessonSet(saved.selectedLessons || [], scope.selectedLessons || [])) return false;
-
-  if (isSavedSessionCompleted(saved)) {
-    const savedTotal = Number(saved.sessionTotal) || Number(saved.learnedCount) || 0;
-    state.deck = [];
-    state.currentIndex = -1;
-    state.showMeaning = false;
-    state.repeatQueueKeys = new Set();
-    state.history = [];
-    state.sessionTotal = savedTotal;
-    state.learnedCount = Math.max(savedTotal, Number(saved.learnedCount) || 0);
-    return true;
-  }
-
-  if (!state.deck.length) return false;
-
-  const restoredIndex = state.deck.findIndex((word) => getWordKey(word) === saved.currentWordKey);
-  if (restoredIndex < 0) return false;
-
-  if (Array.isArray(saved.deckQueueKeys) && saved.deckQueueKeys.length) {
-    const wordsByKey = new Map(state.deck.map((word) => [getWordKey(word), word]));
-    const restoredDeck = saved.deckQueueKeys.map((wordKey) => wordsByKey.get(wordKey)).filter(Boolean);
-    if (restoredDeck.length) {
-      const seenKeys = new Set(saved.deckQueueKeys);
-      const prevTotal = Number(saved.sessionTotal) || restoredDeck.length;
-      const extra = Math.max(0, state.deck.length - prevTotal);
-      if (extra > 0) {
-        const added = state.deck.filter((word) => !seenKeys.has(getWordKey(word))).slice(-extra);
-        restoredDeck.push(...added);
-        saved.sessionTotal = prevTotal + added.length;
-        saved.deckQueueKeys = restoredDeck.map(getWordKey);
-      }
-      state.deck = restoredDeck;
-      state.currentIndex = Math.max(
-        0,
-        Math.min(state.deck.findIndex((word) => getWordKey(word) === saved.currentWordKey), state.deck.length - 1)
-      );
-      state.learnedCount = Math.max(0, (Number(saved.sessionTotal) || state.deck.length) - new Set(saved.deckQueueKeys).size);
-      state.sessionTotal = Number(saved.sessionTotal) || state.deck.length;
-      return true;
-    }
-  }
-
-  state.currentIndex = restoredIndex;
-  state.sessionTotal = Number(saved.sessionTotal) || state.deck.length;
-  state.learnedCount = Math.max(0, state.sessionTotal - state.deck.length);
-  return true;
+  const index = ordered.findIndex((word) => getWordKey(word) === saved.currentWordKey);
+  state.currentIndex = index >= 0 ? index : 0;
 }
 
 function handleKeyboardShortcuts(event) {
@@ -809,7 +993,10 @@ function getAllWords() {
         lessonTitle: "作文·错词",
       });
     });
-    allWordsCache = [...barron, ...essay];
+    const kaoyan = getKaoyanLessons().flatMap((lesson) =>
+      lesson.words.map((word) => ({ ...word, lesson: lesson.id, lessonTitle: lesson.title }))
+    );
+    allWordsCache = [...barron, ...essay, ...kaoyan];
   }
   return allWordsCache;
 }
@@ -819,15 +1006,19 @@ function getBarronWords() {
 }
 
 function getSelectedWords() {
-  if (isEssayMode()) {
-    const lessonId = essayLessonId();
-    return getAllWords().filter((word) => word.lesson === lessonId);
-  }
-  return getAllWords().filter((word) => typeof word.lesson === "number" && state.selectedLessons.has(word.lesson));
+  return getAllWords().filter((word) => wordLibrary(word) === state.libraryMode && isWordInSelection(word));
 }
 
+// 按单元建索引：侧栏每次渲染要算 40+15 个单元的进度，词库合计 4000+ 词，逐个全表 filter 太慢
 function getLessonWords(lessonNo) {
-  return getAllWords().filter((word) => word.lesson === lessonNo);
+  if (!lessonIndexCache) {
+    lessonIndexCache = new Map();
+    getAllWords().forEach((word) => {
+      if (!lessonIndexCache.has(word.lesson)) lessonIndexCache.set(word.lesson, []);
+      lessonIndexCache.get(word.lesson).push(word);
+    });
+  }
+  return [...(lessonIndexCache.get(lessonNo) || [])];
 }
 
 function getWordKey(word) {
@@ -847,8 +1038,6 @@ function ensureWordState(word) {
       inWrongBook: false,
       lesson: word.lesson,
       word: word.word,
-      meaning: word.meaning,
-      partOfSpeech: word.part_of_speech,
     };
   }
   return state.progress[key];
@@ -877,16 +1066,16 @@ function isInWrongBook(itemState) {
 }
 
 function buildDeck() {
+  const isNormal = state.currentSource === "normal";
   const sourceWords =
     state.currentSource === "wrong"
       ? getWrongWords({ lesson: state.wrongReviewLesson })
       : state.currentSource === "due"
         ? getDueWords().map((item) => item.word)
-        : state.quizLesson !== null
-          ? getLessonWords(state.quizLesson)
-          : getSelectedWords();
+        : getScopeWords();
 
-  state.deck = [...sourceWords];
+  // 普通背词：已背过的词不再进本轮（无论之前在哪个组合/模式里背的）
+  state.deck = isNormal ? sourceWords.filter((word) => !isLearned(word)) : [...sourceWords];
 
   if (state.currentMode === "random") {
     shuffle(state.deck);
@@ -919,10 +1108,23 @@ function buildDeck() {
   state.showMeaning = false;
   state.repeatQueueKeys = new Set();
   state.history = [];
-  state.learnedCount = 0;
-  state.sessionTotal = state.deck.length;
-  restoreSavedSessionIfPossible();
-  saveCurrentSession();
+  state.sessionTotal = sourceWords.length;
+  state.learnedCount = sourceWords.length - state.deck.length;
+  if (isNormal) {
+    restoreSavedQueue();
+    saveLastScope();
+  }
+}
+
+function reshuffleDeck() {
+  const key = getSessionKey();
+  if (key) {
+    const queues = loadQueues();
+    delete queues[key];
+    saveQueues(queues);
+  }
+  buildDeck();
+  renderAll();
 }
 
 function revealMeaning() {
@@ -971,6 +1173,10 @@ function goToPreviousWord() {
   if (last.previousWordState) {
     state.progress[previousKey] = { ...last.previousWordState };
   }
+  if (last.source === "normal") {
+    setLearned(last.word, last.wasLearned);
+    saveLearned();
+  }
 
   if (last.repeatQueueHadKey) {
     state.repeatQueueKeys.add(previousKey);
@@ -1006,6 +1212,7 @@ function markAnswer(isKnown, options = {}) {
     repeatQueueHadKey: state.repeatQueueKeys.has(currentKey),
     previousWordState: { ...itemState },
     learnedCount: state.learnedCount,
+    wasLearned: isLearned(current),
   });
 
   state.deck.splice(state.currentIndex, 1);
@@ -1017,6 +1224,10 @@ function markAnswer(isKnown, options = {}) {
     itemState.reviewStage = Math.min(itemState.reviewStage + 1, REVIEW_INTERVALS.length - 1);
     if (state.currentSource === "wrong") {
       itemState.inWrongBook = false;
+    }
+    if (state.currentSource === "normal") {
+      setLearned(current, true);
+      saveLearned();
     }
   } else {
     state.repeatQueueKeys.add(currentKey);
@@ -1240,7 +1451,41 @@ function startLessonQuiz(lessonNo) {
   renderAll();
 }
 
+function startKaoyanUnitQuiz(lessonId) {
+  state.selectedKaoyanUnits = new Set([lessonId]);
+  state.currentSource = "normal";
+  state.currentMode = "sequential";
+  state.quizLesson = lessonId;
+  state.wrongReviewLesson = null;
+  saveKaoyanPrefs();
+  syncModeButtons();
+  buildDeck();
+  renderAll();
+}
+
+function toggleKaoyanUnit(lessonId) {
+  if (state.selectedKaoyanUnits.has(lessonId)) state.selectedKaoyanUnits.delete(lessonId);
+  else state.selectedKaoyanUnits.add(lessonId);
+  state.currentSource = "normal";
+  state.quizLesson = null;
+  state.wrongReviewLesson = null;
+  saveKaoyanPrefs();
+  buildDeck();
+  renderAll();
+}
+
 function toggleAllLessons() {
+  if (isKaoyanMode()) {
+    const all = getKaoyanCoreLessons().map((lesson) => lesson.id);
+    state.selectedKaoyanUnits = state.selectedKaoyanUnits.size === all.length ? new Set() : new Set(all);
+    state.currentSource = "normal";
+    state.quizLesson = null;
+    state.wrongReviewLesson = null;
+    saveKaoyanPrefs();
+    buildDeck();
+    renderAll();
+    return;
+  }
   if (state.selectedLessons.size === state.data.lessons.length) {
     state.selectedLessons.clear();
   } else {
@@ -1262,7 +1507,12 @@ function compareWrongWords(a, b) {
   const aTime = new Date(aState.lastWrongAt || aState.lastSeenAt || 0).getTime();
   const bTime = new Date(bState.lastWrongAt || bState.lastSeenAt || 0).getTime();
   if (bTime !== aTime) return bTime - aTime;
-  return a.lesson - b.lesson || a.index - b.index;
+  if (a.lesson !== b.lesson) {
+    // 作文词的 lesson 是字符串，直接相减会得到 NaN，排序结果不稳定
+    if (typeof a.lesson === "number" && typeof b.lesson === "number") return a.lesson - b.lesson;
+    return String(a.lesson).localeCompare(String(b.lesson));
+  }
+  return (a.index || 0) - (b.index || 0);
 }
 
 function getWrongWords({ lesson = null, selectedOnly = state.wrongOnlySelected } = {}) {
@@ -1270,19 +1520,9 @@ function getWrongWords({ lesson = null, selectedOnly = state.wrongOnlySelected }
     const itemState = state.progress[getWordKey(word)];
     if (!isInWrongBook(itemState)) return false;
     if (lesson != null && word.lesson !== lesson) return false;
-    if (isEssayMode()) {
-      const inEssay =
-        word.lesson === "essay-spell" ||
-        word.lesson === "essay-recognize" ||
-        word.lesson === "essay-misspell";
-      if (!inEssay) return false;
-      if (selectedOnly) {
-        if (word.lesson !== essayLessonId()) return false;
-      }
-    } else {
-      if (typeof word.lesson !== "number") return false;
-      if (selectedOnly && !state.selectedLessons.has(word.lesson)) return false;
-    }
+    // 错题本按词库隔离：巴朗 / 作文 / 考研各看各的
+    if (wordLibrary(word) !== state.libraryMode) return false;
+    if (selectedOnly && !isWordInSelection(word)) return false;
     return true;
   });
 }
@@ -1290,16 +1530,7 @@ function getWrongWords({ lesson = null, selectedOnly = state.wrongOnlySelected }
 function getDueWords() {
   const now = Date.now();
   return getAllWords()
-    .filter((word) => {
-      if (isEssayMode()) {
-        return (
-          word.lesson === "essay-spell" ||
-          word.lesson === "essay-recognize" ||
-          word.lesson === "essay-misspell"
-        );
-      }
-      return typeof word.lesson === "number";
-    })
+    .filter((word) => wordLibrary(word) === state.libraryMode)
     .map((word) => ({ word, progress: state.progress[getWordKey(word)] }))
     .filter(({ progress }) => progress && progress.nextReviewAt && new Date(progress.nextReviewAt).getTime() <= now);
 }
@@ -1310,54 +1541,14 @@ function renderAll() {
   renderCard();
 }
 
+function getLessonProgress(lessonNo) {
+  const words = getLessonWords(lessonNo);
+  const learned = words.filter(isLearned).length;
+  return { learned, total: words.length, completed: words.length > 0 && learned >= words.length };
+}
+
 function getLessonProgressMap() {
-  const map = new Map();
-  state.data.lessons.forEach((lesson) => {
-    map.set(lesson.lesson, { learned: 0, total: lesson.count, completed: false });
-  });
-
-  const sessions = Object.values(loadSavedSessions()).filter((saved) => saved && typeof saved === "object");
-  const multiSessions = sessions
-    .filter((saved) => saved.type === "all" || saved.type === "selection")
-    .sort((a, b) => new Date(a.savedAt || 0) - new Date(b.savedAt || 0));
-  const lessonSessions = sessions.filter((saved) => saved.type === "lesson" && saved.quizLesson != null);
-
-  for (const saved of multiSessions) {
-    if (!Array.isArray(saved.deckQueueKeys) && !saved.completed) continue;
-    const remainingKeys = new Set(saved.deckQueueKeys || []);
-    const selected = Array.isArray(saved.selectedLessons) ? saved.selectedLessons : [];
-    for (const lessonNo of selected) {
-      const current = map.get(lessonNo);
-      if (!current?.total) continue;
-      const remaining = getLessonWords(lessonNo).filter((word) => remainingKeys.has(getWordKey(word))).length;
-      const learned = Math.max(0, current.total - remaining);
-      map.set(lessonNo, {
-        learned,
-        total: current.total,
-        completed: remaining === 0 && (saved.completed || learned >= current.total),
-      });
-    }
-  }
-
-  for (const saved of lessonSessions) {
-    const current = map.get(saved.quizLesson);
-    if (!current?.total) continue;
-    if (isSavedSessionCompleted(saved)) {
-      map.set(saved.quizLesson, { learned: current.total, total: current.total, completed: true });
-      continue;
-    }
-    if (!Array.isArray(saved.deckQueueKeys)) continue;
-    const remaining = new Set(saved.deckQueueKeys).size;
-    const sessionTotal = Number(saved.sessionTotal) || current.total;
-    const learned = Math.max(0, Math.min(current.total, sessionTotal - remaining));
-    map.set(saved.quizLesson, {
-      learned,
-      total: current.total,
-      completed: learned >= current.total,
-    });
-  }
-
-  return map;
+  return new Map(state.data.lessons.map((lesson) => [lesson.lesson, getLessonProgress(lesson.lesson)]));
 }
 
 function renderSidebar() {
@@ -1390,12 +1581,18 @@ function renderSidebar() {
     ];
     items.forEach((item) => {
       const active = state.essaySubMode === item.sub;
+      const progress = getLessonProgress(item.id);
+      const progressText = progress.completed
+        ? "已完成"
+        : progress.learned > 0
+          ? `进度 ${progress.learned} / ${progress.total}`
+          : `${item.count} 词`;
       const node = document.createElement("div");
-      node.className = `lesson-item${active ? " active" : ""}`;
+      node.className = `lesson-item${active ? " active" : ""}${progress.completed ? " is-complete" : ""}`;
       node.innerHTML = `
         <div>
           <strong>${escapeHtml(item.title)}</strong>
-          <div class="muted">${item.count} 词 · ${escapeHtml(item.hint)}</div>
+          <div class="muted">${escapeHtml(progressText)} · ${escapeHtml(item.hint)}</div>
         </div>
         <div class="lesson-item-actions">
           <span class="tag">${active ? "当前" : "切换"}</span>
@@ -1413,6 +1610,11 @@ function renderSidebar() {
       });
       els.lessonList.appendChild(node);
     });
+    return;
+  }
+
+  if (isKaoyanMode()) {
+    renderKaoyanSidebar();
     return;
   }
 
@@ -1478,6 +1680,72 @@ function renderSidebar() {
   });
 }
 
+function lessonStatusText(progress, total) {
+  if (progress.completed) return `已完成 · ${progress.total} 个单词`;
+  if (progress.learned > 0) return `进度 ${progress.learned} / ${progress.total}`;
+  return `${total} 个单词`;
+}
+
+function renderKaoyanSidebar() {
+  const lessons = state.kaoyanBook === "freq" ? getKaoyanLessons().filter((l) => l.book === "freq") : getKaoyanCoreLessons();
+  const isFreq = state.kaoyanBook === "freq";
+
+  lessons.forEach((lesson) => {
+    const active = isFreq || state.selectedKaoyanUnits.has(lesson.id);
+    const progress = getLessonProgress(lesson.id);
+    const item = document.createElement("div");
+    item.className = `lesson-item${active ? " active" : ""}${progress.completed ? " is-complete" : ""}`;
+
+    if (!isFreq) {
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.checked = active;
+      checkbox.tabIndex = -1;
+      item.appendChild(checkbox);
+    }
+
+    const info = document.createElement("div");
+    const hint = isFreq ? " · 卡片标注真题出现次数" : "";
+    info.innerHTML = `<strong>${escapeHtml(lesson.title)}</strong><div class="muted">${escapeHtml(
+      lessonStatusText(progress, lesson.count) + hint
+    )}</div>`;
+    item.appendChild(info);
+
+    const actions = document.createElement("div");
+    actions.className = "lesson-item-actions";
+    const tag = document.createElement("span");
+    tag.className = "tag";
+    tag.textContent = lesson.shortTitle || lesson.title;
+    actions.appendChild(tag);
+
+    if (!isFreq) {
+      const quizButton = document.createElement("button");
+      quizButton.type = "button";
+      quizButton.className = "mini-button";
+      quizButton.textContent = progress.completed ? "已完成" : progress.learned > 0 ? "继续背词" : "开始背词";
+      quizButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        startKaoyanUnitQuiz(lesson.id);
+      });
+      actions.appendChild(quizButton);
+      item.addEventListener("click", () => toggleKaoyanUnit(lesson.id));
+    }
+    item.appendChild(actions);
+    els.lessonList.appendChild(item);
+  });
+}
+
+function lessonTitleOf(lessonId) {
+  if (typeof lessonId === "number") {
+    return state.data.lessons.find((lesson) => lesson.lesson === lessonId)?.title || `Lesson ${lessonId}`;
+  }
+  return (
+    getKaoyanLesson(lessonId)?.title ||
+    getAllWords().find((word) => word.lesson === lessonId)?.lessonTitle ||
+    String(lessonId ?? "")
+  );
+}
+
 function refreshDashboard() {
   const selected = [...state.selectedLessons].sort((a, b) => a - b);
   const hasSelection = selected.length > 0;
@@ -1496,6 +1764,10 @@ function refreshDashboard() {
         (state.data.essay?.recognizeCount || 0) +
         (state.data.essay?.misspellCount || 0)
     );
+  } else if (isKaoyanMode()) {
+    const freq = state.kaoyanBook === "freq";
+    els.lessonCount.textContent = freq ? "1" : String(getKaoyanCoreLessons().length);
+    els.wordCount.textContent = String(freq ? state.data.kaoyan.freqCount : state.data.kaoyan.coreCount);
   } else {
     els.lessonCount.textContent = String(state.data.lessonCount);
     els.wordCount.textContent = String(state.data.wordCount);
@@ -1504,10 +1776,7 @@ function refreshDashboard() {
 
   if (state.currentSource === "wrong") {
     if (state.wrongReviewLesson != null) {
-      const wrongLessonTitle =
-        state.data.lessons.find((lesson) => lesson.lesson === state.wrongReviewLesson)?.title ||
-        `Lesson ${state.wrongReviewLesson}`;
-      els.currentScopeTitle.textContent = `${wrongLessonTitle} 错题复习`;
+      els.currentScopeTitle.textContent = `${lessonTitleOf(state.wrongReviewLesson)} 错题复习`;
     } else if (state.wrongOnlySelected) {
       els.currentScopeTitle.textContent = "错题本复习（已选单元）";
     } else {
@@ -1528,6 +1797,24 @@ function refreshDashboard() {
       els.currentScopeTitle.textContent = "作文 · 要认识";
       els.scopeHint.textContent = "先看英文，轻点卡片显示释义，再点认识 / 不认识。";
     }
+  } else if (isKaoyanMode()) {
+    const units = sortKaoyanUnits([...state.selectedKaoyanUnits]);
+    if (state.kaoyanBook === "freq") {
+      els.currentScopeTitle.textContent = "考研 · 真题高频200词";
+      els.scopeHint.textContent = "按原书词族顺序排列，卡片上标注真题出现次数；先看英文，再显示释义判断。";
+    } else if (state.quizLesson !== null) {
+      els.currentScopeTitle.textContent = `${lessonTitleOf(state.quizLesson)} 背词中`;
+      els.scopeHint.textContent = "先看英文，显示释义后再判断是否认识。";
+    } else if (units.length === getKaoyanCoreLessons().length) {
+      els.currentScopeTitle.textContent = "考研核心词 · 全部单元";
+      els.scopeHint.textContent = `Unit 1–${units.length} 共 ${state.data.kaoyan.coreCount} 词，推荐按顺序背；想打乱顺序再切随机模式。`;
+    } else if (units.length) {
+      els.currentScopeTitle.textContent = `核心词：${units.map((id) => getKaoyanLesson(id)?.shortTitle || id).join("、")}`;
+      els.scopeHint.textContent = `当前已选择 ${units.length} 个单元，推荐按顺序背；想打乱顺序再切随机模式。`;
+    } else {
+      els.currentScopeTitle.textContent = "未选择单元";
+      els.scopeHint.textContent = "请先在面板选择至少一个核心词单元，再开始背词。";
+    }
   } else if (state.quizLesson !== null) {
     els.currentScopeTitle.textContent = `${currentLessonTitle} 背词中`;
     els.scopeHint.textContent = "先看英文，显示释义后再判断是否认识。";
@@ -1542,15 +1829,20 @@ function refreshDashboard() {
     els.scopeHint.textContent = "请先在面板选择至少一个单元，再开始背词。";
   }
 
-  if (!isEssayMode()) {
+  if (isKaoyanMode()) {
+    els.toggleAllLessons.textContent =
+      state.selectedKaoyanUnits.size === getKaoyanCoreLessons().length ? "清空选择" : "全选单元";
+  } else if (!isEssayMode()) {
     els.toggleAllLessons.textContent =
       state.selectedLessons.size === state.data.lessons.length ? "清空选择" : "全选单元";
   }
+  const kaoyanHasScope =
+    isKaoyanMode() && (state.kaoyanBook === "freq" || state.selectedKaoyanUnits.size > 0);
   els.startRandomBtn.disabled =
     state.currentSource === "normal" &&
     state.quizLesson === null &&
-    !hasSelection &&
-    !isEssayMode();
+    !isEssayMode() &&
+    !(isKaoyanMode() ? kaoyanHasScope : hasSelection);
   if (state.currentSource === "wrong") {
     els.startRandomBtn.textContent = "退出错题本";
   } else if (state.currentSource === "due") {
@@ -1593,13 +1885,17 @@ function renderCard() {
       els.cardWord.textContent = state.wrongOnlySelected ? "当前单元没有错词" : "错题本暂时为空";
     } else if (state.currentSource === "due") {
       els.cardWord.textContent = "今天没有到期复习";
-    } else if (isEssayMode() || state.selectedLessons.size) {
+    } else if (
+      isEssayMode() ||
+      (isKaoyanMode() ? state.kaoyanBook === "freq" || state.selectedKaoyanUnits.size : state.selectedLessons.size)
+    ) {
       els.cardWord.textContent = "当前没有可背单词";
     } else {
       els.cardWord.textContent = "请先选择单元";
     }
 
-    els.cardPos.textContent = "";
+    els.cardPos.textContent =
+      finishedGroup && state.currentSource === "normal" ? "想再背一轮：面板 →「重置本组进度」" : "";
     els.tapHint.hidden = true;
     els.cardMeaning.textContent = spellMode ? "看中文，拼出英文后点检查。" : "轻点卡片查看中文意思。";
     els.cardMeaning.classList.add("hidden");
@@ -1658,13 +1954,10 @@ function renderCard() {
     els.unknownBtn.style.opacity = "0.55";
     if (els.spellFeedback) {
       els.spellFeedback.textContent = state.spellFeedback || "";
-      els.spellFeedback.classList.toggle("is-ok", state.spellFeedback === "拼写正确");
-      els.spellFeedback.classList.toggle(
-        "is-bad",
-        Boolean(state.spellFeedback) &&
-          state.spellFeedback !== "拼写正确" &&
-          state.spellFeedback !== "请先输入拼写"
-      );
+      // 反馈文案带后缀（"拼写正确 ✓ 回车或…"），之前用 === 判断导致答对也显示成红色
+      const ok = state.spellPendingAdvance?.isKnown === true;
+      els.spellFeedback.classList.toggle("is-ok", ok);
+      els.spellFeedback.classList.toggle("is-bad", Boolean(state.spellPendingAdvance) && !ok);
     }
     if (els.spellHint) {
       const bits = [];
@@ -1707,7 +2000,8 @@ function renderCard() {
   }
 
   els.cardWord.textContent = current.word;
-  els.cardPos.textContent = current.part_of_speech || "未标注词性";
+  const posText = current.part_of_speech || "未标注词性";
+  els.cardPos.textContent = Number.isFinite(current.freq) ? `${posText} · 真题出现 ${current.freq} 次` : posText;
   els.tapHint.hidden = state.showMeaning;
   els.cardMeaning.textContent = current.meaning || "未提取到释义";
   els.cardMeaning.classList.toggle("hidden", !state.showMeaning);
@@ -1860,15 +2154,32 @@ function renderWrongList() {
 }
 
 function clearCurrentSessionProgress() {
-  clearSavedSession();
+  if (state.currentSource !== "normal") {
+    showToast("请先退出错题本/复习，再重置背词进度");
+    return;
+  }
+  const words = getScopeWords();
+  const learnedWords = words.filter(isLearned);
+  if (!window.confirm(`重置当前范围的背词进度？${learnedWords.length} 个已背单词会重新出现（错题本和复习记录保留）。`)) {
+    return;
+  }
+  learnedWords.forEach((word) => setLearned(word, false));
+  saveLearned();
+  const queues = loadQueues();
+  ["sequential", "random"].forEach((mode) => delete queues[getSessionKey(getCurrentSessionScope(), mode)]);
+  saveQueues(queues);
   buildDeck();
   renderAll();
 }
 
 function resetProgress() {
-  localStorage.removeItem(STORAGE_KEY);
-  localStorage.removeItem(SESSION_KEY);
+  if (!window.confirm("清空全部进度？已背记录、错题本和复习计划都会被删除，无法恢复。")) return;
+  [STORAGE_KEY, LEGACY_SESSION_KEY, LEARNED_KEY, QUEUE_KEY, LAST_SCOPE_KEY].forEach((key) =>
+    localStorage.removeItem(key)
+  );
   state.progress = {};
+  state.learned = new Map();
+  saveLearned(); // 写入空集合，避免下次启动又从旧版会话迁移
   buildDeck();
   renderAll();
 }

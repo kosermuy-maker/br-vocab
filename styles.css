@@ -1015,7 +1015,8 @@ body.practice-spell .tap-hint {
   display: none;
 }
 
-body.library-essay .app-header h1 {
+body.library-essay .app-header h1,
+body.library-kaoyan .app-header h1 {
   margin-bottom: 0;
 }
 

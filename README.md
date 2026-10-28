@@ -4,6 +4,7 @@
 
 - **巴朗词库**：Lesson **1–40**，约 **1938** 词
 - **作文模式**：**会拼写**（约 78 词，打字拼写）+ **要认识**（约 910 词，翻卡）+ **作文错词**（约 40 词，个人错词本，强制打字拼写）
+- **考研词汇**：**27考研核心词** Unit 1–15（2137 词，可多选单元）+ **真题高频200词**（199 词，卡片标注真题词频）
 
 **在线试用：** https://kosermuy-maker.github.io/br-vocab/
 
@@ -13,7 +14,7 @@
 
 ## 功能
 
-- 词库切换：**巴朗 1–40** | **作文**
+- 词库切换：**巴朗 1–40** | **作文** | **考研词汇**（错题本、复习提醒按词库各自独立）
 - 作文子模式：**会拼写** | **要认识** | **作文错词**（会拼写/作文错词均为输入框打字判对错）
 - 按单元选择（巴朗可多选）
 - 顺序背词 / 随机背词
@@ -48,6 +49,7 @@ cd br-vocab
 - 词库数据：`data/vocab.json` 与 `data/vocab-data.js`（`window.VOCAB_DATA`）保持一致
 - 作文词来源：考研写作必拼表 / 图表认识表 / 书本核心词与精彩词汇
 - **作文错词维护**：老师批改后新增错词时，只改 `data/essay-misspell.json`，再运行 `python3 scripts/build_essay_vocab.py` 编进 `vocab.json` / `vocab-data.js`，然后同步 **GitHub + 桌面 `br`**
+- **考研词汇**：独立数据文件 `data/kaoyan.json` / `data/kaoyan-data.js`（`window.KAOYAN_DATA`），不改巴朗/作文的词库与进度键。源文件在 `data/kaoyan-src/`，改完运行 `python scripts/build_kaoyan_vocab.py` 重建（会自动去掉 PDF 抽取时连续重复的行）
 - PWA：`manifest.webmanifest` + `sw.js` + `icons/`（可安装、可离线）
 - 无后端、无账号
 - 可选：用 `scripts/extract_pdf_words.py` 从 PDF 重新提取巴朗词表；`scripts/build_essay_vocab.py` 重建作文词与裁剪 Lesson 41+

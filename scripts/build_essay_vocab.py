@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-ROOT = Path("/workspace/br-vocab")
+ROOT = Path(__file__).resolve().parent.parent  # 原为写死的 /workspace/br-vocab，换机器就找不到
 SRC = Path("/workspace/kaoyan-writing")
 VOCAB_JSON = ROOT / "data" / "vocab.json"
 VOCAB_JS = ROOT / "data" / "vocab-data.js"

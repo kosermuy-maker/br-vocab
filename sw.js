@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v19-eng-1027";
+const CACHE = "br-vocab-v20-kaoyan-1028";
 const CORE = [
   "./",
   "./index.html",
@@ -6,6 +6,7 @@ const CORE = [
   "./app.js",
   "./manifest.webmanifest",
   "./data/vocab-data.js",
+  "./data/kaoyan-data.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/apple-touch-icon.png",

@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20261009-spell-enter" />
+    <link rel="stylesheet" href="./styles.css?v=20261028-kaoyan" />
   </head>
   <body>
     <div class="app-shell">
@@ -22,6 +22,7 @@
           <div class="library-switch" role="tablist" aria-label="词库切换">
             <button class="chip active" type="button" data-library="barron" role="tab" aria-selected="true">巴朗 1–40</button>
             <button class="chip" type="button" data-library="essay" role="tab" aria-selected="false">作文</button>
+            <button class="chip" type="button" data-library="kaoyan" role="tab" aria-selected="false">考研词汇</button>
           </div>
         </div>
         <button id="menuBtn" class="icon-button" type="button" aria-label="打开学习面板">☰</button>
@@ -38,6 +39,11 @@
             <button class="chip active" type="button" data-essay-sub="spell">会拼写</button>
             <button class="chip" type="button" data-essay-sub="recognize">要认识</button>
             <button class="chip" type="button" data-essay-sub="misspell">作文错词</button>
+          </div>
+
+          <div id="kaoyanBookRow" class="essay-submode-row hidden-panel" aria-label="考研词汇分册">
+            <button class="chip active" type="button" data-kaoyan-book="core">核心词 Unit 1–15</button>
+            <button class="chip" type="button" data-kaoyan-book="freq">真题高频200词</button>
           </div>
 
           <div id="flashcard" class="flashcard" role="button" tabindex="0" aria-label="点击显示或隐藏释义">
@@ -121,7 +127,7 @@
               <div class="toolbar-actions">
                 <button id="autoSpeakBtn" class="chip" type="button">自动发音：关</button>
                 <button id="wrongOnlySelectedBtn" class="ghost" type="button">仅已选单元</button>
-                <button id="clearSessionBtn" class="ghost danger-ghost" type="button">清空顺序进度</button>
+                <button id="clearSessionBtn" class="ghost danger-ghost" type="button">重置本组进度</button>
                 <button id="resetProgressBtn" class="ghost danger-ghost" type="button">清空进度</button>
               </div>
             </section>
@@ -171,7 +177,8 @@
       </nav>
     </div>
 
-    <script charset="UTF-8" src="./data/vocab-data.js"></script>
-    <script charset="UTF-8" src="./app.js?v=20261024-session"></script>
+    <script charset="UTF-8" src="./data/vocab-data.js?v=20261028-kaoyan"></script>
+    <script charset="UTF-8" src="./data/kaoyan-data.js?v=20261028-kaoyan"></script>
+    <script charset="UTF-8" src="./app.js?v=20261028-kaoyan"></script>
   </body>
   </html>
