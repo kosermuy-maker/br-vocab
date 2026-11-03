@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v20-kaoyan-1028";
+const CACHE = "br-vocab-v20-rec-1103";
 const CORE = [
   "./",
   "./index.html",

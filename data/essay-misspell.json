@@ -1,6 +1,6 @@
 {
   "description": "个人作文错词本。老师批改新增错词时：改本文件 → 运行 scripts/build_essay_vocab.py → 同步 GitHub 与桌面 br。",
-  "count": 158,
+  "count": 176,
   "words": [
     {
       "index": 1,
@@ -210,7 +210,8 @@
       "part_of_speech": "",
       "meaning": "机会",
       "wrongForms": [
-        "change"
+        "change",
+        "chace"
       ],
       "group": "作文错词",
       "source": "辞职道歉信",
@@ -1930,6 +1931,218 @@
       "group": "作文错词",
       "source": "工程硕士图表 10-27",
       "note": "单数 Master of Engineering",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 159,
+      "word": "writing",
+      "part_of_speech": "",
+      "meaning": "写作",
+      "wrongForms": [
+        "writting"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 160,
+      "word": "world",
+      "part_of_speech": "",
+      "meaning": "世界",
+      "wrongForms": [
+        "word"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 161,
+      "word": "there",
+      "part_of_speech": "",
+      "meaning": "那里；存在",
+      "wrongForms": [
+        "their"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 162,
+      "word": "architecture",
+      "part_of_speech": "",
+      "meaning": "建筑",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 163,
+      "word": "attractions",
+      "part_of_speech": "",
+      "meaning": "景点",
+      "wrongForms": [
+        "tourist"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 164,
+      "word": "enjoy",
+      "part_of_speech": "",
+      "meaning": "享受；玩得开心",
+      "wrongForms": [
+        "play happy"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 165,
+      "word": "recommend",
+      "part_of_speech": "",
+      "meaning": "推荐",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 166,
+      "word": "scenic",
+      "part_of_speech": "",
+      "meaning": "风景的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 167,
+      "word": "ancient",
+      "part_of_speech": "",
+      "meaning": "古代的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 168,
+      "word": "heritage",
+      "part_of_speech": "",
+      "meaning": "遗产",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 169,
+      "word": "welcome",
+      "part_of_speech": "",
+      "meaning": "欢迎",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 170,
+      "word": "meanwhile",
+      "part_of_speech": "",
+      "meaning": "同时",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 171,
+      "word": "opportunity",
+      "part_of_speech": "",
+      "meaning": "机会",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 172,
+      "word": "primary",
+      "part_of_speech": "",
+      "meaning": "主要的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 173,
+      "word": "currently",
+      "part_of_speech": "",
+      "meaning": "目前",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 174,
+      "word": "renowned",
+      "part_of_speech": "",
+      "meaning": "著名的",
+      "wrongForms": [],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 175,
+      "word": "Forbidden City",
+      "part_of_speech": "",
+      "meaning": "故宫",
+      "wrongForms": [
+        "Forbidden city"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
+      "lesson": "essay-misspell"
+    },
+    {
+      "index": 176,
+      "word": "Great Wall",
+      "part_of_speech": "",
+      "meaning": "长城",
+      "wrongForms": [
+        "Great wall"
+      ],
+      "group": "作文错词",
+      "source": "推荐信 11-03",
+      "note": "",
       "lesson": "essay-misspell"
     }
   ]
