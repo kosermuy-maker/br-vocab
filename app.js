@@ -12,6 +12,12 @@ const KAOYAN_PREFS_KEY = "vocab-trainer-kaoyan-prefs-v1";
 const LIBRARIES = ["barron", "essay", "kaoyan"];
 const AUTOSPEAK_KEY = "vocab-trainer-autospeak-v1";
 const REVIEW_INTERVALS = [0, 1, 2, 4, 7, 15];
+const ESSAY_SUB_MODES = {
+  spell: { title: "会拼写", hint: "看中文，打字拼写" },
+  recognize: { title: "要认识", hint: "翻卡：认识 / 不认识" },
+  misspell: { title: "作文错词", cardTitle: "错词", hint: "个人错词，打字拼写" },
+  prompt: { title: "审题词", hint: "大小作文真题题干，翻卡认词" },
+};
 
 let allWordsCache = null;
 let lessonIndexCache = null; // lesson -> words[]，由 getLessonWords 惰性构建
@@ -295,18 +301,7 @@ function bindEvents() {
 
   els.essaySubButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const raw = button.dataset.essaySub;
-      const next = raw === "recognize" ? "recognize" : raw === "misspell" ? "misspell" : "spell";
-      if (next === state.essaySubMode) return;
-      state.essaySubMode = next;
-      state.currentSource = "normal";
-      state.quizLesson = null;
-      state.wrongReviewLesson = null;
-      syncEssaySubButtons();
-      syncLibraryUi();
-      buildDeck();
-      renderAll();
-      closeDrawer();
+      if (switchEssaySubMode(normalizeEssaySubMode(button.dataset.essaySub))) closeDrawer();
     });
   });
 
@@ -424,15 +419,23 @@ function isSpellPractice() {
 }
 
 function essayLessonId(sub = state.essaySubMode) {
-  if (sub === "recognize") return "essay-recognize";
-  if (sub === "misspell") return "essay-misspell";
-  return "essay-spell";
+  return `essay-${sub}`;
 }
 
-function essaySubLabel(sub = state.essaySubMode) {
-  if (sub === "recognize") return "要认识";
-  if (sub === "misspell") return "作文错词";
-  return "会拼写";
+function normalizeEssaySubMode(sub) {
+  return Object.hasOwn(ESSAY_SUB_MODES, sub) ? sub : "spell";
+}
+
+function switchEssaySubMode(next) {
+  if (next === state.essaySubMode) return false;
+  state.essaySubMode = next;
+  state.currentSource = "normal";
+  state.quizLesson = null;
+  state.wrongReviewLesson = null;
+  syncEssaySubButtons();
+  buildDeck();
+  renderAll();
+  return true;
 }
 
 function normalizeAnswer(text) {
@@ -488,7 +491,9 @@ function syncLibraryButtons() {
 
 function syncEssaySubButtons() {
   els.essaySubButtons.forEach((button) => {
-    button.classList.toggle("active", button.dataset.essaySub === state.essaySubMode);
+    const active = button.dataset.essaySub === state.essaySubMode;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
   });
 }
 
@@ -690,12 +695,7 @@ function saveQueues(queues) {
 function getSessionKeyFromSaved(saved) {
   if (!saved || !Array.isArray(saved.selectedLessons)) return null;
   const library = LIBRARIES.includes(saved.libraryMode) ? saved.libraryMode : "barron";
-  const essaySub =
-    saved.essaySubMode === "recognize"
-      ? "recognize"
-      : saved.essaySubMode === "misspell"
-        ? "misspell"
-        : "spell";
+  const essaySub = normalizeEssaySubMode(saved.essaySubMode);
   const mode = saved.mode === "random" ? "random" : "sequential";
   let base;
   if (saved.type === "lesson") base = `lesson:${saved.quizLesson}`;
@@ -722,12 +722,7 @@ function restoreSavedSessionScopeOnStartup() {
 
   if (saved.libraryMode === "essay") {
     state.libraryMode = "essay";
-    state.essaySubMode =
-      saved.essaySubMode === "recognize"
-        ? "recognize"
-        : saved.essaySubMode === "misspell"
-          ? "misspell"
-          : "spell";
+    state.essaySubMode = normalizeEssaySubMode(saved.essaySubMode);
     state.currentSource = "normal";
     state.currentMode = saved.mode === "random" ? "random" : "sequential";
     state.quizLesson = null;
@@ -968,30 +963,16 @@ function getAllWords() {
     const barron = state.data.lessons.flatMap((lesson) =>
       lesson.words.map((word) => ({ ...word, lessonTitle: lesson.title }))
     );
-    const essay = [];
-    const spell = state.data.essay?.spell || [];
-    const recognize = state.data.essay?.recognize || [];
-    const misspell = state.data.essay?.misspell || [];
-    spell.forEach((word) => {
-      essay.push({
+    const prompts = (window.ESSAY_PROMPT_WORDS || [])
+      .flatMap(({ group, words }) => words.map(([word, meaning]) => ({ word, meaning, group })))
+      .map((word, index) => ({ ...word, index: index + 1 }));
+    const essay = Object.entries(ESSAY_SUB_MODES).flatMap(([sub, { title, cardTitle }]) => {
+      const words = sub === "prompt" ? prompts : state.data.essay?.[sub] || [];
+      return words.map((word) => ({
         ...word,
-        lesson: "essay-spell",
-        lessonTitle: "作文·会拼写",
-      });
-    });
-    recognize.forEach((word) => {
-      essay.push({
-        ...word,
-        lesson: "essay-recognize",
-        lessonTitle: "作文·要认识",
-      });
-    });
-    misspell.forEach((word) => {
-      essay.push({
-        ...word,
-        lesson: "essay-misspell",
-        lessonTitle: "作文·错词",
-      });
+        lesson: essayLessonId(sub),
+        lessonTitle: `作文·${cardTitle || title}`,
+      }));
     });
     const kaoyan = getKaoyanLessons().flatMap((lesson) =>
       lesson.words.map((word) => ({ ...word, lesson: lesson.id, lessonTitle: lesson.title }))
@@ -1556,58 +1537,26 @@ function renderSidebar() {
   syncLibraryUi();
 
   if (isEssayMode()) {
-    const items = [
-      {
-        id: "essay-spell",
-        title: "会拼写",
-        count: state.data.essay?.spellCount || (state.data.essay?.spell || []).length,
-        sub: "spell",
-        hint: "看中文，打字拼写",
-      },
-      {
-        id: "essay-recognize",
-        title: "要认识",
-        count: state.data.essay?.recognizeCount || (state.data.essay?.recognize || []).length,
-        sub: "recognize",
-        hint: "翻卡：认识 / 不认识",
-      },
-      {
-        id: "essay-misspell",
-        title: "作文错词",
-        count: state.data.essay?.misspellCount || (state.data.essay?.misspell || []).length,
-        sub: "misspell",
-        hint: "个人错词，打字拼写",
-      },
-    ];
-    items.forEach((item) => {
-      const active = state.essaySubMode === item.sub;
-      const progress = getLessonProgress(item.id);
+    Object.entries(ESSAY_SUB_MODES).forEach(([sub, { title, hint }]) => {
+      const active = state.essaySubMode === sub;
+      const progress = getLessonProgress(essayLessonId(sub));
       const progressText = progress.completed
         ? "已完成"
         : progress.learned > 0
           ? `进度 ${progress.learned} / ${progress.total}`
-          : `${item.count} 词`;
+          : `${progress.total} 词`;
       const node = document.createElement("div");
       node.className = `lesson-item${active ? " active" : ""}${progress.completed ? " is-complete" : ""}`;
       node.innerHTML = `
         <div>
-          <strong>${escapeHtml(item.title)}</strong>
-          <div class="muted">${escapeHtml(progressText)} · ${escapeHtml(item.hint)}</div>
+          <strong>${escapeHtml(title)}</strong>
+          <div class="muted">${escapeHtml(progressText)} · ${escapeHtml(hint)}</div>
         </div>
         <div class="lesson-item-actions">
           <span class="tag">${active ? "当前" : "切换"}</span>
         </div>
       `;
-      node.addEventListener("click", () => {
-        if (state.essaySubMode === item.sub) return;
-        state.essaySubMode = item.sub;
-        state.currentSource = "normal";
-        state.quizLesson = null;
-        syncEssaySubButtons();
-        syncLibraryUi();
-        buildDeck();
-        renderAll();
-      });
+      node.addEventListener("click", () => switchEssaySubMode(sub));
       els.lessonList.appendChild(node);
     });
     return;
@@ -1758,12 +1707,9 @@ function refreshDashboard() {
   const dueWords = getDueWords();
 
   if (isEssayMode()) {
-    els.lessonCount.textContent = "3";
-    els.wordCount.textContent = String(
-      (state.data.essay?.spellCount || 0) +
-        (state.data.essay?.recognizeCount || 0) +
-        (state.data.essay?.misspellCount || 0)
-    );
+    const modes = Object.keys(ESSAY_SUB_MODES);
+    els.lessonCount.textContent = String(modes.length);
+    els.wordCount.textContent = String(modes.reduce((count, sub) => count + getLessonWords(essayLessonId(sub)).length, 0));
   } else if (isKaoyanMode()) {
     const freq = state.kaoyanBook === "freq";
     els.lessonCount.textContent = freq ? "1" : String(getKaoyanCoreLessons().length);
@@ -1794,7 +1740,7 @@ function refreshDashboard() {
       els.currentScopeTitle.textContent = "作文 · 错词";
       els.scopeHint.textContent = "看中文拼英文；点「不会」显示正确拼写，仍可继续输入。对了下一词，错了进错题。";
     } else {
-      els.currentScopeTitle.textContent = "作文 · 要认识";
+      els.currentScopeTitle.textContent = `作文 · ${ESSAY_SUB_MODES[state.essaySubMode].title}`;
       els.scopeHint.textContent = "先看英文，轻点卡片显示释义，再点认识 / 不认识。";
     }
   } else if (isKaoyanMode()) {
@@ -1866,11 +1812,13 @@ function refreshDashboard() {
 function renderCard() {
   const current = state.deck[state.currentIndex];
   const spellMode = isSpellPractice();
+  const promptCard = current?.lesson === essayLessonId("prompt");
 
   els.spellPanel?.classList.toggle("hidden-panel", !spellMode);
+  els.flashcard.classList.toggle("prompt-card", promptCard);
   els.knownBtn.classList.toggle("hidden-panel", spellMode);
   els.unknownBtn.classList.toggle("hidden-panel", spellMode);
-  if (els.wordZoneLabel) els.wordZoneLabel.textContent = spellMode ? "请拼写" : "当前单词";
+  if (els.wordZoneLabel) els.wordZoneLabel.textContent = spellMode ? "请拼写" : promptCard ? "审题词" : "当前单词";
   if (els.meaningZoneLabel) els.meaningZoneLabel.textContent = spellMode ? "中文提示" : "中文释义";
 
   if (!current) {
@@ -2000,7 +1948,7 @@ function renderCard() {
   }
 
   els.cardWord.textContent = current.word;
-  const posText = current.part_of_speech || "未标注词性";
+  const posText = promptCard ? current.group : current.part_of_speech || "未标注词性";
   els.cardPos.textContent = Number.isFinite(current.freq) ? `${posText} · 真题出现 ${current.freq} 次` : posText;
   els.tapHint.hidden = state.showMeaning;
   els.cardMeaning.textContent = current.meaning || "未提取到释义";
@@ -2123,6 +2071,7 @@ function renderWrongList() {
           const itemState = state.progress[key] || {};
           const expanded = state.expandedWrongKeys.has(key);
           const lastWrong = formatRelativeTime(itemState.lastWrongAt || itemState.lastSeenAt);
+          const posText = word.lesson === essayLessonId("prompt") ? word.group : word.part_of_speech || "未标注词性";
           return `
             <div class="wrong-card">
               <div class="wrong-card-head">
@@ -2133,7 +2082,7 @@ function renderWrongList() {
                   <button type="button" class="mini-button danger-mini" data-wrong-action="remove" data-word-key="${escapeHtml(key)}">移出</button>
                 </div>
               </div>
-              <div class="wrong-meta">${escapeHtml(word.part_of_speech || "未标注词性")} · 答错 ${itemState.wrongCount || 0} 次 · ${escapeHtml(lastWrong)}</div>
+              <div class="wrong-meta">${escapeHtml(posText)} · 答错 ${itemState.wrongCount || 0} 次 · ${escapeHtml(lastWrong)}</div>
               <div class="wrong-meta wrong-meaning${expanded ? "" : " is-collapsed"}">${escapeHtml(word.meaning)}</div>
             </div>
           `;

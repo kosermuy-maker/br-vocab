@@ -1,4 +1,4 @@
-const CACHE = "br-vocab-v20-rec-1103";
+const CACHE = "br-vocab-v21-essay-prompt";
 const CORE = [
   "./",
   "./index.html",
@@ -7,6 +7,7 @@ const CORE = [
   "./manifest.webmanifest",
   "./data/vocab-data.js",
   "./data/kaoyan-data.js",
+  "./data/essay-prompt-words.js",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
   "./icons/apple-touch-icon.png",

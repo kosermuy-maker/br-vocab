@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
     <title>单词背诵器</title>
-    <link rel="stylesheet" href="./styles.css?v=20261028-kaoyan" />
+    <link rel="stylesheet" href="./styles.css?v=20261126-prompt" />
   </head>
   <body>
     <div class="app-shell">
@@ -39,6 +39,7 @@
             <button class="chip active" type="button" data-essay-sub="spell">会拼写</button>
             <button class="chip" type="button" data-essay-sub="recognize">要认识</button>
             <button class="chip" type="button" data-essay-sub="misspell">作文错词</button>
+            <button class="chip" type="button" data-essay-sub="prompt">审题词</button>
           </div>
 
           <div id="kaoyanBookRow" class="essay-submode-row hidden-panel" aria-label="考研词汇分册">
@@ -179,6 +180,7 @@
 
     <script charset="UTF-8" src="./data/vocab-data.js?v=20261103-rec"></script>
     <script charset="UTF-8" src="./data/kaoyan-data.js?v=20261028-kaoyan"></script>
-    <script charset="UTF-8" src="./app.js?v=20261103-rec"></script>
+    <script charset="UTF-8" src="./data/essay-prompt-words.js?v=20261126-prompt"></script>
+    <script charset="UTF-8" src="./app.js?v=20261126-prompt"></script>
   </body>
   </html>

@@ -945,6 +945,12 @@ button:hover {
   margin: 0 0 8px;
 }
 
+.prompt-card .word {
+  font-size: clamp(24px, 6vw, 56px);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
 .hidden-panel {
   display: none !important;
 }
