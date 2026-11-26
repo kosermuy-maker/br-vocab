@@ -81,7 +81,7 @@ window.ESSAY_PROMPT_WORDS = [
     group: "英语一 · 2025 小作文",
     words: [
       ["classmate", "同班同学"],
-      ["young craftsmen", "年轻手艺人"],
+      ["young craftsmen", "年轻手艺人。craftsman 是单数，craftsmen 是复数。"],
       ["demonstrate", "演示、展示"],
       ["innovative craft-making", "有创意的手工艺制作"],
       ["preparation work", "筹备工作"],
@@ -104,7 +104,7 @@ window.ESSAY_PROMPT_WORDS = [
       ["research project", "研究项目"],
       ["campus sports activities", "校园体育活动"],
       ["specify", "具体说明、明确写出"],
-      ["duties and requirements", "工作职责和要求，两项都要写"],
+      ["duties and requirements", "工作职责和要求，两项都要写。duties 是 duty 的复数。"],
     ],
   },
   {
@@ -420,6 +420,14 @@ window.ESSAY_PROMPT_WORDS = [
       ["share with you a video", "给你分享一段视频"],
       ["how you feel about the video", "你看完视频的感受"],
       ["wish to learn more", "想了解更多"],
+    ],
+  },
+  {
+    group: "小作文 · 词汇补充",
+    words: [
+      ["British", "英国的。a British university 指一所英国大学（英一 2022）。"],
+      ["Sino-American", "中美的。用于描述中美文化交流项目（英二 2010）。"],
+      ["congratulation", "祝贺（名词）。直接道贺常用复数 Congratulations!，congratulate 是动词。"],
     ],
   },
 ];
