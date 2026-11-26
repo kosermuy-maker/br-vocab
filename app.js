@@ -12,6 +12,7 @@ const KAOYAN_PREFS_KEY = "vocab-trainer-kaoyan-prefs-v1";
 const LIBRARIES = ["barron", "essay", "kaoyan"];
 const AUTOSPEAK_KEY = "vocab-trainer-autospeak-v1";
 const REVIEW_INTERVALS = [0, 1, 2, 4, 7, 15];
+const TOUCH_INPUT = window.matchMedia("(pointer: coarse)").matches;
 const ESSAY_SUB_MODES = {
   spell: { title: "会拼写", hint: "看中文，打字拼写" },
   recognize: { title: "要认识", hint: "翻卡：认识 / 不认识" },
@@ -307,7 +308,7 @@ function bindEvents() {
 
   els.spellCheckBtn?.addEventListener("click", (event) => {
     event.stopPropagation();
-    checkSpelling();
+    if (!flushSpellPending()) checkSpelling();
   });
   els.spellHintBtn?.addEventListener("click", (event) => {
     event.stopPropagation();
@@ -1254,7 +1255,7 @@ function revealSpellAnswer() {
   if (state.spellPendingAdvance) return;
   state.spellShowAnswer = true;
   renderCard();
-  els.spellInput?.focus();
+  if (!TOUCH_INPUT) els.spellInput?.focus();
 }
 
 function flushSpellPending() {
@@ -1286,14 +1287,14 @@ function checkSpelling() {
     return;
   }
   if (answersMatch(input, current.word)) {
-    state.spellFeedback = "拼写正确 ✓ 回车或点「下一个」继续";
+    state.spellFeedback = "拼写正确 ✓";
     state.spellRevealedAnswer = true;
     state.spellShowAnswer = true;
     state.spellPendingAdvance = { isKnown: true };
     renderCard();
     return;
   }
-  state.spellFeedback = `不正确，答案：${current.word} · 回车或点「下一个」继续`;
+  state.spellFeedback = `不正确，答案：${current.word}`;
   state.spellRevealedAnswer = true;
   state.spellShowAnswer = true;
   state.spellPendingAdvance = { isKnown: false };
@@ -1902,7 +1903,6 @@ function renderCard() {
     els.unknownBtn.style.opacity = "0.55";
     if (els.spellFeedback) {
       els.spellFeedback.textContent = state.spellFeedback || "";
-      // 反馈文案带后缀（"拼写正确 ✓ 回车或…"），之前用 === 判断导致答对也显示成红色
       const ok = state.spellPendingAdvance?.isKnown === true;
       els.spellFeedback.classList.toggle("is-ok", ok);
       els.spellFeedback.classList.toggle("is-bad", Boolean(state.spellPendingAdvance) && !ok);
@@ -1918,8 +1918,8 @@ function renderCard() {
     }
     const pending = Boolean(state.spellPendingAdvance);
     if (els.spellCheckBtn) {
-      els.spellCheckBtn.disabled = pending;
-      els.spellCheckBtn.textContent = pending ? "已提交" : "检查";
+      els.spellCheckBtn.disabled = false;
+      els.spellCheckBtn.textContent = pending ? "下一个" : "检查";
     }
     if (els.spellInput) {
       // 用 readOnly 而非 disabled，这样反馈期间回车仍能触发 keydown → 下一题
@@ -1934,16 +1934,18 @@ function renderCard() {
     if (els.nextWordBtn) {
       els.nextWordBtn.classList.toggle("primary", pending);
     }
-    setTimeout(() => {
-      if (!els.spellInput) return;
-      els.spellInput.focus();
-      if (pending) {
-        try {
-          const len = els.spellInput.value.length;
-          els.spellInput.setSelectionRange(len, len);
-        } catch (_) {}
-      }
-    }, 0);
+    if (TOUCH_INPUT) {
+      if (pending && document.activeElement === els.spellInput) els.spellInput.blur();
+    } else {
+      setTimeout(() => {
+        if (!isSpellPractice() || !els.spellInput) return;
+        els.spellInput.focus();
+        if (pending) {
+          const end = els.spellInput.value.length;
+          els.spellInput.setSelectionRange(end, end);
+        }
+      }, 0);
+    }
     return;
   }
 

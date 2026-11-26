@@ -1030,8 +1030,120 @@ body.library-kaoyan .app-header h1 {
   .library-switch {
     margin-top: 8px;
   }
-  .spell-row .primary {
-    flex: 1 1 100%;
+}
+
+@media (max-width: 899px) {
+  /* 拼写含输入框和多行反馈，内容超出一屏时让页面自然滚动。 */
+  html:has(body.practice-spell),
+  body.practice-spell {
+    height: auto;
+    overflow: visible;
+  }
+
+  body.practice-spell .app-shell {
+    height: auto;
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  body.practice-spell .app-main {
+    overflow: visible;
+  }
+
+  body.practice-spell .app-drawer {
+    overflow: hidden;
+    visibility: hidden;
+    transition: visibility 0s 0.24s;
+  }
+
+  body.practice-spell .app-drawer.open {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  body.practice-spell .study-screen {
+    min-width: 0;
+  }
+
+  body.practice-spell .flashcard {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto;
+    align-content: center;
+    overflow: visible;
+  }
+
+  body.practice-spell .word-zone,
+  body.practice-spell .meaning-zone {
+    max-height: none;
+    overflow: visible;
+  }
+
+  body.practice-spell .word {
+    font-size: clamp(24px, 7vw, 38px);
+    line-height: 1.15;
+  }
+
+  body.practice-spell .card-actions {
+    display: none;
+  }
+
+  .spell-panel {
+    margin-top: 0;
+    padding: 10px;
+    gap: 8px;
+    overflow-wrap: anywhere;
+  }
+
+  .spell-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .spell-row .spell-input {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .spell-row > button {
+    min-height: 44px;
+    padding: 8px;
+  }
+
+  .spell-hint:empty,
+  .spell-feedback:empty {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  body.practice-spell .app-header .eyebrow {
+    letter-spacing: 0.08em;
+    font-size: 10px;
+  }
+
+  body.practice-spell .library-switch {
+    gap: 4px;
+  }
+
+  body.practice-spell .library-switch .chip {
+    min-height: 36px;
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+
+  #essaySubModeRow {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+    margin-bottom: 0;
+  }
+
+  #essaySubModeRow .chip {
+    min-height: 44px;
+    padding: 6px 2px;
+    font-size: 14px;
+    white-space: nowrap;
   }
 }
 
